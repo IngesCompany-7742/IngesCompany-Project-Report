@@ -86,17 +86,34 @@ La incapacidad de demostrar una trazabilidad ininterrumpida, desde los parámetr
 
 - **What (¿Qué?):** ¿Qué es lo que se busca resolver?
 
+    Se busca resolver las dificultades en el control y supervisión de la calidad durante la fabricación de productos farmacéuticos, principalmente debido al registro manual de información y la falta de monitoreo en tiempo real de las máquinas y procesos.
+
 - **Why (¿Por qué?):** ¿Por qué es importante resolverlo?
+
+  Es importante resolverlo porque los procesos manuales aumentan el riesgo de errores en los registros, dificultan la trazabilidad de los productos y hacen que la preparación de información requiera demasiado tiempo. Además de que una detección tardía de desviaciones puede afectar la calidad y seguridad de los productos farmacéuticos. 
 
 - **Who (¿Quién?):** ¿A quién afecta?
 
+  Afecta principalmente a los directores de farmacias y farmacéuticos encargados del aseguramiento de la calidad de laboratorios farmacéuticos medianos y entidades publicas de salud en el Perú. También puede impactar a los responsables de producción y
+  a los consumidores finales.
+
 - **When (¿Cuándo?):** ¿Cuándo ocurre?
+
+  Ocurre durante las diferentes etapas del proceso de fabricación y control de los productos farmacéuticos, especialmente cuando se deben registrar datos de producción, verificar la calidad, detectar desviaciones, realizar la cuarentena o liberacion de
+  productos y recolectar informacion.
 
 - **Where (¿Dónde?):** ¿En dónde ocurre?
 
+  Se presenta principalmente en laboratorios farmacéuticos y entidades públicas de salud en el Perú, específicamente en los espacios donde se realizan los procesos de fabricación, control de calidad, almacenamiento y seguimiento de los productos.  
+
 - **How (¿Cómo?):** ¿Cómo se resuelve?
 
+  Se busca resolver mediante una plataforma SaaS que integre sensores IoT para obtener información en tiempo real, automatice los procesos de cuarentena y liberación, permita verificar la calidad y proporcione trazabilidad completa de los lotes desde
+  su fabricación hasta su almacenamiento y distribución. Esto permitiría centralizar la información y reducir la dependencia de registros manuales. 
+
 - **How much (¿Cuánto?):** ¿Cuánto cuesta resolverlo?
+
+  El costo implica la inversión de la plataforma SaaS e instalación de sensores IoT en la maquinaria de producción y las horas asociadas a la capacitación del personal farmacéutico en el nuevo flujo de trabajo. 
 
 ### 1.2.2. Lean UX Process
 
