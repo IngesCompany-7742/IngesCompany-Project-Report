@@ -50,11 +50,38 @@ La visión de IngesCompany es convertirse en un referente global en la implement
 
 ### 1.2.1. Antecedentes y problemática
 
-**1. ANTECEDENTES:**
+La industria farmacéutica está considerada entre las más reguladas del mundo, debido a que sus 
+productos se relacionan directamente con la salud pública. En el Perú, la Dirección General de 
+Medicamentos, Insumos y Drogas (DIGEMID) es la entidad reguladora responsable de supervisar que se cumplan 
+los estándares rigurosos de las Buenas Prácticas de Manufactura (BPM). Estas normas obligan 
+a los laboratorios, tanto privados como públicos, por ejemplo, el Instituto Nacional de Salud 
+(INS), a asegurar que los productos se elaboren de forma uniforme y controlada, donde se debe respetar los 
+estándares de calidad acordes con el uso previsto.
 
-
+No obstante, aunque estos procesos son críticos, la digitalización en las áreas de aseguramiento 
+de la calidad (Quality Assurance) todavía es limitada en numerosos laboratorios nacionales. 
+El manejo de equipos industriales esenciales, como las autoclaves —cuya esterilización eficaz 
+depende de medir con precisión la temperatura y la presión del vapor— o la determinación del 
+pH en el control de calidad, continúa apoyándose en gran medida en sistemas aislados, impresiones 
+térmicas o, incluso, en registros manuales hechos por operarios. Esta escasa integración digital 
+y automatización no solo vuelve más lentas las operaciones, sino que también pone en riesgo la 
+“Integridad de Datos” (Data Integrity), un principio fundamental exigido por las agencias 
+regulatorias internacionales.
 
 **2. PROBLEMATICA:**
+---
+**Desconexión entre Producción y Logística (Silos de Información):** 
+---
+Actualmente, las plantas operan con sistemas aislados. Si una máquina experimenta una leve descalibración durante un turno de producción, la alerta no se vincula automáticamente con el lote producido. Esto permite que medicamentos con calidad cuestionable avancen hacia el almacén, generando pérdidas económicas cuando el control de calidad final rechaza la mercadería.
+
+**Carencia de Almacenamiento Inteligente y Trazabilidad:** 
+---
+Al no contar con una plataforma que conecte la calidad de origen (la máquina) con el inventario, la gestión de la mercadería se vuelve ineficiente y propensa a errores. La falta de automatización dificulta la aplicación rigurosa de métodos como FEFO (Primero en expirar, primero en salir) y el bloqueo inmediato de lotes en cuarentena, poniendo en riesgo la integridad del producto.
+
+**Riesgo Regulatorio y Auditorías Deficientes:** 
+---
+La incapacidad de demostrar una trazabilidad ininterrumpida —desde los parámetros técnicos con los que operó la máquina hasta la ubicación exacta del fármaco en el almacén— expone a los laboratorios a graves observaciones durante las auditorías de DIGEMID. Recopilar esta información de manera manual es un proceso lento que incrementa el riesgo de multas y paralizaciones.
+
 
 **A:**
 

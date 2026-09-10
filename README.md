@@ -39,9 +39,12 @@ Carrera de Ingeniería de Software
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción |
-|:---:|:---:|:---|:---|
+| Versión | Fecha | Autor                              | Descripción                                                                                              |
+|:---:|:---:|:-----------------------------------|:---------------------------------------------------------------------------------------------------------|
 | 1.0.0 | 03/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inicialización del repositorio del informe (first commit) y creación de la estructura base del proyecto. |
+| 1.0.1 | 10/09/2026 | Angulo Ramírez, Marcelo Martín     | Agregando contenido relacionado al UX y los antecedentes del problema.                                   |
+ | 1.0.2 | 17/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Avance del Capítulo I, con definición de los antecedentes y la problemática.                             |
+
 
 ---
 
