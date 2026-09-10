@@ -64,6 +64,7 @@ Proyecto
 | 1.0.2 | 11/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Avance del Capítulo I, con definición de los antecedentes y la problemática.                             |
 | 1.0.3 | 11/09/2026 | Angulo Ramírez, Marcelo Martín     | Especifica y Declara a los Segmentos Objetivos.                                                          |
 | 1.0.4 | 11/09/2026 | Cobades Zamora, Yhoshua Hebert     | Se agregó la sección de supuestos con los 5 tipos requeridos. |
+| 1.0.5 | 11/09/2026 | Flores Martinez, Ricardo Andres     | Se completo los 5w y 2h requeridos. |
 
 
 ---
