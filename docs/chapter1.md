@@ -50,14 +50,108 @@ La visión de IngesCompany es convertirse en un referente global en la implement
 
 ### 1.2.1. Antecedentes y problemática
 
+**1. ANTECEDENTES:**
+
+
+
+**2. PROBLEMATICA:**
+
+**A:**
+
+**B:**
+
+**C:**
+
+**ANALISIS 5W & 2H:**
+
+- **What (¿Qué?):** ¿Qué es lo que se busca resolver?
+
+- **Why (¿Por qué?):** ¿Por qué es importante resolverlo?
+
+- **Who (¿Quién?):** ¿A quién afecta?
+
+- **When (¿Cuándo?):** ¿Cuándo ocurre?
+
+- **Where (¿Dónde?):** ¿En dónde ocurre?
+
+- **How (¿Cómo?):** ¿Cómo se resuelve?
+
+- **How much (¿Cuánto?):** ¿Cuánto cuesta resolverlo?
+
 ### 1.2.2. Lean UX Process
+
+El Lean UX es un enfoque que permite validar las soluciones propuestas para los problemas identificados. Este método se centra en los usuarios del producto. Una vez definido el problema a resolver, se aplicó este procedimiento para determinar los aspectos clave que guiarán el desarrollo del producto.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
+**The current state of** pharmaceutical quality control in Peru **has focused mainly on** manual record keeping and fragmented information systems, forcing quality assurance pharmacists and pharmacy directors to invest excessive time in data consolidation for regulatory audits, increasing the risk of human error, and delaying the detection of operational deviations.
+
+**What existing products fail to address is** the need for an affordable, scalable platform that unifies real time machine monitoring, automated quality verification, and full traceability from production to storage while remaining accessible to mid sized laboratories and public health institutions.
+
+**Our product will address this gap by** delivering a SaaS solution that integrates IoT based sensor data, automated quarantine and release workflows, and complete batch genealogy, enabling proactive quality management and streamlined regulatory compliance.
+
+**Our initial focus will be** on pharmacy directors and quality assurance pharmacists within mid sized pharmaceutical laboratories and public health entities in Peru.
+
+**We will know we have succeeded when we see** a significant decrease in manual registration errors, a measurable reduction in audit preparation time, and sustained improvements in quality and traceability performance metrics among our early adopters.
+
 #### 1.2.2.2. Lean UX Assumptions
 
+En esta sección se presentan las premisas que sustentan la propuesta de DoofPlus, tomando en cuenta el marco regulatorio de la DIGEMID, las limitaciones de los procesos manuales en los laboratorios y el valor que aporta una plataforma integral de monitoreo y trazabilidad.
+
+**Business Assumptions:**
+
+*
+
+**Business Outcome Assumptions:**
+
+*
+
+**User Assumptions:**
+
+*
+
+**User Outcome & Benefit Assumptions:**
+
+*
+
+**Feature Assumptions:**
+
+*
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+* **Hypothesis 1:**
+* **Hypothesis 2:**
+* **Hypothesis 3:**
+* **Hypothesis 4:**
+* **Hypothesis 5:**
 
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
+
+Características demográficas:
+
+- **Edad:**
+- **Género:**
+- **Ocupación:**
+- **Nivel educativo:**
+- **Ubicación geográfica:**
+
+Información estadística de sustento:
+
+-
+
+### Segmento Objetivo 2:
+
+Características demográficas:
+
+- **Edad:**
+- **Género:**
+- **Ocupación:**
+- **Nivel educativo:**
+- **Ubicación geográfica:**
+
+Información estadística de sustento:
+
+-
