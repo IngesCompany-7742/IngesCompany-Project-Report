@@ -150,28 +150,38 @@ En esta sección se presentan las premisas que sustentan la propuesta de DoofPlu
 
 ## 1.3. Segmentos objetivo
 
-Características demográficas:
+La definición de los segmentos objetivo es un paso esencial para orientar el desarrollo de DoofPlus hacia los actores que enfrentan directamente las ineficiencias del control manual y la presión regulatoria en la industria farmacéutica. Delimitar con precisión estos perfiles permite validar el problema, priorizar funcionalidades y asegurar que la solución responda a necesidades reales del sector. En un entorno tan regulado como el farmacéutico, esta delimitación resulta aún más crítica, pues de ella depende que la plataforma aporte valor tangible a quienes gestionan la producción y la calidad.
 
-- **Edad:**
-- **Género:**
-- **Ocupación:**
-- **Nivel educativo:**
-- **Ubicación geográfica:**
-
-Información estadística de sustento:
-
--
-
-### Segmento Objetivo 2:
+### Segmento objetivo 1: Jefe de Producción
 
 Características demográficas:
 
-- **Edad:**
-- **Género:**
-- **Ocupación:**
-- **Nivel educativo:**
-- **Ubicación geográfica:**
+- **Edad:** Entre 35 y 70 años.
+- **Género:** Indistinto.
+- **Ocupación:** Responsable de planificar, ejecutar y supervisar lotes, personal operario, parámetros críticos y cierre de registros de producción.
+- **Nivel educativo:** Ingeniero Químico, con diplomado en BPM, Producción o Gerencia de Operaciones.
+- **Ubicación geográfica:** Lima Metropolitana, Perú.
 
 Información estadística de sustento:
 
--
+- Un análisis de las actas de inspección de DIGEMID durante 2022 reveló que el 34% de los laboratorios farmacéuticos nacionales no cumple con las Buenas Prácticas de Manufactura (BPM). En 32 inspecciones se identificaron 410 no conformidades: 82 críticas (20%), 326 mayores (79.51%) y 2 menores (0.49%). La sección XX "Documentación" fue la más incumplida.
+- Una revisión académica de casos de implementación Lean 4.0 en la industria farmacéutica (2024) documentó que el monitoreo IoT en tiempo real permite a los operarios detectar desviaciones negativas del proceso a medida que surgen, activando notificaciones automáticas mediante infraestructura IoT cuando una medición inicial cae fuera de las variabilidades esperadas.
+- El mismo estudio señaló que equipos farmacéuticos de nueva generación ya incorporan capacidades IoT de fábrica, transmitiendo parámetros críticos como velocidad, oxígeno disuelto y conductividad para guiar ajustes de programación que optimizan las especificaciones de salida deseadas.
+- La implementación de Lean 4.0 en la industria farmacéutica, con supervisión de la alta dirección, puede resultar en mayor eficiencia, mejor control de calidad y reducción de costos, según la síntesis de casos de estudio revisados.
+
+### Segmento Objetivo 2: Jefe de Aseguramiento de Calidad (QA)
+
+Características demográficas:
+
+- **Edad:** Entre 30 y 55 años.
+- **Género:** Indistinto.
+- **Ocupación:** Responsable de documentación de calidad, cuarentena, liberación de lotes, auditorías, cumplimiento DIGEMID y reportes por cliente.
+- **Nivel educativo:** Químico Farmacéutico, con diplomado en Aseguramiento de Calidad, BPM, Auditoría o Regulación Farmacéutica.
+- **Ubicación geográfica:** Lima Metropolitana, Perú.
+
+Información estadística de sustento:
+
+- El mismo estudio de DIGEMID (2022) confirmó que el subnumeral 22.5 de la Sección XXV "Buenas Prácticas de Control de Calidad" es el requisito más frecuentemente incumplido por laboratorios nacionales y extranjeros, evidenciando una debilidad directa en los sistemas de liberación de lotes.
+- La DIGEMID ha intensificado la vigilancia regulatoria: entre noviembre de 2025 y mayo de 2026, evaluó 70 laboratorios farmacéuticos en seis países, de los cuales 20 obtuvieron la certificación BPM otorgada por la autoridad sanitaria peruana.
+- Según datos de benchmark de ISPE Pharma 4.0, el coste medio de validación CSV en proyectos IT farmacéuticos ha aumentado un 38% en los últimos 5 años, generando entre 6 y 12 semanas de retraso medio en el go-live por documentación de validación.
+- La validación de sistemas computarizados (CSV) incrementa el costo de un proyecto IT GxP en aproximadamente un 20–40%, según datos de la industria farmacéutica, costo que frecuentemente supera el valor de la licencia del software a lo largo de la vida del contrato.
