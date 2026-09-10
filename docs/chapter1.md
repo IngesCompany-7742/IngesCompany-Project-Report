@@ -120,23 +120,33 @@ En esta sección se presentan las premisas que sustentan la propuesta de DoofPlu
 
 **Business Assumptions:**
 
-*
+* Creemos que los laboratorios farmacéuticos medianos y las entidades de salud pública en el Perú están dispuestos a invertir en una plataforma SaaS para modernizar su control de calidad y cumplir con las regulaciones de la DIGEMID.
+* Creemos que el riesgo económico de las multas, observaciones de auditoría y pérdidas de lotes por calidad cuestionable es significativamente mayor que el costo de suscripción a nuestra plataforma.
+* Creemos que la integración de sensores IoT con la maquinaria industrial existente en los laboratorios es técnicamente viable, accesible y escalable.
 
 **Business Outcome Assumptions:**
 
-*
+* Creemos que lograremos una alta tasa de retención de clientes mayor al 90% debido a la naturaleza crítica e indispensable del cumplimiento regulatorio continuo en la industria farmacéutica.
+* Creemos que nuestro modelo SaaS generará métricas de crecimiento medibles reducción de costos de adquisición y un MRR estable) que indicarán la consolidación de la startup en el sector.
+* Creemos que el éxito de la plataforma se evidenciará cuando los primeros adoptantes reporten una reducción medible en el tiempo invertido en la preparación para auditorías.
 
 **User Assumptions:**
 
-*
+* Creemos que nuestros usuarios principales son los Químicos Farmacéuticos de Aseguramiento de la Calidad y los Directores Técnicos de laboratorios medianos.
+* Creemos que nuestros usuarios interactuarán con el sistema buscando consolidar datos que actualmente se encuentran en silos o en registros manuales y físicos, papel.
+* Creemos que los usuarios operativos en planta y almacén tienen un tiempo limitado para interactuar con pantallas, por lo que requieren que la recolección de datos técnicos sea en su mayor parte automatizada e invisible para ellos.
 
 **User Outcome & Benefit Assumptions:**
 
-*
+* Creemos que los usuarios desean reducir el estrés y la carga laboral asociados a la consolidación manual de datos para demostrar la Integridad de Datos ante los inspectores.
+* Creemos que los usuarios buscan obtener la capacidad de detectar de manera proactiva en tiempo real si una máquina se descalibra, para evitar que productos defectuosos avancen en la cadena de suministro.
+* Creemos que los usuarios obtendrán un gran valor y tranquilidad al tener una visibilidad completa y rastreabilidad ininterrumpida de cada lote desde su fabricación hasta su almacenamiento.
 
 **Feature Assumptions:**
 
-*
+* Creemos que un módulo de integración con sensores IoT proporcionará el monitoreo automatizado en tiempo real necesario para garantizar las Buenas Prácticas de Manufactura.
+* Creemos que una funcionalidad de control de Cuarentena y Liberación con estados virtuales automatizados mitigará el error humano y bloqueará inmediatamente los lotes sospechosos.
+* Creemos que un panel, Dashboard, de trazabilidad de Extremo a Extremo que conecte la calidad de origen, la máquina, con el inventario logístico, resolverá los problemas de desconexión y facilitará métodos como el FEFO.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
