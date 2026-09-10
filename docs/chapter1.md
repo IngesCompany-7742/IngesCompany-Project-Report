@@ -80,7 +80,7 @@ Al no contar con una plataforma que conecte la calidad de origen (la máquina) c
 
 **Riesgo Regulatorio y Auditorías Deficientes:** 
 ---
-La incapacidad de demostrar una trazabilidad ininterrumpida —desde los parámetros técnicos con los que operó la máquina hasta la ubicación exacta del fármaco en el almacén— expone a los laboratorios a graves observaciones durante las auditorías de DIGEMID. Recopilar esta información de manera manual es un proceso lento que incrementa el riesgo de multas y paralizaciones.
+La incapacidad de demostrar una trazabilidad ininterrumpida, desde los parámetros técnicos con los que operó la máquina hasta la ubicación exacta del fármaco en el almacén, expone a los laboratorios a graves observaciones durante las auditorías de DIGEMID. Recopilar esta información de manera manual es un proceso lento que incrementa el riesgo de multas y paralizaciones.
 
 
 **A:**
