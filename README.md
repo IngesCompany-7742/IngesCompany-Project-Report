@@ -42,6 +42,8 @@ Carrera de Ingeniería de Software
 | Versión | Fecha | Autor | Descripción |
 |:---:|:---:|:---|:---|
 | 1.0.0 | 03/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inicialización del repositorio del informe (first commit) y creación de la estructura base del proyecto. |
+| 1.0.1 | 10/09/2026 | Angulo Ramírez, Marcelo Martín | Agregando contenido relacionado al UX y los antecedentes del problema. |
+
 
 ---
 
