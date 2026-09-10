@@ -169,11 +169,28 @@ En esta sección se presentan las premisas que sustentan la propuesta de DoofPlu
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-* **Hypothesis 1:**
-* **Hypothesis 2:**
-* **Hypothesis 3:**
-* **Hypothesis 4:**
-* **Hypothesis 5:**
+A continuación se muestran las Hypothesis Statements en su idioma original:  
+
+* **Hypothesis 1:**   
+  We believe we will achieve a customer retention rate greater than 90% and stable growth in our monthly recurring revenue (MRR)  
+  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
+  Attain the automated real-time monitoring required to guarantee Good Manufacturing Practices without relying on manual and physical records  
+  With an IoT sensor integration module directly connected to industrial machinery.
+  
+
+* **Hypothesis 2:**  
+  We believe we will achieve platform success by demonstrating that early adopters drastically reduce batch losses due to questionable quality and avoid regulatory fines  
+  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
+  Attain the ability to mitigate human error and immediately block suspicious batches in the supply chain  
+  With a Quarantine and Release control feature featuring automated virtual statuses.  
+  
+
+* **Hypothesis 3:**  
+  We believe we will achieve a measurable reduction in the time spent preparing for DIGEMID audits among our early adopters  
+  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
+  Attain complete visibility and uninterrupted traceability of each batch from manufacturing to storage, resolving the disconnection issues between production and logistics  
+  With an End-to-End traceability dashboard connecting the source quality (the machine) with logistic inventory and facilitating methods such as FEFO.
+
 
 #### 1.2.2.4. Lean UX Canvas
 
