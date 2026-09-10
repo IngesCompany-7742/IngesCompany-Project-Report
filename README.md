@@ -1,25 +1,38 @@
 <div align="center">
     <img src="assets/img/readme/UPC.png" alt="UPC Logo" width="auto" height="120">
 
-# Universidad Peruana de Ciencias Aplicadas
+Universidad Peruana de Ciencias Aplicadas
 
 Facultad de Ingeniería
 
-Carrera de Ingeniería de Software
+<br>
 
-**Periodo:** 202620
+### 1ASI0729
 
-1ASI0729 Desarrollo de Aplicaciones Open Source
+### Desarrollo de Aplicaciones Open Source
 
-**NRC:** 7742
+NRC:
 
-**Nombre del profesor:** Ángel Augusto Velásquez Núñez
+### 7742
 
-### "Informe de Trabajo Final"
+## Informe del Trabajo Final
 
-**Nombre del Startup:** IngesCompany
 
-**Nombre del Producto:** DoofPlus
+Docente
+
+### Ángel Augusto Velásquez Núñez
+
+<br>
+
+Equipo
+
+### IngesCompany
+
+Proyecto
+
+### DoofPlus
+
+<br>
 
 **Integrantes:**
 
@@ -30,6 +43,12 @@ Carrera de Ingeniería de Software
 | U202423162 | Flores Martinez, Ricardo Andres |
 | U20241F397 | Rojas Ambicho, Nestor Daniel |
 | U20241F733 | Zavaleta Gutierrez, Rodolfo Martin |
+
+<br>
+
+### Período 202620
+
+<br> 
 
 ### Septiembre, 2026
 
@@ -45,7 +64,7 @@ Carrera de Ingeniería de Software
 | 1.0.1 | 10/09/2026 | Angulo Ramírez, Marcelo Martín     | Agregando contenido relacionado al UX y los antecedentes del problema.                                   |
 | 1.0.2 | 11/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Avance del Capítulo I, con definición de los antecedentes y la problemática.                             |
 | 1.0.3 | 11/09/2026 | Angulo Ramírez, Marcelo Martín     | Especifica y Declara a los Segmentos Objetivos.                                                          |
-
+| 1.0.4 | 11/09/2026 | Cobades Zamora, Yhoshua Hebert     | Se agregó la sección de supuestos con los 5 tipos requeridos. |
 
 
 ---
