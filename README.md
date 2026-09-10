@@ -17,7 +17,6 @@ NRC:
 
 ## Informe del Trabajo Final
 
-
 Docente
 
 ### Ángel Augusto Velásquez Núñez
