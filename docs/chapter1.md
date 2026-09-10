@@ -137,35 +137,37 @@ A continuación se muestra el problem statement en su idioma original:
 
 En esta sección se presentan las premisas que sustentan la propuesta de DoofPlus, tomando en cuenta el marco regulatorio de la DIGEMID, las limitaciones de los procesos manuales en los laboratorios y el valor que aporta una plataforma integral de monitoreo y trazabilidad.
 
+A continuación se muestran los Assumptions en su idioma original:  
+
 **Business Assumptions:**
 
-* Creemos que los laboratorios farmacéuticos medianos y las entidades de salud pública en el Perú están dispuestos a invertir en una plataforma SaaS para modernizar su control de calidad y cumplir con las regulaciones de la DIGEMID.
-* Creemos que el riesgo económico de las multas, observaciones de auditoría y pérdidas de lotes por calidad cuestionable es significativamente mayor que el costo de suscripción a nuestra plataforma.
-* Creemos que la integración de sensores IoT con la maquinaria industrial existente en los laboratorios es técnicamente viable, accesible y escalable.
+* We believe that medium-sized pharmaceutical laboratories and public health entities in Peru are willing to invest in a SaaS platform to modernize their quality control and comply with DIGEMID regulations.
+* We believe that the economic risk of fines, audit observations, and batch losses due to questionable quality is significantly higher than the subscription cost of our platform.
+* We believe that the integration of IoT sensors with the existing industrial machinery in laboratories is technically viable, accessible, and scalable.
 
 **Business Outcome Assumptions:**
 
-* Creemos que lograremos una alta tasa de retención de clientes mayor al 90% debido a la naturaleza crítica e indispensable del cumplimiento regulatorio continuo en la industria farmacéutica.
-* Creemos que nuestro modelo SaaS generará métricas de crecimiento medibles reducción de costos de adquisición y un MRR estable) que indicarán la consolidación de la startup en el sector.
-* Creemos que el éxito de la plataforma se evidenciará cuando los primeros adoptantes reporten una reducción medible en el tiempo invertido en la preparación para auditorías.
+* We believe we will achieve a customer retention rate greater than 90% due to the critical and indispensable nature of continuous regulatory compliance in the pharmaceutical industry.
+* We believe that our SaaS model will generate measurable growth metrics (reduction in acquisition costs and a stable MRR) that will indicate the consolidation of the startup in the sector.
+* We believe that the success of the platform will be evidenced when early adopters report a measurable reduction in the time spent preparing for audits.
 
 **User Assumptions:**
 
-* Creemos que nuestros usuarios principales son los Químicos Farmacéuticos de Aseguramiento de la Calidad y los Directores Técnicos de laboratorios medianos.
-* Creemos que nuestros usuarios interactuarán con el sistema buscando consolidar datos que actualmente se encuentran en silos o en registros manuales y físicos, papel.
-* Creemos que los usuarios operativos en planta y almacén tienen un tiempo limitado para interactuar con pantallas, por lo que requieren que la recolección de datos técnicos sea en su mayor parte automatizada e invisible para ellos.
+* We believe that our primary users are Quality Assurance Pharmaceutical Chemists and Technical Directors of medium-sized laboratories.
+* We believe that our users will interact with the system seeking to consolidate data currently trapped in silos or manual and physical paper records.
+* We believe that operational users in plant and warehouse have limited time to interact with screens, requiring the collection of technical data to be mostly automated and invisible to them.
 
 **User Outcome & Benefit Assumptions:**
 
-* Creemos que los usuarios desean reducir el estrés y la carga laboral asociados a la consolidación manual de datos para demostrar la Integridad de Datos ante los inspectores.
-* Creemos que los usuarios buscan obtener la capacidad de detectar de manera proactiva en tiempo real si una máquina se descalibra, para evitar que productos defectuosos avancen en la cadena de suministro.
-* Creemos que los usuarios obtendrán un gran valor y tranquilidad al tener una visibilidad completa y rastreabilidad ininterrumpida de cada lote desde su fabricación hasta su almacenamiento.
+* We believe that users want to reduce the stress and workload associated with manual data consolidation to demonstrate Data Integrity to inspectors.
+* We believe that users seek to obtain the ability to proactively detect in real-time if a machine falls out of calibration, in order to prevent defective products from moving forward in the supply chain.
+* We believe that users will gain great value and peace of mind by having complete visibility and uninterrupted traceability of each batch from manufacturing to storage.
 
 **Feature Assumptions:**
 
-* Creemos que un módulo de integración con sensores IoT proporcionará el monitoreo automatizado en tiempo real necesario para garantizar las Buenas Prácticas de Manufactura.
-* Creemos que una funcionalidad de control de Cuarentena y Liberación con estados virtuales automatizados mitigará el error humano y bloqueará inmediatamente los lotes sospechosos.
-* Creemos que un panel, Dashboard, de trazabilidad de Extremo a Extremo que conecte la calidad de origen, la máquina, con el inventario logístico, resolverá los problemas de desconexión y facilitará métodos como el FEFO.
+* We believe that an IoT sensor integration module will provide the automated real-time monitoring necessary to guarantee Good Manufacturing Practices.
+* We believe that a Quarantine and Release control feature with automated virtual statuses will mitigate human error and immediately block suspicious batches.
+* We believe that an End-to-End traceability dashboard connecting the source quality (the machine) with logistic inventory will solve disconnection issues and facilitate methods such as FEFO.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
