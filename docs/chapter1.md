@@ -42,7 +42,7 @@ La visión de IngesCompany es convertirse en un referente global en la implement
 |:----------------------------------------------------:|:----------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  ![Marcelo Angulo](../assets/img/photo/Marcelo.jpg)  |   Marcelo Martín Angulo Ramírez  <br/>(U202321425)  <br/>Ingeniería de Software.   | Tengo 21 años y soy una persona puntual, responsable y comunicativa. Me interesé por la carrera gracias a cursos de programación del colegio y a los que tomé por mi cuenta; actualmente manejo C++ y Python, y busco ampliar mis conocimientos en otros lenguajes para optimizar mi trabajo en equipo y resolver problemas. |
 | ![Yhoshua Cobades](../assets/img/photo/Yhoshua.jpg)  |    Cobades Zamora Yhoshua Hebert  <br>(U20231H117)  <br>Ingeniería de Software.    | Tengo 19 años, me interesa mucho aprender sobre tecnología y soy bastante resistente al estrés. En mis tiempos libres me gusta aprender e informarme sobre la situación actual de varias tecnologías. Me divierto surfeando en las olas de internet. I use Arch btw. |
-|  ![Ricardo Flores](../assets/img/photo/Ricardo.jpg)  |  Flores Martinez Ricardo Andres  <br/>(U202423162)  <br/>Ingeniería de Software.   |  |
+|  ![Ricardo Flores](../assets/img/photo/Ricardo.jpg)  |  Flores Martinez Ricardo Andres  <br/>(U202423162)  <br/>Ingeniería de Software.   | Tengo 19 años y soy una persona responsable, organizada y comprometida. Me interesa mucho la tecnología, especialmente el desarrollo de software y la creación de aplicaciones. Mi interés por la programación fue gracias a mi familia, lo que me llevó a elegir Ingeniería de Software. Actualmente cuento con conocimientos en programación, bases de datos y desarrollo de proyectos, y busco constantemente aprender nuevas herramientas y tecnologías |
 |   ![Nestor Daniel](../assets/img/photo/Daniel.jpg)   |    Nestor Daniel Rojas Ambicho  <br/>(U20241F397)  <br/>Ingeniería de Software.    | Tengo 20 años, apasionado por la tecnología, el desarrollo de aplicaciones y la programación. Con experiencia en proyectos académicos de software, bases de datos y metodologías de desarrollo, busco constantemente aprender y dominar nuevas herramientas técnicas. Me interesé por la carrera debido a que desde el colegio me gustaban cursos relacionados a la tecnologia, y después empecé a aprender por mi cuenta. |
 | ![Rodolfo Zavaleta](../assets/img/photo/Rodolfo.jpg) | Rodolfo Martin Zavaleta Gutierrez  <br/>(U20241F733)  <br/>Ingeniería de Software. | Tengo 19 años y soy una persona puntual y responsable. Me interesé por la carrera debido a mis gustos adquiridos por la programación gracias a cursos del colegio y que tomé por mi parte. |  
 
@@ -81,13 +81,6 @@ Al no contar con una plataforma que conecte la calidad de origen (la máquina) c
 **Riesgo Regulatorio y Auditorías Deficientes:** 
 ---
 La incapacidad de demostrar una trazabilidad ininterrumpida, desde los parámetros técnicos con los que operó la máquina hasta la ubicación exacta del fármaco en el almacén, expone a los laboratorios a graves observaciones durante las auditorías de DIGEMID. Recopilar esta información de manera manual es un proceso lento que incrementa el riesgo de multas y paralizaciones.
-
-
-**A:**
-
-**B:**
-
-**C:**
 
 **ANALISIS 5W & 2H:**
 
