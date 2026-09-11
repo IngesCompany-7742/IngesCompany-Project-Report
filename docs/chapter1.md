@@ -1,40 +1,26 @@
 # Capítulo 1: Introducción
 
-La introducción cumple con un rol fundamental para estructurar y comprender el proyecto
-realizado, debido a que establece el marco conceptual y contextual donde se va a desarrollar
-el trabajo. En esta sección, se presenta una vista general que permite al lector
-comprender los objetivos principales que se desean alcanzar, tales como antecedentes que
-derivaron a la formulación del proyecto. Además, se delimita el alcance del mismo, es decir,
-hasta dónde se pretende llegar con el desarrollo de la propuesta. Asimismo, la introducción
-cumple la función de poner en contexto la importancia del proyecto en un entorno específico,
-donde se destacan las razones que justifican el porqué de su desarrollo, los retos que se  
-pretenden abordar y los beneficios esperados a partir de la implementación. Por último, esta parte
-inicial no solo informa, sino que también orienta y motiva al lector a profundizar en el contenido
-que se presentará a lo largo del documento.
+La presente introducción tiene como finalidad contextualizar el proyecto desarrollado, proporcionando una visión general de los antecedentes, objetivos y fundamentos que sustentan su planteamiento. Asimismo, delimita el alcance de la propuesta y establece el marco de referencia necesario para comprender su desarrollo, destacando su relevancia, los retos que busca abordar y los beneficios esperados de su implementación. De esta manera, se ofrece una base conceptual que orienta al lector y facilita la comprensión de los contenidos expuestos en las secciones posteriores del documento.
 
 ## 1.1. Startup Profile
-El perfil de la startup es un elemento fundamental para comprender su identidad y camino estratégico . A través de este perfil, se revela su visión de futuro, sus valores esenciales y la propuesta de valor que la diferencia en el mercado competitivo.
 
-En esta sección se describen los aspectos que definen a la startup, incluyendo el origen, motivaciones que llevaron a su creación, el problema que busca solucionar y el enfoque innovador que emplea para posicionarse frente a sus competidores.
-
-Además, se analizan los objetivos a mediano y largo plazo, junto con las estrategias diseñadas para su crecimiento y consolidación dentro del sector. Entender estos elementos resulta vital para evaluar el potencial de la startup y el impacto que puede generar en su entorno.
+La presente sección tiene como finalidad presentar la startup responsable de la propuesta y los elementos que definen su identidad organizacional. En ella se describen los aspectos fundamentales relacionados con la empresa, incluyendo su misión, visión, propósito, propuesta de valor y características principales de la solución planteada. Asimismo, se exponen los componentes que permiten comprender el enfoque adoptado y la manera en que la startup busca generar valor dentro de su ámbito de aplicación. De esta manera, la información desarrollada proporciona el contexto necesario para comprender la propuesta presentada y su relación con los objetivos generales del proyecto.
 
 ### 1.1.1. Descripción de la Startup
-La startup IngesCompany se centra en el desarrollo de soluciones tecnológicas innovadoras que buscan optimizar procesos y mejorar la eficiencia en diversos sectores, en este caso, el enfoque es la regulación de las máquinas donde se realizan la fabricación de los fármacos, incluyendo una supervición de la calidad de dichos fármacos producidos.
 
-El propósito es brindar una plataforma que combine la solidez de una arquitectura de software empresarial con la innovación del Internet de las Cosas (IoT), que permita a las instituciones farmacéuticas cumplir con las Buenas Prácticas de Manufactura (BPM) exigidas por entidades como la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID).
+La startup IngesCompany se dedica al desarrollo de soluciones tecnológicas innovadoras orientadas a la transformación digital de procesos especializados dentro de sectores altamente regulados. Como parte de esta visión, la empresa desarrolla DoofPlus, una plataforma tecnológica concebida para asistir la producción y el control de calidad de fármacos mediante la integración de tecnologías basadas en el Internet de las Cosas (IoT) y sistemas de gestión empresarial.
 
-Como principales características que nos ayudan a diferenciar de la competencia, se destacan la integración de sensores IoT para monitoreo en tiempo real, el control de "Cuarentena y Liberación", estados virtuales de los fármacos para la revisión de calidad, y la trazabilidad de Extremo a Extremo, que permite la visualización completa de la información de los fármacos desde su fabricación hasta su distribución, garantizando la seguridad y cumplimiento de los estándares regulatorios.
+DoofPlus tiene como propósito proporcionar un entorno centralizado que permita supervisar y gestionar información crítica generada durante los procesos de fabricación farmacéutica. A través de la captura automática de datos provenientes de equipos industriales y dispositivos IoT, la plataforma busca fortalecer la visibilidad de los procesos productivos, mejorar la disponibilidad de información para la toma de decisiones y contribuir al cumplimiento de las Buenas Prácticas de Manufactura (BPM) y de los estándares establecidos por organismos reguladores como la DIGEMID.
 
+La propuesta de valor de la solución se fundamenta en la integración de sensores IoT para el monitoreo en tiempo real de variables relevantes de producción, la gestión digital de procesos de Cuarentena y Liberación de lotes farmacéuticos y la implementación de mecanismos de Trazabilidad de Extremo a Extremo. Estas capacidades permiten consolidar la información generada durante el ciclo de fabricación, facilitando el seguimiento de los productos y proporcionando un mayor nivel de control, trazabilidad y confiabilidad dentro de los procesos asociados a la calidad farmacéutica.
 
 ### **Misión**
-La misión de IngesCompany es proporcionar soluciones tecnológicas avanzadas que optimicen los procesos de fabricación farmacéutica, asegurando la calidad y seguridad de los productos, cumpliendo con las regulaciones vigentes y contribuyendo al bienestar de la sociedad.
 
+Diseñar soluciones tecnológicas abiertas que integren IoT y herramientas de gestión digital para apoyar los procesos de producción y aseguramiento de la calidad en la industria farmacéutica, fomentando la eficiencia operativa y la trazabilidad de la información.
 
 ### **Visión**
-La visión de IngesCompany es convertirse en un referente global en la implementación de tecnologías innovadoras para la industria farmacéutica en Lima, liderando la transformación digital del sector y promoviendo la excelencia en la producción de medicamentos.
 
-
+Promover la adopción de tecnologías abiertas e innovadoras que permitan a las organizaciones farmacéuticas modernizar sus procesos productivos y de control de calidad, contribuyendo al desarrollo de una industria más eficiente, transparente y confiable.
 
 ### 1.1.2 Perfiles de Integrantes del Equipo
 
@@ -50,186 +36,217 @@ La visión de IngesCompany es convertirse en un referente global en la implement
 
 ### 1.2.1. Antecedentes y problemática
 
-La industria farmacéutica está considerada entre las más reguladas del mundo, debido a que sus 
-productos se relacionan directamente con la salud pública. En el Perú, la Dirección General de 
-Medicamentos, Insumos y Drogas (DIGEMID) es la entidad reguladora responsable de supervisar que se cumplan 
-los estándares rigurosos de las Buenas Prácticas de Manufactura (BPM). Estas normas obligan 
-a los laboratorios, tanto privados como públicos, por ejemplo, el Instituto Nacional de Salud 
-(INS), a asegurar que los productos se elaboren de forma uniforme y controlada, donde se debe respetar los 
-estándares de calidad acordes con el uso previsto.
+#### **1. ANTECEDENTES:**
 
-No obstante, aunque estos procesos son críticos, la digitalización en las áreas de aseguramiento 
-de la calidad (Quality Assurance) todavía es limitada en numerosos laboratorios nacionales. 
-El manejo de equipos industriales esenciales, como las autoclaves —cuya esterilización eficaz 
-depende de medir con precisión la temperatura y la presión del vapor— o la determinación del 
-pH en el control de calidad, continúa apoyándose en gran medida en sistemas aislados, impresiones 
-térmicas o, incluso, en registros manuales hechos por operarios. Esta escasa integración digital 
-y automatización no solo vuelve más lentas las operaciones, sino que también pone en riesgo la 
-“Integridad de Datos” (Data Integrity), un principio fundamental exigido por las agencias 
-regulatorias internacionales.
+La industria farmacéutica opera bajo estrictos estándares de calidad debido al impacto directo que sus productos tienen sobre la salud pública. En el Perú, la Dirección General de Medicamentos, Insumos y Drogas (DIGEMID) supervisa el cumplimiento de las Buenas Prácticas de Manufactura (BPM), las cuales establecen requisitos relacionados con la producción, el control de calidad, la documentación y la validación de procesos farmacéuticos. Asimismo, la normativa reconoce la importancia de garantizar la calidad de los medicamentos a través de procesos controlados y adecuadamente documentados.
 
-**2. PROBLEMATICA:**
----
-**Desconexión entre Producción y Logística (Silos de Información):** 
----
-Actualmente, las plantas operan con sistemas aislados. Si una máquina experimenta una leve descalibración durante un turno de producción, la alerta no se vincula automáticamente con el lote producido. Esto permite que medicamentos con calidad cuestionable avancen hacia el almacén, generando pérdidas económicas cuando el control de calidad final rechaza la mercadería.
+En este contexto, la trazabilidad y la integridad de los datos constituyen elementos fundamentales para asegurar la calidad de los productos farmacéuticos. La Organización Mundial de la Salud (OMS) destaca que los sistemas de trazabilidad permiten fortalecer el control, la seguridad y la disponibilidad de información asociada a los productos médicos, mientras que las directrices internacionales de integridad de datos señalan la necesidad de garantizar que la información generada durante los procesos de producción y control de calidad sea completa, precisa, consistente y accesible durante todo su ciclo de vida.
 
-**Carencia de Almacenamiento Inteligente y Trazabilidad:** 
----
-Al no contar con una plataforma que conecte la calidad de origen (la máquina) con el inventario, la gestión de la mercadería se vuelve ineficiente y propensa a errores. La falta de automatización dificulta la aplicación rigurosa de métodos como FEFO (Primero en expirar, primero en salir) y el bloqueo inmediato de lotes en cuarentena, poniendo en riesgo la integridad del producto.
+Sin embargo, la gestión de información proveniente de equipos de producción, controles de calidad y registros operativos representa un desafío para las organizaciones que requieren mantener una supervisión continua de sus procesos. En este escenario, las tecnologías basadas en Internet de las Cosas (IoT) ofrecen una oportunidad para fortalecer el monitoreo de variables críticas de fabricación, mejorar la trazabilidad de los lotes y facilitar la disponibilidad de información confiable para las actividades de aseguramiento de la calidad y cumplimiento regulatorio.
 
-**Riesgo Regulatorio y Auditorías Deficientes:** 
----
-La incapacidad de demostrar una trazabilidad ininterrumpida, desde los parámetros técnicos con los que operó la máquina hasta la ubicación exacta del fármaco en el almacén, expone a los laboratorios a graves observaciones durante las auditorías de DIGEMID. Recopilar esta información de manera manual es un proceso lento que incrementa el riesgo de multas y paralizaciones.
+#### **2. PROBLEMATICA**
 
-**ANALISIS 5W & 2H:**
+##### - **Limitaciones en el Monitoreo Continuo de los Procesos Productivos:**
+
+La fabricación farmacéutica requiere mantener variables críticas de operación bajo condiciones controladas para garantizar la calidad de los medicamentos. Las Buenas Prácticas de Manufactura (BPM) enfatizan la necesidad de supervisar adecuadamente los procesos de producción y control de calidad. Sin embargo, la disponibilidad de información en tiempo real sobre el estado de los equipos y las condiciones de fabricación continúa siendo un desafío para garantizar una vigilancia continua de las operaciones.
+
+##### - **Desafíos en la Trazabilidad de la Información de Producción:**
+
+La trazabilidad constituye un requisito fundamental dentro de la industria farmacéutica, ya que permite reconstruir el historial de fabricación y seguimiento de los productos. La Organización Mundial de la Salud destaca que los sistemas de trazabilidad son esenciales para fortalecer la seguridad, el control y la gestión de la información asociada a los productos médicos. No obstante, la gestión integrada de la información generada durante la producción sigue representando una necesidad relevante para las organizaciones del sector.
+
+##### - **Necesidad de Fortalecer la Integridad de los Datos**
+
+Los procesos de producción y control de calidad generan grandes volúmenes de información que deben mantenerse completos, precisos y disponibles para procesos de revisión y auditoría. Las directrices de integridad de datos de la Organización Mundial de la Salud señalan que la confiabilidad de los registros es un elemento clave para garantizar la calidad, seguridad y eficacia de los productos farmacéuticos, tanto en entornos físicos como digitales.
+
+##### - **Oportunidad de Incorporación de Tecnologías IoT:**
+
+Las tecnologías basadas en Internet de las Cosas (IoT) permiten capturar información directamente desde equipos y procesos mediante sensores conectados, facilitando el monitoreo continuo y la disponibilidad de datos en tiempo real. Su incorporación representa una oportunidad para fortalecer la supervisión de la producción, mejorar la trazabilidad de los procesos y apoyar las actividades de aseguramiento de la calidad dentro de la industria farmacéutica.
+
+#### **3. ANALISIS 5W & 2H:**
 
 - **What (¿Qué?):** ¿Qué es lo que se busca resolver?
 
-    Se busca resolver las dificultades en el control y supervisión de la calidad durante la fabricación de productos farmacéuticos, principalmente debido al registro manual de información y la falta de monitoreo en tiempo real de las máquinas y procesos.
+  Se busca abordar las limitaciones relacionadas con el monitoreo, la trazabilidad y la gestión de la información generada durante los procesos de producción y control de calidad farmacéutica. Estas limitaciones dificultan la supervisión continua de los procesos y la disponibilidad de información confiable para actividades de aseguramiento de la calidad y cumplimiento regulatorio.
 
 - **Why (¿Por qué?):** ¿Por qué es importante resolverlo?
 
-  Es importante resolverlo porque los procesos manuales aumentan el riesgo de errores en los registros, dificultan la trazabilidad de los productos y hacen que la preparación de información requiera demasiado tiempo. Además de que una detección tardía de desviaciones puede afectar la calidad y seguridad de los productos farmacéuticos. 
+  Resulta importante porque la calidad de los medicamentos depende de que los procesos de fabricación se desarrollen bajo condiciones controladas y adecuadamente documentadas. Asimismo, disponer de información íntegra y trazable facilita las auditorías, fortalece la toma de decisiones y contribuye al cumplimiento de las Buenas Prácticas de Manufactura (BPM).
 
 - **Who (¿Quién?):** ¿A quién afecta?
 
-  Afecta principalmente a los directores de farmacias y farmacéuticos encargados del aseguramiento de la calidad de laboratorios farmacéuticos medianos y entidades publicas de salud en el Perú. También puede impactar a los responsables de producción y
-  a los consumidores finales.
+  Afecta principalmente a los profesionales involucrados en la producción farmacéutica y en las actividades de aseguramiento y control de calidad, quienes son responsables de supervisar las operaciones, verificar la conformidad de los productos y garantizar el cumplimiento de los estándares regulatorios. También impacta indirectamente a las organizaciones farmacéuticas y a los pacientes que reciben los medicamentos.
 
 - **When (¿Cuándo?):** ¿Cuándo ocurre?
 
-  Ocurre durante las diferentes etapas del proceso de fabricación y control de los productos farmacéuticos, especialmente cuando se deben registrar datos de producción, verificar la calidad, detectar desviaciones, realizar la cuarentena o liberacion de
-  productos y recolectar informacion.
+  La necesidad se presenta durante las diferentes etapas de fabricación y control de calidad, especialmente en actividades relacionadas con el monitoreo de variables de producción, el registro de información operativa, la gestión de desviaciones y la generación de evidencia documental para auditorías e inspecciones.
 
 - **Where (¿Dónde?):** ¿En dónde ocurre?
 
-  Se presenta principalmente en laboratorios farmacéuticos y entidades públicas de salud en el Perú, específicamente en los espacios donde se realizan los procesos de fabricación, control de calidad, almacenamiento y seguimiento de los productos.  
+  Se manifiesta en plantas y laboratorios farmacéuticos donde se ejecutan procesos productivos y actividades de aseguramiento de la calidad. Estos entornos requieren mantener un control constante sobre las condiciones de fabricación y la documentación asociada a cada lote producido.
 
 - **How (¿Cómo?):** ¿Cómo se resuelve?
 
-  Se busca resolver mediante una plataforma SaaS que integre sensores IoT para obtener información en tiempo real, automatice los procesos de cuarentena y liberación, permita verificar la calidad y proporcione trazabilidad completa de los lotes desde
-  su fabricación hasta su almacenamiento y distribución. Esto permitiría centralizar la información y reducir la dependencia de registros manuales. 
+  Puede abordarse mediante una plataforma que integre tecnologías IoT para la captura automática de información proveniente de equipos y procesos productivos. Esto permitiría centralizar los datos, mejorar la trazabilidad de los lotes y proporcionar visibilidad en tiempo real sobre las condiciones de producción y control de calidad.
 
 - **How much (¿Cuánto?):** ¿Cuánto cuesta resolverlo?
 
-  El costo implica la inversión de la plataforma SaaS e instalación de sensores IoT en la maquinaria de producción y las horas asociadas a la capacitación del personal farmacéutico en el nuevo flujo de trabajo. 
+  La implementación requiere infraestructura tecnológica para el despliegue de la plataforma, la integración de sensores o dispositivos IoT en los procesos de producción y la capacitación del personal encargado de utilizar y supervisar la solución. El nivel de inversión dependerá de la infraestructura existente y del alcance de la integración requerida en cada organización.
 
 ### 1.2.2. Lean UX Process
 
-El Lean UX es un enfoque que permite validar las soluciones propuestas para los problemas identificados. Este método se centra en los usuarios del producto. Una vez definido el problema a resolver, se aplicó este procedimiento para determinar los aspectos clave que guiarán el desarrollo del producto.
+La presente sección tiene como finalidad presentar el proceso de Lean UX aplicado para la validación de la propuesta desarrollada. En ella se describen las actividades de investigación, análisis y validación realizadas con el fin de comprender el contexto de los usuarios y verificar los supuestos que motivan la solución planteada. Asimismo, se exponen los artefactos y resultados obtenidos durante el proceso, los cuales permiten identificar necesidades, oportunidades y criterios de diseño relevantes. De esta manera, la información recopilada constituye una base para la definición y evolución de la propuesta de solución presentada en el proyecto.
 
 #### 1.2.2.1. Lean UX Problem Statements
 
 A continuación se muestra el problem statement en su idioma original:
 
-**The current state of** pharmaceutical quality control in Peru **has focused mainly on** manual record keeping and fragmented information systems, forcing quality assurance pharmacists and pharmacy directors to invest excessive time in data consolidation for regulatory audits, increasing the risk of human error, and delaying the detection of operational deviations.
+***The current state of*** pharmaceutical production and quality control ***has focused mainly on*** ensuring compliance with manufacturing standards through operational controls, documentation practices, and quality assurance activities. However, organizations still face challenges in obtaining integrated, traceable, and timely information throughout the manufacturing process.
 
-**What existing products fail to address is** the need for an affordable, scalable platform that unifies real time machine monitoring, automated quality verification, and full traceability from production to storage while remaining accessible to mid sized laboratories and public health institutions.
+***What existing products and approaches fail to address is*** the need for an accessible solution that combines real-time production monitoring, centralized data management, and traceability of quality-related information within a single platform.
 
-**Our product will address this gap by** delivering a SaaS solution that integrates IoT based sensor data, automated quarantine and release workflows, and complete batch genealogy, enabling proactive quality management and streamlined regulatory compliance.
+***Our product will address this gap by*** providing an IoT-enabled platform that captures and consolidates production data, supports continuous monitoring of critical manufacturing variables, and improves the traceability required for quality assurance and regulatory compliance.
 
-**Our initial focus will be** on pharmacy directors and quality assurance pharmacists within mid sized pharmaceutical laboratories and public health entities in Peru.
+***Our initial focus will be*** pharmaceutical production, quality assurance, and quality control professionals working in pharmaceutical laboratories and manufacturing facilities.
 
-**We will know we have succeeded when we see** a significant decrease in manual registration errors, a measurable reduction in audit preparation time, and sustained improvements in quality and traceability performance metrics among our early adopters.
+***We will know we have succeeded when we see*** improved visibility of production processes, greater traceability of manufacturing information, and more efficient access to data required for quality management activities.
 
 #### 1.2.2.2. Lean UX Assumptions
 
-En esta sección se presentan las premisas que sustentan la propuesta de DoofPlus, tomando en cuenta el marco regulatorio de la DIGEMID, las limitaciones de los procesos manuales en los laboratorios y el valor que aporta una plataforma integral de monitoreo y trazabilidad.
+En esta sección se presentan las principales premisas que sustentan la propuesta de DoofPlus. Estas suposiciones han sido formuladas a partir del análisis del contexto regulatorio de la industria farmacéutica, las necesidades asociadas al control de calidad y producción, y las oportunidades que ofrecen las tecnologías IoT para fortalecer la trazabilidad y el monitoreo de los procesos. Los assumptions constituyen hipótesis iniciales que deberán validarse posteriormente mediante actividades de investigación y retroalimentación con usuarios potenciales.
 
 A continuación se muestran los Assumptions en su idioma original:  
 
 **Business Assumptions:**
 
-* We believe that medium-sized pharmaceutical laboratories and public health entities in Peru are willing to invest in a SaaS platform to modernize their quality control and comply with DIGEMID regulations.
-* We believe that the economic risk of fines, audit observations, and batch losses due to questionable quality is significantly higher than the subscription cost of our platform.
-* We believe that the integration of IoT sensors with the existing industrial machinery in laboratories is technically viable, accessible, and scalable.
+* We believe that pharmaceutical organizations are interested in adopting digital technologies that improve the visibility and traceability of production processes.
+* We believe that regulatory requirements related to quality, documentation, and traceability motivate organizations to seek technological solutions that support compliance activities.
+* We believe that an open-source platform can reduce adoption barriers and encourage the implementation of digital solutions in pharmaceutical environments.
+* We believe that integrating IoT technologies into pharmaceutical production processes is becoming increasingly feasible due to the growing availability of connected devices and sensors.
+* We believe that organizations perceive value in centralizing production and quality information within a single platform.
 
 **Business Outcome Assumptions:**
 
-* We believe we will achieve a customer retention rate greater than 90% due to the critical and indispensable nature of continuous regulatory compliance in the pharmaceutical industry.
-* We believe that our SaaS model will generate measurable growth metrics (reduction in acquisition costs and a stable MRR) that will indicate the consolidation of the startup in the sector.
-* We believe that the success of the platform will be evidenced when early adopters report a measurable reduction in the time spent preparing for audits.
+* We believe that organizations using the platform will report improved visibility of production and quality-related information.
+* We believe that users will access operational and quality data more efficiently through a centralized system.
+* We believe that the adoption of the platform will contribute to improved traceability practices within pharmaceutical environments.
+* We believe that organizations will recognize value in the automated collection of production data.
+* We believe that positive feedback from early adopters will encourage broader adoption of the solution.
 
 **User Assumptions:**
 
-* We believe that our primary users are Quality Assurance Pharmaceutical Chemists and Technical Directors of medium-sized laboratories.
-* We believe that our users will interact with the system seeking to consolidate data currently trapped in silos or manual and physical paper records.
-* We believe that operational users in plant and warehouse have limited time to interact with screens, requiring the collection of technical data to be mostly automated and invisible to them.
+* We believe that the primary users of the platform are professionals involved in pharmaceutical production processes.
+* We believe that quality assurance specialists require timely access to information generated during manufacturing activities.
+* We believe that quality control personnel need reliable records to support verification and compliance activities.
+* We believe that users value having a unified view of production and quality information.
+* We believe that users prefer minimizing manual interactions when collecting operational data from manufacturing processes.
 
 **User Outcome & Benefit Assumptions:**
 
-* We believe that users want to reduce the stress and workload associated with manual data consolidation to demonstrate Data Integrity to inspectors.
-* We believe that users seek to obtain the ability to proactively detect in real-time if a machine falls out of calibration, in order to prevent defective products from moving forward in the supply chain.
-* We believe that users will gain great value and peace of mind by having complete visibility and uninterrupted traceability of each batch from manufacturing to storage.
+* We believe that users want greater visibility into the conditions under which pharmaceutical products are manufactured.
+* We believe that users seek easier access to information required for quality assurance activities.
+* We believe that users benefit from having traceable and consolidated production records.
+* We believe that users want to identify potential process deviations earlier through continuous monitoring.
+* We believe that users value having information readily available for review, reporting, and regulatory activities.
 
 **Feature Assumptions:**
 
-* We believe that an IoT sensor integration module will provide the automated real-time monitoring necessary to guarantee Good Manufacturing Practices.
-* We believe that a Quarantine and Release control feature with automated virtual statuses will mitigate human error and immediately block suspicious batches.
-* We believe that an End-to-End traceability dashboard connecting the source quality (the machine) with logistic inventory will solve disconnection issues and facilitate methods such as FEFO.
+* We believe that IoT-based monitoring capabilities will help users obtain real-time information from production processes.
+* We believe that automated data collection from connected devices will reduce dependence on manual record management.
+* We believe that a centralized production monitoring dashboard will improve process visibility.
+* We believe that traceability features will facilitate the tracking of information generated throughout the manufacturing process.
+* We believe that quality-related event management capabilities will support quality assurance and compliance activities.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 A continuación se muestran las Hypothesis Statements en su idioma original:  
 
 * **Hypothesis 1:**   
-  We believe we will achieve a customer retention rate greater than 90% and stable growth in our monthly recurring revenue (MRR)  
-  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
-  Attain the automated real-time monitoring required to guarantee Good Manufacturing Practices without relying on manual and physical records  
-  With an IoT sensor integration module directly connected to industrial machinery.
-  
+  ***We believe we will achieve*** improved visibility of production and quality-related information across pharmaceutical operations.
+
+  ***If*** pharmaceutical production professionals, quality assurance specialists, and quality control personnel
+
+  ***Attain*** continuous access to information generated during manufacturing processes
+
+  ***With*** IoT-based monitoring capabilities that provide real-time production data.
+
 
 * **Hypothesis 2:**  
-  We believe we will achieve platform success by demonstrating that early adopters drastically reduce batch losses due to questionable quality and avoid regulatory fines  
-  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
-  Attain the ability to mitigate human error and immediately block suspicious batches in the supply chain  
-  With a Quarantine and Release control feature featuring automated virtual statuses.  
-  
+  ***We believe we will achieve*** broader adoption of digital quality management practices within pharmaceutical environments.
+
+  ***If*** quality assurance and quality control professionals
+
+  ***Attain*** reliable and up-to-date operational records without depending on manual data collection
+
+  ***With*** automated data acquisition from connected devices and production equipment.
+
 
 * **Hypothesis 3:**  
-  We believe we will achieve a measurable reduction in the time spent preparing for DIGEMID audits among our early adopters  
-  If Quality Assurance Pharmaceutical Chemists and Technical Directors  
-  Attain complete visibility and uninterrupted traceability of each batch from manufacturing to storage, resolving the disconnection issues between production and logistics  
-  With an End-to-End traceability dashboard connecting the source quality (the machine) with logistic inventory and facilitating methods such as FEFO.
+  ***We believe we will achieve*** improved access to production and quality information required for operational and compliance activities.
 
+  ***If*** pharmaceutical production and quality professionals
+
+  ***Attain*** a unified view of manufacturing data
+
+  ***With*** a centralized production monitoring dashboard.
+
+
+* **Hypothesis 4:**  
+  ***We believe we will achieve*** increased traceability of information throughout pharmaceutical manufacturing processes.
+
+  ***If*** quality assurance specialists and production supervisors
+
+  ***Attain*** the ability to track production information throughout the lifecycle of a batch
+
+  ***With*** end-to-end traceability capabilities integrated into the platform.
+
+
+* **Hypothesis 5:**  
+  ***We believe we will achieve*** greater confidence in the information used for quality management and regulatory activities.
+
+  ***If*** quality assurance and quality control personnel
+
+  ***Attain*** timely identification and documentation of quality-related events
+
+  ***With*** quality event management capabilities that support monitoring, review, and compliance processes.
 
 #### 1.2.2.4. Lean UX Canvas
 
+
+
 ## 1.3. Segmentos objetivo
 
-La definición de los segmentos objetivo es un paso esencial para orientar el desarrollo de DoofPlus hacia los actores que enfrentan directamente las ineficiencias del control manual y la presión regulatoria en la industria farmacéutica. Delimitar con precisión estos perfiles permite validar el problema, priorizar funcionalidades y asegurar que la solución responda a necesidades reales del sector. En un entorno tan regulado como el farmacéutico, esta delimitación resulta aún más crítica, pues de ella depende que la plataforma aporte valor tangible a quienes gestionan la producción y la calidad.
+La identificación de los segmentos objetivo constituye una actividad fundamental para orientar el desarrollo de DoofPlus hacia los profesionales que participan directamente en los procesos de producción y aseguramiento de la calidad dentro de la industria farmacéutica. La definición de estos perfiles permite comprender las necesidades asociadas al monitoreo de los procesos productivos, la trazabilidad de la información y el cumplimiento de los estándares regulatorios, contribuyendo a que la propuesta responda a problemáticas reales del entorno de aplicación.
 
-### Segmento objetivo 1: Jefe de Producción
+### Segmento objetivo 1: Supervisor de Producción Farmacéutica
 
 Características demográficas:
 
 - **Edad:** Entre 35 y 70 años.
 - **Género:** Indistinto.
-- **Ocupación:** Responsable de planificar, ejecutar y supervisar lotes, personal operario, parámetros críticos y cierre de registros de producción.
-- **Nivel educativo:** Ingeniero Químico, con diplomado en BPM, Producción o Gerencia de Operaciones.
+- **Ocupación:** Profesional encargado de supervisar las operaciones de fabricación, controlar el desempeño de la maquinaria y garantizar el cumplimiento de los parámetros de producción establecidos.
+- **Nivel educativo:** Ingeniería Química, Ingeniería Industrial, Ingeniería Farmacéutica o carreras afines.
 - **Ubicación geográfica:** Lima Metropolitana, Perú.
 
 Información estadística de sustento:
 
-- Un análisis de las actas de inspección de DIGEMID durante 2022 reveló que el 34% de los laboratorios farmacéuticos nacionales no cumple con las Buenas Prácticas de Manufactura (BPM). En 32 inspecciones se identificaron 410 no conformidades: 82 críticas (20%), 326 mayores (79.51%) y 2 menores (0.49%). La sección XX "Documentación" fue la más incumplida.
-- Una revisión académica de casos de implementación Lean 4.0 en la industria farmacéutica (2024) documentó que el monitoreo IoT en tiempo real permite a los operarios detectar desviaciones negativas del proceso a medida que surgen, activando notificaciones automáticas mediante infraestructura IoT cuando una medición inicial cae fuera de las variabilidades esperadas.
-- El mismo estudio señaló que equipos farmacéuticos de nueva generación ya incorporan capacidades IoT de fábrica, transmitiendo parámetros críticos como velocidad, oxígeno disuelto y conductividad para guiar ajustes de programación que optimizan las especificaciones de salida deseadas.
-- La implementación de Lean 4.0 en la industria farmacéutica, con supervisión de la alta dirección, puede resultar en mayor eficiencia, mejor control de calidad y reducción de costos, según la síntesis de casos de estudio revisados.
+- Las Buenas Prácticas de Manufactura establecen la necesidad de mantener procesos de producción controlados y adecuadamente documentados para garantizar la calidad de los medicamentos.
+- Las inspecciones realizadas por DIGEMID identifican observaciones recurrentes relacionadas con documentación, control de procesos y cumplimiento de procedimientos de manufactura.
+- La incorporación de tecnologías asociadas a la Industria 4.0 e IoT ha demostrado potencial para fortalecer el monitoreo de variables críticas de fabricación mediante la obtención de información en tiempo real.
+- La supervisión continua de equipos y procesos permite identificar oportunamente desviaciones operativas que podrían impactar la calidad del producto final.
 
-### Segmento Objetivo 2: Jefe de Aseguramiento de Calidad (QA)
+### Segmento Objetivo 2: Especialista de Aseguramiento y Control de Calidad (QA/QC)
 
 Características demográficas:
 
 - **Edad:** Entre 30 y 55 años.
 - **Género:** Indistinto.
-- **Ocupación:** Responsable de documentación de calidad, cuarentena, liberación de lotes, auditorías, cumplimiento DIGEMID y reportes por cliente.
-- **Nivel educativo:** Químico Farmacéutico, con diplomado en Aseguramiento de Calidad, BPM, Auditoría o Regulación Farmacéutica.
+- **Ocupación:** Profesional responsable de verificar el cumplimiento de los estándares de calidad, gestionar la documentación asociada a los procesos y participar en actividades de auditoría e inspección.
+- **Nivel educativo:** Químico Farmacéutico o profesional afín con especialización en aseguramiento de la calidad, BPM o regulación farmacéutica.
 - **Ubicación geográfica:** Lima Metropolitana, Perú.
 
 Información estadística de sustento:
 
-- El mismo estudio de DIGEMID (2022) confirmó que el subnumeral 22.5 de la Sección XXV "Buenas Prácticas de Control de Calidad" es el requisito más frecuentemente incumplido por laboratorios nacionales y extranjeros, evidenciando una debilidad directa en los sistemas de liberación de lotes.
-- La DIGEMID ha intensificado la vigilancia regulatoria: entre noviembre de 2025 y mayo de 2026, evaluó 70 laboratorios farmacéuticos en seis países, de los cuales 20 obtuvieron la certificación BPM otorgada por la autoridad sanitaria peruana.
-- Según datos de benchmark de ISPE Pharma 4.0, el coste medio de validación CSV en proyectos IT farmacéuticos ha aumentado un 38% en los últimos 5 años, generando entre 6 y 12 semanas de retraso medio en el go-live por documentación de validación.
-- La validación de sistemas computarizados (CSV) incrementa el costo de un proyecto IT GxP en aproximadamente un 20–40%, según datos de la industria farmacéutica, costo que frecuentemente supera el valor de la licencia del software a lo largo de la vida del contrato.
+- Los marcos regulatorios farmacéuticos exigen mantener registros íntegros, trazables y disponibles para actividades de inspección, validación y auditoría.
+- La OMS reconoce la trazabilidad y la integridad de los datos como elementos fundamentales para garantizar la calidad y seguridad de los productos farmacéuticos.
+- Las actividades de aseguramiento de la calidad requieren acceso confiable a la información generada durante la fabricación para evaluar desviaciones, verificar procesos y sustentar decisiones relacionadas con la conformidad de los productos.
+- La creciente digitalización de los procesos farmacéuticos evidencia la necesidad de herramientas capaces de consolidar información proveniente de diferentes fuentes dentro de una misma plataforma.
