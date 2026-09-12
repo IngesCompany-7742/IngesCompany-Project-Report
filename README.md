@@ -1,25 +1,37 @@
 <div align="center">
     <img src="assets/img/readme/UPC.png" alt="UPC Logo" width="auto" height="120">
 
-# Universidad Peruana de Ciencias Aplicadas
+Universidad Peruana de Ciencias Aplicadas
 
 Facultad de Ingeniería
 
-Carrera de Ingeniería de Software
+<br>
 
-**Periodo:** 202620
+### 1ASI0729
 
-1ASI0729 Desarrollo de Aplicaciones Open Source
+### Desarrollo de Aplicaciones Open Source
 
-**NRC:** 7742
+NRC:
 
-**Nombre del profesor:** Ángel Augusto Velásquez Núñez
+### 7742
 
-### "Informe de Trabajo Final"
+## Informe del Trabajo Final
 
-**Nombre del Startup:** IngesCompany
+Docente
 
-**Nombre del Producto:** DoofPlus
+### Ángel Augusto Velásquez Núñez
+
+<br>
+
+Equipo
+
+### IngesCompany
+
+Proyecto
+
+### DoofPlus
+
+<br>
 
 **Integrantes:**
 
@@ -31,6 +43,12 @@ Carrera de Ingeniería de Software
 | U20241F397 | Rojas Ambicho, Nestor Daniel |
 | U20241F733 | Zavaleta Gutierrez, Rodolfo Martin |
 
+<br>
+
+### Período 202620
+
+<br> 
+
 ### Septiembre, 2026
 
 </div>
@@ -39,9 +57,18 @@ Carrera de Ingeniería de Software
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción |
-|:---:|:---:|:---|:---|
-| 1.0.0 | 03/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inicialización del repositorio del informe (first commit) y creación de la estructura base del proyecto. |
+| Versión |   Fecha    | Autor                              | Descripción                                                                                              |
+|:-------:|:----------:|:-----------------------------------|:---------------------------------------------------------------------------------------------------------|
+|  1.0.0  | 03/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inicialización del repositorio del informe (first commit) y creación de la estructura base del proyecto. |
+|  1.0.1  | 10/09/2026 | Angulo Ramírez, Marcelo Martín     | Agregando contenido relacionado al UX y los antecedentes del problema.                                   |
+|  1.0.2  | 11/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Avance del Capítulo I, con definición de los antecedentes y la problemática.                             |
+|  1.0.3  | 11/09/2026 | Angulo Ramírez, Marcelo Martín     | Especifica y Declara a los Segmentos Objetivos.                                                          |
+|  1.0.4  | 11/09/2026 | Cobades Zamora, Yhoshua Hebert     | Se agregó la sección de supuestos con los 5 tipos requeridos.                                            |
+|  1.0.5  | 11/09/2026 | Flores Martinez, Ricardo Andres    | Se completó los 5w y 2h requeridos.                                                                      |
+|  1.0.6  | 11/09/2026 | Rojas Ambicho, Nestor Daniel       | Se completó las Hypothesis Statements.                                                                   |
+|  1.0.7  | 11/09/2026 | Rojas Ambicho, Nestor Daniel       | Traducción de la sección de Lean UX Assumptions al idioma inglés.                                        |
+|  1.0.8  | 11/09/2026 | Angulo Ramírez, Marcelo Martín     | Retoque en la estructura del Capitulo 1.                                                                 |
+|  1.0.9  | 12/09/2026 | Rojas Ambicho, Nestor Daniel       | Se creó la rama feature/README para centralizar el registro de versiones del proyecto.                   |
 
 ---
 
