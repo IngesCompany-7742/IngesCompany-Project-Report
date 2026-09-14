@@ -210,7 +210,8 @@ A continuación se muestran las Hypothesis Statements en su idioma original:
   ***With*** IoT data integration capabilities.
 
 #### 1.2.2.4. Lean UX Canvas
-
+A continuación se muestra el Lean UX Canvas en su idioma original:
+![LeanUX](../assets/img/chapter1/Lean-UX-canvas.jpg)
 
 
 ## 1.3. Segmentos objetivo
