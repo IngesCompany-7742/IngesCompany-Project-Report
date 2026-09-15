@@ -70,7 +70,9 @@ Proyecto
 |  1.0.8  | 11/09/2026 | Angulo Ramírez, Marcelo Martín     | Retoque en la estructura del Capitulo 1.                                                                 |
 |  1.0.9  | 12/09/2026 | Rojas Ambicho, Nestor Daniel       | Se creó la rama feature/README para centralizar el registro de versiones del proyecto.                   |
 | 1.0.10  | 12/09/2026 | Rojas Ambicho, Nestor Daniel       | Se restaró el registro de versiones inicial del Capítulo 1.                                              |
-| 1.0.11 | 14/09/2026| Zavaleta Gutierrez, Rodolfo martin | Implementación del LeanUX Canvas |
+| 1.0.11  | 14/09/2026 | Zavaleta Gutierrez, Rodolfo martin | Implementación del LeanUX Canvas |
+|  1.1.0  | 14/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del Lean UX canvas |
+|  1.1.1  | 14/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la sección de entrevistas. |
 ---
 
 ## Project Report Collaboration Insights
