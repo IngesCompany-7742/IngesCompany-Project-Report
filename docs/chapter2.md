@@ -69,31 +69,61 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 
 ### Entrevista #1
 
-| Campo | Información |
-|---------|---------|
-| Nombre | Mareliena Mexico |
+| Numero | 1 |
+|---------|--------|
+| **Campo** | **Información** |
+| Nombre | Mareliena |
+| Apellido | Mexico |
 | Edad | 53 |
 | Distrito | San Juan de Lurigancho |
 | Evidencia | ![Entrevista 1 - Segmento 1](../assets/img/chapter2/interview/segmento1/entrevista1-segmento1.png) |
-| Link | https://sl1nk.com/klevtn8 |
+| Link | https://shorturl.at/awG4J |
 | Inicio | 00:00 min |
 | Duración | 04:38 min |
 | Resumen |  |
 
 **Segmento 2: Jefe o Supervisor de Producción Farmacéutica**
 
-| Campo | Información |
-|---------|---------|
-| Nombre | X |
-| Edad | XX |
-| Distrito | X |
-| Evidencia | X |
-| Link | X |
-| Inicio | XX:XX min |
-| Duración | XX:XX min |
+
+| Numero | 1 |
+|---------|--------|
+| **Campo** | **Información** |
+| Nombre | Alberto |
+| Apellido | Valle Vega |
+| Edad | 68 |
+| Distrito | Arequipa |
+| Evidencia | ![Entrevista 1 - Segmento 2](../assets/img/chapter2/interview/segmento2/entrevista1-segmento2.png) |
+| Link | https://shorturl.at/awG4J |
+| Inicio | 04:39 min |
+| Duración | 09:27 min |
 | Resumen |  |
 
 ### 2.2.3. Análisis de entrevistas
+
+En esta sección se presenta el análisis detallado de la información recolectada. Para cada segmento, se explican primero los hallazgos estadísticos objetivos y subjetivos, seguidos de la evidencia gráfica correspondiente.
+
+##### Segmento 1: Especialista de Aseguramiento y Control de Calidad (QA/QC)
+
+
+
+##### Segmento 2: Jefe o Supervisor de Producción Farmacéutica
+
+
+
+##### Análisis Comparativo
+
+
+#### Conclusiones y Definición de Arquetipos
+
+Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
+
+1.  **User Persona Especialista de Control de Calidad:**
+
+
+
+2.  **Jefe de Producción Farmacéutica:**
+
+
 
 ## 2.3. Needfinding
 
