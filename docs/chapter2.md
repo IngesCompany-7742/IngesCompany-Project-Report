@@ -66,9 +66,6 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 
 **Segmento 1: Especialista de Aseguramiento y Control de Calidad (QA/QC)**
 
-
-### Entrevista #1
-
 | Numero | 1 |
 |---------|--------|
 | **Campo** | **Información** |
@@ -80,10 +77,9 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Link | https://shorturl.at/awG4J |
 | Inicio | 00:00 min |
 | Duración | 04:38 min |
-| Resumen |  |
+| Resumen | María es química farmacéutica y trabaja en el área de Control de Calidad de un laboratorio, donde se encarga de las validaciones, la revisión documental, la verificación de equipos y la evaluación del personal analista. Actualmente, la gestión de la documentación combina procesos manuales y digitales, aunque la empresa busca implementar un software integral que cubra todo el proceso productivo.<br><br>Para asegurar la calidad, se revisan registros, protocolos, resultados y reportes de conformidades y no conformidades. Uno de los principales problemas es la revisión manual de cálculos e informes antes de registrar los resultados en el sistema, lo que genera demoras y representa una oportunidad de automatización.<br><br>Las desviaciones se investigan analizando posibles causas relacionadas con el personal, los equipos o el producto. Además, la empresa mantiene registros actualizados para auditorías e inspecciones y realiza evaluaciones periódicas. María considera que la generación automática de reportes reduciría significativamente la carga operativa. |
 
 **Segmento 2: Jefe o Supervisor de Producción Farmacéutica**
-
 
 | Numero | 1 |
 |---------|--------|
@@ -96,7 +92,7 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Link | https://shorturl.at/awG4J |
 | Inicio | 04:39 min |
 | Duración | 09:27 min |
-| Resumen |  |
+| Resumen | Alberto Valle Vera, químico farmacéutico con cerca de 40 años de experiencia en la industria farmacéutica, describe los procesos de fabricación y empaquetado de productos como jarabes, inyectables, cremas y tabletas. Explica que los componentes de empaque, como frascos, etiquetas, insertos y estuches, deben ser previamente aprobados por el área de control de calidad antes de su uso.<br><br>También señala que la industria ha evolucionado desde controles manuales basados en muestreos hacia procesos más tecnificados, orientados a garantizar la calidad y reducir errores. Antes de iniciar la producción se validan los parámetros de los materiales y, durante el proceso, se realizan muestreos periódicos para verificar el cumplimiento de los estándares establecidos.<br><br>Las desviaciones se gestionan mediante procedimientos documentados. Los problemas recurrentes requieren investigaciones más profundas y, en casos críticos, la detención de la producción y la elaboración de informes de desviación. Asimismo, la coordinación entre producción y control de calidad se basa en procedimientos que definen responsabilidades, frecuencias de muestreo y criterios de aceptación, garantizando la trazabilidad y la calidad de los productos farmacéuticos. |
 
 ### 2.2.3. Análisis de entrevistas
 
