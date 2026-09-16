@@ -73,6 +73,7 @@ Proyecto
 | 1.0.11  | 14/09/2026 | Zavaleta Gutierrez, Rodolfo martin | Implementación del LeanUX Canvas |
 |  1.1.0  | 14/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del Lean UX canvas |
 |  1.1.1  | 14/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la sección de entrevistas. |
+|  1.1.2  | 15/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la entrevista del segundo segmento objetivo. |
 ---
 
 ## Project Report Collaboration Insights
