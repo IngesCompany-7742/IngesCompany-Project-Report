@@ -74,7 +74,8 @@ Proyecto
 |  1.1.0  | 14/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del Lean UX canvas                                                                             |
 |  1.1.1  | 14/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la sección de entrevistas.                                                                  |
 |  1.1.2  | 15/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la entrevista del segundo segmento objetivo.                                                |
-|  1.1.3  | 15/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del análisis competitivo y estrategias frente a la competencia.                                |                                |
+|  1.1.3  | 15/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del análisis competitivo y estrategias frente a la competencia.                                |
+|  1.1.4  | 17/09/2026 | Rojas Ambicho, Nestor Daniel       | Inserción de la sección de User Journey Mapping.                                                         |
 ---
 
 ## Project Report Collaboration Insights
