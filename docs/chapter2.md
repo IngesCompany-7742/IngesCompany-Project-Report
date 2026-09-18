@@ -262,7 +262,17 @@ En esta sección se presenta el análisis detallado de la información recolecta
 
 ##### Segmento 1: Especialista de Aseguramiento y Control de Calidad (QA/QC)
 
+**Análisis de Características Objetivas y Subjetivas:** El análisis de las entrevistas evidencia que las áreas de Aseguramiento y Control de Calidad dentro de las organizaciones farmacéuticas evaluadas mantienen una fuerte dependencia de procesos documentales para garantizar el cumplimiento normativo y la trazabilidad de las operaciones. El 100% de los entrevistados desempeña funciones relacionadas con el aseguramiento de la calidad, el control de calidad, la validación de procesos o la revisión documental, lo que brinda solidez y representatividad a la información recopilada para comprender las necesidades del dominio del problema.
 
+Respecto a la gestión de información, el 100% manifestó utilizar esquemas mixtos que combinan documentación física con sistemas digitales para registrar, consultar y controlar información técnica relacionada con procedimientos, protocolos, registros de producción, resultados analíticos y actividades de calidad. Sin embargo, estos procesos continúan requiriendo revisiones manuales, verificaciones documentales y consolidación de información antes de su registro o aprobación definitiva, generando mayores tiempos operativos. Asimismo, se identificó que aproximadamente el 67% de los entrevistados presenta dificultades asociadas a la búsqueda, acceso o integración de información proveniente de diferentes fuentes, lo que afecta la eficiencia de determinadas actividades de control y seguimiento.
+
+Desde la perspectiva subjetiva, el 100% de los entrevistados manifestó una valoración positiva hacia la incorporación de soluciones digitales que permitan automatizar tareas operativas y fortalecer la trazabilidad de la información. Adicionalmente, alrededor del 67% señaló que la automatización de actividades como la generación de reportes, la consolidación de registros y la consulta de información histórica contribuiría significativamente a reducir la carga operativa y minimizar errores asociados a procesos manuales. En general, los entrevistados coinciden en que una plataforma centralizada facilitaría el acceso a la información, optimizaría la gestión documental y fortalecería los procesos de calidad dentro de sus organizaciones.
+
+***Graficos***
+
+![Grafico 1 - Segmento 1](../assets/img/chapter2/interview/segmento1/analisis-1-segmento1.png)
+
+![Grafico 2 - Segmento 1](../assets/img/chapter2/interview/segmento1/analisis-2-segmento1.png)
 
 ##### Segmento 2: Jefe o Supervisor de Producción Farmacéutica
 
