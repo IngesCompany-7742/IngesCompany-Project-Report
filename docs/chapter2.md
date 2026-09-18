@@ -256,6 +256,19 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Duración | 04:48 min |
 | Resumen | Alberto Valle Vera, químico farmacéutico con cerca de 40 años de experiencia en la industria farmacéutica, describe los procesos de fabricación y empaquetado de productos como jarabes, inyectables, cremas y tabletas. Explica que los componentes de empaque, como frascos, etiquetas, insertos y estuches, deben ser previamente aprobados por el área de control de calidad antes de su uso.<br><br>También señala que la industria ha evolucionado desde controles manuales basados en muestreos hacia procesos más tecnificados, orientados a garantizar la calidad y reducir errores. Antes de iniciar la producción se validan los parámetros de los materiales y, durante el proceso, se realizan muestreos periódicos para verificar el cumplimiento de los estándares establecidos.<br><br>Las desviaciones se gestionan mediante procedimientos documentados. Los problemas recurrentes requieren investigaciones más profundas y, en casos críticos, la detención de la producción y la elaboración de informes de desviación. Asimismo, la coordinación entre producción y control de calidad se basa en procedimientos que definen responsabilidades, frecuencias de muestreo y criterios de aceptación, garantizando la trazabilidad y la calidad de los productos farmacéuticos. |
 
+| Numero | 2 |
+|---------|--------|
+| **Campo** | **Información** |
+| Nombre | X |
+| Apellido | X |
+| Edad | X |
+| Distrito | X |
+| Evidencia | X |
+| Link | X |
+| Inicio | 0X:XX min |
+| Duración | 0X:XX min |
+| Resumen | X<br><br>X<br><br>X |
+
 ### 2.2.3. Análisis de entrevistas
 
 En esta sección se presenta el análisis detallado de la información recolectada. Para cada segmento, se explican primero los hallazgos estadísticos objetivos y subjetivos, seguidos de la evidencia gráfica correspondiente.
@@ -268,11 +281,9 @@ Respecto a la gestión de información, el 100% manifestó utilizar esquemas mix
 
 Desde la perspectiva subjetiva, el 100% de los entrevistados manifestó una valoración positiva hacia la incorporación de soluciones digitales que permitan automatizar tareas operativas y fortalecer la trazabilidad de la información. Adicionalmente, alrededor del 67% señaló que la automatización de actividades como la generación de reportes, la consolidación de registros y la consulta de información histórica contribuiría significativamente a reducir la carga operativa y minimizar errores asociados a procesos manuales. En general, los entrevistados coinciden en que una plataforma centralizada facilitaría el acceso a la información, optimizaría la gestión documental y fortalecería los procesos de calidad dentro de sus organizaciones.
 
-***Graficos***
+***Gráficos***
 
-![Grafico 1 - Segmento 1](../assets/img/chapter2/interview/segmento1/analisis-1-segmento1.png)
-
-![Grafico 2 - Segmento 1](../assets/img/chapter2/interview/segmento1/analisis-2-segmento1.png)
+![Gráfico - Segmento 1](../assets/img/chapter2/interview/segmento1/analisis-segmento-1.png)
 
 ##### Segmento 2: Jefe o Supervisor de Producción Farmacéutica
 
