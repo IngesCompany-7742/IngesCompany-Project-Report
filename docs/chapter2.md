@@ -391,6 +391,30 @@ En este mapa se analizó a Alberto Valle, jefe de producción farmacéutica con 
 
 ## 2.4. Big Picture Event Storming
 
+Para comprender el dominio del negocio de DoofPlus, el equipo realizó una sesión colaborativa de **Big Picture Event Storming** en Miro. Esta dinámica permitió mapear el flujo operativo del laboratorio farmacéutico, el proceso constó de cuatro etapas:
+
+**Step 1 – Generating Domain Events**
+Cada integrante propuso eventos relevantes del negocio en tiempo pasado usando post-its naranjas.
+
+[click aqui para ver el mirro](https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974)
+
+![Step 1 - Generating Domain Events](../assets/img/chapter2/event-storming/step1-generating-domain-events.png)
+
+**Step 2 – Sorting Domain Events**
+Se ordenaron los eventos cronológicamente para reflejar las etapas operativas reales del laboratorio, visualizando el ciclo de vida completo de un lote.
+
+![Step 2 - Sorting Domain Events](../assets/img/chapter2/event-storming/step2-sorting-domain-events.png)
+
+**Step 3 – Adding Actors and External Systems**
+Se identificaron los actores (post-its azules, ej. QA/QC, Jefe de Producción), los sistemas externos y se marcaron problemas críticos del flujo actual (post-its rosados).
+
+![Step 3 - Adding Actors and External Systems](../assets/img/chapter2/event-storming/step3-adding-actors-external-systems.png)
+
+**Step 4 – Storytelling**
+Se narró la historia completa del flujo de manera secuencial. Esto permitió al equipo detectar incoherencias, ajustar la ubicación de los eventos y llegar a un consenso sobre el funcionamiento real del negocio farmacéutico.
+
+![Step 4 - Storytelling](../assets/img/chapter2/event-storming/step4-storytelling.png)
+
 ## 2.5. Ubiquitous Language
 
 En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestión documental y la eficiencia en los procesos de calidad de laboratorios y plantas farmacéuticas mediante la plataforma DoofPlus, se ha definido el siguiente **lenguaje ubicuo (ubiquitous language)** para asegurar claridad y consistencia entre desarrolladores, usuarios (QA/QC, Jefes de Producción) y stakeholders:
