@@ -74,7 +74,7 @@ Proyecto
 |  1.1.2  | 15/09/2026 | Angulo Ramírez, Marcelo Martín     | Inserción de la entrevista del segundo segmento objetivo.                                                |
 |  1.1.3  | 15/09/2026 | Zavaleta Gutierrez, Rodolfo Martin | Inserción del análisis competitivo y estrategias frente a la competencia.                                |
 |  1.1.4  | 17/09/2026 | Rojas Ambicho, Nestor Daniel       | Inserción de la sección de User Journey Mapping.                                                         |
- | 1.1.5  | 17/09/2026 | Cobades Zamora, Yhoshua Hebert     | Implementación de la User Task Matrix, Big Picture Event Storming y Ubiquitous Language |
+ | 1.1.5  | 17/09/2026 | Cobades Zamora, Yhoshua Hebert / Rojas Ambicho, Nestor Daniel / Flores Martinez, Ricardo Andres   | Implementación del Needfinding |
 ---
 
 ## Project Report Collaboration Insights
