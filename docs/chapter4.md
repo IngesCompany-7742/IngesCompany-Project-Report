@@ -18,7 +18,8 @@ El logotico escogido para DoofPlus comunica de forma directa y sintética la pro
 
 #### Typography
 La tipografía empleada en DoofPlus será una fuente sans-serif moderna, limpia y altamente versátil, la cual cuenta con una extensa familia de pesos que incluye: Thin, Extra Light, Light, Regular, Medium, Semi Bold, Bold, Extra Bold y Black. Esta amplia disponibilidad de grosores, junto con sus respectivas versiones en cursiva (italic) para cada peso, permite estructurar una jerarquía visual extremadamente precisa. Su diseño geométrico garantiza una legibilidad excepcional para datos numéricos críticos, tablas de lotes y gráficos de telemetría, tanto en pantallas industriales como en dispositivos móviles.   
-![Typography](../assets/img/chapter4/typography-guide.jpg)
+![Typography](../assets/img/chapter4/typography-guide.jpg) 
+<br>
 La jerarquía tipográfica se establece de la siguiente manera para garantizar claridad y ritmo visual:
 - Títulos principales (H1 / Section heading): 3rem (aprox. 48px) en escritorio, utilizando pesos pesados como Extra Bold o Black para máximo impacto y jerarquía.   
 - Subtítulos (H2 / Sub-headings): 2rem (aprox. 32px) en peso Bold o Semi Bold.   
