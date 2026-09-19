@@ -10,13 +10,18 @@ Para asegurar una interfaz coherente y alineada a los estándares que exige la i
 #### Branding:
 El logotico escogido para DoofPlus comunica de forma directa y sintética la propuesta de valor del sistema: la integración de la automatización industrial con la rigurosidad del control farmacéutico. Para la sección de Branding, el análisis de los componentes de dicho logotipo se desglosa de la siguiente manera:
 <br>
-![DoofPlus Logo](../assets/images/doofplus-logo.png)
+![DoofPlus Logo](../assets/img/chapter4/doofplus-logo.png)
 <br>
 - Maquinaria y Cinta Transportadora: La silueta industrial con cápsulas en la cinta representa el núcleo operativo de la plataforma, lo que simboliza la manufactura y conexión de IoT en la línea de producción.
 - Escudo de Verificación: Representa el Aseguramiento de Calidad de los productos. Transmite bioseguridad, protección de los datos y el cumplimiento regulatorio estricto que se exige por DIGEMID y las BPM.
 - Construcción Tipográfica y Cromática: El nombre "DoofPLus" divide sus conceptos visualmente utilizando una fuente sans-serif sólida. El prefijo "Doof" en azul marino corporativo evoca la base tecnológica y la seriedad farmacéutica, mientras que el sufijo "PLus" en verde esmeralda conecta con la salud y la validación de procesos.
 
 #### Typography
+La tipografía del logotipo "DoofPLus" se basa en una estructura sans-serif geométrica de peso ExtraBold. 
+Esta elección no es casual: sus trazos gruesos y caracteres circulares perfectos proyectan una imagen de exactitud matemática, precisión de datos industriales y solidez algorítmica, características fundamentales para un sistema de telemetría y calidad.
+
+Para la interfaz de la plataforma web y móvil (UI), se empleará Roboto, la fuente estándar de Material Design, en sus variantes Regular (400), Medium (500) y Bold (700). Al ser una fuente diseñada específicamente para la legibilidad en pantallas de alta densidad, garantiza que las extensas tablas de lotes y gráficos de telemetría sean fácilmente interpretables en las pantallas de la planta o dispositivos móviles.
+![Typography](../assets/img/chapter4/typography.png)
 
 ### 4.1.2. Web Style Guidelines
 
