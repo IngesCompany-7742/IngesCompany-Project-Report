@@ -109,15 +109,103 @@ Las directrices web de DoofPlus se centran en la eficiencia operativa, la legibi
 
 ## 4.2. Information Architecture
 
+La arquitectura de la información de **DoofPlus** está diseñada para que tanto los visitantes de la Landing Page como los usuarios de la aplicación web (Especialistas QA/QC y Jefes de Producción) encuentren la información que necesitan sin esfuerzo, aplicando principios de organización jerárquica, etiquetado claro y navegación contextual.
+
 ### 4.2.1. Organization Systems
-    
+
+**Landing Page — Organización jerárquica (Visual Hierarchy):**
+La página de inicio presenta la información de lo general a lo específico, guiando al visitante desde la propuesta de valor hasta la conversión:
+
+- **Hero:** Mensaje principal de DoofPlus, problema que resuelve y CTA hacia la demo.
+- **Features:** Desglose de los módulos clave (Trazabilidad de Lotes, Control de Calidad, IoT, Auditoría).
+- **Benefits:** Ventajas competitivas como la eliminación de registros manuales y la trazabilidad inmutable.
+- **Plans:** Opciones de suscripción con desglose de características por plan.
+- **Testimonials:** Casos de éxito y reseñas del sector farmacéutico.
+- **FAQ:** Preguntas frecuentes sobre instalación, compatibilidad IoT y soporte.
+- **Contact:** Formulario de solicitud de demostración.
+
+**Web Application — Organización matricial y secuencial:**
+Dentro de la plataforma, el contenido se organiza según dos esquemas:
+
+- **Matricial (por tópicos):** El menú lateral agrupa las funcionalidades por dominio de negocio: *Lotes*, *Protocolos*, *Desviaciones*, *Telemetría IoT*, *Auditoría*, *Catálogo de Productos*. Cada usuario accede a las secciones relevantes según su rol.
+- **Secuencial (step-by-step):** Los flujos críticos como la apertura de un lote o el registro de una desviación siguen un proceso guiado paso a paso, asegurando que no se omitan campos obligatorios ni validaciones regulatorias.
+- **Cronológico:** El historial de trazabilidad (Audit Trail) y las lecturas de telemetría se presentan en orden cronológico descendente, priorizando los eventos más recientes.
+
 ### 4.2.2. Labeling Systems
+
+Se utiliza un sistema de etiquetas concisas y consistentes, alineadas al lenguaje ubicuo del dominio farmacéutico:
+
+**Landing Page:**
+
+| Etiqueta | Asociación |
+|---|---|
+| Features | Módulos y capacidades técnicas de la plataforma |
+| Plans | Opciones de suscripción y precios |
+| FAQ | Respuestas a dudas frecuentes de implementación |
+| Request a Demo | Formulario de contacto comercial |
+| Sign In / Sign Up | Acceso y registro a la plataforma |
+
+**Web Application:**
+
+| Etiqueta | Asociación |
+|---|---|
+| Batches | Gestión y trazabilidad de lotes de producción |
+| Protocols | Protocolos de calidad y documentación normativa |
+| Deviations | Registro de no conformidades y acciones correctivas |
+| Telemetry | Lecturas de sensores IoT en tiempo real |
+| Audit Trail | Historial inmutable de cambios en el sistema |
+| Dashboard | Panel de indicadores y métricas de cumplimiento |
+| Catalog | Productos farmacéuticos y fórmulas maestras |
+
+Se evitan sinónimos o variaciones para una misma funcionalidad. Por ejemplo, "Batches" se usa consistentemente en la navegación, los breadcrumbs y los títulos de página.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
+**Landing Page (`index.html`):**
+
+| Tag | Valor |
+|---|---|
+| Title | DoofPlus · Trazabilidad y Control de Calidad Farmacéutica |
+| Meta Description | Plataforma web para gestión de calidad, trazabilidad de lotes e integración IoT en la industria farmacéutica. Cumplimiento BPM y DIGEMID. |
+| Meta Keywords | trazabilidad farmacéutica, control de calidad, BPM, DIGEMID, IoT manufactura, gestión de lotes, DoofPlus |
+| Meta Author | IngesCompany |
+
+**Web Application (`/app`):**
+
+| Tag | Valor |
+|---|---|
+| Title | DoofPlus · Dashboard |
+| Meta Description | Panel de gestión de calidad farmacéutica: monitoreo de lotes, desviaciones, telemetría IoT y cumplimiento regulatorio. |
+| Meta Keywords | dashboard farmacéutico, trazabilidad lotes, control calidad, audit trail, DoofPlus app |
+| Meta Author | IngesCompany |
+
+Cada sub-página de la aplicación actualiza dinámicamente el `<title>` para reflejar la sección activa (ej. "DoofPlus · Batches", "DoofPlus · Deviations").
+
 ### 4.2.4. Searching Systems
 
+**Landing Page:**
+La Landing Page no requiere buscador global. La sección FAQ incluye un filtro por categorías (Instalación, IoT, Soporte, Precios) que permite al visitante localizar respuestas sin recorrer todo el listado.
+
+**Web Application:**
+- **Barra de búsqueda global:** Ubicada en el header de la app, permite buscar por **código de lote**, **nombre de producto** o **ID de desviación**. Los resultados se muestran agrupados por tipo de entidad (Lote, Protocolo, Desviación).
+- **Filtros contextuales:** Cada vista de listado cuenta con filtros específicos:
+  - *Lotes:* por estado (En Proceso, Aprobado, Rechazado, Retenido), rango de fechas y producto asociado.
+  - *Desviaciones:* por severidad (Crítica, Mayor, Menor), estado (Abierta, En Investigación, Cerrada) y lote afectado.
+  - *Telemetría:* por dispositivo IoT, parámetro medido y rango de valores.
+- **Visualización de resultados:** Los resultados se presentan en tablas paginadas con columnas ordenables. Cuando no hay coincidencias, se muestra el mensaje "No se encontraron resultados" con sugerencias de ajuste de filtros.
+
 ### 4.2.5. Navigation Systems
+
+**Landing Page — Navegación lineal y contextual:**
+- **Navbar fijo:** Barra superior con enlaces ancla a las secciones principales (*Features, Plans, FAQ, Contact*) y botones de acceso (*Sign In, Sign Up*). Permanece visible al hacer scroll.
+- **CTAs contextuales:** Botones estratégicos dentro de cada sección que guían al visitante al siguiente paso lógico (ej. de *Features* a *Plans*, de *Plans* a *Request a Demo*).
+- **Footer:** Enlaces secundarios de soporte, políticas y redes sociales.
+
+**Web Application — Navegación lateral y breadcrumbs:**
+- **Sidebar fijo:** Menú lateral con iconos y etiquetas para cada módulo (*Dashboard, Batches, Protocols, Deviations, Telemetry, Catalog, Audit Trail*). Se colapsa a solo iconos en resoluciones menores.
+- **Breadcrumbs:** Ruta jerárquica visible en la parte superior de cada vista (ej. *Dashboard > Batches > LOT-2026-0142*), permitiendo retroceder a cualquier nivel sin perder contexto.
+- **Tabs contextuales:** Dentro de la vista de detalle de un lote, se utilizan pestañas para agrupar información relacionada (*General, Muestras, Desviaciones, Telemetría, Audit Trail*).
+
 
 ## 4.3. Landing Page UI Design
 
