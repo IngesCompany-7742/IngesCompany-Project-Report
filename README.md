@@ -19,9 +19,8 @@ NRC:
 
 Docente
 
-### Ángel Augusto Velásquez Núñez
+### Velásquez Núñez, Ángel Augusto
 
-<br>
 
 Equipo
 
@@ -33,16 +32,19 @@ Proyecto
 
 <br>
 
-**Integrantes:**
+<div style="display: inline-block; text-align: left;">
 
-| Código | Apellidos y Nombres |
-|:---:|:---:|
-| U202321425 | Angulo Ramírez, Marcelo Martín |
-| U20231H117 | Cobades Zamora, Yhoshua Hebert |
-| U202423162 | Flores Martinez, Ricardo Andres |
-| U20241F397 | Rojas Ambicho, Nestor Daniel |
-| U20241F733 | Zavaleta Gutierrez, Rodolfo Martin |
+**Integrantes:**<br><br>
+**Código** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Apellidos y Nombres**<br>
+U202321425 &nbsp; &nbsp; Angulo Ramírez, Marcelo Martín<br>
+U20231H117 &nbsp; &nbsp; Cobades Zamora, Yhoshua Hebert<br>
+U202423162 &nbsp; &nbsp; Flores Martinez, Ricardo Andres<br>
+U20241F397 &nbsp; &nbsp; Rojas Ambicho, Nestor Daniel<br>
+U20241F733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 
+</div>
+
+<br>
 <br>
 
 ### Período 202620
