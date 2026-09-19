@@ -21,7 +21,25 @@ La tipografía del logotipo "DoofPLus" se basa en una estructura sans-serif geom
 Esta elección no es casual: sus trazos gruesos y caracteres circulares perfectos proyectan una imagen de exactitud matemática, precisión de datos industriales y solidez algorítmica, características fundamentales para un sistema de telemetría y calidad.
 
 Para la interfaz de la plataforma web y móvil (UI), se empleará Roboto, la fuente estándar de Material Design, en sus variantes Regular (400), Medium (500) y Bold (700). Al ser una fuente diseñada específicamente para la legibilidad en pantallas de alta densidad, garantiza que las extensas tablas de lotes y gráficos de telemetría sean fácilmente interpretables en las pantallas de la planta o dispositivos móviles.
-![Typography](../assets/img/chapter4/typography.png)
+![Typography](../assets/img/chapter4/typography-guide.svg)
+
+#### Colors
+La paleta de colores de DoofPlus está diseñada para evocar pulcritud clínica, seguridad tecnológica y control absoluto sobre los procesos. Se distribuye en tres categorías:
+
+**Paleta principal**: Colores que definen la identidad de QualiTrack y se usan en elementos clave.
+* **Primario (Verde Marino):** var(--primary-color | #0D9488) (referencia principal).
+* **Secundario (Azul Pizarra Oscuro):** var(--secondary-color | #0F172A) (para texto principal y elementos interactivos).
+* **Terciario (Gris Pizarra):** var(--tertiary-color | #64748B) (para texto secundario y detalles).
+* **Fondo Claro:** var(--bg-light) (fondos de listas, dashboard y secciones).
+* **Fondo Blanco:** var(--white) (fondos de tarjetas y elementos principales).
+
+**Paleta de Soporte**: Colores complementarios que añaden profundidad y contraste.
+* **Gris Neutro:** Para bordes sutiles, líneas divisorias y fondos de alternancia.
+
+**Colores Funcionales**: Reservados para comunicar estados específicos al usuario.
+* **Éxito:** Verde (#4CAF50) para confirmaciones y acciones exitosas.
+* **Error:** Rojo (#F44336) para alertas y mensajes de error.
+* **Advertencia:** Amarillo (#FFC107) para notificaciones y avisos importantes.
 
 ### 4.1.2. Web Style Guidelines
 
