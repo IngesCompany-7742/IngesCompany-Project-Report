@@ -395,7 +395,7 @@ En el escenario actual (As-Is), María se desenvuelve en un entorno altamente de
 
 El análisis de su mapa evidencia estos quiebres operativos y emocionales, justificando la necesidad de nuestra solución tecnológica para digitalizar la captura de datos en el origen, automatizar los cálculos de calidad y centralizar el historial de los lotes en una base de datos accesible al instante.
 
-![User - Segmento 1](../assets/img/chapter2/interview/segmento1/User-Journey-Mapping1.png)
+![User Journey Map - Segmento 1](../assets/img/chapter2/interview/segmento1/User-Journey-Mapping1.png)
 
 **Segmento 2 – Jefe de Producción Farmacéutica (Alberto Valle)**
 
@@ -405,7 +405,7 @@ Bajo la situación actual (As-Is), el principal obstáculo en la experiencia de 
 
 Este mapa expone cómo la desconexión interdepartamental impacta negativamente en la continuidad de la producción, generando frustración en su perfil de liderazgo. A partir de la identificación de estos puntos de dolor, se establecen las bases para diseñar un sistema que ofrezca comunicación directa, validaciones ágiles y un tablero de control integrado para optimizar los tiempos de la fábrica.
 
-![User - Segmento 2](../assets/img/chapter2/interview/segmento2/User-Journey-Mapping2.png)
+![User Journey Map - Segmento 2](../assets/img/chapter2/interview/segmento2/User-Journey-Mapping2.png)
 
 ### 2.3.4. Empathy Mapping
 Para la elaboración de los Empathy Maps, el equipo partió del conocimiento y observaciones recolectadas durante el análisis de los User Persona. Se colocó al centro de cada mapa al usuario correspondiente (María México y Alberto Valle Vega) y se respondieron las preguntas claves sobre su entorno, emociones, comportamientos y necesidades.
