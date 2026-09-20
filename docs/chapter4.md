@@ -221,15 +221,123 @@ El "Footer" de nuestra landing page actúa como cierre funcional de la navegaci�
 
 ## 4.4. Web Applications UX/UI Design
 
+La presente sección describe el diseño de experiencia de usuario (UX) e interfaz de usuario (UI) desarrollado para la plataforma web DoofPlus. La propuesta fue diseñada para apoyar la gestión integral de calidad farmacéutica bajo entornos regulados GxP, facilitando la administración documental, la trazabilidad de procesos productivos, la gestión de desviaciones y el monitoreo operativo de laboratorios y líneas de manufactura.
+
+El diseño considera principios de usabilidad, accesibilidad, consistencia visual y eficiencia operativa, asegurando que los diferentes perfiles de usuario puedan ejecutar actividades críticas relacionadas con el cumplimiento normativo, la liberación de lotes y la auditoría regulatoria.
+
 ### 4.4.1. Web Applications Wireframes
+
+La presente sección describe el diseño de experiencia de usuario (UX) e interfaz de usuario (UI) desarrollado para la plataforma web DoofPlus. La propuesta fue diseñada para apoyar la gestión integral de calidad farmacéutica bajo entornos regulados GxP, facilitando la administración documental, la trazabilidad de procesos productivos, la gestión de desviaciones y el monitoreo operativo de laboratorios y líneas de manufactura.
+
+El diseño considera principios de usabilidad, accesibilidad, consistencia visual y eficiencia operativa, asegurando que los diferentes perfiles de usuario puedan ejecutar actividades críticas relacionadas con el cumplimiento normativo, la liberación de lotes y la auditoría regulatoria.
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+- Landing Page - DoofPlus
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe1.png)
+
+- Regulatory Identification
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe2.png)
+
+- QA & Lab Console Dashboard
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe3.png)
+
+- Document Management & Master SOPs
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe4.png)
+
+- Quality Protocols & Validation Management
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe5.png)
+
+- Critical Deviations & CAPA Actions Control
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe6.png)
+
+- Process Audit Master Plan
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe7.png)
+
+- GxP Regulatory Reports & Metrics
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe8.png)
+
 ### 4.4.3. Web Applications Mock-ups
+
+En esta sección se presentan los mock-ups desarrollados para la plataforma web DoofPlus. Estas representaciones de alta fidelidad muestran la apariencia final de la interfaz, incorporando elementos visuales, identidad corporativa, jerarquías de información y componentes interactivos diseñados para entornos farmacéuticos regulados bajo estándares GMP y FDA 21 CFR Part 11.
+
+Los mock-ups fueron elaborados considerando los requerimientos identificados durante el proceso de investigación, priorizando la trazabilidad, la integridad de los datos, la segregación de funciones y la facilidad de navegación para usuarios pertenecientes a las áreas de Quality Assurance (QA), Quality Control (QC) y Manufacturing Operations.
+
+- Landing Page - DoofPlus
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup1.png)
+- Regulatory Identification
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup2.png)
+- Environment Selection Portal
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup3.png)
+- QA / QC Operational Dashboard
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup4.png)
+- Document Management & Master SOPs
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup5.png)
+- Critical Deviations & CAPA Control
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup6.png)
+- Process Audit & Regulatory Oversight
+  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup7.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+Los User Flow Diagrams detallan el recorrido completo que realizan los usuarios para cumplir tareas críticas dentro de DoofPlus. Estos diagramas permiten validar que la navegación propuesta sea intuitiva, eficiente y compatible con los requisitos regulatorios asociados a la gestión farmacéutica.
+
+Los flujos fueron diseñados considerando tanto escenarios exitosos (Happy Path) como situaciones excepcionales (Unhappy Path), garantizando la correcta validación de usuarios, la integridad de los registros electrónicos y la trazabilidad de las acciones ejecutadas dentro del sistema.
+
+Entre los principales procesos modelados se encuentran:
+
+- Acceso regulatorio mediante firma electrónica.
+- Selección de entorno autorizado (Quality Segment o GxP Production).
+- Consulta y aprobación de documentación regulatoria.
+- Gestión de desviaciones y seguimiento CAPA.
+- Ejecución de auditorías internas y externas.
+- Registro y validación de resultados analíticos.
+- Liberación documental de lotes farmacéuticos.
+
 ## 4.5. Web Applications Prototyping
+
+La sección de Web Applications Prototyping presenta los prototipos interactivos desarrollados para validar los flujos operativos y regulatorios de DoofPlus antes de su implementación. Estos prototipos permiten simular la experiencia real de navegación dentro de la plataforma, evaluando la accesibilidad, usabilidad y eficiencia de las interacciones propuestas.
+
+El diseño de los prototipos fue guiado por cuatro principios fundamentales:
+
+1. Cumplimiento regulatorio por diseño
+
+Todas las interacciones fueron concebidas considerando requisitos de FDA 21 CFR Part 11, GMP y buenas prácticas de documentación, incorporando controles asociados a firmas electrónicas, auditoría de registros y segregación de funciones.
+
+2. Arquitectura basada en procesos farmacéuticos
+
+La navegación se organiza alrededor de los procesos más frecuentes dentro de la industria farmacéutica:
+
+- Gestión documental regulatoria.
+- Control y liberación de lotes.
+- Investigación de desviaciones.
+- Gestión CAPA.
+- Auditorías regulatorias.
+- Validación y control analítico.
+
+3. Consistencia visual y operativa
+
+Los prototipos mantienen una identidad visual uniforme mediante el uso consistente de colores institucionales, componentes reutilizables, tablas regulatorias y paneles de control orientados a la supervisión operativa.
+
+4. Optimización para entornos de trabajo regulados
+
+La interfaz prioriza:
+
+- Acceso rápido a información crítica.
+- Visualización inmediata del estado de cumplimiento.
+- Reducción de errores durante el ingreso de datos.
+- Navegación simplificada para procesos frecuentes.
+- Facilidad de auditoría e inspección regulatoria.
+
+Los prototipos permiten validar que las tareas principales del sistema, tales como consultar documentación aprobada, investigar desviaciones, ejecutar acciones CAPA y realizar auditorías internas, puedan completarse de forma eficiente y manteniendo la trazabilidad requerida por los estándares regulatorios del sector farmacéutico.
 
 ## 4.6. Domain-Driven Software Architecture
 La arquitectura de DoofPlus se fundamenta en Domain-Driven Design (DDD) para modelar con precisión las reglas de negocio del sector farmacéutico exigida por DIGEMID. Mediante la delimitación de bounded contexts, se separan claramente las responsabilidades de cada subsistema. En esta sección se presentan los resultados del Event Storming, así como los diagramas de contexto, contenedores y componentes que estructuran la solución.
