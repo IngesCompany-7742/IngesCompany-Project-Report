@@ -191,6 +191,8 @@ Se configuró **GitHub Pages** apuntando a la rama `main` del repositorio `DoofP
 
 ![github page](assets\img\chapter5\evidencia\github-pages.png)
 
+![pages](assets\img\chapter5\evidencia\pages.png)
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Todos los miembros del equipo participaron activamente en la implementación de la Landing Page, organizándose a través de ramas y realizando Pull Requests que fueron revisados por sus pares antes de ser fusionados a `main`.
