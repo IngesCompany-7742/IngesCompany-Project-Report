@@ -472,15 +472,12 @@ Se ordenaron los eventos cronológicamente para reflejar las etapas operativas r
 ![Step 2 - Sorting Domain Events](../assets/img/chapter2/event-storming/step2-sorting-domain-events.png)
 
 **Step 3 – Adding Actors and External Systems**
-Se identificaron los actores (post-its azules, ej. QA/QC, Jefe de Producción), los sistemas externos y se marcaron problemas críticos del flujo actual (post-its rosados).
+Se identificaron los actores (post-its azules, ej. QA/QC, Jefe de Producción) y los sistemas externos.
 
 ![Step 3 - Adding Actors and External Systems](../assets/img/chapter2/event-storming/step3-adding-actors-external-systems.png)
 
 **Step 4 – Storytelling**
-Se narró la historia completa del flujo de manera secuencial. Esto permitió al equipo detectar incoherencias, ajustar la ubicación de los eventos y llegar a un consenso sobre el funcionamiento real del negocio farmacéutico.
-
-![Step 4 - Storytelling](../assets/img/chapter2/event-storming/step4-storytelling.png)
-
+Se narró la historia completa del flujo de manera secuencial. Durante este proceso no se detectaron incoherencias, lo que permitió al equipo confirmar el orden de los eventos y ratificar su comprensión sobre el funcionamiento del negocio farmacéutico.
 ## 2.5. Ubiquitous Language
 
 En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestión documental y la eficiencia en los procesos de calidad de laboratorios y plantas farmacéuticas mediante la plataforma DoofPlus, se ha definido el siguiente **lenguaje ubicuo (ubiquitous language)** para asegurar claridad y consistencia entre desarrolladores, usuarios (QA/QC, Jefes de Producción) y stakeholders:
