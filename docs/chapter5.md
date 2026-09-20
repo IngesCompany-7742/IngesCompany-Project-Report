@@ -114,7 +114,7 @@ A continuación se presenta el Leadership-and-Collaboration Matrix (LACX), que i
 
 El objetivo principal de este Sprint fue implementar el sitio web estático (Landing Page) para dar a conocer a Inges Company y el producto DoofPlus.
 
-![jira](assets/img/chapter5/jira-pb.png)
+![jira](../assets/img/chapter5/jira-pb.png)
 
 
 | User Story | Work-Item / Task | Status |
@@ -158,27 +158,27 @@ En esta sección se presentan los principales avances en la implementación del 
 
 Lo alcanzado en este Sprint corresponde a la Landing Page totalmente funcional, responsiva y con soporte bilingüe.
 
-![capturas de pantalla](assets\img\chapter5\screenshots\1.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/1.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\2.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/2.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\3.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/3.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\4.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/4.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\5.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/5.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\6.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/6.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\7.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/7.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\8.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/8.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\9.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/9.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\10.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/10.png)
 
-![capturas de pantalla](assets\img\chapter5\screenshots\11.png)
+![capturas de pantalla](../assets/img/chapter5/screenshots/11.png)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -189,15 +189,15 @@ Dado que el enfoque del Sprint 1 fue la Landing Page, la documentación de servi
 Durante este Sprint, el equipo configuró los entornos en la nube para el alojamiento del Landing Page.
 Se configuró **GitHub Pages** apuntando a la rama `main` del repositorio `DoofPlus-LandingPage`, permitiendo que cualquier cambio en el código se publique automáticamente.
 
-![github page](assets\img\chapter5\evidencia\github-pages.png)
+![github page](../assets/img/chapter5/evidencia/github-pages.png)
 
-![pages](assets\img\chapter5\evidencia\pages.png)
+![pages](../assets/img/chapter5/evidencia/pages.png)
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Todos los miembros del equipo participaron activamente en la implementación de la Landing Page, organizándose a través de ramas y realizando Pull Requests que fueron revisados por sus pares antes de ser fusionados a `main`.
 
-![evidencia](assets\img\chapter5\evidencia\evidencia.png)
+![evidencia](../assets/img/chapter5/evidencia/evidencia.png)
 
 ## 5.3. Validation Interviews
 
