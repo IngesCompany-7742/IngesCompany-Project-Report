@@ -106,31 +106,31 @@ A continuación, se presenta una tabla comparativa sobre los principales competi
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
     <td>Fortalezas</td>
-    <td>1. Código abierto con posibilidad de personalización total.<br>2. Integración nativa con dispositivos IoT.<br>3. Bajo costo de adopción.<br>4. Enfoque específico en el contexto peruano (BPM/DIGEMID).<br>5. Trazabilidad integral.</td>
-    <td>Integración nativa de las reglas de DIGEMID, automatización IoT en tiempo real que previene fallas y un modelo HaaS accesible que reduce el CapEx inicial.</td>
+    <td>1. Código abierto con posibilidad de personalización total.<br>2. Integración nativa con dispositivos IoT para monitoreo en tiempo real.<br>3. Bajo costo de adopción.<br>4. Enfoque específico en el contexto regulatorio farmacéutico peruano (BPM/DIGEMID).<br>5. Trazabilidad integral del ciclo de vida de lotes.</td>
+    <td>Integración nativa de las reglas de DIGEMID, automatización IoT en tiempo real que previene fallas y un modelo HaaS accesible que reduce el CapEx inicial del cliente.</td>
     <td>Tecnología No-Code sumamente madura, ecosistema educativo global consolidado y fuerte respaldo financiero/técnico internacional.</td>
     <td>Especialización absoluta en seguridad de empaques, cumplimiento de normativas de serialización internacional y protección ante falsificaciones.</td>
   </tr>
   <tr>
     <td>Debilidades</td>
-    <td>1. Producto en fase temprana.<br>2. Sin validación regulatoria preconfigurada.<br>3. Comunidad open source incipiente.<br>4. Reconocimiento de marca limitado.</td>
-    <td>Startup en etapa inicial, catálogo inicial de sensores acotado y equipo de soporte técnico en proceso de consolidación.</td>
-    <td>Costos excesivamente elevados para laboratorios medianos, soporte regional limitado en español y complejidad para adaptarlo a DIGEMID.</td>
-    <td>Enfoque exclusivo en empaque y logística de salida, dejando de lado el monitoreo IoT en las fases de mezcla y fabricación.</td>
+    <td>1. Producto en fase temprana de desarrollo sin base instalada en producción.<br>2. Sin validación regulatoria preconfigurada (requiere validación por parte del cliente).<br>3. Comunidad open source incipiente.<br>4. Reconocimiento de marca limitado en el mercado.</td>
+    <td>Startup en etapa inicial, catálogo inicial de sensores acotado a las variables críticas y equipo de soporte técnico en proceso de consolidación.</td>
+    <td>Costos excesivamente elevados para laboratorios medianos, soporte regional limitado en español y complejidad para adaptarlo a la burocracia de DIGEMID.</td>
+    <td>Enfoque exclusivo en la fase de empaque y logística de salida, dejando de lado el monitoreo IoT en las fases críticas de mezcla y fabricación líquida/sólida.</td>
   </tr>
   <tr>
     <td>Oportunidades</td>
-    <td>1. Crecimiento del mercado de soluciones digitales.<br>2. Aumento de regulación y necesidad de trazabilidad.<br>3. Interés en soluciones open source con enfoque regulatorio.<br>4. Colaboración con instituciones de investigación.</td>
-    <td>Fiscalizaciones más estrictas de DIGEMID en Lima y urgencia por digitalizar registros manuales.</td>
-    <td>Crecimiento de la adopción de la nube y automatización digital avanzada en grandes corporativos farmacéuticos.</td>
-    <td>Nuevas leyes gubernamentales y tratados en la región andina que exijan serialización obligatoria.</td>
+    <td>1. Crecimiento del mercado de soluciones digitales en la industria farmacéutica.<br>2. Aumento de la regulación y necesidad de trazabilidad en el sector.<br>3. Interés creciente por soluciones open source con enfoque regulatorio.<br>4. Posibilidad de colaboración con instituciones de investigación y desarrollo.</td>
+    <td>Fiscalizaciones más estrictas de DIGEMID en Lima y la urgencia de los laboratorios por digitalizar registros manuales para evitar el cierre o multas de plantas.</td>
+    <td>Crecimiento de la adopción de la nube y automatización digital avanzada en grandes corporativos farmacéuticos latinoamericanos.</td>
+    <td>Nuevas leyes gubernamentales y tratados en la región andina que exijan la serialización obligatoria de medicamentos para el consumidor final.</td>
   </tr>
   <tr>
     <td>Amenazas</td>
-    <td>1. Resistencia al cambio.<br>2. Competencia de gigantes (SAP u Oracle).<br>3. Vulnerabilidad cibernética.<br>4. Ciclos de venta lentos.<br>5. Cambios regulatorios.<br>6. Incompatibilidad técnica de maquinaria antigua.</td>
-    <td>Resistencia cultural de operarios y lentitud burocrática en aprobación de presupuestos.</td>
-    <td>Consultorías locales que logren parametrizar herramientas para cumplir con normas peruanas a mediano plazo.</td>
-    <td>Gigantes logísticos que incorporen herramientas de trazabilidad gratuitas en sus servicios de distribución.</td>
+    <td>1. Resistencia al cambio: Rechazo de los laboratorios a abandonar sus procesos manuales o sistemas antiguos.<br>2. Competencia de gigantes: Grandes empresas (como SAP u Oracle) que podrían lanzar módulos nativos similares.<br>3. Vulnerabilidad cibernética: Riesgo de hackeos al manejar datos sensibles de salud y telemetría de máquinas.<br>4. Ciclos de venta lentos: Licitaciones largas y burocráticas, especialmente con entidades públicas.<br>5. Cambios regulatorios: Actualizaciones sorpresivas en las normativas de la DIGEMID que obliguen a reprogramar el software.<br>6. Incompatibilidad técnica: Maquinaria de laboratorio antigua o cerrada que dificulte la conexión de los sensores IoT.</td>
+    <td>Resistencia cultural de los operarios tradicionales al uso de tecnología y lentitud burocrática en la aprobación de presupuestos por directorios locales.</td>
+    <td>Consultorías locales especializadas que logren parametrizar Tulip de forma genérica para cumplir con las normas peruanas a mediano plazo.</td>
+    <td>Gigantes logísticos que incorporen herramientas de trazabilidad gratuitas o integradas nativamente en sus servicios de distribución de fármacos.</td>
   </tr>
 </table>
 
