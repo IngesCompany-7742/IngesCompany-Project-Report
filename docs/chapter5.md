@@ -34,9 +34,9 @@ Se detallan las herramientas utilizadas en el ciclo de vida del producto:
 ### 5.1.2. Source Code Management
 
 El código fuente de la solución es gestionado mediante **GitHub** como plataforma y sistema de control de versiones distribuido.
-* **Landing Page:** https://github.com/IngesCompany-7742/DoofPlus-LandingPage
-* **Frontend Web Application:** https://github.com/IngesCompany-7742/DoofPlus-Frontend
-* **Backend Web Services:** https://github.com/IngesCompany-7742/doofplus-platform
+* **Landing Page:** [https://github.com/IngesCompany-7742/DoofPlus-LandingPage](https://github.com/IngesCompany-7742/IngesCompany-LandingPage)
+* **Frontend Web Application:** [https://github.com/IngesCompany-7742/DoofPlus-Frontend](https://github.com/IngesCompany-7742/IngesCompany-Frontend)
+* **Backend Web Services:**
 
 **GitFlow Workflow**
 El proyecto adopta **GitFlow** para la organización de ramas:
