@@ -468,7 +468,7 @@ Para comprender el dominio del negocio de DoofPlus, el equipo realizó una sesi�
 **Step 1 – Generating Domain Events**
 Cada integrante propuso eventos relevantes del negocio en tiempo pasado usando post-its naranjas.
 
-[click aqui para ver el mirro](https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974)
+Link del miro: [https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974](https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974)
 
 ![Step 1 - Generating Domain Events](../assets/img/chapter2/event-storming/step1-generating-domain-events.png)
 
