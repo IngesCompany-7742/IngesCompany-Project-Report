@@ -1,10 +1,13 @@
 # Capítulo IV: Product Design
+
 En este capítulo se detallan las decisiones de diseño del producto para su plataforma DoofPlus, junto con la Landing Page. Se establecen guías de estilo visuales, arquitectura de la información (AI) y criterios que aseguran que la experiencia de usuario (UX) sea intuitiva y profesional, donde alineamos a las exigencias en las máquinas de la industria farmacéutica y entidades regulatorias para la calidad de los fármacos como la DIGEMID.
 
 ## 4.1. Style Guidelines
+
 En esta sección se establecen las bases visuales y de comunicación para DoofPlus, centralizando los recursos que serán de uso común para todo el equipo de desarrollo y diseño. El objetivo es garantizar una presentación consistente, inclusiva y enfocada a través de todos los puntos de contacto del producto, facilitando la mantenibilidad y escalabilidad del código y del diseño a lo largo del ciclo de vida del proyecto.
 
 ### 4.1.1. General Style Guidelines
+
 Para asegurar una interfaz coherente y alineada a los estándares que exige la industria farmacéutica, el sistema de diseño de DoofPlus toma como base fundamental **Material Design**. Esta decisión permite una integración nativa con la biblioteca de componentes Angular Material, que será utilizada en la implementación del frontend.
 
 #### Branding:
@@ -18,13 +21,13 @@ El logotico escogido para DoofPlus comunica de forma directa y sintética la pro
 
 #### Typography
 La tipografía empleada en DoofPlus será una fuente inter moderna, limpia y altamente versátil, la cual cuenta con una extensa familia de pesos que incluye: Thin, Extra Light, Light, Regular, Medium, Semi Bold, Bold, Extra Bold y Black. Esta amplia disponibilidad de grosores, junto con sus respectivas versiones en cursiva (italic) para cada peso, permite estructurar una jerarquía visual extremadamente precisa. Su diseño geométrico garantiza una legibilidad excepcional para datos numéricos críticos, tablas de lotes y gráficos de telemetría, tanto en pantallas industriales como en dispositivos móviles.   
-![Typography](../assets/img/chapter4/typography-guide.jpg) 
+![Typography](../assets/img/chapter4/typography-guide.jpg)
 <br>
 La jerarquía tipográfica se establece de la siguiente manera para garantizar claridad y ritmo visual:
-- Títulos principales (H1 / Section heading): 3rem (aprox. 48px) en escritorio, utilizando pesos pesados como Extra Bold o Black para máximo impacto y jerarquía.   
-- Subtítulos (H2 / Sub-headings): 2rem (aprox. 32px) en peso Bold o Semi Bold.   
-- Títulos de componentes y tarjetas (H3 / H4): 1.25rem (20px) a 1.5rem (24px) en peso Medium.   
-- Cuerpo del texto y Tablas de Datos (p / td): 1rem (16px) en peso Regular, con un interlineado de 1.5. Para datos complementarios o notas secundarias se podrán aplicar pesos más ligeros como Light o Extra Light.   
+- Títulos principales (H1 / Section heading): 3rem (aprox. 48px) en escritorio, utilizando pesos pesados como Extra Bold o Black para máximo impacto y jerarquía.
+- Subtítulos (H2 / Sub-headings): 2rem (aprox. 32px) en peso Bold o Semi Bold.
+- Títulos de componentes y tarjetas (H3 / H4): 1.25rem (20px) a 1.5rem (24px) en peso Medium.
+- Cuerpo del texto y Tablas de Datos (p / td): 1rem (16px) en peso Regular, con un interlineado de 1.5. Para datos complementarios o notas secundarias se podrán aplicar pesos más ligeros como Light o Extra Light.
 - Botones y etiquetas de estado (span): 0.875rem (14px) en peso Medium o Semi Bold para resaltar la acción.
 
 #### Colors
@@ -44,7 +47,7 @@ La paleta de colores de DoofPlus está diseñada para evocar pulcritud clínica,
 * **Éxito:** Verde (#4CAF50) para confirmaciones y acciones exitosas.
 * **Error:** Rojo (#F44336) para alertas y mensajes de error.
 * **Advertencia:** Amarillo (#FFC107) para notificaciones y avisos importantes.
-![paleta-colores](../assets/img/chapter4/color-palette.png)
+  ![paleta-colores](../assets/img/chapter4/color-palette.png)
 
 #### Spacing
 El espaciado en DoofPlus se rige por el sistema de cuadrícula de 8 puntos de Material Design. Esto asegura un ritmo vertical constante y facilita la lectura rápida de los reportes técnicos sin abrumar al usuario.
@@ -66,6 +69,7 @@ La voz y el tono de DoofPlus están diseñados para reflejar la misma fiabilidad
 - Voz: Experta e inquebrantable. Posiciona a DoofPlus como el puente definitivo entre la maquinaria industrial y el cumplimiento normativo, siendo una fuente de verdad única y segura para las auditorías.
 
 ### 4.1.2. Web Style Guidelines
+
 Las directrices de estilo web de DoofPlus explican e ilustran las decisiones sobre los estándares visuales y de interacción para las interfaces web responsivas de la plataforma. Nuestro objetivo es crear una experiencia visual que refleje la misión del sistema: digitalizar el control de calidad farmacéutico y la telemetría industrial mediante un diseño limpio, riguroso y altamente funcional, minimizando la carga cognitiva en la planta de producción.
 
 1. Layout
@@ -86,11 +90,12 @@ Las directrices de estilo web de DoofPlus explican e ilustran las decisiones sob
 - Organización: El proyecto frontend en Angular sigue una estructura de directorios modular. Los activos visuales estáticos se almacenan centralizados en `src/assets/images` y `src/assets/icons`, los estilos globales y variables SCSS en `src/styles`, y los componentes reutilizables en `src/app/shared/components`.
 - Versionado: Se utiliza Git gestionado desde GitHub como sistema de control de versiones central. El equipo aplica GitFlow y Conventional Commits para gestionar los cambios en el código, lo que ayuda a garantizar que el entorno de desarrollo mantenga una integración continua y una versión estable del producto en todo momento. Además, se aplica Semantic Versioning para darle un orden a las versiones.
 
+
 ## 4.2. Information Architecture
 La arquitectura de la información de DoofPlus establece las decisiones que dirigen la organización del contenido en las experiencias web, lo que está orientado a que tanto los visitantes del sector comercial como los usuarios operativos, que forman parte de los segmentos objetivos, se adapten con facilidad a la funcionalidad del producto y puedan encontrar lo que necesitan sin esfuerzo.
 
 ### 4.2.1. Organization Systems
-Para estructurar los grupos de información de la plataforma de manera lógica, se aplican los siguientes sistemas de organización visual y de categorización:   
+Para estructurar los grupos de información de la plataforma de manera lógica, se aplican los siguientes sistemas de organización visual y de categorización:
 - Organización Visual Jerárquica (Visual Hierarchy): Se aplica en la Landing Page estructurando el contenido de mayor a menor impacto, inicia con la Propuesta de Valor (Hero), luego a las Características (Features) y culmina en los Planes de Suscripción y Contacto.
 - Organización Visual Secuencial (Step-by-step to accomplish): Se utiliza en la Web Application para los flujos operativos estrictos, como la liberación de un lote farmacéutico, donde el usuario debe validar parámetros de telemetría IoT antes de firmar electrónicamente la aprobación.
 - Organización Visual Matricial: Aplicada en los dashboards para cruzar variables críticas de maquinaria frente a los índices de calidad y cumplimiento normativo en tiempo real.
@@ -99,7 +104,7 @@ Para estructurar los grupos de información de la plataforma de manera lógica, 
 
 ### 4.2.2. Labeling Systems
 Para asegurar la simplicidad y evitar la confusión de los visitantes y usuarios, la representación de los datos se realiza mediante etiquetas que utilizan el mínimo número de palabras posibles, lo que representa la terminología técnica de la industria farmacéutica:
-- Landing Page: Se emplean asociaciones de uso estándar como "Features" (para módulos técnicos), "Pricing" (para los planes) y "Request Demo" (para el contacto comercial).   
+- Landing Page: Se emplean asociaciones de uso estándar como "Features" (para módulos técnicos), "Pricing" (para los planes) y "Request Demo" (para el contacto comercial).
 - Web Application: Las etiquetas operativas evitan ambigüedades. Se utiliza "Lotes" (agrupando el historial de fabricación), "Cuarentena" (asociado a la evaluación de calidad), "Desviaciones" (asociado a alertas IoT y errores) y "Audit Trail" (asociado al registro inmutable de auditoría).
 
 ### 4.2.3. SEO Tags and Meta Tags
@@ -114,8 +119,8 @@ Para el posicionamiento y la indexación correcta de las principales páginas de
 
 ### 4.2.4. Searching Systems
 Para evitar que los usuarios se sientan perdidos ante el alto volumen de información generada por la producción y la telemetría, se brindan los siguientes medios de ayuda dentro del producto digital:
-- Búsqueda Global y Específica: La App Web ofrece una barra de búsqueda en el encabezado centrada en la consulta rápida por identificadores exactos (ID de Lote, Código de Protocolo de Calidad o ID de Dispositivo IoT).   
-- Filtros y Facetas: El usuario contará con filtros combinados para refinar las listas de datos. Podrá filtrar expedientes por "Estado" (En Proceso, Cuarentena, Aprobado, Rechazado), por "Rango de Fechas de Manufactura", o aislar eventos por la "Severidad" de las desviaciones (Crítica, Advertencia).   
+- Búsqueda Global y Específica: La App Web ofrece una barra de búsqueda en el encabezado centrada en la consulta rápida por identificadores exactos (ID de Lote, Código de Protocolo de Calidad o ID de Dispositivo IoT).
+- Filtros y Facetas: El usuario contará con filtros combinados para refinar las listas de datos. Podrá filtrar expedientes por "Estado" (En Proceso, Cuarentena, Aprobado, Rechazado), por "Rango de Fechas de Manufactura", o aislar eventos por la "Severidad" de las desviaciones (Crítica, Advertencia).
 - Visualización de Resultados: Después de la búsqueda, los datos lucirán en formato de tabla de datos (Data Table), resaltando visualmente la coincidencia del término ingresado y mostrando el estado actual del lote para permitir una toma de decisión inmediata.
 
 ### 4.2.5. Navigation Systems
@@ -133,37 +138,37 @@ El wireframe de nuestra página de inicio sirve como un mapa visual que define l
 
 Esta sección inicial incluye el logotipo de DoofPlus junto con una presentación breve que introduce al visitante en la propuesta de valor de la plataforma: 'The Future of Pharmaceutical Quality Management' (El futuro de la gestión de calidad farmacéutica). La barra de navegación permite un acceso rápido a secciones clave como Features, Benefits y About Us, mientras que el área principal ofrece una visión concisa del producto, acompañada de un claro llamado a la acción: 'Request a Demo' (Solicitar Demo). Un elemento visual atractivo refuerza el mensaje de innovación tecnológica, precisión y cumplimiento regulatorio que distingue a DoofPlus.
 
-![Hero Section Wireframe](../assets/img/chapter4/landing_page/wireframes/hero-section-landing-wireframe.png)
+![Hero Section Wireframe](../assets/img/chapter4/landing-page/wireframes/hero-section-landing-wireframe.png)
 
 **Services (What We Offer):**
 
 Aquí se detallan los servicios principales de DoofPlus: Real-Time IoT Monitoring, Automated BPM Compliance, Immutable Traceability y Digital Batch Management. Cada servicio se presenta con un icono representativo y una breve descripción, haciendo que nuestra oferta sea fácil de entender y visualmente accesible.
 
-![What We Offer Wireframe](../assets/img/chapter4/landing_page/wireframes/whatweoffer-section-landing-wireframe.png)
+![What We Offer Wireframe](../assets/img/chapter4/landing-page/wireframes/whatweoffer-section-landing-wireframe.png)
 
 **Acerca de la aplicación (About the Platform):**
 
 Esta sección presenta lo que hace única a DoofPlus: una plataforma para laboratorios farmacéuticos que automatiza el control de calidad mediante integración IoT, elimina errores manuales y garantiza la trazabilidad inmutable. Destacamos beneficios clave como captura automática de telemetría, alertas en tiempo real y cumplimiento nativo con normativas DIGEMID.
 
-![Benefits Wireframe](../assets/img/chapter4/landing_page/wireframes/benefits-section-landing-wireframe.png)
+![Benefits Wireframe](../assets/img/chapter4/landing-page/wireframes/benefits-section-landing-wireframe.png)
 
 **Sobre el Equipo (Our Team):**
 
 En esta sección, se humaniza la marca al presentar al equipo detrás de DoofPlus (Inges Company). Con fotos y descripciones de los miembros, mostramos a las personas dedicadas a este proyecto, construyendo confianza y una conexión personal con los visitantes.
 
-![Our Team Wireframe](../assets/img/chapter4/landing_page/wireframes/ourteam-section-landing-wireframe.png)
+![Our Team Wireframe](../assets/img/chapter4/landing-page/wireframes/ourteam-section-landing-wireframe.png)
 
 **Precios (Plans):**
 
 La sección de Precios ofrece una visión clara de los planes disponibles. Presentamos el Standard Lab Plan y el Enterprise Plan, con una comparativa de características para ayudar a los usuarios a elegir la opción que mejor se adapte a sus necesidades, ya sea para un laboratorio mediano o para una institución de salud pública. Un selector entre tarifas mensuales y anuales, junto con la indicación del ahorro asociado, facilita una elección más informada.
 
-![Plans Wireframe](../assets/img/chapter4/landing_page/wireframes/plans-section-landing-wireframe.png)
+![Plans Wireframe](../assets/img/chapter4/landing-page/wireframes/plans-section-landing-wireframe.png)
 
 **Footer:**
 
 El pie de página es un elemento crucial para la usabilidad. Contiene enlaces a información de contacto (correo electrónico, teléfono y ubicación). Esto proporciona un acceso rápido a la información sin saturar la interfaz, ofreciendo un cierre limpio y funcional a la página.
 
-![Footer Wireframe](../assets/img/chapter4/landing_page/wireframes/footer-section-landing-wireframe.png)
+![Footer Wireframe](../assets/img/chapter4/landing-page/wireframes/footer-section-landing-wireframe.png)
 
 Este wireframe sienta las bases para un diseño visual que no solo se ve bien, sino que también guía al usuario de manera intuitiva a través de nuestra propuesta de valor, reforzando la confianza y la conexión que DoofPlus promete.
 
@@ -175,49 +180,49 @@ Esta sección presenta y explica los Mock-ups del Landing Page, tanto en su vers
 
 El hero de nuestra plataforma **DoofPlus** presenta un fondo moderno e institucional que evoca precisión tecnológica y cumplimiento normativo, con un título claro: 'The Future of Pharmaceutical Quality Management'. Una breve descripción capta nuestra esencia para el control de calidad, y un botón de llamado a la acción sólido y centrado ('Request a Demo') invita a los usuarios a dar el primer paso hacia la digitalización de sus procesos. Una barra de navegación en la parte superior con el logotipo de DoofPlus permite acceder de forma fluida a todas las secciones de la página, proporcionando una experiencia de usuario intuitiva.
 
-![Hero Section Mockup](../assets/img/chapter4/landing_page/mockups/hero-section-landing-mockup.png)
+![Hero Section Mockup](../assets/img/chapter4/landing-page/mockups/hero-section-landing-mockup.png)
 
 **What We Offer**
 
 En la sección 'What we offer', presentamos nuestras principales áreas de servicio a través de tarjetas limpias. Cada tarjeta cuenta con un título y una descripción enfocada, como 'Real-Time IoT Monitoring', 'Automated BPM Compliance', 'Immutable Traceability' y 'Digital Batch Management'. Esto permite a los usuarios entender rápidamente el alcance de nuestra plataforma para resolver los problemas de documentación de calidad farmacéutica.
 
-![What We Offer Mockup](../assets/img/chapter4/landing_page/mockups/whatweoffer-section-landing-mockup.png)
+![What We Offer Mockup](../assets/img/chapter4/landing-page/mockups/whatweoffer-section-landing-mockup.png)
 
 **Features**
 
 La sección de "Features" muestra las funcionalidades clave de DoofPlus. El diseño tipo acordeón interactivo permite a los usuarios expandir cada característica (como la integración de sensores IoT o alertas instantáneas por desviación) para leer su descripción completa, mientras que el recuadro visual de la izquierda balancea el contenido. Este formato combina información técnica detallada con un diseño dinámico.
 
-![Features Mockup](../assets/img/chapter4/landing_page/mockups/features-section-landing-mockup.png)
+![Features Mockup](../assets/img/chapter4/landing-page/mockups/features-section-landing-mockup.png)
 
 **Benefits**
 
 En 'Benefits', destacamos las ventajas tangibles de utilizar DoofPlus. A través de un diseño de tarjetas (cards) sobre fondo claro con íconos representativos, comunicamos de manera directa cómo nuestra plataforma reduce el tiempo de preparación para auditorías en un 80%, elimina el error humano en los registros y proporciona una infraestructura SaaS escalable.
 
-![Benefits Mockup](../assets/img/chapter4/landing_page/mockups/benefits-section-landing-mockup.png)
+![Benefits Mockup](../assets/img/chapter4/landing-page/mockups/benefits-section-landing-mockup.png)
 
 **About Us**
 
 La sección 'About Us' presenta a **Inges Company**, la startup detrás de DoofPlus. Aquí compartimos nuestra visión de transformar digitalmente procesos especializados, detallando cómo nuestra solución permite centralizar información para el ciclo de vida farmacéutico y asegurar las BPM. El diseño separa claramente la misión de la empresa de una lista puntual con los pilares del servicio (IoT, Trazabilidad, Cumplimiento).
 
-![About Us Mockup](../assets/img/chapter4/landing_page/mockups/aboutus-section-landing-mockup.png)
+![About Us Mockup](../assets/img/chapter4/landing-page/mockups/aboutus-section-landing-mockup.png)
 
 **Our Team**
 
 La sección "Our Team" presenta a los ingenieros de software detrás de Inges Company: Marcelo Angulo, Yhoshua Cobades, Ricardo Flores, Nestor Rojas y Rodolfo Zavaleta. Las tarjetas de perfil muestran una foto, el nombre, el rol de Software Engineer y una biografía detallada para cada miembro. El diseño de tarjetas alineadas en cuadrícula brinda un aspecto organizado, humanizando el desarrollo del software.
 
-![Our Team Mockup](../assets/img/chapter4/landing_page/mockups/ourteam-section-landing-mockup.png)
+![Our Team Mockup](../assets/img/chapter4/landing-page/mockups/ourteam-section-landing-mockup.png)
 
 **Plans**
 
 En la sección de "Plans", ofrecemos los detalles de nuestros planes de suscripción. Las tarjetas de "Standard Lab" y "Enterprise" incluyen descripciones precisas para los segmentos objetivos, precios mensuales/anuales, y listas completas de características. El Plan Enterprise destaca visualmente con el color Verde Marino principal como fondo sólido para distinguirlo, y se incorpora un toggle para facilitar la vista de precios anuales.
 
-![Plans Mockup](../assets/img/chapter4/landing_page/mockups/plans-section-landing-mockup.png)
+![Plans Mockup](../assets/img/chapter4/landing-page/mockups/plans-section-landing-mockup.png)
 
 **Footer**
 
 El "Footer" de nuestra landing page actúa como cierre funcional de la navegación. Contiene el logotipo en su versión blanca y el nombre de DoofPlus, enlaces de contacto y acceso a recursos. Finalmente, se observa la declaración oficial "Copyright © 2026 Inges Company", asegurando la propiedad del producto en una interfaz ordenada con los colores oscuros corporativos.
 
-![Footer Mockup](../assets/img/chapter4/landing_page/mockups/footer-section-landing-mockup.png)
+![Footer Mockup](../assets/img/chapter4/landing-page/mockups/footer-section-landing-mockup.png)
 
 ## 4.4. Web Applications UX/UI Design
 
@@ -227,80 +232,415 @@ El diseño considera principios de usabilidad, accesibilidad, consistencia visua
 
 ### 4.4.1. Web Applications Wireframes
 
-La presente sección describe el diseño de experiencia de usuario (UX) e interfaz de usuario (UI) desarrollado para la plataforma web DoofPlus. La propuesta fue diseñada para apoyar la gestión integral de calidad farmacéutica bajo entornos regulados GxP, facilitando la administración documental, la trazabilidad de procesos productivos, la gestión de desviaciones y el monitoreo operativo de laboratorios y líneas de manufactura.
+En esta sección se presentan los wireframes diseñados para la aplicación web de DoofPlus. Cada pantalla fue desarrollada para gestionar procesos de calidad farmacéutica, producción regulada GxP, trazabilidad de lotes, control documental y cumplimiento normativo mediante firmas electrónicas y registros auditables.
 
-El diseño considera principios de usabilidad, accesibilidad, consistencia visual y eficiencia operativa, asegurando que los diferentes perfiles de usuario puedan ejecutar actividades críticas relacionadas con el cumplimiento normativo, la liberación de lotes y la auditoría regulatoria.
+A continuación, se muestran las representaciones esquemáticas de baja fidelidad que describen la estructura, distribución de componentes y funcionalidades principales de cada módulo de la plataforma.
+
+- **Landing Page - DoofPlus**
+
+Pantalla de presentación de la plataforma que comunica la propuesta de valor de DoofPlus y permite acceder al portal especializado para gestión de calidad y producción farmacéutica bajo normativas GxP.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Landing%20Page.png)
+
+- **Regulatory Identification - DoofPlus**
+
+Pantalla de autenticación regulatoria que solicita las credenciales corporativas y la firma electrónica necesarias para acceder a funcionalidades sujetas a cumplimiento FDA 21 CFR Part 11 y normativas GxP.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Login.png)
+
+- **Environment Selection Portal - DoofPlus**
+
+Interfaz que permite seleccionar el entorno de trabajo autorizado, diferenciando entre el segmento de calidad (QA/QC) y el entorno de producción farmacéutica.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Selección%20de%20Espacio.png)
+
+- **QA & Lab Console Dashboard - DoofPlus**
+
+Panel principal para usuarios de calidad que centraliza la supervisión de lotes pendientes, ensayos analíticos, desviaciones abiertas y actividades del laboratorio.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Dashboard%20Calidad.png)
+
+- **Document Management & Master SOPs - DoofPlus**
+
+Repositorio documental diseñado para gestionar procedimientos operativos estándar (SOPs), registros electrónicos, certificados de análisis y documentación regulatoria controlada.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Documentación.png)
+
+- **Quality Protocols & Validation Management - DoofPlus**
+
+Módulo destinado a la administración de protocolos de validación, cualificación de equipos y seguimiento de actividades relacionadas con IQ, OQ y PQ.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Protocolos.png)
+
+- **Critical Deviations & CAPA Actions Control - DoofPlus**
+
+Pantalla de seguimiento de desviaciones críticas, análisis de impacto GMP y control de acciones correctivas y preventivas (CAPA).
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Desviaciones.png)
+
+- **Process Audit Master Plan - DoofPlus**
+
+Módulo para planificar, ejecutar y monitorear auditorías internas, inspecciones regulatorias y hallazgos asociados al cumplimiento GMP.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Auditorías.png)
+
+- **GxP Regulatory Reports & Metrics - DoofPlus**
+
+Panel de análisis que permite generar reportes regulatorios, revisar métricas de desempeño y exportar información validada para auditorías e inspecciones.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Reportes.png)
+
+- **Analytical Testing & Microbiology Control (QC) - DoofPlus**
+
+Pantalla de control de ensayos analíticos y microbiológicos que permite gestionar muestras, equipos de laboratorio y resultados fuera de especificación (OOS).
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Ensayos.png)
+
+- **Analytical Results Entry & Validation - DoofPlus**
+
+Interfaz destinada al registro y validación de resultados analíticos, integrando verificación de especificaciones y aprobación mediante firma electrónica.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Resultados.png)
+
+- **Pharmaceutical Batch History & Traceability - DoofPlus**
+
+Módulo de consulta histórica que permite rastrear lotes farmacéuticos, consultar estados regulatorios y acceder a certificados de análisis.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Historial%20de%20Lotes.png)
+
+- **Cross-Traceability & Audit Center - DoofPlus**
+
+Centro de trazabilidad que integra genealogía de lotes, registros de laboratorio, documentación asociada y auditoría completa de eventos regulatorios.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Centro%20de%20Trazabilidad.png)
+
+- **GxP Production Control Console - DoofPlus**
+
+Panel principal del entorno de producción que permite supervisar órdenes activas, progreso de eBR y estado de los procesos de manufactura.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Dashboard%20Producción.png)
+
+- **GxP Batch Execution & Management Console - DoofPlus**
+
+Interfaz para la gestión operativa de lotes de fabricación, incluyendo seguimiento de etapas de producción, firmas electrónicas y responsables asignados.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Gestión%20de%20Lotes.png)
+
+- **GxP Incident Registration & Deviation Management - DoofPlus**
+
+Módulo de registro de incidencias que permite documentar eventos de desviación, adjuntar evidencias y gestionar acciones de contención.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Incidencias.png)
+
+- **GxP Profile & Regulatory Credentials - DoofPlus**
+
+Pantalla de perfil regulatorio donde los usuarios administran credenciales, firmas electrónicas y permisos asociados a los distintos contextos del sistema.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Perfil.png)
+
+- **General Settings & GxP Policies - DoofPlus**
+
+Módulo de configuración orientado a la administración de políticas GxP, parámetros de seguridad, auditorías internas y canales de notificación regulatoria.
+
+![Wireframe](../assets/img/chapter4/prototype/wireframes/Configuración.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
-- Landing Page - DoofPlus
+Los Wireflow Diagrams se utilizan para representar visualmente la navegación y las interacciones que realizan los usuarios dentro de una aplicación para alcanzar un objetivo determinado. Estos diagramas combinan wireframes y flujos de usuario, permitiendo visualizar las diferentes pantallas involucradas en cada proceso y la secuencia de acciones necesarias para completar una tarea.
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe1.png)
+Para DoofPlus se desarrollaron distintos Wireflow Diagrams basados en los principales objetivos de los usuarios dentro de un entorno farmacéutico regulado por normas GxP. Cada diagrama describe el flujo que siguen los usuarios para gestionar procesos de producción, control de calidad, documentación regulatoria, trazabilidad y cumplimiento normativo.
 
-- Regulatory Identification
+**Especialista de Aseguramiento y Control de Calidad (QA/QC)**
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe2.png)
+**User Goal 1:** Acceder a la plataforma y configurar el entorno regulatorio de trabajo.
 
-- QA & Lab Console Dashboard
+Como usuario, quiero ingresar a DoofPlus y configurar el entorno regulatorio correspondiente para acceder a los módulos y funciones necesarias para la gestión de calidad farmacéutica.
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe3.png)
+![User 1](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-1.png)
 
-- Document Management & Master SOPs
+**User Goal 2:** Monitorear equipos y condiciones ambientales asociadas a la producción.
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe4.png)
+Como usuario, quiero supervisar el estado de los equipos y las variables ambientales críticas para asegurar que las operaciones de manufactura cumplan con los requisitos regulatorios establecidos.
 
-- Quality Protocols & Validation Management
+![User 2](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-2.png)
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe5.png)
+**User Goal 3:** Gestionar lotes de producción y garantizar su trazabilidad.
 
-- Critical Deviations & CAPA Actions Control
+Como usuario, quiero registrar y monitorear los lotes de producción para asegurar la trazabilidad completa desde su fabricación hasta su liberación.
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe6.png)
+![User 3](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-3.png)
 
-- Process Audit Master Plan
+**User Goal 4:** Consultar la trazabilidad histórica y el plan maestro de auditorías.
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe7.png)
+Como usuario, quiero acceder al historial de lotes y a los registros de auditoría para verificar evidencias de cumplimiento y mantener la integridad de la información regulatoria.
 
-- GxP Regulatory Reports & Metrics
+![User 4](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-4.png)
 
-![Wireframe](../assets/img/chapter4/prototype/wireframes/wireframe8.png)
+User Goal 5: Gestionar protocolos de laboratorio y validar resultados de calidad.
+
+Como usuario de control de calidad, quiero administrar protocolos de laboratorio y registrar resultados analíticos para garantizar el cumplimiento de los estándares GxP y los procedimientos de validación.
+
+![User 5](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-5.png)
+
+**User Goal 6:** Supervisar desviaciones, CAPA y métricas regulatorias.
+
+Como usuario, quiero registrar desviaciones, gestionar acciones correctivas y preventivas (CAPA) y consultar métricas regulatorias para facilitar el cumplimiento normativo y la mejora continua.
+
+![User 6](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-2-user-goal-6.png)
+
+**Jefe o Supervisor de Producción Farmacéutica**
+
+User Goal 1: Acceder al dashboard de calidad para supervisar el estado de los procesos.
+
+Como especialista de QA, quiero acceder a un dashboard centralizado que me permita monitorear indicadores de calidad, lotes en revisión y elementos pendientes de validación.
+
+![User 1](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-1.png)
+
+User Goal 2: Gestionar auditorías y evidencias de cumplimiento regulatorio.
+
+Como especialista de QA, quiero revisar auditorías y evidencias documentadas para verificar el cumplimiento de los requisitos regulatorios y de calidad.
+
+![User 2](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-2.png)
+
+User Goal 3: Registrar desviaciones e iniciar acciones CAPA.
+
+Como especialista de QA, quiero registrar incidencias y gestionar acciones correctivas y preventivas para controlar riesgos y asegurar la mejora continua de los procesos.
+
+![User 3](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-3.png)
+
+User Goal 4: Gestionar protocolos de validación y control de calidad.
+
+Como especialista de QA, quiero administrar protocolos de validación para verificar que los procesos y procedimientos cumplan con los requisitos regulatorios establecidos.
+
+![User 4](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-4.png)
+
+User Goal 5: Administrar documentación regulatoria y procedimientos operativos estándar.
+
+Como especialista de QA, quiero gestionar documentos y SOPs para mantener registros controlados, actualizados y trazables dentro del sistema.
+
+![User 5](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-5.png)
+
+User Goal 6: Consultar reportes regulatorios y métricas de desempeño.
+
+Como especialista de QA, quiero visualizar reportes regulatorios e indicadores de calidad para evaluar tendencias, identificar riesgos y respaldar la toma de decisiones.
+
+![User 6](../assets/img/chapter4/prototype/wireflow-diagrams/segmento-1-user-goal-6.png)
 
 ### 4.4.3. Web Applications Mock-ups
 
-En esta sección se presentan los mock-ups desarrollados para la plataforma web DoofPlus. Estas representaciones de alta fidelidad muestran la apariencia final de la interfaz, incorporando elementos visuales, identidad corporativa, jerarquías de información y componentes interactivos diseñados para entornos farmacéuticos regulados bajo estándares GMP y FDA 21 CFR Part 11.
+En esta sección se presentan los mock-ups desarrollados para la aplicación web de DoofPlus. Estas representaciones de alta fidelidad muestran la apariencia final de la plataforma, incorporando la identidad visual del producto, componentes interactivos y elementos orientados al cumplimiento regulatorio farmacéutico bajo estándares GMP y FDA 21 CFR Part 11.
 
-Los mock-ups fueron elaborados considerando los requerimientos identificados durante el proceso de investigación, priorizando la trazabilidad, la integridad de los datos, la segregación de funciones y la facilidad de navegación para usuarios pertenecientes a las áreas de Quality Assurance (QA), Quality Control (QC) y Manufacturing Operations.
+Los mock-ups fueron diseñados considerando los procesos críticos de aseguramiento y control de calidad, manufactura farmacéutica, trazabilidad de lotes y gestión documental, garantizando una experiencia de usuario intuitiva y alineada con los requisitos de integridad de datos, auditoría y firmas electrónicas.
 
-- Landing Page - DoofPlus
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup1.png)
-- Regulatory Identification
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup2.png)
-- Environment Selection Portal
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup3.png)
-- QA / QC Operational Dashboard
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup4.png)
-- Document Management & Master SOPs
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup5.png)
-- Critical Deviations & CAPA Control
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup6.png)
-- Process Audit & Regulatory Oversight
-  ![Wireframe](../assets/img/chapter4/prototype/mockup/mockup7.png)
+- **Landing Page - DoofPlus**
+
+Pantalla de presentación de la plataforma que comunica la propuesta de valor de DoofPlus y permite acceder al portal especializado para gestión de calidad y producción farmacéutica bajo normativas GxP.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Landing%20Page.png)
+
+- **Regulatory Identification - DoofPlus**
+
+Pantalla de autenticación regulatoria que solicita las credenciales corporativas y la firma electrónica necesarias para acceder a funcionalidades sujetas a cumplimiento FDA 21 CFR Part 11 y normativas GxP.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Login.png)
+
+- **Environment Selection Portal - DoofPlus**
+
+Interfaz que permite seleccionar el entorno de trabajo autorizado, diferenciando entre el segmento de calidad (QA/QC) y el entorno de producción farmacéutica.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Selección%20de%20Espacio.png)
+
+- **QA & Lab Console Dashboard - DoofPlus**
+
+Panel principal para usuarios de calidad que centraliza la supervisión de lotes pendientes, ensayos analíticos, desviaciones abiertas y actividades del laboratorio.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Dashboard%20Calidad.png)
+
+- **Document Management & Master SOPs - DoofPlus**
+
+Repositorio documental diseñado para gestionar procedimientos operativos estándar (SOPs), registros electrónicos, certificados de análisis y documentación regulatoria controlada.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Documentación.png)
+
+- **Quality Protocols & Validation Management - DoofPlus**
+
+Módulo destinado a la administración de protocolos de validación, cualificación de equipos y seguimiento de actividades relacionadas con IQ, OQ y PQ.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Protocolos.png)
+
+- **Critical Deviations & CAPA Actions Control - DoofPlus**
+
+Pantalla de seguimiento de desviaciones críticas, análisis de impacto GMP y control de acciones correctivas y preventivas (CAPA).
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Desviaciones.png)
+
+- **Process Audit Master Plan - DoofPlus**
+
+Módulo para planificar, ejecutar y monitorear auditorías internas, inspecciones regulatorias y hallazgos asociados al cumplimiento GMP.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Auditorías.png)
+
+- **GxP Regulatory Reports & Metrics - DoofPlus**
+
+Panel de análisis que permite generar reportes regulatorios, revisar métricas de desempeño y exportar información validada para auditorías e inspecciones.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Reportes.png)
+
+- **Analytical Testing & Microbiology Control (QC) - DoofPlus**
+
+Pantalla de control de ensayos analíticos y microbiológicos que permite gestionar muestras, equipos de laboratorio y resultados fuera de especificación (OOS).
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Ensayos.png)
+
+- **Analytical Results Entry & Validation - DoofPlus**
+
+Interfaz destinada al registro y validación de resultados analíticos, integrando verificación de especificaciones y aprobación mediante firma electrónica.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Resultados.png)
+
+- **Pharmaceutical Batch History & Traceability - DoofPlus**
+
+Módulo de consulta histórica que permite rastrear lotes farmacéuticos, consultar estados regulatorios y acceder a certificados de análisis.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Historial%20de%20Lotes.png)
+
+- **Cross-Traceability & Audit Center - DoofPlus**
+
+Centro de trazabilidad que integra genealogía de lotes, registros de laboratorio, documentación asociada y auditoría completa de eventos regulatorios.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Centro%20de%20Trazabilidad.png)
+
+- **GxP Production Control Console - DoofPlus**
+
+Panel principal del entorno de producción que permite supervisar órdenes activas, progreso de eBR y estado de los procesos de manufactura.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Dashboard%20Producción.png)
+
+- **GxP Batch Execution & Management Console - DoofPlus**
+
+Interfaz para la gestión operativa de lotes de fabricación, incluyendo seguimiento de etapas de producción, firmas electrónicas y responsables asignados.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Gestión%20de%20Lotes.png)
+
+- **GxP Incident Registration & Deviation Management - DoofPlus**
+
+Módulo de registro de incidencias que permite documentar eventos de desviación, adjuntar evidencias y gestionar acciones de contención.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Incidencias.png)
+
+- **GxP Profile & Regulatory Credentials - DoofPlus**
+
+Pantalla de perfil regulatorio donde los usuarios administran credenciales, firmas electrónicas y permisos asociados a los distintos contextos del sistema.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Perfil.png)
+
+- **General Settings & GxP Policies - DoofPlus**
+
+Módulo de configuración orientado a la administración de políticas GxP, parámetros de seguridad, auditorías internas y canales de notificación regulatoria.
+
+![Mockup](../assets/img/chapter4/prototype/mockup/Configuración.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-Los User Flow Diagrams detallan el recorrido completo que realizan los usuarios para cumplir tareas críticas dentro de DoofPlus. Estos diagramas permiten validar que la navegación propuesta sea intuitiva, eficiente y compatible con los requisitos regulatorios asociados a la gestión farmacéutica.
+Los User Flow Diagrams representan la secuencia de acciones que realizan los usuarios dentro de la plataforma para alcanzar un objetivo específico. Estos diagramas permiten visualizar la navegación entre módulos, las decisiones tomadas durante el proceso y los diferentes escenarios que pueden ocurrir durante la interacción con el sistema.
 
-Los flujos fueron diseñados considerando tanto escenarios exitosos (Happy Path) como situaciones excepcionales (Unhappy Path), garantizando la correcta validación de usuarios, la integridad de los registros electrónicos y la trazabilidad de las acciones ejecutadas dentro del sistema.
+Para DoofPlus se definieron distintos flujos asociados a los procesos críticos de calidad y manufactura farmacéutica. Cada User Flow se clasifica como Happy Path, cuando el usuario completa exitosamente el objetivo planteado, o Unhappy Path, cuando el flujo se origina a partir de una incidencia, desviación o situación excepcional que requiere atención y seguimiento.
 
-Entre los principales procesos modelados se encuentran:
+***User Flow 1: Acceso a la plataforma y selección del entorno operativo***
 
-- Acceso regulatorio mediante firma electrónica.
-- Selección de entorno autorizado (Quality Segment o GxP Production).
-- Consulta y aprobación de documentación regulatoria.
-- Gestión de desviaciones y seguimiento CAPA.
-- Ejecución de auditorías internas y externas.
-- Registro y validación de resultados analíticos.
-- Liberación documental de lotes farmacéuticos.
+Este flujo describe el proceso que realiza un usuario desde el ingreso a la plataforma hasta el acceso al entorno de trabajo correspondiente según su rol y permisos regulatorios.
+
+**Happy Path**
+
+Como usuario autorizado, quiero acceder a la plataforma, completar la autenticación regulatoria y seleccionar mi entorno de trabajo para comenzar a utilizar las funcionalidades correspondientes a mi perfil.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-1.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path*
+
+Como usuario, quiero acceder a la plataforma y al entorno de manufactura para consultar indicadores regulatorios y reportes asociados al proceso productivo.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-1.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***User Flow 2: Gestión de muestras y consulta de trazabilidad***
+
+Este flujo representa el proceso mediante el cual un especialista de calidad registra una muestra, valida los resultados obtenidos y consulta posteriormente la trazabilidad asociada al lote analizado.
+
+**Happy Path**
+
+Como especialista de calidad, quiero registrar muestras y validar resultados analíticos para garantizar la trazabilidad y el cumplimiento de los procedimientos de laboratorio.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-2.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path**
+
+Como usuario de manufactura, quiero consultar el historial de trazabilidad y auditoría de un lote para investigar eventos o situaciones excepcionales detectadas durante la producción.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-2.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***User Flow 3: Registro de incidencias y gestión de desviaciones***
+
+Este flujo muestra cómo una incidencia detectada durante las operaciones es registrada y posteriormente evaluada mediante el proceso de gestión de desviaciones y acciones correctivas.
+
+**Happy Path**
+
+Como especialista de calidad, quiero gestionar desviaciones y registrar acciones CAPA para corregir incumplimientos identificados y reducir riesgos regulatorios.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-3.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path**
+
+Como operador de manufactura, quiero registrar una incidencia operativa para documentar una desviación que pueda afectar la calidad, seguridad o continuidad del proceso.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-3.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***User Flow 4: Gestión documental y protocolos de validación***
+
+Este flujo describe la administración de documentos regulados y protocolos de validación necesarios para mantener la conformidad con los estándares GMP.
+
+**Happy Path**
+
+Como especialista de calidad, quiero gestionar documentos y protocolos de validación para asegurar que los procedimientos se encuentren actualizados y correctamente controlados.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-4.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path**
+
+Como usuario de manufactura, quiero monitorear equipos y consultar el estado de ejecución de lotes para identificar anomalías que puedan afectar la operación.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-4.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***User Flow 5: Evaluación de cumplimiento regulatorio***
+
+Este flujo representa el proceso de análisis del estado de cumplimiento mediante la revisión de desviaciones, validaciones y reportes regulatorios.
+
+**Happy Path**
+
+Como especialista de calidad, quiero revisar el estado del sistema de calidad y consultar métricas regulatorias para evaluar el nivel de cumplimiento de la organización.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-5.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path**
+
+Como usuario de manufactura, quiero realizar seguimiento a la ejecución de lotes y verificar posteriormente la información de trazabilidad para investigar posibles desviaciones.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-5.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+***User Flow 6: Auditoría y trazabilidad de lotes***
+
+Este flujo muestra cómo los usuarios acceden a la información histórica de los lotes y a los registros de auditoría para respaldar procesos de inspección y liberación farmacéutica.
+
+**Happy Path**
+
+Como especialista de calidad, quiero consultar la trazabilidad completa de un lote y revisar el historial de auditoría para verificar la integridad y consistencia de los registros.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/happy-path-6.png" alt="Happy" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+**Unhappy Path**
+
+Como usuario de manufactura, quiero acceder al historial y la trazabilidad de un lote para analizar información relacionada con una situación excepcional o una observación generada durante el proceso productivo.
+
+<img src="../assets/img/chapter4/prototype/user-flow-diagrams/unhappy-path-6.png" alt="Unappy" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 ## 4.5. Web Applications Prototyping
 
@@ -346,7 +686,6 @@ La arquitectura de DoofPlus se fundamenta en Domain-Driven Design (DDD) para mod
 Para identificar los eventos de dominio y profundizar en la arquitectura del sistema, el equipo de IngesCompany llevó a cabo una sesión de Design-Level Event Storming. Esta técnica permitió visualizar y comprender el flujo de eventos, reglas de negocio y dependencias tecnológicas, facilitando la identificación formal de los Contextos Delimitados de DoofPlus.
 El desarrollo del proceso de Domain-Driven Design se realizó de manera colaborativa utilizando la plataforma Miro.
 Enlace al tablero: [click aquí para ver el enlace](https://miro.com/app/board/uXjVHkhKOXE=/)
-
 #### Paso 1: Timelines
 Organizamos los eventos (post-its naranjas) en líneas de tiempo para visualizar la secuencia lógica de las operaciones de la plataforma SaaS y farmacéutica. Identificamos los siguientes flujos principales:
 
@@ -401,10 +740,10 @@ Identificamos a los actores del sistema (post-its amarillos: Especialista QA/QC,
 *   **CUANDO** se identifica una causa raíz **ENTONCES** registrar acción correctiva en el registro CAPA[cite: 7].
 *   **CUANDO** el Especialista QA aprueba la distribución **ENTONCES** generar reporte y certificado de calidad[cite: 8].
 *   **CUANDO** se cierra el lote de producción **ENTONCES** habilitar la solicitud de liberación[cite: 5].
-![policies lotes](../assets/img/chapter4/design-level-event-storming/policies/policy-lotes.png)
-![policies telemetria](../assets/img/chapter4/design-level-event-storming/policies/policy-telemetria.png)
-![policies calidad](../assets/img/chapter4/design-level-event-storming/policies/policy-calidad.png)
-![policies saas](../assets/img/chapter4/design-level-event-storming/policies/policy-saas.png)
+    ![policies lotes](../assets/img/chapter4/design-level-event-storming/policies/policy-lotes.png)
+    ![policies telemetria](../assets/img/chapter4/design-level-event-storming/policies/policy-telemetria.png)
+    ![policies calidad](../assets/img/chapter4/design-level-event-storming/policies/policy-calidad.png)
+    ![policies saas](../assets/img/chapter4/design-level-event-storming/policies/policy-saas.png)
 
 #### Paso 4: Read Models
 
@@ -415,13 +754,13 @@ Los Modelos de Lectura (post-its verdes) representan las vistas de consulta crí
 *   **Producción y Logística:** *Panel de Control de Lote*, *Dashboard de Tendencias Operativas*, *Catálogo Maestro de Fármacos*, *Inventario de Materia Prima y Almacén*[cite: 5].
 *   **Control de Calidad (QA/QC):** *Bandeja de Solicitudes de Calidad*, *Panel de Resultados de Laboratorio*, *Agenda y Registro de Auditorías*[cite: 7, 8].
 *   **Monitoreo Industrial:** *Historial de Calibración de Maquinaria*, *Dashboard de Telemetría en Tiempo Real*, *Panel de Alertas y Desviaciones Sensoriales*[cite: 6].
-![rm IAM](../assets/img/chapter4/design-level-event-storming/read-models/rm-iam.png)
-![rm lotes](../assets/img/chapter4/design-level-event-storming/read-models/rm-lotes.png)
-![rm telemetria](../assets/img/chapter4/design-level-event-storming/read-models/rm-telemetria.png)
-![rm calidad](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad.png)
-![rm calidad2](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad2.png)
-![rm SaaS](../assets/img/chapter4/design-level-event-storming/read-models/rm-saas.png)
-![rm B2B](../assets/img/chapter4/design-level-event-storming/read-models/rm-b2b.png)
+    ![rm IAM](../assets/img/chapter4/design-level-event-storming/read-models/rm-iam.png)
+    ![rm lotes](../assets/img/chapter4/design-level-event-storming/read-models/rm-lotes.png)
+    ![rm telemetria](../assets/img/chapter4/design-level-event-storming/read-models/rm-telemetria.png)
+    ![rm calidad](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad.png)
+    ![rm calidad2](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad2.png)
+    ![rm SaaS](../assets/img/chapter4/design-level-event-storming/read-models/rm-saas.png)
+    ![rm B2B](../assets/img/chapter4/design-level-event-storming/read-models/rm-b2b.png)
 
 #### Paso 5: External Systems
 
@@ -431,13 +770,13 @@ Mapeamos los sistemas e infraestructura externos (post-its rosados) que interact
 *   **Pasarela de Pago:** Sistema financiero externo para procesar renovaciones o rechazar pagos de las suscripciones SaaS[cite: 9].
 *   **Dispositivos IoT:** Hardware en planta encargado de capturar y emitir parámetros y variables críticas hacia el sistema[cite: 6].
 *   **Motor de Alertas:** Servicio externo o microservicio encargado de despachar las alertas ambientales generadas por desviaciones de la maquinaria[cite: 6].
-![es IAM](../assets/img/chapter4/design-level-event-storming/external-systems/es-iam.png)
-![es lotes](../assets/img/chapter4/design-level-event-storming/external-systems/es-lotes.png)
-![es telemetria](../assets/img/chapter4/design-level-event-storming/external-systems/es-telemetria.png)
-![es calidad](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad.png)
-![es calidad2](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad2.png)
-![es SaaS](../assets/img/chapter4/design-level-event-storming/external-systems/es-saas.png)
-![es B2B](../assets/img/chapter4/design-level-event-storming/external-systems/es-b2b.png)
+    ![es IAM](../assets/img/chapter4/design-level-event-storming/external-systems/es-iam.png)
+    ![es lotes](../assets/img/chapter4/design-level-event-storming/external-systems/es-lotes.png)
+    ![es telemetria](../assets/img/chapter4/design-level-event-storming/external-systems/es-telemetria.png)
+    ![es calidad](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad.png)
+    ![es calidad2](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad2.png)
+    ![es SaaS](../assets/img/chapter4/design-level-event-storming/external-systems/es-saas.png)
+    ![es B2B](../assets/img/chapter4/design-level-event-storming/external-systems/es-b2b.png)
 
 #### Paso 6: Aggregates
 
@@ -452,12 +791,12 @@ Agrupamos los comandos y eventos en Agregados (grandes bloques amarillos central
 *   **Repositorio Documental y Protocolos:** Controla las versiones y aprobaciones de los estándares de calidad[cite: 7].
 *   **Registro de Investigación y CAPA:** Gestiona las desviaciones de calidad, análisis de causa raíz y verificaciones[cite: 7].
 *   **Expediente de Trazabilidad y Auditoría:** Consolida rastreos de lotes, auditorías, hallazgos y certificados de liberación final[cite: 7, 8].
-![aggregate IAM](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-iam.png)
-![aggregate lotes](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-lotes.png)
-![aggregate telemetria](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-telemetria.png)
-![aggregate calidad](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-calidad.png)
-![aggregate SaaS](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-saas.png)
-![aggregate B2B](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-b2b.png)
+    ![aggregate IAM](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-iam.png)
+    ![aggregate lotes](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-lotes.png)
+    ![aggregate telemetria](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-telemetria.png)
+    ![aggregate calidad](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-calidad.png)
+    ![aggregate SaaS](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-saas.png)
+    ![aggregate B2B](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-b2b.png)
 
 #### Paso 7: Bounded Contexts
 
@@ -612,6 +951,7 @@ Modela la gestión de dispositivos de hardware en planta, específicamente el ra
 ![ Diagrama de Clases Plant Asset & Device](../assets/img/chapter4/diagram-class/diagram-class-b6.png)
 
 ## 4.8. Database Design
+
 En esta sección se presenta el diseño de la base de datos relacional orientada a soportar los diferentes Bounded Contexts identificados para la plataforma DoofPlus. El diseño garantiza la persistencia, integridad y trazabilidad de la información crítica del negocio farmacéutico y la telemetría IoT.
 
 Las principales características consideradas para este diseño son:
@@ -621,7 +961,6 @@ Las principales características consideradas para este diseño son:
 - Integridad Referencial y Restricciones (Constraints): Dentro de cada contexto, se aplican Primary Keys (PK) y Foreign Keys (FK) para garantizar la consistencia de los datos. Se utilizan restricciones NOT NULL, UNIQUE y validaciones de estado para proteger las reglas de negocio (BPM).
 
 - Trazabilidad y Auditoría (Auditability): Cumple con normativas como la FDA 21 CFR Part 11, entidades críticas incluyen campos de control de concurrencia y marcas de tiempo exactas, soportadas por tablas de registro inmutable.
-
 
 ### 4.8.1. Database Diagrams
 En esta sección se presenta el diseño de la base de datos relacional de DoofPlus, organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas, lo que nos garantiza la separación de responsabilidades y la alineación con la arquitectura DDD definida en los apartados anteriores. Para el diseño y modelado de estos diagramas se utilizará la herramienta de Lucichart. La base de datos está orientada a implementarse en MySQL y sus tablas principales incluyen campos de auditoría como created_at y updated_at, con el objetivo de mantener trazabilidad sobre la creación y actualización de los registros.
