@@ -108,7 +108,7 @@ A continuación se muestra el problem statement en su idioma original:
 
 ***Our initial focus will be*** quality assurance specialists and pharmaceutical production supervisors responsible for compliance, documentation, and batch monitoring activities.
 
-***We will know we have succeeded when we see*** users completing quality-related tasks more efficiently, relying on the platform as their primary source of batch information, and spending less time searching for documentation required for audits and compliance processes.
+***We’ll know we are successful when we see*** quality assurance specialists and production supervisors relying on the platform for more than 80% of quality documentation queries, reducing the time spent searching for batch-related records by 50%, and achieving a 30% reduction in the time required to prepare documentation for audits and compliance reviews.
 
 #### 1.2.2.2. Lean UX Assumptions
 
