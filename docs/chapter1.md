@@ -114,7 +114,7 @@ A continuación se muestra el problem statement en su idioma original:
 
 En esta sección se presentan las principales premisas que sustentan la propuesta de DoofPlus. Estas suposiciones han sido formuladas a partir del análisis del contexto regulatorio de la industria farmacéutica, las necesidades asociadas al control de calidad y producción, y las oportunidades que ofrecen las tecnologías IoT para fortalecer la trazabilidad y el monitoreo de los procesos. Los assumptions constituyen hipótesis iniciales que deberán validarse posteriormente mediante actividades de investigación y retroalimentación con usuarios potenciales.
 
-A continuación se muestran los Assumptions en su idioma original:  
+A continuación se muestran los Assumptions en su idioma original:
 
 **Business Assumptions:**
 
@@ -158,7 +158,7 @@ A continuación se muestran los Assumptions en su idioma original:
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-A continuación se muestran las Hypothesis Statements en su idioma original:  
+A continuación se muestran las Hypothesis Statements en su idioma original:
 
 * **Hypothesis 1:**   
   ***We believe we will achieve*** more efficient management of pharmaceutical quality documentation.
@@ -211,8 +211,8 @@ A continuación se muestran las Hypothesis Statements en su idioma original:
 
 #### 1.2.2.4. Lean UX Canvas
 A continuación se muestra el Lean UX Canvas en su idioma original:
-![LeanUX](../assets/img/chapter1/Lean-UX-canvas.jpg)
 
+![LeanUX](../assets/img/chapter1/Lean-UX-canvas.jpg)
 
 ## 1.3. Segmentos objetivo
 

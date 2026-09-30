@@ -51,7 +51,7 @@ A continuación, se presenta una tabla comparativa sobre los principales competi
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td>Overview</td>
-    <td>Plataforma web open source diseñada para apoyar la gestión de calidad y trazabilidad en la industria farmacéutica peruana, con integración de datos IoT para fortalecer el monitoreo de procesos productivos.</td>
+    <td>Plataforma web open source diseñada para apoyar la gestión de calidad y trazabilidad en la industria farmacéutica peruana, con integración de datos IoT para fortalecer la trazabilidad de lotes farmacéuticos y la captura automática de evidencias de calidad.</td>
     <td>Plataforma SaaS/HaaS empresarial que integra hardware IoT nativo en maquinaria para la regulación de procesos y control digitalizado de calidad ("Cuarentena/Liberación") bajo normativas BPM de DIGEMID.</td>
     <td>Plataforma global No-Code enfocada en operaciones farmacéuticas que permite digitalizar las guías de lotes (eBR) y flujos de trabajo en plantas de alta tecnología.</td>
     <td>Sistema integral peruano de serialización, agregación de empaques y trazabilidad farmacéutica enfocado en la seguridad de la cadena de suministro logístico.</td>
@@ -106,7 +106,7 @@ A continuación, se presenta una tabla comparativa sobre los principales competi
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
     <td>Fortalezas</td>
-    <td>1. Código abierto con posibilidad de personalización total.<br>2. Integración nativa con dispositivos IoT para monitoreo en tiempo real.<br>3. Bajo costo de adopción.<br>4. Enfoque específico en el contexto regulatorio farmacéutico peruano (BPM/DIGEMID).<br>5. Trazabilidad integral del ciclo de vida de lotes.</td>
+    <td>1. Código abierto con posibilidad de personalización total.<br>2. Integración nativa con dispositivos IoT para monitoreo de la trazabilidad en tiempo real.<br>3. Bajo costo de adopción.<br>4. Enfoque específico en el contexto regulatorio farmacéutico peruano (BPM/DIGEMID).<br>5. Trazabilidad integral del ciclo de vida de lotes.</td>
     <td>Integración nativa de las reglas de DIGEMID, automatización IoT en tiempo real que previene fallas y un modelo HaaS accesible que reduce el CapEx inicial del cliente.</td>
     <td>Tecnología No-Code sumamente madura, ecosistema educativo global consolidado y fuerte respaldo financiero/técnico internacional.</td>
     <td>Especialización absoluta en seguridad de empaques, cumplimiento de normativas de serialización internacional y protección ante falsificaciones.</td>
@@ -501,7 +501,7 @@ En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestió
 | Raw Material (Materia Prima / Insumo) | Toda sustancia, activa o inactiva, que es empleada e incorporada durante el proceso de formulación o fabricación de un producto farmacéutico. |
 | Analytical Protocol (Protocolo Analítico) | Documento técnico normado que describe detalladamente los métodos, equipos y criterios de aceptación utilizados para realizar las pruebas de control de un producto. |
 | Audit (Auditoría) | Revisión sistemática e independiente, ya sea interna o realizada por entidades regulatorias, para evaluar el estricto cumplimiento de las normativas y reportes de calidad. |
-| Production Parameter (Parámetro de Producción) | Variables críticas del proceso de manufactura (como temperatura, velocidad o peso) que deben ser monitoreadas constantemente en la maquinaria de la planta. |
+| Production Parameter (Parámetro de Producción) | Variable operativa asociada a una etapa de fabricación cuya información puede registrarse y vincularse al historial de trazabilidad de un lote farmacéutico. |
 
 **Beneficios esperados del Ubiquitous Language:**
 - Facilita la comunicación directa sin ambigüedades entre desarrolladores de software, especialistas de QA/QC, Jefes de Producción y otros stakeholders.
