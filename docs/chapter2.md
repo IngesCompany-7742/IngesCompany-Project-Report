@@ -1,7 +1,7 @@
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
-Para desarrollar una solución efectiva, es importante entender la situación competitiva y las diferentes variantes que se utilizan en los laboratorios farmacéuticos. Este análisis nos ayuda a identificar cómo se gestionan los procesos de calidad actualmente, y qué limitaciones presentan las soluciones existentes.
+Para desarrollar una solución efectiva, es importante entender la situación competitiva y las diferentes variantes que se utilizan en los laboratorios farmacéuticos. Este análisis nos ayuda a identificar cómo se gestionan los procesos de calidad actualmente y qué limitaciones presentan las soluciones existentes.
 
 En este periodo, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas y debilidades, y así posicionar a DoofPlus como una propuesta que responda de manera más efectiva a las necesidades reales del sector.
 
@@ -112,23 +112,23 @@ A continuación, se presenta una tabla comparativa sobre los principales competi
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Para posicionar a DoofPlus frente a la competencia internacional (como Tulip y DrugXafe) y a las soluciones locales de gestión tradicional (como LOLFAR), IngesCompany implementa las siguientes estrategias y tácticas competitivas:
+Para posicionar a DoofPlus frente a TuHub (MES con IoT), LOLFAR (gestión de farmacias) y DrugXafe (serialización), IngesCompany aplicará las siguientes estrategias y tácticas:
 
-#### Estrategia de Costos y Accesibilidad (Modelo HaaS/SaaS sin CapEx elevado):
+#### Estrategia de costos y accesibilidad (suscripción sin inversión inicial)
 
-A diferencia de competidores que exigen licenciamiento tradicional con pago inicial por servidores e infraestructura (LOLFAR) o suscripciones elevadas por usuario/estación (Tulip), DoofPlus ofrece un esquema flexible de licenciamiento adaptado al tamaño de la planta y al número de líneas conectadas, sin inversión inicial de capital en infraestructura de hardware. Esto elimina la barrera financiera de entrada para laboratorios farmacéuticos medianos que hoy quedan fuera del alcance de las soluciones globales.
+Frente a soluciones cotizadas por proyecto con costos de implementación elevados (TuHub, LOLFAR), DoofPlus ofrece precios públicos por suscripción (Standard Lab y Enterprise) sin inversión en servidores ni hardware propio, ya que la captura IoT se integra con ThingsBoard. Táctica: prueba piloto de 30 días para laboratorios que soliciten una demo desde la Landing Page.
 
-#### Enfoque Vertical y Regulatorio (Más allá del Monitor Genérico):
+#### Enfoque vertical en la calidad farmacéutica
 
-Mientras que los MES generalistas (Tulip) carecen de flujos especializados para el control de calidad regulado y de personalización nativa para el marco legal peruano, y las plataformas no-code (DrugXafe) requieren configuración genérica costosa para adaptarse a la burocracia de DIGEMID, DoofPlus integra reglas de cumplimiento BPM/DIGEMID preconfiguradas nativamente, con automatización IoT en tiempo real que cubre las fases críticas de fabricación (mezcla, liberación de lote) que soluciones como LOLFAR —enfocadas solo en empaque y logística de salida— dejan sin monitorear.
+Mientras TuHub se enfoca en la eficiencia productiva (OEE), LOLFAR en la gestión comercial de farmacias y DrugXafe en el empaque y la distribución, DoofPlus cubre el ciclo de calidad del lote: documentación controlada, desviaciones y CAPA, cuarentena y liberación con firma electrónica, y audit trail. Táctica: plantillas de protocolos y reportes alineadas a las BPM de DIGEMID, configurables por cada laboratorio (la validación final corresponde al cliente).
 
-#### Gestión Multi-Planta y Trazabilidad de Lotes Centralizada:
+#### Gestión multi-planta y trazabilidad centralizada de lotes
 
-Se despliega una arquitectura pensada para que laboratorios y plantas farmacéuticas gestionen múltiples líneas de producción y lotes simultáneamente desde una única cuenta centralizada, con trazabilidad completa del ciclo de vida del producto, optimizando el control que ejercen los especialistas de QA/QC y los responsables de producción.
+Se ofrece una única cuenta por organización con varias plantas y líneas de producción, de modo que QA/QC y Producción consulten la misma información del lote. Táctica: el plan Enterprise habilita sensores ilimitados y gestión multi-planta para instituciones como el INS.
 
-#### Estrategia Comercial B2B Dirigida:
+#### Estrategia comercial B2B dirigida
 
-La prospección se enfoca directamente en especialistas de aseguramiento y control de calidad (QA/QC) y responsables de producción farmacéutica, apoyándose en consultoría técnica de eficiencia y automatización de procesos, y demostrando una reducción directa en el riesgo de observaciones, cierres o multas ante fiscalizaciones de DIGEMID.
+La prospección se dirige a jefes de aseguramiento de calidad y de producción, demostrando la reducción del tiempo de preparación de auditorías y del riesgo de observaciones de DIGEMID. Tácticas: webinars sobre integridad de datos, casos de uso con laboratorios piloto y alianzas con consultores de BPM.
 
 ## 2.2. Entrevistas
 
