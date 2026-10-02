@@ -199,6 +199,81 @@ Todos los miembros del equipo participaron activamente en la implementación de 
 
 ![evidencia](../assets/img/chapter5/evidencia/evidencia.png)
 
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint Planning Meeting sirvió para definir los objetivos del desarrollo frontend, asignar las responsabilidades entre los miembros del equipo y seleccionar las User Stories prioritarias orientadas a la experiencia de usuario en la gestión de lotes farmacéuticos, eventos de calidad y
+monitoreo mediante dashboards. A continuación, se presenta el resumen de la reunión de planificación:
+
+| Sprint # | Sprint 2 |
+|----------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2026-10-02 |
+| **Time** | 09:00 AM |
+| **Location** | Reunión virtual vía Discord |
+| **Prepared By** | Cobades, Yhoshua |
+| **Attendees (to planning meeting)** | Angulo, Marcelo / Cobades, Yhoshua / Flores, Ricardo / Rojas, Nestor / Zavaleta, Rodolfo |
+| **Sprint 2 – 1 Review Summary** | Evaluación satisfactoria del progreso de la solución digital y alineación de la Web Application con la guía de estilos del producto. |
+| **Sprint 2 – 1 Retrospective Summary** | Se acordó reforzar la consistencia en el uso del data-binding bidireccional (ngModel) para búsquedas y filtros en tiempo real sobre las vistas tabulares. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Our focus is on** delivering an interactive and fully functional SPA Frontend for the Web Application.<br>**We believe it delivers** an intuitive interface for lab specialists and production supervisors to manage batch traceability and quality events.<br>**This will be confirmed when** users can navigate through the dashboard, create and inspect batches and deviations, and perform real-time search/filtering smoothly. |
+| **Sprint 2 Velocity** | 18 Story Points |
+| **Sum of Story Points** | 18 Story Points |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+A continuación se presenta el Leadership-and-Collaboration Matrix (LACX), que indica quién es el líder (L) y quiénes son los colaboradores (C) para cada aspecto dentro del alcance del Sprint 2.
+
+| Team Member | GitHub Username | Landing Page (UI/UX) | Landing Page (Code) | Deployment & Setup | Documentation |
+|-------------|-----------------|----------------------|---------------------|--------------------|---------------|
+| Angulo, Marcelo | mangulo | L | C |  | C |
+| Cobades, Yhoshua | yhocz | C | C |  | C |
+| Flores, Ricardo | rflores | C | C |  | C |
+| Rojas, Nestor | nrojas | C | C |  |  |
+| Zavaleta, Rodolfo | rzavaleta | C | L |  | L |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El objetivo principal de este Sprint fue implementar el frontend de la Web Application (SPA) para permitir la gestión operativa de calidad y producción en DoofPlus.
+
+![jira](../assets/img/chapter5/jira-pb.png)
+
+| User Story | Work-Item / Task | Status |
+|------------|------------------|--------|
+| **Story Id** \| **Story Title** | **Task Id** \| **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **(To-do / In-Process / To-Review / Done)** |
+| US14 \| Registro de lotes | T012 \| Creación del componente de registro de lotes | Diseñar el formulario reactivo para captura de código de producto, nombre, cantidad planificada y fecha de expiración. | 4 | Flores, Ricardo | Done |
+| US14 \| Registro de lotes | T013 \| Persistencia e integración del servicio de lotes | Implementar el manejo de estado en memoria en el servicio TypeScript para almacenar dinámicamente los lotes. | 3 | Cobades, Yhoshua | Done |
+| US15 \| Consulta del historial de lotes | T014 \| Creación del componente de lista de lotes | Diseñar la tabla de inspección de lotes con badges dinámicos de color según el estado del lote. | 4 | Zavaleta, Rodolfo | Done |
+| US15 \| Consulta del historial de lotes | T015 \| Implementación de filtros y buscador en tiempo real | Incorporar el campo de búsqueda con icono de lupa y selector por estado mediante ngModel | 3 | Rojas, Nestor | Done |
+| US18 \| Registro de desviaciones | T016 \| Creación del componente de registro de desviaciones | Construir el formulario para el registro de hallazgos técnicos clasificados por nivel de severidad. | 4 | Flores, Ricardo | Done |
+| US18 \| Registro de desviaciones | T017 \| Creación del componente de lista de desviaciones | Desarrollar la vista tabular e integración para la consulta y filtrado de desviaciones. | 3 | Angulo, Marcelo | Done |
+| US31 \| Visualización de indicadores KPI de calidad | T018 \| Implementación de tarjetas de métricas KPI | Diseñar e integrar las tarjetas dinámicas de indicadores KPI para el control de lotes y desviaciones en el dashboard. | 3 | Cobades, Yhoshua | Done |
+| US32 \| Monitoreo de producción en tiempo real| T019 \| Implementación de tabla y widgets de monitoreo | Desarrollar la tabla de seguimiento centralizado de lotes en ejecución y widgets de alertas de calidad recientes. | 3 | Angulo, Marcelo | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+En esta sección se presentan las evidencias de desarrollo registradas en el repositorio de la Web Application:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|--------------------|
+| DoofPlus-LandingPage | main | `1f1a22f` | Merge branch 'release/v1.0.0-rc.1' into main | Se fusionó la rama de liberación a producción. | 20/09/2026 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+Dado que durante el Sprint 2 el enfoque principal se centró en la maquetación UI/UX de la Web Application y la gestión de estado local mediante servicios TypeScript, la documentación técnica formal de los RESTful Web Services a través de OpenAPI (Swagger) se profundizará en los Sprints siguientes con la integración directa de los endpoints de backend.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint, el equipo configuró los entornos en la nube para el alojamiento del Front Web Application.
+Se configuró **GitHub Pages** apuntando a la rama `main` del repositorio `DoofPlus-Frontend`, permitiendo que cualquier cambio en el código se publique automáticamente.
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Todos los integrantes del equipo colaboraron activamente en el desarrollo del frontend de la Web Application bajo el flujo GitFlow.
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
