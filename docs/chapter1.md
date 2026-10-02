@@ -126,7 +126,7 @@ A continuación se muestran los Assumptions en su idioma original:
 
 **Business Outcome Assumptions:**
 
-- We believe that at least 10 laboratories will subscribe to a paid plan during the first year after launch.
+- We believe that at least 10 laboratories will subscribe to a paid plan within the first six months after launch.
 - We believe that at least 20% of the laboratories that request a demo from the landing page will become paying customers.
 - We believe that monthly churn will remain below 5% once a laboratory registers its batch records in the platform.
 - We believe that subscribed laboratories will register at least 80% of their new batches in the platform after the third month of use.
