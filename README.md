@@ -3,9 +3,7 @@
 
 Universidad Peruana de Ciencias Aplicadas
 
-Facultad de Ingeniería
-
-<br>
+Carrera de Ingeniería de Software
 
 ### 1ASI0729
 
@@ -30,11 +28,11 @@ Proyecto
 
 ### DoofPlus
 
-<br>
+
+**Integrantes:**
 
 <div style="display: inline-block; text-align: left;">
 
-**Integrantes:**<br><br>
 **Código** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Apellidos y Nombres**<br>
 U202321425 &nbsp; &nbsp; Angulo Ramírez, Marcelo Martín<br>
 U20231H117 &nbsp; &nbsp; Cobades Zamora, Yhoshua Hebert<br>
@@ -44,12 +42,7 @@ U20241F733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 
 </div>
 
-<br>
-<br>
-
 ### Período 202620
-
-<br> 
 
 ### Septiembre, 2026
 
