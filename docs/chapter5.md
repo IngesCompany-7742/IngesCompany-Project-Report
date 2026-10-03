@@ -104,11 +104,11 @@ A continuación se presenta el Leadership-and-Collaboration Matrix (LACX), que i
 
 | Team Member | GitHub Username | Landing Page (UI/UX) | Landing Page (Code) | Deployment & Setup | Documentation |
 |-------------|-----------------|----------------------|---------------------|--------------------|---------------|
-| Angulo, Marcelo | mangulo | L | C |  | C |
-| Cobades, Yhoshua | yhocz | C | C |  | C |
-| Flores, Ricardo | rflores | C | C |  | C |
-| Rojas, Nestor | nrojas | C | C |  |  |
-| Zavaleta, Rodolfo | rzavaleta | C | L |  | L |
+| Angulo, Marcelo | Zock2005| L | C |  | C |
+| Cobades, Yhoshua | YhoshuaCZ | C | C |  | C |
+| Flores, Ricardo | Nitoryu2801 | C | C |  | C |
+| Rojas, Nestor | danRO-20 | C | C |  |  |
+| Zavaleta, Rodolfo | gutierrezrodolfo360-bit | C | L |  | L |
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -227,11 +227,11 @@ A continuación se presenta el Leadership-and-Collaboration Matrix (LACX), que i
 
 | Team Member | GitHub Username | Landing Page (UI/UX) | Landing Page (Code) | Deployment & Setup | Documentation |
 |-------------|-----------------|----------------------|---------------------|--------------------|---------------|
-| Angulo, Marcelo | mangulo | L | C |  | C |
-| Cobades, Yhoshua | yhocz | C | C |  | C |
-| Flores, Ricardo | rflores | C | C |  | C |
-| Rojas, Nestor | nrojas | C | C |  |  |
-| Zavaleta, Rodolfo | rzavaleta | C | L |  | L |
+| Angulo, Marcelo | Zock2005 | L | C |  | C |
+| Cobades, Yhoshua | YhoshuaCZ | C | C |  | C |
+| Flores, Ricardo | Nitoryu2801 | C | C |  | C |
+| Rojas, Nestor | danRO | C | C |  |  |
+| Zavaleta, Rodolfo | gutierrezrodolfo360 | C | L |  | L |
 
 #### 5.2.2.3. Sprint Backlog 2
 
