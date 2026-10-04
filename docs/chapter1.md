@@ -66,31 +66,31 @@ Las tecnologías basadas en Internet de las Cosas (IoT) permiten capturar inform
 
 - **What (¿Qué?):** *¿Qué es lo que se busca resolver?*
 
-- Se busca resolver las limitaciones relacionadas con la gestión de documentación de calidad, la trazabilidad de los lotes farmacéuticos y la disponibilidad de información confiable para actividades de aseguramiento de calidad y cumplimiento regulatorio.
+  Se busca resolver las limitaciones relacionadas con la gestión de documentación de calidad, la trazabilidad de los lotes farmacéuticos y la disponibilidad de información confiable para actividades de aseguramiento de calidad y cumplimiento regulatorio.
 
 - **Why (¿Por qué?):** *¿Por qué es importante resolverlo?*
 
-- Porque la calidad de los medicamentos depende de procesos adecuadamente controlados, documentados y respaldados por información íntegra y trazable. Además, una gestión eficiente de los registros facilita las auditorías, fortalece la toma de decisiones y contribuye al cumplimiento de las BPM y de los requisitos regulatorios aplicables.
+  Porque la calidad de los medicamentos depende de procesos adecuadamente controlados, documentados y respaldados por información íntegra y trazable. Además, una gestión eficiente de los registros facilita las auditorías, fortalece la toma de decisiones y contribuye al cumplimiento de las BPM y de los requisitos regulatorios aplicables.
 
-- **Who (¿Quién?):** *¿A quién afecta?*
+- **Who (¿Quién?):** *¿A quién afecta?* 
 
-- Afecta principalmente a especialistas de aseguramiento y control de calidad (QA/QC), así como a responsables de producción farmacéutica encargados de supervisar procesos, gestionar documentación y asegurar el cumplimiento de estándares regulatorios.
+  Afecta principalmente a especialistas de aseguramiento y control de calidad (QA/QC), así como a responsables de producción farmacéutica encargados de supervisar procesos, gestionar documentación y asegurar el cumplimiento de estándares regulatorios.
 
 - **When (¿Cuándo?):** *¿Cuándo ocurre?*
 
-- La necesidad se presenta durante todas las etapas del ciclo de vida de un lote farmacéutico, incluyendo la fabricación, el control de calidad, la gestión de desviaciones, la revisión documental y las actividades de auditoría.
+  La necesidad se presenta durante todas las etapas del ciclo de vida de un lote farmacéutico, incluyendo la fabricación, el control de calidad, la gestión de desviaciones, la revisión documental y las actividades de auditoría.
 
 - **Where (¿Dónde?):** *¿En dónde ocurre?*
 
-- Se manifiesta en laboratorios y plantas farmacéuticas donde se ejecutan actividades de producción, aseguramiento de calidad y control regulatorio.
+  Se manifiesta en laboratorios y plantas farmacéuticas donde se ejecutan actividades de producción, aseguramiento de calidad y control regulatorio.
 
 - **How (¿Cómo?):** *¿Cómo se resuelve?*
 
-- Puede abordarse mediante una plataforma digital que centralice protocolos, expedientes de calidad y registros asociados a los lotes farmacéuticos, complementando la información mediante tecnologías IoT para fortalecer la trazabilidad y disponibilidad de datos.
+  Puede abordarse mediante una plataforma digital que centralice protocolos, expedientes de calidad y registros asociados a los lotes farmacéuticos, complementando la información mediante tecnologías IoT para fortalecer la trazabilidad y disponibilidad de datos.
 
 - **How much (¿Cuánto?):** *¿Cuánto cuesta resolverlo?*
 
-- La implementación requiere infraestructura tecnológica para el despliegue de la solución, digitalización de procesos documentales, capacitación de los usuarios e integración con fuentes de información internas y dispositivos IoT. La inversión dependerá del tamaño de la organización y del alcance de la integración requerida.
+  La implementación requiere infraestructura tecnológica para el despliegue de la solución, digitalización de procesos documentales, capacitación de los usuarios e integración con fuentes de información internas y dispositivos IoT. La inversión dependerá del tamaño de la organización y del alcance de la integración requerida.
 
 ### 1.2.2. Lean UX Process
 
