@@ -118,7 +118,7 @@ A continuación se muestran los Assumptions en su idioma original:
 
 **Business Assumptions:**
 
-- We believe that small and medium-sized Peruvian pharmaceutical laboratories are willing to pay a monthly subscription between US$199 and US$599 for a platform that reduces the risk of GMP observations during DIGEMID inspections.
+- We believe that small and medium-sized Peruvian pharmaceutical laboratories are willing to pay a monthly subscription between US\$ 199 and US\$ 599 for a platform that reduces the risk of GMP observations during DIGEMID inspections.
 - We believe that stricter DIGEMID GMP inspections create urgency for laboratories to digitize their paper-based quality records.
 - We believe that a SaaS model built on open-source technologies allows us to offer lower prices than global MES and QMS solutions while keeping a sustainable margin.
 - We believe that heads of quality assurance are the main decision-makers or influencers in the purchase of quality-management software.
