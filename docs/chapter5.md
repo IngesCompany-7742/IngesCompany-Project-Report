@@ -257,7 +257,9 @@ En esta sección se presentan las evidencias de desarrollo registradas en el rep
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |------------|--------|-----------|----------------|---------------------|--------------------|
-| DoofPlus-LandingPage | main | `1f1a22f` | Merge branch 'release/v1.0.0-rc.1' into main | Se fusionó la rama de liberación a producción. | 20/09/2026 |
+| DoofPlus-WebApplication | main | `382179b` | feat(models): add deviation model interface and severity types | Definición de la interfaz Deviation y recursos de creación con tipado estricto | 05/10/2026 |
+| DoofPlus-WebApplication | main | `0994c14` | feat(models): add lot model interface and product properties | Definición de la interfaz Lot y consistencia en propiedades temporales | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(models): add user model interface and authentication roles | Creación de la estructura del modelo de usuario y gestión de permisos | 05/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
