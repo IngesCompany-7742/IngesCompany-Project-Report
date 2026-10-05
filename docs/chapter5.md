@@ -260,6 +260,10 @@ En esta sección se presentan las evidencias de desarrollo registradas en el rep
 | DoofPlus-WebApplication | main | `382179b` | feat(models): add deviation model interface and severity types | Definición de la interfaz Deviation y recursos de creación con tipado estricto | 05/10/2026 |
 | DoofPlus-WebApplication | main | `0994c14` | feat(models): add lot model interface and product properties | Definición de la interfaz Lot y consistencia en propiedades temporales | 05/10/2026 |
 | DoofPlus-WebApplication | main | `69c570f` | feat(models): add user model interface and authentication roles | Creación de la estructura del modelo de usuario y gestión de permisos | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(dashboard): integrate real-time reactive deviation alerts and metrics into dashboard overview | Conexión del componente de dashboard en features con el servicio reactivo para mostrar alertas recientes y métricas dinámicas | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(deviations): implement deviation creation component with reactive form bindings | Creación del componente de registro de nuevas desviaciones conectado al servicio con signals | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(deviations): implement deviation list component with reactive signals integration | Desarrollo de la vista de listado y filtrado de desviaciones en tiempo real dentro del módulo de features | 05/10/2026 |
+
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
