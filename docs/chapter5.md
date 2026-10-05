@@ -237,7 +237,7 @@ A continuación se presenta el Leadership-and-Collaboration Matrix (LACX), que i
 
 El objetivo principal de este Sprint fue implementar el frontend de la Web Application (SPA) para permitir la gestión operativa de calidad y producción en DoofPlus.
 
-![jira](../assets/img/chapter5/jira-pb.png)
+![jira](../assets/img/chapter5/evidencia/jira-pb2.png)
 
 | User Story | Work-Item / Task | Status |
 |------------|------------------|--------|
