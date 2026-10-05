@@ -266,6 +266,8 @@ En esta sección se presentan las evidencias de desarrollo registradas en el rep
 | DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot list component with reactive signals integration | Desarrollo de la vista de listado y filtrado de lotes en tiempo real dentro del módulo de features | 05/10/2026 |
 | DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot creation component with reactive form bindings | Creación del componente de registro de nuevos lotes conectado al servicio con signals | 05/10/2026 |
 | DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot detail component with reactive state management | Desarrollo del componente de detalles e información específica de cada lote | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(shared): implement responsive navbar component with routing and active states | Desarrollo e integración del componente de navegación principal ubicado en shared con soporte para enrutamiento y estados activos | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(shared): implement responsive sidebar navigation component with active state routing | Desarrollo e integración del componente de barra lateral en shared para la navegación estructural de la aplicación | 05/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
