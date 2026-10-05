@@ -263,7 +263,9 @@ En esta sección se presentan las evidencias de desarrollo registradas en el rep
 | DoofPlus-WebApplication | main | `69c570f` | feat(dashboard): integrate real-time reactive deviation alerts and metrics into dashboard overview | Conexión del componente de dashboard en features con el servicio reactivo para mostrar alertas recientes y métricas dinámicas | 05/10/2026 |
 | DoofPlus-WebApplication | main | `69c570f` | feat(deviations): implement deviation creation component with reactive form bindings | Creación del componente de registro de nuevas desviaciones conectado al servicio con signals | 05/10/2026 |
 | DoofPlus-WebApplication | main | `69c570f` | feat(deviations): implement deviation list component with reactive signals integration | Desarrollo de la vista de listado y filtrado de desviaciones en tiempo real dentro del módulo de features | 05/10/2026 |
-
+| DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot list component with reactive signals integration | Desarrollo de la vista de listado y filtrado de lotes en tiempo real dentro del módulo de features | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot creation component with reactive form bindings | Creación del componente de registro de nuevos lotes conectado al servicio con signals | 05/10/2026 |
+| DoofPlus-WebApplication | main | `69c570f` | feat(lots): implement lot detail component with reactive state management | Desarrollo del componente de detalles e información específica de cada lote | 05/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
