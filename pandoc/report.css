@@ -43,29 +43,77 @@ header#title-block-header {
   display: none;
 }
 
-/* Cover taken from the HTML block at the top of README.md. */
+/* Cover taken from the HTML block at the top of README.md, laid out like the
+   course's reference cover: labels in regular weight, values in bold. */
 .cover {
+  padding-top: 1.2cm;
   text-align: center;
+  font-size: 11pt;
+  line-height: 1.25;
   break-after: page;
-}
-
-.cover h2, .cover h3 {
-  margin: 0.3em 0;
-  border: none;
-}
-
-.cover p {
-  margin: 0.2em 0;
 }
 
 .cover img {
   width: auto;
-  height: 2.8cm;
+  height: 1.5cm;
+  margin-bottom: 0.5cm;
 }
 
-.cover table {
+.cover p,
+.cover h2,
+.cover h3 {
+  margin: 0 0 0.32cm;
+  padding: 0;
+  border: none;
+}
+
+.cover h2,
+.cover h3,
+.cover strong,
+.cover table.members th {
+  font-weight: 700;
+}
+
+.cover h3 {
+  font-size: 12.5pt;
+}
+
+.cover h2 {
+  font-size: 15pt;
+}
+
+/* Extra space between the groups of the cover. */
+.cover h3:nth-of-type(1),
+.cover p:nth-of-type(5),
+.cover p:nth-of-type(7) {
+  margin-top: 0.9cm;
+}
+
+.cover h3:nth-last-of-type(2) {
+  margin-top: 1.4cm;
+}
+
+.cover h3:last-of-type {
+  margin-top: 0.9cm;
+}
+
+/* Member list: two left-aligned columns without borders, centered on the page. */
+.cover table.members {
   width: auto;
-  margin: 0.4em auto;
+  margin: 0 auto;
+  font-size: 10pt;
+  text-align: left;
+}
+
+.cover table.members th,
+.cover table.members td {
+  padding: 0.12cm 0.3cm;
+  border: none;
+  background: none;
+}
+
+.cover table.members tr:nth-child(2n) td {
+  background: none;
 }
 
 /* The cover already ends its page. */
