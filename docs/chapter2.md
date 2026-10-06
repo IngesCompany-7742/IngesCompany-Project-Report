@@ -1,158 +1,134 @@
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
-Para desarrollar una solución efectiva, es importante entender la situación competitiva y las diferentes variantes que se utilizan en los laboratorios farmacéuticos. Este análisis nos ayuda a identificar cómo se gestionan los procesos de calidad actualmente, y qué limitaciones presentan las soluciones existentes.
+Para desarrollar una solución efectiva, es importante entender la situación competitiva y las diferentes variantes que se utilizan en los laboratorios farmacéuticos. Este análisis nos ayuda a identificar cómo se gestionan los procesos de calidad actualmente y qué limitaciones presentan las soluciones existentes.
 
 En este periodo, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas y debilidades, y así posicionar a DoofPlus como una propuesta que responda de manera más efectiva a las necesidades reales del sector.
 
 ### 2.1.1. Análisis competitivo
 A continuación, se presenta una tabla comparativa sobre los principales competidores, en el que se considera su propuesta de valor, mercado objetivo y características generales. Este análisis permite evidenciar que, mientras las soluciones existentes se orientan a grandes corporaciones o dependen de procesos manuales, DoofPlus podrá destacar como una alternativa specializada, accesible y centrada en la automatización del aseguramiento de la calidad mediante integración IoT y trazabilidad digital, especialmente pensada para laboratorios medianos y entidades públicas de la región.
 
-<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-left: auto; margin-right: auto; font-family: sans-serif; table-layout: fixed; word-wrap: break-word; text-align: left;">
-  <colgroup>
-    <col style="width: 10%;">
-    <col style="width: 10%;">
-    <col style="width: 20%;">
-    <col style="width: 20%;">
-    <col style="width: 20%;">
-    <col style="width: 20%;">
-  </colgroup>
-
+<table>
   <tr>
-    <th colspan="6" style="text-align: center;">Competitive Analysis Landscape</th>
+    <th colspan="6"><b>Competitive Analysis Landscape</b></th>
   </tr>
   <tr>
-    <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td>
-    <td colspan="4">¿Cómo se posiciona DoofPlus frente a sus competidores en cuanto a fortalezas, debilidades, oportunidades y su propuesta de valor dentro del mercado de gestión de calidad de máquinas farmacéutica y los fármacos producidos?</td>
+    <td colspan="2">¿Por qué llevar a cabo este análisis?</td>
+    <td colspan="4">¿Cómo se posiciona DoofPlus frente a sus competidores en fortalezas, debilidades, oportunidades y propuesta de valor dentro del mercado de software de gestión de calidad y trazabilidad farmacéutica?</td>
   </tr>
   <tr>
+    <td colspan="2">Respuesta del análisis</td>
     <td colspan="4">Es una propuesta que posiciona a DoofPlus como una plataforma SaaS orientada a la gestión de calidad farmacéutica, incorporando integración IoT para automatizar la captura de datos, mejorar la trazabilidad y asegurar el cumplimiento normativo frente a otras soluciones del mercado.</td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align: center;"><b>Competidores</b></td>
-    <td style="text-align: center; vertical-align: middle;">
-      <b>DoofPlus</b><br>
-      <img src="../assets/img/doofplus.png" alt="DoofPlus" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px;"/>
-    </td>
-    <td style="text-align: center; vertical-align: middle;">
-      <b>TuHub</b><br>
-      <img src="../assets/img/chapter2/competitors/tuhub.png" alt="Tuhub" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px;"/>
-    </td>
-    <td style="text-align: center; vertical-align: middle;">
-      <b>LOLFAR (Lolimsa)</b><br>
-      <img src="../assets/img/chapter2/competitors/lolfar.png" alt="LOLFAR" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px;"/>
-    </td>
-    <td style="text-align: center; vertical-align: middle;">
-      <b>DrugXafe (Tiga Health)</b><br>
-      <img src="../assets/img/chapter2/competitors/drugxafe.png" alt="DrugXafe" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px;"/>
-    </td>
+    <td colspan="2"></td>
+    <td><img src="../assets/img/doofplus.png" width="120"><br><b>DoofPlus</b></td>
+    <td><img src="../assets/img/chapter2/competitors/tuhub.png" width="120"><br><b>TuHub</b></td>
+    <td><img src="../assets/img/chapter2/competitors/lolfar.png" width="120"><br><b>LOLFAR (LOLIMSA)</b></td>
+    <td><img src="../assets/img/chapter2/competitors/drugxafe.png" width="120"><br><b>DrugXafe (Tiga Healthcare)</b></td>
   </tr>
-
   <tr>
-    <td rowspan="2"><b>Perfil</b></td>
+    <td rowspan="2">Perfil</td>
     <td>Overview</td>
-    <td>Plataforma web open source diseñada para apoyar la gestión de calidad y trazabilidad en la industria farmacéutica peruana, con integración de datos IoT para fortalecer la trazabilidad de lotes farmacéuticos y la captura automática de evidencias de calidad.</td>
-    <td>Plataforma SaaS/HaaS empresarial que integra hardware IoT nativo en maquinaria para la regulación de procesos y control digitalizado de calidad ("Cuarentena/Liberación") bajo normativas BPM de DIGEMID.</td>
-    <td>Plataforma global No-Code enfocada en operaciones farmacéuticas que permite digitalizar las guías de lotes (eBR) y flujos de trabajo en plantas de alta tecnología.</td>
-    <td>Sistema integral peruano de serialización, agregación de empaques y trazabilidad farmacéutica enfocado en la seguridad de la cadena de suministro logístico.</td>
+    <td>Plataforma SaaS bilingüe de gestión de calidad y trazabilidad de lotes para laboratorios farmacéuticos, con integración de sensores IoT.</td>
+    <td>Plataforma MES de gestión de producción que integra IoT industrial, monitoreo de OEE en tiempo real y batch record electrónico (Colombia).</td>
+    <td>Software de gestión farmacéutica para farmacias y cadenas: ventas, inventario, logística y control de vencimientos; más de 30 años en el mercado.</td>
+    <td>Sistema de track &amp; trace que serializa cada empaque con un código 2D Data Matrix y registra su recorrido del productor al paciente.</td>
   </tr>
-  <tr> 
-    <td>Ventaja competitiva</td>
-    <td>Solución open source con integración IoT nativa, enfocada específicamente en el contexto regulatorio peruano (BPM/DIGEMID), con bajo costo de adopción y capacidad de personalización.</td>
-    <td>Automatización total mediante IoT que elimina el error humano en los registros, con flujos de validación preconfigurados nativamente según la ley peruana sin costos extra de consultoría.</td>
-    <td>Flexibilidad total para crear aplicaciones de manufactura sin escribir código y una biblioteca global de plantillas validadas para laboratorios de primer nivel.</td>
-    <td>Mitigación robusta del riesgo de falsificación de medicamentos y automatización de reportes de salida logística para cumplir normativas de distribución.</td>
-  </tr>
-
   <tr>
-    <td rowspan="2"><b>Perfil de Marketing</b></td>
+    <td>Ventaja competitiva ¿Qué valor ofrece a los clientes?</td>
+    <td>Especialización en QA/QC (documentos, desviaciones, CAPA, liberación) con precio accesible y enfoque en BPM de DIGEMID: encontrar cualquier evidencia de un lote en minutos y preparar auditorías sin compilar documentos.</td>
+    <td>Captura automática de datos de planta (sensores, PLC, SCADA) y dashboards multi-planta para reducir pérdidas de producción y mejorar la eficiencia (OEE).</td>
+    <td>Trayectoria y base instalada en más de 12 países; reduce costos logísticos (10–15%) y evita quiebres de stock y mermas por vencimiento.</td>
+    <td>Prevención de falsificaciones y fraude en la cadena de suministro: garantiza que solo medicamentos auténticos lleguen al paciente.</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Perfil de marketing</td>
     <td>Mercado objetivo</td>
-    <td>Laboratorios y plantas farmacéuticas medianas y pequeñas en el Perú y Latinoamérica que buscan digitalizar sus procesos de calidad y trazabilidad con bajo presupuesto.</td>
-    <td>Medianas y grandes fábricas industriales/cosméticas/farmacéuticas en Sudamérica.</td>
-    <td>Laboratorios farmacéuticos nacionales, distribuidores mayoristas y entidades reguladoras de salud.</td>
-    <td>Laboratorios, distribuidoras farmacéuticas, clínicas y farmacias en el mercado peruano y andino.</td>
+    <td>Laboratorios farmacéuticos pequeños y medianos de Lima y, luego, de la región andina.</td>
+    <td>Manufactura regulada y no regulada (alimentos, farmacéuticos, cosméticos) en Colombia y Latinoamérica.</td>
+    <td>Farmacias, boticas, cadenas, clínicas y hospitales de Latinoamérica.</td>
+    <td>Fabricantes, importadores, distribuidores y autoridades sanitarias.</td>
   </tr>
   <tr>
     <td>Estrategias de marketing</td>
-    <td>Marketing digital enfocado en contenido educativo sobre transformación digital farmacéutica, comunidad open source, y presencia en eventos del sector salud y tecnología en Perú.</td>
-    <td>Marketing B2B global mediante webinars, whitepapers, conferencias de la industria farmacéutica (ISPE, PDA), y alianzas con consultoras de cumplimiento regulatorio.</td>
-    <td>Venta corporativa directa (B2B) apoyada en consultoría técnica de eficiencia y automatización de procesos.</td>
-    <td>Marketing de reputación histórica local, venta consultiva B2B presencial en Lima e industria de la salud.</td>
-  </tr>
-
-  <tr>
-    <td rowspan="3"><b>Perfil de Producto</b></td>
-    <td>Productos & Servicios</td>
-    <td>Plataforma web de gestión de calidad farmacéutica: gestión de protocolos, expedientes de calidad, trazabilidad de lotes, gestión de desviaciones, dashboards operativos e integración con dispositivos IoT.</td>
-    <td>Software MES de monitoreo de producción, integración con sensores básicos y paneles de control analíticos.</td>
-    <td>Módulos de serialización, agregación de empaques, software de reportes regulatorios y despacho seguro.</td>
-    <td>ERP completo: Contabilidad, compras, control de almacenes, mermas farmacéuticas y facturación.</td>
+    <td>Contenido educativo sobre BPM e integridad de datos, demos desde la Landing Page y presencia en eventos del sector.</td>
+    <td>Marketing digital B2B (blog, casos de éxito) y demostraciones comerciales.</td>
+    <td>Venta consultiva B2B con implementación y soporte locales.</td>
+    <td>Venta B2B y B2G a actores de la cadena de suministro y reguladores.</td>
   </tr>
   <tr>
-    <td>Precios & Costos</td>
-    <td>Open source y gratuito con modelos de suscripción. Los costos asociados corresponden a infraestructura de despliegue (hosting) y personalización según las necesidades de la organización.</td>
-    <td>ERP completo: Contabilidad, compras, control de almacenes, mermas farmacéuticas y facturación.</td>
-    <td>Costo por volumen de lotes/códigos generados e implementación inicial de infraestructura de software.</td>
-    <td>Licenciamiento tradicional corporativo con pago inicial por servidores y contratos anuales de soporte.</td>
+    <td rowspan="3">Perfil de producto</td>
+    <td>Productos &amp; Servicios</td>
+    <td>Documentos y SOP, expediente de lote, desviaciones y CAPA, liberación, audit trail, reportes, dashboards e IoT.</td>
+    <td>MES, monitoreo OEE, batch record electrónico, IA para operaciones y mantenimiento.</td>
+    <td>Módulos de ventas, compras, almacenes, fidelización y facturación para farmacias.</td>
+    <td>Serialización, agregación de empaques y reportes de trazabilidad.</td>
   </tr>
   <tr>
-    <td>Canales de distribución</td>
-    <td>Plataforma web responsive accesible desde navegadores modernos en dispositivos de escritorio y móviles.</td>
-    <td>Plataforma Web (Dashboards en la nube o servidores locales) para la gerencia y estaciones de planta.</td>
-    <td>Web (Portales para auditoría y gestión de almacenes) junto a integración por API con sistemas logísticos.</td>
-    <td>Escritorio / Web local enfocado en estaciones de oficina y terminales de inventario administrativo.</td>
+    <td>Precios &amp; Costos</td>
+    <td>Standard Lab US$199/mes (US$1,990/año); Enterprise US$599/mes (US$5,990/año).</td>
+    <td>Suscripción e implementación cotizadas por planta (precios no publicados).</td>
+    <td>Licencia, implementación y soporte cotizados por proyecto (precios no publicados).</td>
+    <td>Costo por volumen de códigos e implementación (precios no publicados).</td>
   </tr>
-
   <tr>
-    <td rowspan="4"><b>Análisis SWOT</b></td>
+    <td>Canales de distribución (Web y/o Móvil)</td>
+    <td>Plataforma web responsive (desktop, tablet y mobile).</td>
+    <td>Plataforma web en la nube y dispositivos IoT en planta.</td>
+    <td>Aplicación de escritorio/web en las estaciones de farmacia.</td>
+    <td>Portales web e integración por API.</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Análisis SWOT</td>
     <td>Fortalezas</td>
-    <td>1. Código abierto con posibilidad de personalización total.<br>2. Integración nativa con dispositivos IoT para monitoreo de la trazabilidad en tiempo real.<br>3. Bajo costo de adopción.<br>4. Enfoque específico en el contexto regulatorio farmacéutico peruano (BPM/DIGEMID).<br>5. Trazabilidad integral del ciclo de vida de lotes.</td>
-    <td>Integración nativa de las reglas de DIGEMID, automatización IoT en tiempo real que previene fallas y un modelo HaaS accesible que reduce el CapEx inicial del cliente.</td>
-    <td>Tecnología No-Code sumamente madura, ecosistema educativo global consolidado y fuerte respaldo financiero/técnico internacional.</td>
-    <td>Especialización absoluta en seguridad de empaques, cumplimiento de normativas de serialización internacional y protección ante falsificaciones.</td>
+    <td>Especialización en calidad farmacéutica; bajo costo; bilingüe; integración IoT sin vender hardware.</td>
+    <td>Integración IoT madura; batch record electrónico; operación multi-planta.</td>
+    <td>Trayectoria; presencia internacional; ahorro logístico comprobado.</td>
+    <td>Especialización en serialización y anti-falsificación.</td>
   </tr>
   <tr>
     <td>Debilidades</td>
-    <td>1. Producto en fase temprana de desarrollo sin base instalada en producción.<br>2. Sin validación regulatoria preconfigurada (requiere validación por parte del cliente).<br>3. Comunidad open source incipiente.<br>4. Reconocimiento de marca limitado en el mercado.</td>
-    <td>Startup en etapa inicial, catálogo inicial de sensores acotado a las variables críticas y equipo de soporte técnico en proceso de consolidación.</td>
-    <td>Costos excesivamente elevados para laboratorios medianos, soporte regional limitado en español y complejidad para adaptarlo a la burocracia de DIGEMID.</td>
-    <td>Enfoque exclusivo en la fase de empaque y logística de salida, dejando de lado el monitoreo IoT en las fases críticas de mezcla y fabricación líquida/sólida.</td>
+    <td>Startup sin base instalada; marca poco conocida; requiere validación por el cliente.</td>
+    <td>Enfoque en eficiencia productiva, no en QA (CAPA, liberación, auditorías); operación centrada en Colombia.</td>
+    <td>Orientado a retail farmacéutico; no cubre manufactura, control de calidad ni IoT.</td>
+    <td>Solo cubre empaque y distribución; no monitorea la fabricación ni la gestión de calidad.</td>
   </tr>
   <tr>
     <td>Oportunidades</td>
-    <td>1. Crecimiento del mercado de soluciones digitales en la industria farmacéutica.<br>2. Aumento de la regulación y necesidad de trazabilidad en el sector.<br>3. Interés creciente por soluciones open source con enfoque regulatorio.<br>4. Posibilidad de colaboración con instituciones de investigación y desarrollo.</td>
-    <td>Fiscalizaciones más estrictas de DIGEMID en Lima y la urgencia de los laboratorios por digitalizar registros manuales para evitar el cierre o multas de plantas.</td>
-    <td>Crecimiento de la adopción de la nube y automatización digital avanzada en grandes corporativos farmacéuticos latinoamericanos.</td>
-    <td>Nuevas leyes gubernamentales y tratados en la región andina que exijan la serialización obligatoria de medicamentos para el consumidor final.</td>
+    <td>Fiscalización más estricta de DIGEMID; crecimiento del sector farmacéutico; digitalización de laboratorios.</td>
+    <td>Expansión a Perú impulsada por Industria 4.0.</td>
+    <td>Crecimiento de cadenas de farmacias.</td>
+    <td>Regulaciones de serialización obligatoria en la región.</td>
   </tr>
   <tr>
     <td>Amenazas</td>
-    <td>1. Resistencia al cambio: Rechazo de los laboratorios a abandonar sus procesos manuales o sistemas antiguos.<br>2. Competencia de gigantes: Grandes empresas (como SAP u Oracle) que podrían lanzar módulos nativos similares.<br>3. Vulnerabilidad cibernética: Riesgo de hackeos al manejar datos sensibles de salud y telemetría de máquinas.<br>4. Ciclos de venta lentos: Licitaciones largas y burocráticas, especialmente con entidades públicas.<br>5. Cambios regulatorios: Actualizaciones sorpresivas en las normativas de la DIGEMID que obliguen a reprogramar el software.<br>6. Incompatibilidad técnica: Maquinaria de laboratorio antigua o cerrada que dificulte la conexión de los sensores IoT.</td>
-    <td>Resistencia cultural de los operarios tradicionales al uso de tecnología y lentitud burocrática en la aprobación de presupuestos por directorios locales.</td>
-    <td>Consultorías locales especializadas que logren parametrizar Tulip de forma genérica para cumplir con las normas peruanas a mediano plazo.</td>
-    <td>Gigantes logísticos que incorporen herramientas de trazabilidad gratuitas o integradas nativamente en sus servicios de distribución de fármacos.</td>
+    <td>Resistencia al cambio; ciclos de venta largos; ingreso de grandes proveedores de QMS.</td>
+    <td>Competidores especializados en QMS farmacéutico.</td>
+    <td>Soluciones SaaS más modernas y económicas.</td>
+    <td>Proveedores globales de serialización.</td>
   </tr>
 </table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Para posicionar a DoofPlus frente a la competencia internacional (como Tulip y DrugXafe) y a las soluciones locales de gestión tradicional (como LOLFAR), IngesCompany implementa las siguientes estrategias y tácticas competitivas:
+Para posicionar a DoofPlus frente a TuHub (MES con IoT), LOLFAR (gestión de farmacias) y DrugXafe (serialización), IngesCompany aplicará las siguientes estrategias y tácticas:
 
-#### Estrategia de Costos y Accesibilidad (Modelo HaaS/SaaS sin CapEx elevado):
+#### Estrategia de costos y accesibilidad (suscripción sin inversión inicial)
 
-A diferencia de competidores que exigen licenciamiento tradicional con pago inicial por servidores e infraestructura (LOLFAR) o suscripciones elevadas por usuario/estación (Tulip), DoofPlus ofrece un esquema flexible de licenciamiento adaptado al tamaño de la planta y al número de líneas conectadas, sin inversión inicial de capital en infraestructura de hardware. Esto elimina la barrera financiera de entrada para laboratorios farmacéuticos medianos que hoy quedan fuera del alcance de las soluciones globales.
+Frente a soluciones cotizadas por proyecto con costos de implementación elevados (TuHub, LOLFAR), DoofPlus ofrece precios públicos por suscripción (Standard Lab y Enterprise) sin inversión en servidores ni hardware propio, ya que la captura IoT se integra con ThingsBoard. Táctica: prueba piloto de 30 días para laboratorios que soliciten una demo desde la Landing Page.
 
-#### Enfoque Vertical y Regulatorio (Más allá del Monitor Genérico):
+#### Enfoque vertical en la calidad farmacéutica
 
-Mientras que los MES generalistas (Tulip) carecen de flujos especializados para el control de calidad regulado y de personalización nativa para el marco legal peruano, y las plataformas no-code (DrugXafe) requieren configuración genérica costosa para adaptarse a la burocracia de DIGEMID, DoofPlus integra reglas de cumplimiento BPM/DIGEMID preconfiguradas nativamente, con automatización IoT en tiempo real que cubre las fases críticas de fabricación (mezcla, liberación de lote) que soluciones como LOLFAR —enfocadas solo en empaque y logística de salida— dejan sin monitorear.
+Mientras TuHub se enfoca en la eficiencia productiva (OEE), LOLFAR en la gestión comercial de farmacias y DrugXafe en el empaque y la distribución, DoofPlus cubre el ciclo de calidad del lote: documentación controlada, desviaciones y CAPA, cuarentena y liberación con firma electrónica, y audit trail. Táctica: plantillas de protocolos y reportes alineadas a las BPM de DIGEMID, configurables por cada laboratorio (la validación final corresponde al cliente).
 
-#### Gestión Multi-Planta y Trazabilidad de Lotes Centralizada:
+#### Gestión multi-planta y trazabilidad centralizada de lotes
 
-Se despliega una arquitectura pensada para que laboratorios y plantas farmacéuticas gestionen múltiples líneas de producción y lotes simultáneamente desde una única cuenta centralizada, con trazabilidad completa del ciclo de vida del producto, optimizando el control que ejercen los especialistas de QA/QC y los responsables de producción.
+Se ofrece una única cuenta por organización con varias plantas y líneas de producción, de modo que QA/QC y Producción consulten la misma información del lote. Táctica: el plan Enterprise habilita sensores ilimitados y gestión multi-planta para instituciones como el INS.
 
-#### Estrategia Comercial B2B Dirigida:
+#### Estrategia comercial B2B dirigida
 
-La prospección se enfoca directamente en especialistas de aseguramiento y control de calidad (QA/QC) y responsables de producción farmacéutica, apoyándose en consultoría técnica de eficiencia y automatización de procesos, y demostrando una reducción directa en el riesgo de observaciones, cierres o multas ante fiscalizaciones de DIGEMID.
+La prospección se dirige a jefes de aseguramiento de calidad y de producción, demostrando la reducción del tiempo de preparación de auditorías y del riesgo de observaciones de DIGEMID. Tácticas: webinars sobre integridad de datos, casos de uso con laboratorios piloto y alianzas con consultores de BPM.
 
 ## 2.2. Entrevistas
 
@@ -211,7 +187,7 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Numero | 1 |
 |---------|--------|
 | **Campo** | **Información** |
-| Nombre | Mareliena |
+| Nombre | María |
 | Apellido | Mexico |
 | Edad | 53 |
 | Distrito | San Juan de Lurigancho |
@@ -232,7 +208,7 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Link | https://shorturl.at/c0pBO |
 | Inicio | 04:39 min |
 | Duración | 04:59 min |
-| Resumen | Julia Collazo Sotelo es química farmacéutica y trabaja en el área de Aseguramiento de la Calidad de un centro de producción de productos biológicos del Instituto Nacional de Salud (INS), donde se encarga de verificar el cumplimiento de las Buenas Prácticas de Manufactura (BPM), supervisar el sistema de calidad y revisar la documentación asociada a los procesos productivos. Asimismo, participa en actividades relacionadas con auditorías, capacitación del personal, programas de limpieza, mantenimiento, calibración y calificación de equipos. Para el desarrollo de sus actividades utiliza herramientas como Microsoft Word, Excel, Google Chrome y sistemas institucionales de gestión documental y control de procesos.<br><br>Para garantizar la calidad de los productos farmacéuticos, se revisan procedimientos, instrucciones de trabajo, protocolos de validación, registros de producción y documentación técnica asociada a materias primas, materiales de empaque y productos terminados. Además, la organización mantiene un sistema de trazabilidad que permite identificar la información relacionada con proveedores, materias primas, operadores, analistas y registros de cada lote producido. Sin embargo, Julia señala que existen dificultades para acceder a determinadas fuentes de información técnica y que, en ocasiones, se presentan errores cuando el personal no sigue adecuadamente los procedimientos establecidos para el registro y seguimiento de la información.<br><br>Las desviaciones y no conformidades son registradas, investigadas mediante análisis de causa raíz y gestionadas a través de acciones correctivas y preventivas supervisadas por equipos multidisciplinarios. Aunque considera que la organización cuenta con un sistema de gestión de calidad estructurado, identifica que una de las principales oportunidades de mejora es fortalecer la capacidad del personal para analizar las causas reales de los problemas y asumir una mayor responsabilidad sobre la calidad de sus procesos. En su opinión, la calidad debe ser un compromiso compartido por todas las áreas de la organización y no únicamente una responsabilidad del departamento de Aseguramiento de la Calidad. |
+| Resumen | Julia Collasos Zotelo es química farmacéutica y trabaja en el área de Aseguramiento de la Calidad de un centro de producción de productos biológicos del Instituto Nacional de Salud (INS), donde se encarga de verificar el cumplimiento de las Buenas Prácticas de Manufactura (BPM), supervisar el sistema de calidad y revisar la documentación asociada a los procesos productivos. Asimismo, participa en actividades relacionadas con auditorías, capacitación del personal, programas de limpieza, mantenimiento, calibración y calificación de equipos. Para el desarrollo de sus actividades utiliza herramientas como Microsoft Word, Excel, Google Chrome y sistemas institucionales de gestión documental y control de procesos.<br><br>Para garantizar la calidad de los productos farmacéuticos, se revisan procedimientos, instrucciones de trabajo, protocolos de validación, registros de producción y documentación técnica asociada a materias primas, materiales de empaque y productos terminados. Además, la organización mantiene un sistema de trazabilidad que permite identificar la información relacionada con proveedores, materias primas, operadores, analistas y registros de cada lote producido. Sin embargo, Julia señala que existen dificultades para acceder a determinadas fuentes de información técnica y que, en ocasiones, se presentan errores cuando el personal no sigue adecuadamente los procedimientos establecidos para el registro y seguimiento de la información.<br><br>Las desviaciones y no conformidades son registradas, investigadas mediante análisis de causa raíz y gestionadas a través de acciones correctivas y preventivas supervisadas por equipos multidisciplinarios. Aunque considera que la organización cuenta con un sistema de gestión de calidad estructurado, identifica que una de las principales oportunidades de mejora es fortalecer la capacidad del personal para analizar las causas reales de los problemas y asumir una mayor responsabilidad sobre la calidad de sus procesos. En su opinión, la calidad debe ser un compromiso compartido por todas las áreas de la organización y no únicamente una responsabilidad del departamento de Aseguramiento de la Calidad. |
 
 | Numero | 3 |
 |---------|--------|
@@ -260,7 +236,7 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | Link | https://shorturl.at/c0pBO |
 | Inicio | 14:35 min |
 | Duración | 04:48 min |
-| Resumen | Alberto Valle Vera, químico farmacéutico con cerca de 40 años de experiencia en la industria farmacéutica, describe los procesos de fabricación y empaquetado de productos como jarabes, inyectables, cremas y tabletas. Explica que los componentes de empaque, como frascos, etiquetas, insertos y estuches, deben ser previamente aprobados por el área de control de calidad antes de su uso.<br><br>También señala que la industria ha evolucionado desde controles manuales basados en muestreos hacia procesos más tecnificados, orientados a garantizar la calidad y reducir errores. Antes de iniciar la producción se validan los parámetros de los materiales y, durante el proceso, se realizan muestreos periódicos para verificar el cumplimiento de los estándares establecidos.<br><br>Las desviaciones se gestionan mediante procedimientos documentados. Los problemas recurrentes requieren investigaciones más profundas y, en casos críticos, la detención de la producción y la elaboración de informes de desviación. Asimismo, la coordinación entre producción y control de calidad se basa en procedimientos que definen responsabilidades, frecuencias de muestreo y criterios de aceptación, garantizando la trazabilidad y la calidad de los productos farmacéuticos. |
+| Resumen | Alberto Valle Vega, químico farmacéutico con cerca de 40 años de experiencia en la industria farmacéutica, describe los procesos de fabricación y empaquetado de productos como jarabes, inyectables, cremas y tabletas. Explica que los componentes de empaque, como frascos, etiquetas, insertos y estuches, deben ser previamente aprobados por el área de control de calidad antes de su uso.<br><br>También señala que la industria ha evolucionado desde controles manuales basados en muestreos hacia procesos más tecnificados, orientados a garantizar la calidad y reducir errores. Antes de iniciar la producción se validan los parámetros de los materiales y, durante el proceso, se realizan muestreos periódicos para verificar el cumplimiento de los estándares establecidos.<br><br>Las desviaciones se gestionan mediante procedimientos documentados. Los problemas recurrentes requieren investigaciones más profundas y, en casos críticos, la detención de la producción y la elaboración de informes de desviación. Asimismo, la coordinación entre producción y control de calidad se basa en procedimientos que definen responsabilidades, frecuencias de muestreo y criterios de aceptación, garantizando la trazabilidad y la calidad de los productos farmacéuticos. |
 
 | Numero | 2 |
 |---------|--------|
@@ -280,13 +256,13 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 | **Campo** | **Información** |
 | Nombre | Rick |
 | Apellido | Correidos |
-| Edad | 26 |
+| Edad | 25 |
 | Distrito | Lima |
 | Evidencia | ![Entrevista 3 - Segmento 2](../assets/img/chapter2/interview/segmento2/entrevista3-segmento2.png) |
 | Link | https://shorturl.at/c0pBO |
 | Inicio | 24:26 min |
 | Duración | 03:58 min |
-| Resumen | Rick Correidos se desempeña como Supervisor de Producción Farmacéutica y cuenta con más de veinte años de experiencia supervisando procesos de fabricación. Entre sus principales responsabilidades se encuentran el seguimiento de los lotes durante las diferentes etapas de producción, la verificación del cumplimiento de los parámetros establecidos y la coordinación con las áreas de calidad para asegurar la correcta ejecución de los procesos productivos. Para desarrollar sus actividades utiliza computadoras de escritorio y laptops, apoyándose principalmente en herramientas como Microsoft Excel, correos electrónicos y sistemas internos de gestión documental.<br><br>Para realizar el seguimiento de la producción, utiliza registros de fabricación, formularios físicos y hojas de cálculo donde se documentan los parámetros operativos, controles realizados y estados de cada lote. Asimismo, considera que la información más importante para la toma de decisiones incluye el estado de los lotes, los resultados de control de calidad, las desviaciones reportadas, la disponibilidad de materiales y el cumplimiento de las especificaciones de producción. Sin embargo, señala que una de las principales dificultades se presenta al consultar el historial de un lote, ya que la información suele encontrarse distribuida entre documentos físicos, correos electrónicos, registros archivados y diversas fuentes de información.<br><br>Cuando ocurre una incidencia o desviación durante la fabricación, esta es registrada y comunicada al área de Calidad para su evaluación e investigación. La coordinación entre Producción y Calidad es constante, aunque en ocasiones puede resultar lenta debido a la dependencia de documentación física, correos electrónicos y validaciones manuales. En su opinión, una de las principales oportunidades de mejora consiste en implementar una plataforma centralizada que integre la información de producción, calidad y trazabilidad de los lotes, permitiendo acceder rápidamente a los registros, fortalecer la comunicación entre áreas y facilitar las actividades de seguimiento, auditoría y toma de decisiones. |
+| Resumen | Rick Correidos se desempeña como Supervisor de Producción Farmacéutica y cuenta con más de tres años de experiencia supervisando procesos de fabricación. Entre sus principales responsabilidades se encuentran el seguimiento de los lotes durante las diferentes etapas de producción, la verificación del cumplimiento de los parámetros establecidos y la coordinación con las áreas de calidad para asegurar la correcta ejecución de los procesos productivos. Para desarrollar sus actividades utiliza computadoras de escritorio y laptops, apoyándose principalmente en herramientas como Microsoft Excel, correos electrónicos y sistemas internos de gestión documental.<br><br>Para realizar el seguimiento de la producción, utiliza registros de fabricación, formularios físicos y hojas de cálculo donde se documentan los parámetros operativos, controles realizados y estados de cada lote. Asimismo, considera que la información más importante para la toma de decisiones incluye el estado de los lotes, los resultados de control de calidad, las desviaciones reportadas, la disponibilidad de materiales y el cumplimiento de las especificaciones de producción. Sin embargo, señala que una de las principales dificultades se presenta al consultar el historial de un lote, ya que la información suele encontrarse distribuida entre documentos físicos, correos electrónicos, registros archivados y diversas fuentes de información.<br><br>Cuando ocurre una incidencia o desviación durante la fabricación, esta es registrada y comunicada al área de Calidad para su evaluación e investigación. La coordinación entre Producción y Calidad es constante, aunque en ocasiones puede resultar lenta debido a la dependencia de documentación física, correos electrónicos y validaciones manuales. En su opinión, una de las principales oportunidades de mejora consiste en implementar una plataforma centralizada que integre la información de producción, calidad y trazabilidad de los lotes, permitiendo acceder rápidamente a los registros, fortalecer la comunicación entre áreas y facilitar las actividades de seguimiento, auditoría y toma de decisiones. |
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -353,12 +329,14 @@ A partir del análisis de las entrevistas y la información recopilada sobre los
 **1) Segmento 1: Especialista de Aseguramiento y Control de Calidad (QA/QC)**
 
 Para este segmento se elaboró el User Persona María México, tomando como referencia el perfil de los profesionales responsables de las actividades de aseguramiento y control de calidad dentro de laboratorios farmacéuticos. Se consideraron factores como su experiencia en validaciones, revisión documental, verificación de equipos y evaluación de personal analista, así como su participación en la gestión de protocolos, registros y auditorías regulatorias. Sus principales frustraciones se relacionan con la dependencia de procesos manuales para revisar cálculos, informes y documentación antes de registrar los resultados en los sistemas de la organización, lo que incrementa el tiempo invertido en tareas operativas y dificulta la preparación de evidencias para inspecciones y auditorías. Asimismo, se tomó en cuenta su necesidad de disponer de una plataforma que centralice la información de calidad, facilite la trazabilidad de los lotes, automatice la generación de reportes y reduzca la carga administrativa asociada a la gestión documental, permitiéndole dedicar más tiempo a actividades de supervisión y mejora continua de los procesos de calidad.
+
 ![User - Segmento 1](../assets/img/chapter2/interview/segmento1/user-persona1.png)
 
 
 **2) Segmento 2: Jefe o Supervisor de Producción Farmacéutica**
 
 Para este segmento se elaboró el User Persona Alberto Valle Vega. Se consideraron factores como su amplia experiencia en la industria farmacéutica, su responsabilidad en la supervisión de los procesos de fabricación y su participación en la coordinación con las áreas de aseguramiento y control de calidad. Sus principales motivaciones están orientadas a garantizar que la producción se desarrolle conforme a los procedimientos establecidos, manteniendo la calidad, la trazabilidad y el cumplimiento de los estándares regulatorios durante todas las etapas de fabricación. Entre sus principales dificultades se encuentra el acceso oportuno a información consolidada sobre los lotes en producción, así como la gestión y comunicación de incidencias que requieren seguimiento y documentación formal. Asimismo, se tomó en cuenta su necesidad de disponer de herramientas que faciliten la consulta del historial de producción, mejoren la coordinación entre las diferentes áreas involucradas y permitan acceder a información confiable para la toma de decisiones operativas, contribuyendo a una gestión más eficiente y a la reducción de errores durante el proceso productivo.
+
 ![User - Segmento 2](../assets/img/chapter2/interview/segmento2/user-persona2.png)
 
 ### 2.3.2. User Task Matrix
@@ -463,27 +441,63 @@ En este mapa se analizó a Alberto Valle, jefe de producción farmacéutica con 
 
 ## 2.4. Big Picture Event Storming
 
-Para comprender el dominio del negocio de DoofPlus, el equipo realizó una sesión colaborativa de **Big Picture Event Storming** en Miro. Esta dinámica permitió mapear el flujo operativo del laboratorio farmacéutico, el proceso constó de cuatro etapas:
+Para comprender el dominio del negocio de DoofPlus de punta a punta, el equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro, siguiendo la guía paso a paso indicada en el statement (https://bit.ly/bpes-guide). El alcance de la sesión fue el ciclo de vida completo de un lote farmacéutico dentro de un laboratorio cliente: desde que la organización se registra en la plataforma hasta que el lote se libera y sus evidencias se presentan en una auditoría. Los integrantes del equipo trabajaron con la información de las entrevistas (sección 2.2) y los artefactos de needfinding (sección 2.3) como base.
 
-**Step 1 – Generating Domain Events**
-Cada integrante propuso eventos relevantes del negocio en tiempo pasado usando post-its naranjas.
+Tablero de Miro: https://miro.com/app/board/uXjVHl-67N8=/
 
-Link del miro: [https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974](https://miro.com/welcomeonboard/bnZYMkFJdmI5RE9HRkFuaXQzV24zSTBVWnMvNXdMRnZ3NWIyTHl3dDRnalM3MVN5RlV6S3NyK0hMTEI1bm5OdDFHeWZoM1pRMHAydU5pNUlzNjBsQ3crcFdoY0Y2ZkIxYU5GRUhsWk9keCtRVkVrV2toK2NCM3ErTTNqMEV5d21yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=703178381974)
+Antes de generar eventos se cumplieron los pasos 1 a 3 de la guía: se preparó el tablero con una franja de tiempo de izquierda a derecha, se acordó la agenda y se presentó la notación:
 
-![Step 1 - Generating Domain Events](../assets/img/chapter2/event-storming/step1-generating-domain-events.png)
+| Elemento | Color | Uso en la sesión |
+| --- | --- | --- |
+| Domain event | Naranja | Hecho relevante del negocio, redactado en pasado (por ejemplo, "Lote cerrado"). |
+| Actor | Amarillo (pequeño) | Persona o rol que provoca o atiende el evento. |
+| External system | Azul | Sistema u organización externa que interviene (Niubiz, ThingsBoard, Lector RFID, DIGEMID). |
+| Problema u oportunidad (hotspot) | Rosado | Dificultad detectada en la situación actual. |
+| Pivotal event | Línea roja | Evento que cambia de fase el proceso. |
 
-**Step 2 – Sorting Domain Events**
-Se ordenaron los eventos cronológicamente para reflejar las etapas operativas reales del laboratorio, visualizando el ciclo de vida completo de un lote.
+**Step 4 – Generating Domain Events**
 
-![Step 2 - Sorting Domain Events](../assets/img/chapter2/event-storming/step2-sorting-domain-events.png)
+Cada integrante escribió en post-its naranjas, sin orden y en tiempo pasado, los hechos que ocurren en un laboratorio cuando se fabrica y controla un lote. Se obtuvieron 67 eventos que cubren la administración de la plataforma, la gestión documental, la producción, el monitoreo de equipos, el control de calidad, las desviaciones y la auditoría.
 
-**Step 3 – Adding Actors and External Systems**
-Se identificaron los actores (post-its azules, ej. QA/QC, Jefe de Producción) y los sistemas externos.
+Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732289571
 
-![Step 3 - Adding Actors and External Systems](../assets/img/chapter2/event-storming/step3-adding-actors-external-systems.png)
+![Step 4 - Generating Domain Events](../assets/img/chapter2/big-picture/step4-generating-domain-events.jpg)
 
-**Step 4 – Storytelling**
-Se narró la historia completa del flujo de manera secuencial. Durante este proceso no se detectaron incoherencias, lo que permitió al equipo confirmar el orden de los eventos y ratificar su comprensión sobre el funcionamiento del negocio farmacéutico.
+**Step 5 – Sorting Domain Events**
+
+Los eventos se ordenaron cronológicamente de izquierda a derecha. Los resultados alternativos de un mismo momento (por ejemplo, "Materia prima aprobada" o "Materia prima rechazada") se ubicaron en vertical, y los flujos que ocurren en paralelo se separaron en siete swimlanes: Plataforma y administración, Gestión documental, Producción y almacén, Monitoreo de equipos (IoT), Control de calidad y liberación, Desviaciones y CAPA, y Auditoría y cumplimiento. Al ordenar se eliminaron los eventos duplicados.
+
+Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732347233
+
+![Step 5 - Sorting Domain Events](../assets/img/chapter2/big-picture/step5-sorting-domain-events.jpg)
+
+**Step 6 – Adding Actors and External Systems**
+
+Sobre la línea de tiempo se agregaron los actores que provocan cada grupo de eventos (Administrador del laboratorio, Especialista QA/QC y Jefe de Producción) y los sistemas externos con los que interactúa el proceso: Niubiz para el cobro de suscripciones, el Lector RFID en la recepción de insumos, los sensores IoT conectados a ThingsBoard y DIGEMID como entidad que realiza la inspección.
+
+Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732347919
+
+![Step 6 - Adding Actors and External Systems](../assets/img/chapter2/big-picture/step6-actors-external-systems.jpg)
+
+**Step 7 – Storytelling**
+
+Un integrante narró la historia completa de inicio a fin mientras el resto validaba el orden y el significado de cada evento. Durante la narración se registraron en rosado los problemas que hoy enfrentan los laboratorios, tomados de las entrevistas, y se conectaron con flechas los eventos que disparan a otros (por ejemplo, "Parámetro fuera de rango detectado" dispara "Alerta generada", que genera una "Incidencia registrada").
+
+| Problema detectado | Evidencia en las entrevistas |
+| --- | --- |
+| Recepción de insumos registrada en papel | Mariela, que también gestiona la adquisición de insumos, y Rick registran la información en formularios físicos y hojas de cálculo. |
+| Producción espera la aprobación de insumos | Alberto explica que los materiales deben ser aprobados por Calidad antes de usarse y Rick señala que la coordinación es lenta por las validaciones manuales. |
+| Calibraciones controladas en hojas de cálculo | Julia participa en la calibración y calificación de equipos y trabaja con Word y Excel. |
+| Parámetros transcritos a mano | Rick documenta parámetros operativos en registros físicos. |
+| Historial del lote disperso en papel, Excel y correos | Mariela y Rick señalan que reconstruir el historial de un lote es la principal dificultad. |
+| Cálculos analíticos revisados a mano | María revisa cálculos e informes manualmente antes de registrarlos. |
+| Análisis de causa raíz débil | Julia identifica la falta de análisis de causas reales como oportunidad de mejora. |
+| Reunir evidencias para una auditoría toma días | María mantiene registros para auditorías y considera que la generación automática de reportes reduciría su carga; Julia participa en las auditorías. |
+
+Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732393843
+
+![Step 7 - Storytelling](../assets/img/chapter2/big-picture/step7-storytelling.jpg)
+
 ## 2.5. Ubiquitous Language
 
 En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestión documental y la eficiencia en los procesos de calidad de laboratorios y plantas farmacéuticas mediante la plataforma DoofPlus, se ha definido el siguiente **lenguaje ubicuo (ubiquitous language)** para asegurar claridad y consistencia entre desarrolladores, usuarios (QA/QC, Jefes de Producción) y stakeholders:
@@ -492,16 +506,32 @@ En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestió
 |---|---|
 | Batch (Lote) | Cantidad definida de un producto farmacéutico elaborado en un mismo ciclo de fabricación, caracterizada por su homogeneidad. |
 | Batch Record (Expediente de Lote) | Conjunto consolidado de documentos físicos o digitales que proporcionan el historial completo de la producción, controles y distribución de un lote específico. |
+| Master Formula (Fórmula maestra) | Documento aprobado que define los componentes y cantidades de un producto; cada lote se fabrica según una versión aprobada de la fórmula. |
+| Production Order (Orden de producción) | Autorización para fabricar una cantidad planificada de un producto según su fórmula maestra; origina uno o más lotes. |
+| Raw Material (Materia Prima / Insumo) | Toda sustancia, activa o inactiva, que es empleada e incorporada durante el proceso de formulación o fabricación de un producto farmacéutico. Se recibe por lote de proveedor y queda en cuarentena hasta su aprobación. |
+| Production Parameter (Parámetro de Producción) | Variable operativa asociada a una etapa de fabricación cuya información puede registrarse y vincularse al historial de trazabilidad de un lote farmacéutico. |
+| Incident (Incidencia) | Evento anómalo que Producción registra durante la fabricación; si es crítico detiene el lote (On Hold) y puede escalarse a Calidad como desviación. |
+| Traceability (Trazabilidad) | Capacidad de rastrear y reconstruir el historial completo, la aplicación o la ubicación de un lote farmacéutico a lo largo de toda su cadena de producción. |
+| Good Manufacturing Practices / GMP (Buenas Prácticas de Manufactura / BPM) | Conjunto de normativas y lineamientos regulatorios (como los exigidos por DIGEMID) que aseguran que los productos se fabriquen y controlen de forma consistente. |
 | Quality Assurance / QA (Aseguramiento de Calidad) | Conjunto de acciones planificadas y sistemáticas necesarias para garantizar que un producto farmacéutico se fabrique cumpliendo los estándares de calidad exigidos. |
 | Quality Control / QC (Control de Calidad) | Área encargada de ejecutar pruebas, validaciones y muestreos operativos para verificar que los productos o insumos cumplen con especificaciones técnicas precisas. |
-| Good Manufacturing Practices / GMP (Buenas Prácticas de Manufactura / BPM) | Conjunto de normativas y lineamientos regulatorios (como los exigidos por DIGEMID) que aseguran que los productos se fabriquen y controlen de forma consistente. |
-| Deviation (Desviación) | Cualquier alteración, no conformidad o evento imprevisto que se aleje de los procedimientos, protocolos o parámetros establecidos durante el proceso de fabricación. |
-| Traceability (Trazabilidad) | Capacidad de rastrear y reconstruir el historial completo, la aplicación o la ubicación de un lote farmacéutico a lo largo de toda su cadena de producción. |
-| Batch Release (Liberación de Lote) | Aprobación formal otorgada por el área de calidad que certifica que un lote ha sido fabricado según las normativas y parámetros, permitiendo su fase de distribución comercial. |
-| Raw Material (Materia Prima / Insumo) | Toda sustancia, activa o inactiva, que es empleada e incorporada durante el proceso de formulación o fabricación de un producto farmacéutico. |
+| Standard Operating Procedure / SOP (Procedimiento operativo estándar) | Documento controlado que describe paso a paso cómo ejecutar una actividad; solo la versión aprobada vigente puede aplicarse. |
 | Analytical Protocol (Protocolo Analítico) | Documento técnico normado que describe detalladamente los métodos, equipos y criterios de aceptación utilizados para realizar las pruebas de control de un producto. |
+| Quarantine (Cuarentena) | Estado en que un insumo o un lote no puede usarse ni distribuirse hasta que Calidad emita su dictamen. |
+| Out of Specification / OOS (Resultado fuera de especificación) | Resultado analítico que no cumple el rango de aceptación del protocolo; obliga a registrar una desviación. |
+| Deviation (Desviación) | Cualquier alteración, no conformidad o evento imprevisto que se aleje de los procedimientos, protocolos o parámetros establecidos durante el proceso de fabricación. |
+| Root Cause Analysis / RCA (Análisis de causa raíz) | Investigación estructurada (por ejemplo, 5 porqués o Ishikawa) que identifica el origen de una desviación; sin causa raíz no se puede cerrar la desviación. |
+| CAPA (Acción correctiva y preventiva) | Acción con responsable y fecha límite que corrige una desviación y evita su recurrencia; se verifica su eficacia antes de cerrarla. |
+| Batch Release (Liberación de Lote) | Aprobación formal otorgada por el área de calidad que certifica que un lote ha sido fabricado según las normativas y parámetros, permitiendo su fase de distribución comercial. |
+| Certificate of Analysis (Certificado de análisis) | Documento firmado que acredita los resultados analíticos de un lote liberado. |
 | Audit (Auditoría) | Revisión sistemática e independiente, ya sea interna o realizada por entidades regulatorias, para evaluar el estricto cumplimiento de las normativas y reportes de calidad. |
-| Production Parameter (Parámetro de Producción) | Variable operativa asociada a una etapa de fabricación cuya información puede registrarse y vincularse al historial de trazabilidad de un lote farmacéutico. |
+| Finding / Observation (Hallazgo / Observación) | Incumplimiento (hallazgo) o recomendación de mejora (observación) registrado durante una auditoría. |
+| Audit Trail (Registro de auditoría) | Registro inalterable de quién, cuándo, qué y por qué cambió en cada registro de calidad. |
+| Electronic Signature (Firma electrónica) | Confirmación de identidad del usuario con su contraseña al aprobar, revisar o liberar un registro; incluye nombre, fecha, hora y significado. |
+| Calibration (Calibración) | Verificación periódica de un equipo o sensor contra un patrón; si vence, el equipo queda no apto para producción. |
+| Sensor Reading (Lectura de sensor) | Valor de una variable crítica (temperatura, humedad, presión, pH) enviado por un sensor y asociado al lote en curso. |
+| Alert (Alerta) | Aviso generado cuando una lectura sale del rango permitido; puede derivar en una incidencia. |
+| Subscription Plan (Plan de suscripción) | Modalidad comercial de DoofPlus (Standard Lab o Enterprise) que define el precio y los límites de usuarios y sensores. |
 
 **Beneficios esperados del Ubiquitous Language:**
 - Facilita la comunicación directa sin ambigüedades entre desarrolladores de software, especialistas de QA/QC, Jefes de Producción y otros stakeholders.
