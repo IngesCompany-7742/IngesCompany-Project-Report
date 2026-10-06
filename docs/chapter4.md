@@ -114,8 +114,8 @@ Para estructurar los grupos de información de la plataforma se aplican los sigu
 
 Para asegurar la simplicidad y evitar la confusión de los visitantes y usuarios, la representación de los datos se realiza mediante etiquetas que utilizan el mínimo número de palabras posibles, lo que representa la terminología técnica de la industria farmacéutica:
 
-- Landing Page: Se emplean asociaciones de uso estándar como "Features" (para módulos técnicos), "Pricing" (para los planes) y "Request Demo" (para el contacto comercial).
-- Web Application: Las etiquetas operativas evitan ambigüedades. Se utiliza "Lotes" (agrupando el historial de fabricación), "Cuarentena" (asociado a la evaluación de calidad), "Desviaciones" (asociado a alertas IoT y errores) y "Audit Trail" (asociado al registro inmutable de auditoría).
+- Landing Page: las etiquetas de la barra de navegación usan asociaciones estándar de una o dos palabras: "Home", "Features" (módulos técnicos), "Benefits", "About Us", "Plans" (planes y precios) y "Get Started" (acceso a la Web Application). En español latinoamericano se muestran como "Inicio", "Características", "Beneficios", "Nosotros", "Planes" y "Comenzar".
+- Web Application: las etiquetas operativas siguen el Ubiquitous Language de la sección 2.5 y se definen en inglés, idioma por defecto, con su traducción al español: "Batches" (Lotes) agrupa el historial de fabricación, "Quarantine" (Cuarentena) se asocia a la evaluación de calidad, "Deviations & CAPA" (Desviaciones y CAPA) a las incidencias y alertas, y "Audit Trail" (registro de auditoría) al registro inmutable de cambios.
 
 ### 4.2.3. SEO Tags and Meta Tags
 
