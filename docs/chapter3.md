@@ -177,6 +177,7 @@ El Product Backlog de DoofPlus consolida todas las User Stories y Technical Stor
 A continuación, se muestra la gestión del backlog en la herramienta Jira Software, evidenciando la priorización y estimación de las historias.
 
 ![Evidence Product Backlog Jira](../assets/img/chapter3/product-backlog-jira.png)
+
 *Figura: Captura del Product Backlog en Jira Software.*
 
 **Enlace al Product Backlog en Jira:** [click aquí](https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3/backlog?jql=parent+IN+%28UPC-2%2C+UPC-9%2C+UPC-20%29&atlOrigin=eyJpIjoiOWZkY2NhNGFkYzdlNGFmNGJlZTE4MTY1OGVjNjAyZDciLCJwIjoiaiJ9)
