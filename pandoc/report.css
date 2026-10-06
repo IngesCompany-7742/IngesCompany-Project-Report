@@ -1,0 +1,215 @@
+/* Print styles for the project report, close to the GitHub Markdown preview. */
+
+@page {
+  size: A4;
+  margin: 2.2cm 2cm;
+  @top-left {
+    content: "IngesCompany - DoofPlus";
+    font-size: 8pt;
+    color: #57606a;
+  }
+  @top-right {
+    content: "1ASI0729 - Desarrollo de Aplicaciones Open Source";
+    font-size: 8pt;
+    color: #57606a;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 8pt;
+    color: #57606a;
+  }
+}
+
+/* The cover has no header or footer. */
+@page :first {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-right { content: none; }
+}
+
+html {
+  font-family: -apple-system, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: #1f2328;
+}
+
+body {
+  margin: 0;
+}
+
+/* Pandoc's title block is only metadata for the PDF. */
+header#title-block-header {
+  display: none;
+}
+
+/* Cover taken from the HTML block at the top of README.md. */
+.cover {
+  text-align: center;
+  break-after: page;
+}
+
+.cover h2, .cover h3 {
+  margin: 0.3em 0;
+  border: none;
+}
+
+.cover p {
+  margin: 0.2em 0;
+}
+
+.cover img {
+  width: auto;
+  height: 2.8cm;
+}
+
+.cover table {
+  width: auto;
+  margin: 0.4em auto;
+}
+
+/* The cover already ends its page. */
+.cover + hr {
+  display: none;
+}
+
+/* Every chapter starts on a new page; GitHub separators (---) also break pages. */
+h1 {
+  break-before: page;
+}
+
+hr {
+  break-after: page;
+  border: 0;
+  height: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d1d9e0;
+}
+
+h1 { font-size: 1.9em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.05em; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.4em 0 0.6em;
+  font-weight: 600;
+  line-height: 1.25;
+  break-after: avoid;
+}
+
+p, ul, ol, table, blockquote, pre {
+  margin: 0 0 0.9em;
+}
+
+a {
+  color: #0969da;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+/* Images never exceed the page, so tall ones (User Personas, canvases) are scaled down. */
+img {
+  max-width: 100%;
+  max-height: 23cm;
+  break-inside: avoid;
+}
+
+/* No paragraph leaves a single line alone at the top or bottom of a page. */
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+code {
+  font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  background: #eff1f3;
+}
+
+pre {
+  padding: 0.8em;
+  border-radius: 6px;
+  background: #f6f8fa;
+  white-space: pre-wrap;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}
+
+blockquote {
+  padding: 0 1em;
+  color: #59636e;
+  border-left: 0.25em solid #d1d9e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+}
+
+th, td {
+  padding: 4px 8px;
+  border: 1px solid #d1d9e0;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+th {
+  font-weight: 600;
+  background: #f6f8fa;
+}
+
+tr {
+  break-inside: avoid;
+}
+
+/* Photos and logos inside tables keep a reasonable size. */
+td img {
+  max-width: 3.5cm;
+  max-height: 4cm;
+}
+
+/* Table of contents with dotted leaders and page numbers. */
+.toc {
+  break-before: page;
+  break-after: page;
+}
+
+.toc > p {
+  font-size: 1.9em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d1d9e0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.toc > ul {
+  padding-left: 0;
+}
+
+.toc a {
+  color: #1f2328;
+}
+
+/* Headings written as ### **Title** should not look bold in the table of contents. */
+.toc strong {
+  font-weight: inherit;
+}
+
+.toc a::after {
+  content: leader(".") target-counter(attr(href), page);
+}
