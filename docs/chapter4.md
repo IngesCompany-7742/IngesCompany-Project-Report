@@ -744,308 +744,405 @@ Prototipo navegable en Figma: <mark>pegar URL pública del prototipo</mark>
 Video de navegación del prototipo (Microsoft Stream), upc-pre-202620-1asi0730-7742-IngesCompany-prototype-navigation-sprint-1: <mark>pegar URL, timing de inicio y duración</mark>
 
 ## 4.6. Domain-Driven Software Architecture
-La arquitectura de DoofPlus se fundamenta en Domain-Driven Design (DDD) para modelar con precisión las reglas de negocio del sector farmacéutico exigida por DIGEMID. Mediante la delimitación de bounded contexts, se separan claramente las responsabilidades de cada subsistema. En esta sección se presentan los resultados del Event Storming, así como los diagramas de contexto, contenedores y componentes que estructuran la solución.
+La arquitectura de DoofPlus se fundamenta en Domain-Driven Design (DDD). El punto de partida es el Big Picture EventStorming (sección 2.4), que dejó una línea de tiempo de eventos organizada en siete swimlanes, con sus actores, sistemas externos y problemas. En esta sección ese conocimiento se profundiza con un Design-Level EventStorming hasta identificar los bounded contexts y obtener aggregates, commands, policies, read models y sistemas externos por contexto; luego la solución se representa con el modelo C4 (contexto, contenedores y componentes). Los mismos bounded contexts y aggregates se mantienen en los diagramas de clases (sección 4.7), en la base de datos (sección 4.8), en los módulos de la Web Application en Angular y en los paquetes del RESTful API en Spring Boot.
+
+La siguiente tabla resume la trazabilidad entre artefactos:
+
+| Bounded context | Tipo | Swimlanes del Big Picture | Épicas | Aggregates (DLES y clases) | Módulo Angular / paquete Spring |
+| --- | --- | --- | --- | --- | --- |
+| Manufacturing & Batch Management | Core | Producción y almacén | EP04, EP09 (productos y fórmulas) | Product, MasterFormula, RawMaterialLot, ProductionOrder, ProductionBatch | `manufacturing` |
+| Quality & Compliance | Core | Gestión documental, Control de calidad y liberación, Desviaciones y CAPA, Auditoría y cumplimiento | EP03, EP05, EP07, EP08, EP10 | QualityDocument, MaterialApproval, BatchReview, AnalyticalResult, Deviation, Audit, AuditTrailEntry, RegulatoryReport | `quality` |
+| IoT Monitoring | Supporting | Monitoreo de equipos (IoT) | EP06, EP09 (equipos, calibraciones y mantenimiento) | Equipment, IoTDevice, TelemetryReading, Alert | `iot-monitoring` / `iotmonitoring` |
+| Identity & Access Management | Generic | Plataforma y administración, Gestión documental | EP02 | User, ElectronicSignature | `iam` |
+| Organizations & Profiles | Supporting | Plataforma y administración | EP01 (solicitud de demo), EP02 (registro de la organización) | Organization, Profile, DemoRequest | `organizations` |
+| Subscriptions & Payments | Generic | Plataforma y administración | EP11 | Plan, Subscription | `subscriptions` |
+
+Los dashboards (EP08) y las notificaciones entre áreas (EP10) no forman un contexto propio: los dashboards son read models que cada contexto expone y las notificaciones son policies que reaccionan a domain events.
 
 ### 4.6.1. Design-Level Event Storming
-Para identificar los eventos de dominio y profundizar en la arquitectura del sistema, el equipo de IngesCompany llevó a cabo una sesión de Design-Level Event Storming. Esta técnica permitió visualizar y comprender el flujo de eventos, reglas de negocio y dependencias tecnológicas, facilitando la identificación formal de los Contextos Delimitados de DoofPlus.
-El desarrollo del proceso de Domain-Driven Design se realizó de manera colaborativa utilizando la plataforma Miro.
-Enlace al tablero: [click aquí para ver el enlace](https://miro.com/app/board/uXjVHkhKOXE=/)
+
+El equipo realizó el Design-Level EventStorming en Miro siguiendo la agenda propuesta en "The best agenda for Design-Level Event Storming" (EventStorming Journal) y la guía del statement (https://bit.ly/dles-guide). Se trabajó un bounded context a la vez, tomando como punto de partida los eventos del Big Picture que pertenecen a ese contexto. Quality & Compliance, el contexto más grande, se modeló en un solo frame con dos swimlanes: liberación de lotes (documentos, insumos, resultados analíticos y liberación) y desviaciones y auditoría (desviaciones, CAPA, auditorías y reportes regulatorios).
+
+Tablero de Miro: https://miro.com/app/board/uXjVHkhKOXE=/
+
+La agenda de la guía tiene 11 fases. El equipo las aplicó agrupadas en los pasos que ya usaba, y decidió qué fases son opcionales para el proyecto:
+
+| Fase de la guía | Paso en DoofPlus | Cómo se aplicó |
+| --- | --- | --- |
+| 1. The target design | Paso 0: Target design | Se presentó la gramática del Design-Level (actor, read model, command, business rule o external system, domain event y policy). |
+| 2. Domain Events | Paso 1: Timelines | Se copiaron los eventos del Big Picture que pertenecen a cada contexto y se ordenaron en el tiempo. |
+| 3. Commands | Paso 2: Commands | Se escribió, antes de cada evento, la intención que lo provoca. |
+| 4. Actors or policies | Paso 3: Actors and policies | Cada command se antecedió por el actor que lo ejecuta o por la policy que lo dispara automáticamente. |
+| 5 y 6. Blank stickies / Read models and UX mock-ups | Paso 4: Read models | Se registró la información que el actor necesita ver para decidir. Los mock-ups en post-its blancos se omitieron porque las pantallas ya se diseñaron en Figma (sección 4.4); cada read model corresponde a una vista de la Web Application. |
+| 7. External systems | Paso 5: External systems | Se ubicaron los sistemas externos entre el command y el evento. |
+| 8 a 11. Business rules, aggregates of business rules y aggregate names | Paso 6: Business rules y aggregates | Donde no interviene un sistema externo se escribió la regla de negocio que protege el command (tomada de los criterios de aceptación de la User Story correspondiente); las reglas relacionadas se apilaron y el grupo recibió el nombre del aggregate. |
+| Opcional después del taller: Bounded Context Canvas y Example Mapping | Paso 7: Bounded contexts | Se agruparon los aggregates en bounded contexts y se trazó el context map. El Bounded Context Canvas no se elaboró (es opcional) y el Example Mapping se reemplazó por los escenarios Gherkin de la sección 3.1. |
+
+Notación usada en el tablero: domain events en naranja, commands en azul, actores en amarillo pequeño, policies en lila, read models en verde, sistemas externos en rosado, business rules en amarillo y aggregates como bloques amarillos que agrupan sus reglas.
+
+#### Paso 0: Target design
+
+Antes de modelar, se acordó la "imagen que lo explica todo": un actor consulta un read model, decide y ejecuta un command; el command se valida con las business rules del aggregate o invoca a un sistema externo; el resultado es un domain event, que puede disparar una policy y con ella un nuevo command.
+
+Frame en Miro: https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685756367551
+
+![Target design](../assets/img/chapter4/design-level-event-storming/target-design.jpg)
+
 #### Paso 1: Timelines
-Organizamos los eventos (post-its naranjas) en líneas de tiempo para visualizar la secuencia lógica de las operaciones de la plataforma SaaS y farmacéutica. Identificamos los siguientes flujos principales:
 
-- Flujo B2B y Organizaciones: Registro de empresas clientes y configuración de perfiles corporativos.
+Se organizaron en una línea de tiempo vertical los eventos de cada contexto, con los resultados alternativos en la columna "Alternativa" (por ejemplo, "Documento aprobado" o "Documento rechazado"). Al revisar qué dispara cada evento, en este nivel se agregaron eventos que faltaban en el Big Picture: "Demostración solicitada", "Plan de suscripción seleccionado", "Firma electrónica registrada", "Equipo registrado", "Sensor IoT registrado", "Aprobación de insumos solicitada a Calidad", "Mantenimiento preventivo realizado", "Lote puesto en espera" y "Acción CAPA vencida"; además, "Usuario registrado" se renombró como "Usuario dado de alta en la organización". También aparecen eventos de detalle que no eran relevantes en la vista general, como "Usuario autenticado", "Inicio de sesión fallido", "Cuenta bloqueada", "Planta agregada", "Perfil actualizado" y "Alerta reconocida".
 
-- Flujo de Suscripciones (SaaS): Selección de planes, procesamiento de pagos y renovación o cancelación de suscripciones.
+**Identity & Access Management**
 
-- Flujo de Identidad y Accesos: Inicio de sesión con autenticación de doble factor y cierre de sesión seguro.
+![Identity & Access Management - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/iam-1-timelines.jpg)
 
-- Flujo de Inventario: Registro de fármacos, recepción de materias primas y asignación de ubicación en almacén.
+**Organizations & Profiles**
 
-- Flujo de Fabricación: Creación de lotes, aprobación de órdenes, inicio y cierre de producción, y solicitud de liberación.
+![Organizations & Profiles - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/org-1-timelines.jpg)
 
-- Flujo de Calidad y Cumplimiento: Creación y publicación de protocolos, investigación de desviaciones (CAPA), revisión de lotes, generación de reportes y expedientes de trazabilidad.
+**Subscriptions & Payments**
 
-- Flujo de Telemetría IoT: Registro automático de variables críticas, calibración de maquinaria y generación de alertas operativas o ambientales.
+![Subscriptions & Payments - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/sub-1-timelines.jpg)
 
-![timeline IAM](../assets/img/chapter4/design-level-event-storming/timelines/timeline-iam.png)
-![timeline lotes](../assets/img/chapter4/design-level-event-storming/timelines/timeline-lotes.png)
-![timeline telemetria](../assets/img/chapter4/design-level-event-storming/timelines/timeline-telemetria.png)
-![timeline calidad](../assets/img/chapter4/design-level-event-storming/timelines/timeline-calidad.png)
-![timeline calidad2](../assets/img/chapter4/design-level-event-storming/timelines/timeline-calidad2.png)
-![timeline calidad3](../assets/img/chapter4/design-level-event-storming/timelines/timeline-calidad3.png)
-![timeline SaaS](../assets/img/chapter4/design-level-event-storming/timelines/timeline-saas.png)
-![timeline B2B](../assets/img/chapter4/design-level-event-storming/timelines/timeline-b2b.png)
+**Manufacturing & Batch Management**
+
+![Manufacturing & Batch Management - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/mfg-1-timelines.jpg)
+
+**IoT Monitoring**
+
+![IoT Monitoring - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/iot-1-timelines.jpg)
+
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
+
+![Quality & Compliance - paso 1](../assets/img/chapter4/design-level-event-storming/timelines/qa-1-timelines.jpg)
 
 #### Paso 2: Commands
-Definimos los comandos (post-its azules, acciones en verbo imperativo) que los actores ejecutan en el sistema para mutar el estado de la aplicación:
 
-| Actor / Sistema | Comandos Principales (Intenciones de acción)                                                                                                                                                                                             |
-| :--- |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Administrador de Sistema** | Registrar empresa cliente, Asignar roles y permisos, Suspender cuenta de empresa, Seleccionar plan de suscripción, Procesar pago, Cancelar suscripción.                                                                                  |
-| **Especialista de control de calidad (QA/QC)** | Iniciar sesión, Crear protocolo, Aprobar protocolo, Publicar versión, Clasificar desviación, Registrar acción correctiva, Iniciar auditoría, Registrar hallazgo, Evaluar lote, Aprobar distribución, Generar reporte.                    |
-| **Jefe de Producción Farmacéutica** | Crear lote, Iniciar producción, Actualizar estado, Cerrar lote, Solicitar liberación, Registrar fármaco, Recibir materia prima, Calibrar maquinaria de producción, Monitorear producción.                                                |
-| **Sistemas Internos / IoT** | Renovar suscripción, Rechazar pago, Registrar variables críticas, Registrar desviaciones, Generar alertas.                                                                                                                               |
-![commands IAM](../assets/img/chapter4/design-level-event-storming/commands/commands-iam.png)
-![commands lotes](../assets/img/chapter4/design-level-event-storming/commands/commands-lotes.png)
-![commands telemetria](../assets/img/chapter4/design-level-event-storming/commands/commands-telemetria.png)
-![commands calidad](../assets/img/chapter4/design-level-event-storming/commands/commands-calidad.png)
-![commands calidad2](../assets/img/chapter4/design-level-event-storming/commands/commands-calidad2.png)
-![commads SaaS](../assets/img/chapter4/design-level-event-storming/commands/commands-saas.png)
-![commands B2B](../assets/img/chapter4/design-level-event-storming/commands/commands-b2b.png)
+Cada evento se antecedió por el command que lo provoca, redactado en imperativo (por ejemplo, "Crear lote" produce "Lote creado"). Un mismo command puede terminar en dos eventos alternativos, como "Aprobar orden de producción", que produce "Orden de producción aprobada" u "Orden de producción rechazada".
 
-#### Paso 3: Policies & actors
+**Identity & Access Management**
 
-Identificamos a los actores del sistema (post-its amarillos: Especialista QA/QC, Jefe de Producción, Administrador) y las reglas de negocio automáticas implícitas en el flujo para garantizar el cumplimiento de las BPM:
+![Identity & Access Management - paso 2](../assets/img/chapter4/design-level-event-storming/commands/iam-2-commands.jpg)
 
-*   **CUANDO** se intenta iniciar sesión **ENTONCES** exigir validación mediante *Google Authenticator*[cite: 4].
-*   **CUANDO** se procesa un pago a través de la pasarela **ENTONCES** renovar la suscripción y activar el panel[cite: 9].
-*   **CUANDO** se recibe materia prima **ENTONCES** actualizar el *Inventario de Materia Prima y Almacén*[cite: 5].
-*   **CUANDO** los dispositivos IoT registran desviaciones de parámetros **ENTONCES** disparar el motor de alertas y generar alerta ambiental de almacén[cite: 6].
-*   **CUANDO** se identifica una causa raíz **ENTONCES** registrar acción correctiva en el registro CAPA[cite: 7].
-*   **CUANDO** el Especialista QA aprueba la distribución **ENTONCES** generar reporte y certificado de calidad[cite: 8].
-*   **CUANDO** se cierra el lote de producción **ENTONCES** habilitar la solicitud de liberación[cite: 5].
-    ![policies lotes](../assets/img/chapter4/design-level-event-storming/policies/policy-lotes.png)
-    ![policies telemetria](../assets/img/chapter4/design-level-event-storming/policies/policy-telemetria.png)
-    ![policies calidad](../assets/img/chapter4/design-level-event-storming/policies/policy-calidad.png)
-    ![policies saas](../assets/img/chapter4/design-level-event-storming/policies/policy-saas.png)
+**Organizations & Profiles**
 
-#### Paso 4: Read Models
+![Organizations & Profiles - paso 2](../assets/img/chapter4/design-level-event-storming/commands/org-2-commands.jpg)
 
-Los Modelos de Lectura (post-its verdes) representan las vistas de consulta críticas que los actores necesitan para tomar decisiones:
+**Subscriptions & Payments**
 
-*   **Administración B2B:** *Directorio de Empresas Clientes*, *Matriz de Roles y Permisos*, *Tabla de Planes de Suscripción*[cite: 9].
-*   **Control de Acceso:** *Pantalla de Verificación 2FA*, *Estado de Sesión*[cite: 4].
-*   **Producción y Logística:** *Panel de Control de Lote*, *Dashboard de Tendencias Operativas*, *Catálogo Maestro de Fármacos*, *Inventario de Materia Prima y Almacén*[cite: 5].
-*   **Control de Calidad (QA/QC):** *Bandeja de Solicitudes de Calidad*, *Panel de Resultados de Laboratorio*, *Agenda y Registro de Auditorías*[cite: 7, 8].
-*   **Monitoreo Industrial:** *Historial de Calibración de Maquinaria*, *Dashboard de Telemetría en Tiempo Real*, *Panel de Alertas y Desviaciones Sensoriales*[cite: 6].
-    ![rm IAM](../assets/img/chapter4/design-level-event-storming/read-models/rm-iam.png)
-    ![rm lotes](../assets/img/chapter4/design-level-event-storming/read-models/rm-lotes.png)
-    ![rm telemetria](../assets/img/chapter4/design-level-event-storming/read-models/rm-telemetria.png)
-    ![rm calidad](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad.png)
-    ![rm calidad2](../assets/img/chapter4/design-level-event-storming/read-models/rm-calidad2.png)
-    ![rm SaaS](../assets/img/chapter4/design-level-event-storming/read-models/rm-saas.png)
-    ![rm B2B](../assets/img/chapter4/design-level-event-storming/read-models/rm-b2b.png)
+![Subscriptions & Payments - paso 2](../assets/img/chapter4/design-level-event-storming/commands/sub-2-commands.jpg)
 
-#### Paso 5: External Systems
+**Manufacturing & Batch Management**
 
-Mapeamos los sistemas e infraestructura externos (post-its rosados) que interactúan con nuestro dominio central para delegar responsabilidades específicas:
+![Manufacturing & Batch Management - paso 2](../assets/img/chapter4/design-level-event-storming/commands/mfg-2-commands.jpg)
 
-*   **Google Authenticator:** Utilizado en el proceso de inicio de sesión para el control de doble factor (2FA)[cite: 4].
-*   **Pasarela de Pago:** Sistema financiero externo para procesar renovaciones o rechazar pagos de las suscripciones SaaS[cite: 9].
-*   **Dispositivos IoT:** Hardware en planta encargado de capturar y emitir parámetros y variables críticas hacia el sistema[cite: 6].
-*   **Motor de Alertas:** Servicio externo o microservicio encargado de despachar las alertas ambientales generadas por desviaciones de la maquinaria[cite: 6].
-    ![es IAM](../assets/img/chapter4/design-level-event-storming/external-systems/es-iam.png)
-    ![es lotes](../assets/img/chapter4/design-level-event-storming/external-systems/es-lotes.png)
-    ![es telemetria](../assets/img/chapter4/design-level-event-storming/external-systems/es-telemetria.png)
-    ![es calidad](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad.png)
-    ![es calidad2](../assets/img/chapter4/design-level-event-storming/external-systems/es-calidad2.png)
-    ![es SaaS](../assets/img/chapter4/design-level-event-storming/external-systems/es-saas.png)
-    ![es B2B](../assets/img/chapter4/design-level-event-storming/external-systems/es-b2b.png)
+**IoT Monitoring**
 
-#### Paso 6: Aggregates
+![IoT Monitoring - paso 2](../assets/img/chapter4/design-level-event-storming/commands/iot-2-commands.jpg)
 
-Agrupamos los comandos y eventos en Agregados (grandes bloques amarillos centrales), los cuales actúan como las entidades transaccionales raíz que protegen la consistencia de los datos:
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
 
-*   **Perfil Corporativo y Tenant:** Centraliza los datos de la empresa cliente y la asignación de roles.
-*   **Motor de Facturación y Suscripción:** Gestiona el estado del plan, pagos y cuenta de la empresa[cite: 9].
-*   **Módulo de Credenciales y Sesión:** Controla el ciclo de vida de la sesión autenticada[cite: 4].
-*   **Inventario y Materia Prima:** Gestiona el catálogo de fármacos y la recepción logística[cite: 5].
-*   **Lote de Producción:** Controla las órdenes, estados e incidencias del ciclo de manufactura[cite: 5].
-*   **Registro de Maquinaria y Telemetría:** Agrupa la calibración de equipos, ingesta de parámetros y el cálculo de indicadores IoT[cite: 6].
-*   **Repositorio Documental y Protocolos:** Controla las versiones y aprobaciones de los estándares de calidad[cite: 7].
-*   **Registro de Investigación y CAPA:** Gestiona las desviaciones de calidad, análisis de causa raíz y verificaciones[cite: 7].
-*   **Expediente de Trazabilidad y Auditoría:** Consolida rastreos de lotes, auditorías, hallazgos y certificados de liberación final[cite: 7, 8].
-    ![aggregate IAM](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-iam.png)
-    ![aggregate lotes](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-lotes.png)
-    ![aggregate telemetria](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-telemetria.png)
-    ![aggregate calidad](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-calidad.png)
-    ![aggregate SaaS](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-saas.png)
-    ![aggregate B2B](../assets/img/chapter4/design-level-event-storming/aggregates/aggregate-b2b.png)
+![Quality & Compliance - paso 2](../assets/img/chapter4/design-level-event-storming/commands/qa-2-commands.jpg)
 
-#### Paso 7: Bounded Contexts
+#### Paso 3: Actors and policies
 
-Finalmente, consolidamos la arquitectura modular de DoofPlus definiendo formalmente 6 *Bounded Contexts* a partir de la agrupación de los Agregados:
+Se identificó quién ejecuta cada command: Administrador del laboratorio, Especialista QA/QC, Jefe de Calidad, Jefe de Producción, Auditor interno, Responsable de la acción CAPA y, para las tareas programadas, el sistema. Cuando un command se ejecuta automáticamente, el actor se reemplazó por una policy. Las principales policies son:
 
-| Bounded Context | Agregados Core y Responsabilidad |
-| :--- | :--- |
-| **BC: Gestión de Organizaciones y Perfiles (B2B)** | Contiene *Perfil Corporativo y Tenant*. Gestiona el registro multi-tenant y la matriz de roles y permisos del sistema. |
-| **BC: Gestión de suscripciones y pagos (SaaS)** | Contiene el *Motor de Facturación y Suscripción*. Administra los planes comerciales y la integración con la pasarela de pagos[cite: 9]. |
-| **BC: Gestión de identidades y accesos (IAM)** | Contiene el *Módulo de Credenciales y Sesión*. Responsable de la seguridad, login y validación 2FA[cite: 4]. |
-| **BC: Fabricación y gestión de lotes** | Agrupa *Inventario y Materia Prima* y *Lote de Producción*. Coordina todo el flujo operativo de manufactura farmacéutica[cite: 5]. |
-| **BC: Telemetría y monitorización IoT** | Contiene el *Registro de Maquinaria y Telemetría*. Procesa la ingesta de datos industriales y el disparo del motor de alertas[cite: 6]. |
-| **BC: Gestión de calidad y cumplimiento** | Agrupa el *Repositorio Documental*, *Registro CAPA* y el *Expediente de Trazabilidad y Auditoría*. Asegura las certificaciones, auditorías y liberación de producto[cite: 7, 8]. |
-![bc IAM](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-iam.png)
-![bc lotes](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-lotes.png)
-![bc telemetria](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-telemetria.png)
-![bc calidad](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-calidad.png)
-![bc SaaS](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-saas.png)
-![bc B2B](../assets/img/chapter4/design-level-event-storming/bounded-contexts/bc-b2b.png)
+| Bounded context | Policy (cuando ocurre…, entonces…) |
+| --- | --- |
+| IAM | Cuando ocurren 5 intentos fallidos de inicio de sesión, bloquear la cuenta 15 minutos. |
+| Organizations | Cuando se registra la organización, crear la cuenta del administrador en IAM. |
+| Subscriptions | Cuando se activa la suscripción, habilitar los límites del plan (usuarios y sensores). |
+| Manufacturing | Cuando se recibe materia prima, solicitar su aprobación a Calidad. |
+| Manufacturing | Cuando se aprueba la orden, planificar la producción. |
+| Manufacturing | Cuando la incidencia es crítica, poner el lote en espera; cuando se escala, registrar una desviación en Quality. |
+| Manufacturing | Cuando se solicita la liberación, poner el lote en cuarentena en Quality. |
+| IoT Monitoring | Cuando llega una lectura, evaluar las reglas de alerta; cuando un parámetro sale de rango, generar una alerta. |
+| IoT Monitoring | Cuando vence la calibración, marcar el equipo como no apto y notificar. |
+| Quality | Cuando un resultado sale de especificación, marcarlo OOS y registrar una desviación. |
+| Quality | Cuando se libera el lote, emitir el certificado y actualizar el lote en Manufacturing. |
+| Quality | Cuando se cierra una desviación, reevaluar el lote afectado. |
+
+**Identity & Access Management**
+
+![Identity & Access Management - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/iam-3-actors-policies.jpg)
+
+**Organizations & Profiles**
+
+![Organizations & Profiles - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/org-3-actors-policies.jpg)
+
+**Subscriptions & Payments**
+
+![Subscriptions & Payments - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/sub-3-actors-policies.jpg)
+
+**Manufacturing & Batch Management**
+
+![Manufacturing & Batch Management - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/mfg-3-actors-policies.jpg)
+
+**IoT Monitoring**
+
+![IoT Monitoring - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/iot-3-actors-policies.jpg)
+
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
+
+![Quality & Compliance - paso 3](../assets/img/chapter4/design-level-event-storming/actors-policies/qa-3-actors-policies.jpg)
+
+#### Paso 4: Read models
+
+Se registró la información que cada actor consulta antes de decidir. Estos read models son la base de las vistas de la Web Application y de los dashboards: por ejemplo, "Panel de control del lote" (GxP Batch Execution & Management Console), "Tablero de desviaciones y CAPA" (Critical Deviations & CAPA Actions Control), "Panel de resultados de laboratorio" (Analytical Results Entry & Validation), "Panel de alertas" (Environmental & Equipment Monitoring) y "Audit trail" (Cross-Traceability & Audit Center).
+
+**Identity & Access Management**
+
+![Identity & Access Management - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/iam-4-read-models.jpg)
+
+**Organizations & Profiles**
+
+![Organizations & Profiles - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/org-4-read-models.jpg)
+
+**Subscriptions & Payments**
+
+![Subscriptions & Payments - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/sub-4-read-models.jpg)
+
+**Manufacturing & Batch Management**
+
+![Manufacturing & Batch Management - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/mfg-4-read-models.jpg)
+
+**IoT Monitoring**
+
+![IoT Monitoring - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/iot-4-read-models.jpg)
+
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
+
+![Quality & Compliance - paso 4](../assets/img/chapter4/design-level-event-storming/read-models/qa-4-read-models.jpg)
+
+#### Paso 5: External systems
+
+Se ubicaron los sistemas externos en el punto donde intervienen: Niubiz (pago y renovación de suscripciones), ThingsBoard (registro de sensores e ingesta de lecturas), SendGrid (invitaciones, alertas y notificaciones por correo), el Lector RFID (recepción de materias primas), la app autenticadora del usuario (códigos TOTP) y DIGEMID (inspección). Respecto del tablero original se corrigieron tres elementos: "Registro en la base de datos" no es un sistema externo (la base de datos es parte de la solución), el "Motor de alertas" es lógica propia del contexto IoT Monitoring y Google Authenticator no expone un API: solo genera el código que el usuario ingresa.
+
+**Identity & Access Management**
+
+![Identity & Access Management - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/iam-5-external-systems.jpg)
+
+**Organizations & Profiles**
+
+![Organizations & Profiles - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/org-5-external-systems.jpg)
+
+**Subscriptions & Payments**
+
+![Subscriptions & Payments - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/sub-5-external-systems.jpg)
+
+**Manufacturing & Batch Management**
+
+![Manufacturing & Batch Management - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/mfg-5-external-systems.jpg)
+
+**IoT Monitoring**
+
+![IoT Monitoring - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/iot-5-external-systems.jpg)
+
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
+
+![Quality & Compliance - paso 5](../assets/img/chapter4/design-level-event-storming/external-systems/qa-5-external-systems.jpg)
+
+#### Paso 6: Business rules y aggregates
+
+Donde no interviene un sistema externo se escribió la business rule que el command debe cumplir. Las reglas se tomaron de los criterios de aceptación de las User Stories (el identificador aparece en el post-it), por ejemplo "Número de lote único (US14)", "Solo materia prima aprobada (US17)" o "Requiere causa raíz y CAPA verificadas (US19)". Las reglas que protegen los mismos datos se apilaron y cada grupo recibió el nombre de su aggregate:
+
+| Bounded context | Aggregates | Ejemplo de invariante |
+| --- | --- | --- |
+| IAM | User, ElectronicSignature | Una cuenta se bloquea tras 5 intentos fallidos; firmar exige reingresar la contraseña. |
+| Organizations & Profiles | DemoRequest, Organization, Profile | El RUC de la organización es válido y único. |
+| Subscriptions & Payments | Subscription (con su Plan) | La suscripción se activa solo si Niubiz autoriza el cobro. |
+| Manufacturing & Batch Management | Product, MasterFormula, RawMaterialLot, ProductionOrder, ProductionBatch | Un lote solo consume materia prima aprobada y solo Calidad puede liberarlo. |
+| IoT Monitoring | Equipment, IoTDevice, TelemetryReading, Alert | Un equipo con calibración vencida no puede asignarse a un lote. |
+| Quality & Compliance | QualityDocument, MaterialApproval, BatchReview, AnalyticalResult, Deviation, Audit, RegulatoryReport | Un lote con un resultado OOS sin desviación cerrada no puede liberarse. |
+
+Frames en Miro por bounded context. Debajo de los frames finales, el tablero tiene la sección "DLES paso a paso por bounded context", con una fila por contexto y un frame por paso (Pasos 1 a 6); el enlace lleva al Paso 1 de cada fila:
+
+| Bounded context | Frame final | Pasos 1 a 6 |
+| --- | --- | --- |
+| Identity & Access Management | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685754766070 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685853215191 |
+| Organizations & Profiles | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685754766071 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685853215761 |
+| Subscriptions & Payments | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685754766072 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685853249317 |
+| Manufacturing & Batch Management | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685754766787 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685853302296 |
+| IoT Monitoring | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685754766073 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685853335403 |
+| Quality & Compliance | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764686149839907 | https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764686150007814 |
+
+**Identity & Access Management**
+
+![Identity & Access Management - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/iam-6-aggregates.jpg)
+
+**Organizations & Profiles**
+
+![Organizations & Profiles - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/org-6-aggregates.jpg)
+
+**Subscriptions & Payments**
+
+![Subscriptions & Payments - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/sub-6-aggregates.jpg)
+
+**Manufacturing & Batch Management**
+
+![Manufacturing & Batch Management - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/mfg-6-aggregates.jpg)
+
+**IoT Monitoring**
+
+![IoT Monitoring - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/iot-6-aggregates.jpg)
+
+**Quality & Compliance** (swimlane 1: liberación de lotes; swimlane 2: desviaciones y auditoría)
+
+![Quality & Compliance - paso 6](../assets/img/chapter4/design-level-event-storming/aggregates/qa-6-aggregates.jpg)
+
+#### Paso 7: Bounded contexts
+
+Los aggregates se agruparon en seis bounded contexts, siguiendo los swimlanes del Big Picture y el lenguaje que comparten sus eventos, con nombres en inglés alineados al Ubiquitous Language y al código. Respecto del Design-Level original del equipo se mantuvieron los seis contextos y se refinaron sus aggregates: "Módulo de Credenciales y Sesión" pasó a User (la sesión se maneja con JWT y no se persiste), la matriz de roles pasó de Organizations a IAM, "Perfil Corporativo y Tenant" se dividió en Organization y Profile, "Inventario y Materia Prima" se separó en Product, MasterFormula y RawMaterialLot, "Lote de Producción" en ProductionOrder y ProductionBatch, "Registro de Maquinaria y Telemetría" en Equipment, IoTDevice, TelemetryReading y Alert, y "Expediente de Trazabilidad y Auditoría" en MaterialApproval, BatchReview, AnalyticalResult, Audit y AuditTrailEntry. Así cada aggregate protege un conjunto pequeño de reglas y se corresponde con una clase raíz y sus tablas.
+
+El context map muestra cómo se integran los contextos. Las consultas entre contextos pasan por un Anti-Corruption Layer (fachada `ContextFacade` del contexto proveedor y servicio `External…Service` del consumidor); las decisiones de Quality hacia Manufacturing se comunican con domain events.
+
+Frame en Miro: https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=3458764685756367552
+
+![Context map](../assets/img/chapter4/design-level-event-storming/context-map.jpg)
+
+| Contexto consumidor | Contexto proveedor | Integración | Motivo |
+| --- | --- | --- | --- |
+| Organizations & Profiles | IAM | ACL (`IamContextFacade`) | Crear la cuenta del administrador al registrar la organización. |
+| Quality & Compliance | IAM | ACL (`IamContextFacade`) | Registrar firmas electrónicas en aprobaciones y liberaciones. |
+| Subscriptions & Payments | Organizations & Profiles | ACL (`OrganizationsContextFacade`) | Validar la organización suscriptora. |
+| IoT Monitoring | Subscriptions & Payments | ACL (`SubscriptionsContextFacade`) | Respetar el límite de sensores del plan. |
+| Manufacturing | Quality & Compliance | ACL (`QualityContextFacade`) | Solicitar la aprobación de insumos y la cuarentena del lote. |
+| Manufacturing | Quality & Compliance | Domain events (`MaterialApprovalDecided`, `BatchReleaseDecided`) | Actualizar el estado del insumo y del lote con el dictamen de Calidad. |
+| Manufacturing e IoT Monitoring | Entre sí | ACL (`IotMonitoringContextFacade`, `ManufacturingContextFacade`) | Asignar sensores al lote y verificar que el lote esté en curso. |
 
 ### 4.6.2. Software Architecture Context Diagram
 
-En esta sección, el equipo presenta el diagrama de contexto (Nivel 1 del modelo C4), el cual ofrece una visión general de alto nivel de la arquitectura de la plataforma **Doof-Plus**. El objetivo de este nivel es ilustrar el sistema como una "caja negra" central, delimitando claramente sus fronteras frente a los usuarios humanos que lo operan y los sistemas externos de los cuales depende para ejecutar sus flujos de negocio.
+El diagrama de contexto (nivel 1 del modelo C4) muestra a DoofPlus como un único sistema rodeado por sus usuarios y los sistemas externos identificados en el EventStorming. Los usuarios son el visitante de un laboratorio (Landing Page), el Especialista QA/QC y el Jefe de Producción (segmentos objetivo) y el Administrador del laboratorio. Los sistemas externos son ThingsBoard, que envía la telemetría de los sensores; Niubiz, que autoriza los cobros de las suscripciones; y SendGrid, que entrega correos. La app autenticadora del usuario genera los códigos TOTP del segundo factor sin integración por API, por eso se muestra con línea punteada. Los diagramas C4 se elaboraron con Structurizr DSL (Diagram-as-Code) y se renderizaron con Structurizr, la herramienta de referencia del modelo C4; todas las vistas salen de un único modelo (`assets/diagrams/structurizr/workspace.dsl`), y la disposición de los elementos de cada vista se guarda en `workspace.json`, ordenada en capas de arriba hacia abajo para que las relaciones no se crucen ni atraviesen otros elementos.
 
-![Context Level Diagram](../assets/img/chapter4/software-architecture/context-diagram.svg)
-
-**Explicación del diagrama:**
-El sistema central, **Doof-Plus**, se ubica en el centro como una plataforma SaaS farmacéutica B2B unificada. A su alrededor, interactúan dos grupos principales:
-
-1. **Usuarios (Actores):**
-    - **Jefe de Producción Farmacéutica:** Interactúa con el sistema mediante peticiones HTTPS para planificar manufactura, gestionar lotes y monitorear la telemetría operativa de la planta.
-    - **Especialista QA/QC:** Utiliza la plataforma para realizar la auditoría de procesos, gestionar normativas, aprobar acciones correctivas (CAPA) y emitir certificados de liberación.
-    - **Administrador de Sistema:** Opera la plataforma para gestionar la alta de empresas clientes (Tenants), distribuir roles globales y administrar los planes de suscripción.
-
-2. **Sistemas Externos:**
-    - **Google Authenticator:** Proveedor de identidad externo con el que Doof-Plus se comunica vía REST API para validar códigos de seguridad de doble factor (2FA).
-    - **ThingsBoard:** Plataforma externa especializada en IoT que procesa en crudo los datos de los sensores de la planta, y luego envía de forma consolidada las alertas ambientales y métricas a Doof-Plus.
-    - **Niubiz (Payment Gateway):** Pasarela de pagos externa utilizada para procesar, autorizar y tokenizar el cobro de las suscripciones del modelo SaaS.
+![Context Level Diagram](../assets/img/chapter4/software-architecture/c4/c4-01-context.png)
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-En esta sección, se presenta el diagrama de contenedores (Nivel 2 del modelo C4), el cual realiza un acercamiento a la arquitectura interna de Doof-Plus. Este nivel expone las unidades de despliegue independientes, mostrando la distribución de responsabilidades, las decisiones tecnológicas clave y la comunicación entre los contenedores.
+El diagrama de contenedores (nivel 2) muestra las unidades de despliegue de la solución y cómo se comunican:
 
-![Container Level Diagram](../assets/img/chapter4/software-architecture/container-diagram.svg)
+| Container | Tecnología | Despliegue | Responsabilidad |
+| --- | --- | --- | --- |
+| Landing Page | HTML5, CSS3, JavaScript | GitHub Pages | Presentar la propuesta de valor, planes y equipo; registrar solicitudes de demo y dirigir a cada segmento a la Web Application. |
+| Web Application | Angular, Angular Material, TypeScript, ngx-translate | Firebase Hosting | SPA responsive con un módulo por bounded context; consume el RESTful API con un token JWT. |
+| RESTful API | Spring Boot, Java 21, Spring Data JPA, Spring Security, springdoc-openapi | Render | Monolito modular con los seis bounded contexts; expone endpoints REST documentados con OpenAPI (Swagger), recibe la telemetría de ThingsBoard y publica notificaciones por WebSocket (STOMP). |
+| Database | MySQL 8 | Railway | Persistencia relacional; las tablas se agrupan por bounded context. |
 
-**Explicación del diagrama y decisiones tecnológicas:**
-La arquitectura de Doof-Plus está diseñada bajo un patrón de microservicios con una capa de persistencia híbrida, garantizando escalabilidad y separación de responsabilidades (*Bounded Contexts*). Los contenedores y su comunicación se estructuran de la siguiente manera:
+Se eligió un monolito modular en lugar de microservicios porque el statement define un único RESTful API y porque el equipo y el volumen de datos de laboratorios pequeños y medianos no justifican la complejidad operativa de varios servicios. La separación por bounded context dentro del código (paquetes independientes que solo se comunican mediante fachadas y eventos) permite extraer un contexto a un servicio propio en el futuro.
 
-1. **Capa de Presentación (Front-End):**
-    - **Aplicación Web (SPA):** Desarrollada en **TypeScript** (empleando React/Angular). Es la unidad desplegable con la que interactúan los actores a través de su navegador web. Se comunica con los microservicios backend de forma síncrona mediante peticiones HTTP/REST (JSON).
-
-2. **Capa de Microservicios Backend (APIs):**
-    - **API de IAM y Gestión de Tenants:** (Java/TypeScript). Centraliza el control de acceso, la emisión de JWT y la multitenencia.
-    - **API Principal de Fabricación:** (Java/TypeScript). Núcleo transaccional del dominio que gestiona la lógica de órdenes de producción y la actualización del inventario de materias primas.
-    - **Motor de Calidad y Cumplimiento:** (Java/TypeScript). Servicio regulatorio que administra los flujos normativos y la inmutabilidad de los reportes CAPA y de auditoría.
-    - **Servicio de Suscripciones y Facturación:** (Java/TypeScript). Gestiona la lógica comercial del SaaS y orquesta los pagos delegándolos a la API de Niubiz.
-    - **Motor de Ingesta de Telemetría IoT:** Desarrollado en **Node.js/TypeScript** por su naturaleza no bloqueante, ideal para recibir un alto volumen de Webhooks entrantes desde ThingsBoard.
-
-3. **Capa de Persistencia (Bases de Datos):**
-    - **Base de Datos Relacional (MySQL):** Seleccionada por su cumplimiento ACID. Persiste los datos transaccionales estrictos: credenciales, catálogos, trazabilidad de lotes y facturación (comunicación vía TCP/IP SQL).
-    - **Base de Datos Documental (MongoDB):** Seleccionada por su flexibilidad de esquemas y rendimiento en operaciones de escritura. Almacena las series temporales masivas generadas por el motor IoT (comunicación vía MongoDB Wire Protocol).
+![Container Level Diagram](../assets/img/chapter4/software-architecture/c4/c4-02-container.png)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección, el equipo presenta los diagramas de componentes (Nivel 3 del modelo C4) correspondientes a cada uno de los microservicios (Containers) backend considerados. Estos diagramas detallan los bloques estructurales de código (Controladores, Servicios y Repositorios), sus responsabilidades de implementación y cómo interactúan para resolver la lógica de dominio antes de persistir los datos.
+Los diagramas de componentes (nivel 3) descomponen la Web Application y el RESTful API. La Web Application sigue la estructura del proyecto en Angular: un módulo por bounded context con las capas `domain`, `application`, `infrastructure` y `presentation`, más los elementos compartidos de `shared`.
 
-**1. Descomposición del Container: API de IAM y Gestión de Tenants**
-![Component Diagram - IAM](../assets/img/chapter4/software-architecture/component-IAM.svg)
-- **Controlador de Autenticación:** *REST Controller* que intercepta peticiones HTTP para login y 2FA.
-- **Servicio de Validación de Tokens:** Lógica de negocio encargada de generar y firmar criptográficamente los tokens JWT.
-- **Servicio de Gestión de Tenants:** Gestiona la segregación de datos para aislar la información de cada empresa B2B.
-- **Repositorio IAM:** Componente ORM que accede a MySQL para validar credenciales.
+![Component Diagram - Web Application](../assets/img/chapter4/software-architecture/c4/c4-03-webapp-components.png)
 
-**2. Descomposición del Container: API Principal de Fabricación**
-![Component Diagram - Manufactura](../assets/img/chapter4/software-architecture/component-manufactura.svg)
-- **Controlador de Lotes:** *REST Controller* que recibe los comandos operativos (ej. Iniciar Lote, Cerrar Lote).
-- **Servicio de Dominio de Manufactura:** Clase de servicio que orquesta las reglas de negocio sobre los estados de la producción.
-- **Servicio de Inventario:** Lógica que valida y descuenta los insumos del almacén para evitar quiebres de stock.
-- **Repositorio de Lotes e Inventario:** Componente ORM que traduce las entidades a consultas transaccionales hacia MySQL.
+En el RESTful API cada bounded context es un paquete de Spring Boot con cuatro capas: `interfaces` (controladores REST y fachadas ACL), `application` (command services, query services, event handlers y servicios ACL de salida), `domain` (aggregates, entities, value objects, commands, queries y domain services) e `infrastructure` (repositorios Spring Data JPA e integraciones externas).
 
-**3. Descomposición del Container: Motor de Calidad y Cumplimiento**
-![Component Diagram - Calidad](../assets/img/chapter4/software-architecture/component-calidad.svg)
-- **Controlador de Cumplimiento:** *REST Controller* para la gestión de cuarentenas y aprobaciones.
-- **Servicio de Investigación CAPA:** Bloque que controla el ciclo de vida de las desviaciones normativas y sus resoluciones.
-- **Repositorio de Trazabilidad y Auditoría:** Componente encargado de garantizar la inmutabilidad de los registros históricos en la base de datos relacional.
+**Identity & Access Management.** `AuthenticationController` atiende sign-up, sign-in y la verificación 2FA; `BearerAuthorizationRequestFilter` valida el JWT en cada request; `UserCommandServiceImpl` da de alta usuarios, asigna roles y bloquea cuentas; `SignatureCommandServiceImpl` registra firmas electrónicas. `IamContextFacade` expone estas capacidades a los demás contextos.
 
-**4. Descomposición del Container: Servicio de Suscripciones y Facturación**
-![Component Diagram - Facturación](../assets/img/chapter4/software-architecture/component-facturacion.svg)
-- **Controlador de Facturación:** Interfaz HTTP para consultar planes y realizar actualizaciones de cuenta.
-- **Gestor de Planes de Suscripción:** Servicio que valida las restricciones operativas según el límite del plan adquirido por el Tenant.
-- **Cliente de Pasarela de Pagos:** Componente de integración externa que serializa la petición hacia Niubiz para autorizar cargos.
-- **Repositorio de Facturación:** ORM responsable de guardar el historial de transacciones en MySQL.
+![Component Diagram - IAM](../assets/img/chapter4/software-architecture/c4/c4-04-api-iam-components.png)
 
-**5. Descomposición del Container: Motor de Ingesta de Telemetría IoT**
-![Component Diagram - Telemetría](../assets/img/chapter4/software-architecture/component-telemetria.svg)
-- **Receptor de Webhooks:** Controlador optimizado en Node.js para recibir flujos continuos de datos JSON desde ThingsBoard.
-- **Motor de Reglas de Alertas:** Servicio lógico que contrasta las variables operativas contra umbrales de seguridad predefinidos.
-- **Cliente de Notificaciones:** Componente disparador que emite eventos de advertencia hacia la plataforma si ocurre una anomalía en planta.
-- **Repositorio de Series Temporales:** Adaptador de datos que persiste los logs y métricas a alta velocidad en las colecciones de MongoDB.
+**Organizations & Profiles.** Registra organizaciones, plantas, perfiles y solicitudes de demo desde la Landing Page; al registrar una organización pide a IAM crear su administrador mediante `ExternalIamService`.
+
+![Component Diagram - Organizations](../assets/img/chapter4/software-architecture/c4/c4-05-api-organizations-components.png)
+
+**Subscriptions & Payments.** Gestiona planes y suscripciones; `NiubizPaymentGateway` autoriza los cobros y `SubscriptionRenewalScheduler` renueva las suscripciones vencidas.
+
+![Component Diagram - Subscriptions](../assets/img/chapter4/software-architecture/c4/c4-06-api-subscriptions-components.png)
+
+**Manufacturing & Batch Management.** Gestiona productos, fórmulas, insumos, órdenes y lotes; solicita a Quality la aprobación de insumos y la cuarentena del lote, y actualiza sus aggregates cuando recibe los eventos `MaterialApprovalDecided` y `BatchReleaseDecided`.
+
+![Component Diagram - Manufacturing](../assets/img/chapter4/software-architecture/c4/c4-07-api-manufacturing-components.png)
+
+**IoT Monitoring.** `TelemetryWebhookController` recibe las lecturas de ThingsBoard, `AlertRuleEvaluator` compara cada lectura con los rangos permitidos y `NotificationService` publica las alertas por WebSocket y por correo.
+
+![Component Diagram - IoT Monitoring](../assets/img/chapter4/software-architecture/c4/c4-08-api-iot-components.png)
+
+**Quality & Compliance.** Gestiona documentos, dictamen de insumos, revisión y liberación de lotes, resultados analíticos, desviaciones, CAPA y auditorías. `AuditTrailEntityListener` registra cada cambio de las entidades de todos los contextos y `ReportGenerationServiceImpl` genera expedientes y reportes en PDF con OpenPDF.
+
+![Component Diagram - Quality & Compliance](../assets/img/chapter4/software-architecture/c4/c4-09-api-quality-components.png)
 
 ## 4.7. Software Object-Oriented Design
 
-En esta sección, el equipo presenta el diseño orientado a objetos y los diagramas de clases tácticos basados en Domain-Driven Design (DDD) para cada uno de los **6 Bounded Contexts** de la plataforma **Doof-Plus**. Esta aproximación detalla las entidades, objetos de valor, enumeraciones, multiplicidades y los miembros de cada clase, especificando atributos y métodos con sus respectivos niveles de visibilidad (`+` para public y `-` para private).
+El diseño orientado a objetos traduce los aggregates del Design-Level EventStorming a clases Java del RESTful API. Se aplicaron estas convenciones:
+
+- Cada aggregate root extiende `AuditableAbstractAggregateRoot`, que aporta el identificador `Long id` y las fechas `createdAt` y `updatedAt` (en los diagramas, `id` se muestra en cada aggregate y la clase base solo en IAM).
+- Las entities internas de un aggregate se acceden solo a través de su raíz; los value objects (por ejemplo, `BatchNumber`, `Quantity`, `Money`, `Ruc`) se implementan como Java records inmutables.
+- Los nombres siguen la Google Java Style Guide: clases en PascalCase, atributos y métodos en camelCase y constantes de enumeraciones en UPPER_SNAKE_CASE. Los getters se generan con Lombok y no se muestran.
+- Los cambios de estado se solicitan con commands (`CreateBatchCommand`, `CloseDeviationCommand`, etc.) atendidos por command services; las consultas usan query services. Los repositorios son interfaces de Spring Data JPA.
+- Las relaciones entre contextos se modelan por identificador (`batchId`, `userId`) y no por referencia directa, respetando los límites de cada bounded context.
 
 ### 4.7.1. Class Diagrams
 
-#### 1. Bounded Context: IAM & Tenant Management
-Este diagrama modela el diseño táctico para el control de identidades, la seguridad perimetral y la separación lógica de las empresas clientes (Tenants) bajo un esquema multitenant B2B.
-- **Clases Principales:** `Tenant` (Raíz de Agregado), `User`, `Credential`, y `UserSession`.
-- **Enumeraciones:** `AuthProvider`, `SessionStatus`.
-- **Detalle de Relaciones:** El `Tenant` agrupa múltiples usuarios, los cuales se componen estrictamente de credenciales y generan sesiones de usuario asociadas a proveedores de identidad externos.
+**Identity & Access Management.** `User` es el aggregate root de la identidad: controla su estado (`INVITED`, `ACTIVE`, `LOCKED`, `DISABLED`), sus roles y los intentos fallidos de inicio de sesión. `ElectronicSignature` registra quién firmó qué registro y con qué significado. Los servicios de tokens (JWT), hashing (BCrypt) y TOTP se definen como interfaces implementadas en la capa de infraestructura.
 
-![ Diagrama de Clases IAM & Tenant Management](../assets/img/chapter4/diagram-class/diagram-class-b1.png)
-#### 2. Bounded Context: Core Manufacturing
-Modela el núcleo operativo y transaccional de la planta farmacéutica, abarcando la creación de lotes, órdenes de producción, control de materias primas e incidentes en línea.
-- **Clases Principales:** `ProductionBatch` (Raíz de Agregado), `BatchOrder`, `RawMaterialInventory`, y `OperationalIncident`.
-- **Enumeraciones:** `BatchStatus`, `IncidentSeverity`.
-- **Detalle de Relaciones:** Cada lote de producción gestiona una orden, consume inventario de materias primas y registra incidencias operativas asociadas a su severidad.
+![Class Diagram - IAM](../assets/img/chapter4/diagram-class/class-01-iam.png)
 
-![ Diagrama de Clases Core Manufacturing](../assets/img/chapter4/diagram-class/diagram-class-b2.png)
+**Organizations & Profiles.** `Organization` agrupa sus plantas y se identifica por el value object `Ruc`; `Profile` guarda los datos y preferencias de cada usuario; `DemoRequest` registra las solicitudes de demo de la Landing Page.
 
-#### 3. Bounded Context: Quality & Compliance
-Encapsula el diseño normativo y regulatorio de las Buenas Prácticas de Manufactura (BPM), permitiendo la trazabilidad inmutable y el control de calidad.
-- **Clases Principales:** `QualityProtocol` (Raíz de Agregado), `QuarantineRecord`, y `CapaInvestigation`.
-- **Enumeraciones:** `ComplianceVerdict`, `CapaState`.
-- **Detalle de Relaciones:** El protocolo de calidad controla los registros de cuarentena de los lotes y origina investigaciones de Acciones Correctivas y Preventivas (CAPA) en caso de desviaciones.
+![Class Diagram - Organizations & Profiles](../assets/img/chapter4/diagram-class/class-02-organizations.png)
 
-![ Diagrama de Clases Quality & Compliance](../assets/img/chapter4/diagram-class/diagram-class-b3.png)
+**Subscriptions & Payments.** `Subscription` controla el ciclo de vida de la suscripción y sus pagos; `Plan` define precios y límites. `PaymentGateway` abstrae la pasarela y `NiubizPaymentGateway` la implementa.
 
-#### 4. Bounded Context: Subscription & Billing (SaaS)
-Modela la lógica comercial orientada al modelo SaaS de la plataforma B2B, gestionando planes de suscripción, cuentas corporativas, facturación y pagos.
-- **Clases Principales:** `SubscriptionPlan`, `TenantBillingAccount` (Raíz de Agregado), `Invoice`, y `PaymentTransaction`.
-- **Enumeraciones:** PlanTier, `PaymentStatus`.
-- **Detalle de Relaciones:** La cuenta de facturación del Tenant se suscribe a un plan, genera facturas periódicas y procesa transacciones de pago mediante la pasarela externa.
+![Class Diagram - Subscriptions & Payments](../assets/img/chapter4/diagram-class/class-03-subscriptions.png)
 
-![ Diagrama de Clases Subscription & Billing](../assets/img/chapter4/diagram-class/diagram-class-b4.png)
+**Manufacturing & Batch Management.** `ProductionBatch` es el aggregate central del dominio: concentra el ciclo de vida del lote (`PLANNED` a `RELEASED` o `REJECTED`), sus consumos de insumos, parámetros de proceso, incidencias y su línea de tiempo (`BatchEvent`). `ProductionOrder`, `MasterFormula`, `Product` y `RawMaterialLot` completan el contexto.
 
-#### 5. Bounded Context: IoT Telemetry & Integration
-Diseñado para el procesamiento de eventos de maquinaria en tiempo real, conectando los flujos de datos con las reglas de alerta de la planta.
-- **Clases Principales:** `MachineEquipment`, `SensorTelemetryStream` (Raíz de Agregado), y `AlertRuleEngine`.
-- **Enumeraciones:** `SensorType`, `AlertLevel`.
-- **Detalle de Relaciones:** Los flujos de telemetría son emitidos por los equipos de maquinaria y evaluados continuamente por el motor de reglas de alertas.
+![Class Diagram - Manufacturing & Batch Management](../assets/img/chapter4/diagram-class/class-04-manufacturing.png)
 
-![ Diagrama de Clases IoT Telemetry & Integration](../assets/img/chapter4/diagram-class/diagram-class-b5.png)
+**IoT Monitoring.** `Equipment` mantiene su historial de calibraciones y mantenimientos y define si está apto para producción; `IoTDevice` representa un sensor de ThingsBoard asignable a un lote; `TelemetryReading` guarda cada lectura y `AlertRuleEvaluator` genera las alertas.
 
-#### 6. Bounded Context: Plant Asset & Device
-Modela la gestión de dispositivos de hardware en planta, específicamente el rastreo y control de lectores RFID y activos físicos vinculados a las líneas de producción.
-- **Clases Principales:** `RfidReaderDevice` (Raíz de Agregado) y `PlantAsset`.
-- **Enumeraciones:** `DeviceStatus`.
-- **Detalle de Relaciones:** El dispositivo lector RFID se encarga de rastrear un activo de planta específico manteniendo un estado operativo actualizado.
+![Class Diagram - IoT Monitoring](../assets/img/chapter4/diagram-class/class-05-iot.png)
 
-![ Diagrama de Clases Plant Asset & Device](../assets/img/chapter4/diagram-class/diagram-class-b6.png)
+**Quality & Compliance.** `QualityDocument` gestiona versiones y aprobación de SOP y protocolos; `MaterialApproval` registra el dictamen de cada lote de insumo; `BatchReview` controla la cuarentena, evaluación y liberación del lote y emite el `ReleaseCertificate`; `AnalyticalResult` calcula el resultado y detecta los OOS. `Deviation` controla la clasificación, investigación, causa raíz y acciones CAPA hasta su cierre; `Audit` registra hallazgos y observaciones; `AuditTrailEntry` es de solo inserción; `RegulatoryReport` guarda los reportes generados.
+
+![Class Diagram - Quality & Compliance](../assets/img/chapter4/diagram-class/class-06-quality.png)
 
 ## 4.8. Database Design
 
-En esta sección se presenta el diseño de la base de datos relacional orientada a soportar los diferentes Bounded Contexts identificados para la plataforma DoofPlus. El diseño garantiza la persistencia, integridad y trazabilidad de la información crítica del negocio farmacéutico y la telemetría IoT.
+La base de datos de DoofPlus se implementa en MySQL 8 y se genera a partir de las entidades JPA del RESTful API. Sus principales características son:
 
-Las principales características consideradas para este diseño son:
-
-- Aislamiento por Contexto (Desacoplamiento): Las tablas se han agrupado lógicamente según su Bounded Context. En una arquitectura de microservicios, cada contexto gestionaría su propio esquema físico. Las referencias inter-contexto se manejan mediante identificadores únicos (UUIDs) en lugar de Foreign Keys estrictas a nivel de base de datos física, favoreciendo la escalabilidad.
-
-- Integridad Referencial y Restricciones (Constraints): Dentro de cada contexto, se aplican Primary Keys (PK) y Foreign Keys (FK) para garantizar la consistencia de los datos. Se utilizan restricciones NOT NULL, UNIQUE y validaciones de estado para proteger las reglas de negocio (BPM).
-
-- Trazabilidad y Auditoría (Auditability): Cumple con normativas como la FDA 21 CFR Part 11, entidades críticas incluyen campos de control de concurrencia y marcas de tiempo exactas, soportadas por tablas de registro inmutable.
+- **Organización por bounded context:** cada contexto tiene su propio conjunto de tablas, que corresponde a sus aggregates. Dentro de un contexto se usan llaves foráneas; entre contextos las referencias son lógicas (solo el identificador) y se marcan como "ref <contexto>.<tabla>" en los diagramas.
+- **Convenciones:** nombres en inglés, en snake_case y en plural, aplicados con la estrategia `SnakeCaseWithPluralizedTablePhysicalNamingStrategy`; llaves primarias `bigint AUTO_INCREMENT`; restricciones `NOT NULL`, `UNIQUE` y estados como enumeraciones en texto.
+- **Auditoría e integridad:** todas las tablas incluyen `created_at` y `updated_at` (omitidos en los diagramas); `audit_trail_entries` es de solo inserción y `electronic_signatures` conserva las firmas de cada registro, en línea con los principios ALCOA y 21 CFR Part 11.
 
 ### 4.8.1. Database Diagrams
-En esta sección se presenta el diseño de la base de datos relacional de DoofPlus, organizado por bounded context. Cada contexto gestiona su propio conjunto de tablas, lo que nos garantiza la separación de responsabilidades y la alineación con la arquitectura DDD definida en los apartados anteriores. Para el diseño y modelado de estos diagramas se utilizará la herramienta de Lucichart. La base de datos está orientada a implementarse en MySQL y sus tablas principales incluyen campos de auditoría como created_at y updated_at, con el objetivo de mantener trazabilidad sobre la creación y actualización de los registros.
 
-Los diagramas de base de datos se organizan en los siguientes contextos:
+Los diagramas se elaboraron con Mermaid (Diagram-as-Code), uno por bounded context:
 
-- Base de datos completa: muestra la integración general de las tablas principales de todos los bounded contexts de DoofPlus.
+| Bounded context | Tablas | Aggregates que persiste |
+| --- | --- | --- |
+| IAM | users, roles, user_roles, electronic_signatures | User, ElectronicSignature |
+| Organizations & Profiles | organizations, plants, profiles, demo_requests | Organization, Profile, DemoRequest |
+| Subscriptions & Payments | plans, subscriptions, payments | Plan, Subscription |
+| Manufacturing & Batch Management | products, master_formulas, formula_components, raw_material_lots, production_orders, production_batches, material_consumptions, process_parameters, incidents, batch_events | Product, MasterFormula, RawMaterialLot, ProductionOrder, ProductionBatch |
+| IoT Monitoring | equipment, calibration_records, maintenance_records, iot_devices, telemetry_readings, alert_rules, alerts | Equipment, IoTDevice, TelemetryReading, Alert |
+| Quality & Compliance | quality_documents, document_versions, material_approvals, analytical_results, batch_reviews, evidence_attachments, release_certificates, deviations, capa_actions, audits, audit_findings, audit_trail_entries, regulatory_reports | QualityDocument, MaterialApproval, AnalyticalResult, BatchReview, Deviation, Audit, AuditTrailEntry, RegulatoryReport |
 
-- Gestión de organizaciones (B2B) Database: contiene las tablas relacionadas con el registro multi-tenant de laboratorios clientes, perfiles corporativos y la matriz de roles y permisos.
+**Identity & Access Management**
 
-- Suscripciones y pagos (SaaS) Database: contiene planes de suscripción, suscripciones activas, pagos procesados y transacciones de facturación.
+![Database Diagram - IAM](../assets/img/chapter4/database/db-01-iam.png)
 
-- IAM Database: contiene credenciales de usuarios, autenticación de doble factor (2FA) y control de sesiones activas.
+**Organizations & Profiles**
 
-- Fabricación y gestión de lotes Database: contiene el catálogo de fármacos, registro de materias primas (RFID), órdenes de manufactura y uso de insumos en lotes de producción.
+![Database Diagram - Organizations](../assets/img/chapter4/database/db-02-organizations.png)
 
-- Telemetría y monitorización IoT Database: contiene el inventario de maquinaria, sensores IoT, registros de telemetría y alertas ambientales/operativas.
+**Subscriptions & Payments**
 
-- Gestión de calidad y cumplimiento Database: contiene protocolos documentales, investigaciones de desviaciones (CAPA), certificados de liberación y el historial de auditoría inmutable.
+![Database Diagram - Subscriptions](../assets/img/chapter4/database/db-03-subscriptions.png)
 
-Diagrama de base de datos completo:
-![Database diagram](../assets/img/chapter4/diagram-database.png)
+**Manufacturing & Batch Management**
 
-Para ver a detalle: [https://lucid.app/lucidchart/6102493d-2535-49c1-a3e5-bf2ab643abdc/edit?viewport_loc=-2209%2C-1329%2C5810%2C2503%2C0_0&invitationId=inv_5c9ee0d8-9bc3-4332-9822-98bf6cc97570](https://lucid.app/lucidchart/6102493d-2535-49c1-a3e5-bf2ab643abdc/edit?viewport_loc=-2209%2C-1329%2C5810%2C2503%2C0_0&invitationId=inv_5c9ee0d8-9bc3-4332-9822-98bf6cc97570)
+![Database Diagram - Manufacturing](../assets/img/chapter4/database/db-04-manufacturing.png)
+
+**IoT Monitoring**
+
+![Database Diagram - IoT](../assets/img/chapter4/database/db-05-iot.png)
+
+**Quality & Compliance (documentos, insumos, resultados, liberación, desviaciones, CAPA, auditorías y reportes)**
+
+![Database Diagram - Quality & Compliance](../assets/img/chapter4/database/db-06-quality.png)
+
+La fuente Structurizr DSL de los diagramas C4 se encuentra en `assets/diagrams/structurizr/workspace.dsl`, y las fuentes Mermaid de los diagramas de clases y de base de datos, en `assets/diagrams/mermaid`.
