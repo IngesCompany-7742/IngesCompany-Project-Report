@@ -1,12 +1,14 @@
 --[[
 Adapts the report to the PDF without changing the Markdown sources.
 
-- Wraps the HTML cover of README.md (<div align="center"> ... </div>) in a
-  "cover" section, so report.css can lay it out as a single page.
-- Inside the cover, turns the member list (aligned with &nbsp; on GitHub)
-  into a two-column table and removes the trailing colons of the labels.
-- Inserts the table of contents ("Contenido") before the first chapter,
-  leaving the cover headings out of it. Page numbers come from report.css.
+- Rebuilds the HTML cover of README.md (<div align="center"> ... </div>) as
+  a "cover" section: one element per line, in the order of the course's
+  template, so report.css can place each line at the template's position.
+  The member list (aligned with &nbsp; on GitHub) becomes a two-column
+  table, and the trailing colons of the labels are removed.
+- Removes the linked "Contenido" list of README.md and inserts the table of
+  contents before the first chapter, leaving the cover headings out of it.
+  Page numbers come from report.css.
 ]]
 
 local NBSP = "\194\160"
@@ -87,29 +89,55 @@ local function is_members_list(block)
   return has_break and pandoc.utils.stringify(block.content):match("^Código") ~= nil
 end
 
+local function escape_html(text)
+  return (text:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
+end
+
 -- "NRC:" -> "NRC", "Integrantes:" -> "Integrantes"
-local function without_colon(block)
-  return block:walk({
-    Str = function(str)
-      if str.text:match(":$") then
-        return pandoc.Str(str.text:sub(1, -2))
-      end
-    end,
-  })
+local function cover_text(block)
+  local text = pandoc.utils.stringify(block.content):gsub(NBSP, " ")
+  return (text:gsub("^%s+", ""):gsub("%s*:?%s*$", ""))
 end
 
 local function build_cover(blocks)
-  local cover = pandoc.List()
+  local html = pandoc.List()
+  local line = 0
   for _, block in ipairs(blocks) do
-    if is_members_list(block) then
-      cover:insert(members_table(block))
-    elseif block.t == "Para" then
-      cover:insert(without_colon(block))
-    else
-      cover:insert(block)
+    if block.t == "RawBlock" and block.format == "html" then
+      local src = block.text:match('<img[^>]-src="([^"]+)"')
+      if src then
+        html:insert(string.format('<img class="cover-logo" src="%s" alt="UPC">', src))
+      end
+    elseif is_members_list(block) then
+      html:insert(members_table(block).text)
+    elseif block.t == "Para" or block.t == "Header" then
+      local text = cover_text(block)
+      if text ~= "" then
+        line = line + 1
+        html:insert(string.format('<p class="cover-line line-%d">%s</p>', line, escape_html(text)))
+      end
     end
   end
-  return pandoc.Div(cover, pandoc.Attr("", { "cover" }))
+  return pandoc.RawBlock("html",
+    '<div class="cover">' .. table.concat(html) .. "</div>")
+end
+
+-- README.md links each section for GitHub ("## Contenido" + list). The PDF
+-- has its own table of contents with page numbers, so that list is removed.
+local function remove_readme_contents(blocks)
+  for i, block in ipairs(blocks) do
+    if block.t == "Header" and block.level == 2
+        and pandoc.utils.stringify(block.content) == "Contenido" then
+      if blocks[i + 1] and blocks[i + 1].t == "BulletList" then
+        blocks:remove(i + 1)
+      end
+      blocks:remove(i)
+      if blocks[i - 1] and blocks[i - 1].t == "HorizontalRule" then
+        blocks:remove(i - 1)
+      end
+      return
+    end
+  end
 end
 
 local function find_first_chapter(blocks)
@@ -130,6 +158,8 @@ function Pandoc(doc)
     end
     blocks:insert(cover_first, build_cover(cover_blocks))
   end
+
+  remove_readme_contents(blocks)
 
   local first_chapter = find_first_chapter(blocks)
   if first_chapter then
