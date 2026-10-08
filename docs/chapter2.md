@@ -6,7 +6,7 @@ Para desarrollar una solución efectiva, es importante entender la situación co
 En este periodo, se analizan distintos tipos de competidores con el objetivo de entender sus fortalezas y debilidades, y así posicionar a DoofPlus como una propuesta que responda de manera más efectiva a las necesidades reales del sector.
 
 ### 2.1.1. Análisis competitivo
-A continuación, se presenta una tabla comparativa sobre los principales competidores, en el que se considera su propuesta de valor, mercado objetivo y características generales. Este análisis permite evidenciar que, mientras las soluciones existentes se orientan a grandes corporaciones o dependen de procesos manuales, DoofPlus podrá destacar como una alternativa specializada, accesible y centrada en la automatización del aseguramiento de la calidad mediante integración IoT y trazabilidad digital, especialmente pensada para laboratorios medianos y entidades públicas de la región.
+A continuación, se presenta una tabla comparativa sobre los principales competidores, en el que se considera su propuesta de valor, mercado objetivo y características generales. Este análisis permite evidenciar que, mientras las soluciones existentes se orientan a grandes corporaciones o dependen de procesos manuales, DoofPlus se posiciona como una alternativa especializada, accesible y centrada en la automatización del aseguramiento de la calidad mediante integración IoT y trazabilidad digital, especialmente pensada para laboratorios medianos y entidades públicas de la región.
 
 <table>
   <tr>
@@ -14,11 +14,7 @@ A continuación, se presenta una tabla comparativa sobre los principales competi
   </tr>
   <tr>
     <td colspan="2">¿Por qué llevar a cabo este análisis?</td>
-    <td colspan="4">¿Cómo se posiciona DoofPlus frente a sus competidores en fortalezas, debilidades, oportunidades y propuesta de valor dentro del mercado de software de gestión de calidad y trazabilidad farmacéutica?</td>
-  </tr>
-  <tr>
-    <td colspan="2">Respuesta del análisis</td>
-    <td colspan="4">Es una propuesta que posiciona a DoofPlus como una plataforma SaaS orientada a la gestión de calidad farmacéutica, incorporando integración IoT para automatizar la captura de datos, mejorar la trazabilidad y asegurar el cumplimiento normativo frente a otras soluciones del mercado.</td>
+    <td colspan="4">¿Cómo se posiciona DoofPlus frente a sus competidores en fortalezas, debilidades, oportunidades y propuesta de valor dentro del mercado de software de gestión de calidad y trazabilidad farmacéutica?<br><br>Es una propuesta que posiciona a DoofPlus como una plataforma SaaS orientada a la gestión de calidad farmacéutica, incorporando integración IoT para automatizar la captura de datos, mejorar la trazabilidad y asegurar el cumplimiento normativo frente a otras soluciones del mercado.</td>
   </tr>
   <tr>
     <td colspan="2"></td>
@@ -132,7 +128,7 @@ La prospección se dirige a jefes de aseguramiento de calidad y de producción, 
 
 ## 2.2. Entrevistas
 
-Las entrevistas constituyen una herramienta fundamental para obtener información cualitativa directamente de los profesionales involucrados en los procesos de aseguramiento de calidad y producción farmacéutica. A través de conversaciones estructuradas, se busca comprender sus actividades, necesidades, desafíos, comportamientos y experiencias relacionadas con la gestión de documentación, la trazabilidad de lotes y el acceso a la información. La información recopilada permitirá identificar problemáticas, oportunidades de mejora y necesidades reales del entorno de aplicación, contribuyendo a definir una propuesta de solución alineada con los requerimientos y expectativas de los segmentos objetivo.
+Las entrevistas constituyen una herramienta fundamental para obtener información cualitativa directamente de los profesionales involucrados en los procesos de aseguramiento de calidad y producción farmacéutica. A través de conversaciones estructuradas, se busca comprender sus actividades, necesidades, desafíos, comportamientos y experiencias relacionadas con la gestión de documentación, la trazabilidad de lotes y el acceso a la información. La información recopilada permitió identificar problemáticas, oportunidades de mejora y necesidades reales del entorno de aplicación, contribuyendo a definir una propuesta de solución alineada con los requerimientos y expectativas de los segmentos objetivo.
 
 ### 2.2.1. Diseño de entrevistas
 
@@ -188,7 +184,7 @@ En esta sección se presentan los resultados obtenidos de las entrevistas realiz
 |---------|--------|
 | **Campo** | **Información** |
 | Nombre | María |
-| Apellido | Mexico |
+| Apellido | México |
 | Edad | 53 |
 | Distrito | San Juan de Lurigancho |
 | Evidencia | ![Entrevista 1 - Segmento 1](../assets/img/chapter2/interview/segmento1/entrevista1-segmento1.png) |
@@ -403,7 +399,7 @@ Se observa que las tareas **"Consultar el historial y trazabilidad de un lote"**
 
 ### 2.3.3. User Journey Mapping
 
-**Segmento 1 – Especialista de Aseguramiento y Control de Calidad (María Mexico)**
+**Segmento 1 – Especialista de Aseguramiento y Control de Calidad (María México)**
 
 El User Journey Map de María ilustra su recorrido integral (end-to-end) en el proceso de validación documental y liberación de lotes de producción. Este diagrama documenta su flujo de trabajo paso a paso: desde la recepción de expedientes de planta en formato físico, pasando por la verificación de cálculos analíticos, hasta la transcripción de datos y la búsqueda de antecedentes frente a auditorías inopinadas.
 
@@ -432,7 +428,7 @@ Para la elaboración de los Empathy Maps, el equipo partió del conocimiento y o
 
 En este mapa se analizó a María México, química farmacéutica encargada del área de aseguramiento y control de calidad en un laboratorio farmacéutico. Se identificó que piensa constantemente en la necesidad de automatizar procesos e informes para liberar la alta carga administrativa del departamento, preocupándose por el riesgo de errores humanos al momento de revisar registros manualmente. Escucha la exigencia de la gerencia para agilizar la entrega de documentación y de las autoridades de salud requerir trazabilidad inmediata. Observa el entorno cargado de expedientes físicos, tablas dispersas y la recurrencia de errores de llenado por parte del personal. María expresa la necesidad de reducir la carga operativa y actúa revisando minuciosamente cálculos a mano e investigando desviaciones operativas junto a su equipo. Su dolor principal es el tiempo invertido en revisiones manuales y la dificultad para recopilar evidencias en auditorías inopinadas, mientras que su ganancia esperada es disponer de generación automática de reportes, un expediente de lotes centralizado y tranquilidad en el cumplimiento normativo.
 
-**Segmento 2: Jefe o Supervisor de Producción Farmacéutica**
+**2) Segmento 2: Jefe o Supervisor de Producción Farmacéutica**
 
 ![EmpathyMap - Segmento 2](../assets/img/chapter2/interview/segmento2/user-empathymap2.png)
 
@@ -453,7 +449,7 @@ Antes de generar eventos se cumplieron los pasos 1 a 3 de la guía: se preparó 
 | Actor | Amarillo (pequeño) | Persona o rol que provoca o atiende el evento. |
 | External system | Azul | Sistema u organización externa que interviene (Niubiz, ThingsBoard, Lector RFID, DIGEMID). |
 | Problema u oportunidad (hotspot) | Rosado | Dificultad detectada en la situación actual. |
-| Pivotal event | Línea roja | Evento que cambia de fase el proceso. |
+| Pivotal event | Naranja (de mayor tamaño) | Evento que cambia de fase el proceso. |
 
 **Step 4 – Generating Domain Events**
 
@@ -481,7 +477,7 @@ Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=34587646857
 
 **Step 7 – Storytelling**
 
-Un integrante narró la historia completa de inicio a fin mientras el resto validaba el orden y el significado de cada evento. Durante la narración se registraron en rosado los problemas que hoy enfrentan los laboratorios, tomados de las entrevistas, y se conectaron con flechas los eventos que disparan a otros (por ejemplo, "Parámetro fuera de rango detectado" dispara "Alerta generada", que genera una "Incidencia registrada").
+Un integrante narró la historia completa de inicio a fin mientras el resto validaba el orden y el significado de cada evento. Durante la narración se registraron en rosado los problemas que hoy enfrentan los laboratorios, tomados de las entrevistas, y se conectaron con flechas los eventos que disparan a otros (por ejemplo, "Parámetro fuera de rango detectado" dispara "Alerta generada", que genera una "Incidencia registrada"). Los pivotal events, destacados con un post-it de mayor tamaño, marcan los cambios de fase del lote: "Materia prima recibida", "Lote creado", "Lote cerrado", "Muestra de lote tomada", "Registro de lote revisado", "Lote liberado", "Auditoría iniciada" y "Auditoría cerrada".
 
 | Problema detectado | Evidencia en las entrevistas |
 | --- | --- |
@@ -506,31 +502,43 @@ En este proyecto, cuyo objetivo principal es mejorar la trazabilidad, la gestió
 |---|---|
 | Batch (Lote) | Cantidad definida de un producto farmacéutico elaborado en un mismo ciclo de fabricación, caracterizada por su homogeneidad. |
 | Batch Record (Expediente de Lote) | Conjunto consolidado de documentos físicos o digitales que proporcionan el historial completo de la producción, controles y distribución de un lote específico. |
+| Product (Producto) | Medicamento que el laboratorio fabrica, identificado por un código único; se elabora según su fórmula maestra aprobada. |
 | Master Formula (Fórmula maestra) | Documento aprobado que define los componentes y cantidades de un producto; cada lote se fabrica según una versión aprobada de la fórmula. |
 | Production Order (Orden de producción) | Autorización para fabricar una cantidad planificada de un producto según su fórmula maestra; origina uno o más lotes. |
 | Raw Material (Materia Prima / Insumo) | Toda sustancia, activa o inactiva, que es empleada e incorporada durante el proceso de formulación o fabricación de un producto farmacéutico. Se recibe por lote de proveedor y queda en cuarentena hasta su aprobación. |
-| Production Parameter (Parámetro de Producción) | Variable operativa asociada a una etapa de fabricación cuya información puede registrarse y vincularse al historial de trazabilidad de un lote farmacéutico. |
+| Storage Location (Ubicación de almacén) | Lugar del almacén asignado a un insumo recibido; queda registrado en su historial para ubicarlo durante la cuarentena y el consumo. |
+| Process Parameter (Parámetro de proceso) | Variable operativa de una etapa de fabricación (por ejemplo, temperatura o tiempo de mezcla) cuyo valor se registra y queda vinculado al historial del lote. |
 | Incident (Incidencia) | Evento anómalo que Producción registra durante la fabricación; si es crítico detiene el lote (On Hold) y puede escalarse a Calidad como desviación. |
 | Traceability (Trazabilidad) | Capacidad de rastrear y reconstruir el historial completo, la aplicación o la ubicación de un lote farmacéutico a lo largo de toda su cadena de producción. |
 | Good Manufacturing Practices / GMP (Buenas Prácticas de Manufactura / BPM) | Conjunto de normativas y lineamientos regulatorios (como los exigidos por DIGEMID) que aseguran que los productos se fabriquen y controlen de forma consistente. |
 | Quality Assurance / QA (Aseguramiento de Calidad) | Conjunto de acciones planificadas y sistemáticas necesarias para garantizar que un producto farmacéutico se fabrique cumpliendo los estándares de calidad exigidos. |
-| Quality Control / QC (Control de Calidad) | Área encargada de ejecutar pruebas, validaciones y muestreos operativos para verificar que los productos o insumos cumplen con especificaciones técnicas precisas. |
+| Quality Control / QC (Control de Calidad) | Conjunto de pruebas, muestreos y verificaciones analíticas que comprueban que los insumos y los productos cumplen sus especificaciones técnicas. |
 | Standard Operating Procedure / SOP (Procedimiento operativo estándar) | Documento controlado que describe paso a paso cómo ejecutar una actividad; solo la versión aprobada vigente puede aplicarse. |
 | Analytical Protocol (Protocolo Analítico) | Documento técnico normado que describe detalladamente los métodos, equipos y criterios de aceptación utilizados para realizar las pruebas de control de un producto. |
+| Document Version (Versión de documento) | Edición numerada de un documento controlado con su autor, fecha y motivo de cambio; al aprobarse una nueva versión, la anterior queda obsoleta. |
+| Sample (Muestra) | Porción de un insumo o de un lote que Calidad toma para realizar los ensayos analíticos que sustentan su dictamen. |
+| Analytical Result (Resultado analítico) | Valor obtenido en un ensayo de control de calidad, calculado según la fórmula del protocolo y comparado con su especificación. |
 | Quarantine (Cuarentena) | Estado en que un insumo o un lote no puede usarse ni distribuirse hasta que Calidad emita su dictamen. |
 | Out of Specification / OOS (Resultado fuera de especificación) | Resultado analítico que no cumple el rango de aceptación del protocolo; obliga a registrar una desviación. |
-| Deviation (Desviación) | Cualquier alteración, no conformidad o evento imprevisto que se aleje de los procedimientos, protocolos o parámetros establecidos durante el proceso de fabricación. |
+| Deviation (Desviación) | Cualquier alteración, no conformidad o evento imprevisto que se aleje de los procedimientos, protocolos o especificaciones establecidos, detectado durante la fabricación, en un resultado de control de calidad o al escalar una incidencia de Producción; se registra, investiga y cierra con su causa raíz y CAPA. |
 | Root Cause Analysis / RCA (Análisis de causa raíz) | Investigación estructurada (por ejemplo, 5 porqués o Ishikawa) que identifica el origen de una desviación; sin causa raíz no se puede cerrar la desviación. |
 | CAPA (Acción correctiva y preventiva) | Acción con responsable y fecha límite que corrige una desviación y evita su recurrencia; se verifica su eficacia antes de cerrarla. |
 | Batch Release (Liberación de Lote) | Aprobación formal otorgada por el área de calidad que certifica que un lote ha sido fabricado según las normativas y parámetros, permitiendo su fase de distribución comercial. |
 | Certificate of Analysis (Certificado de análisis) | Documento firmado que acredita los resultados analíticos de un lote liberado. |
 | Audit (Auditoría) | Revisión sistemática e independiente, ya sea interna o realizada por entidades regulatorias, para evaluar el estricto cumplimiento de las normativas y reportes de calidad. |
 | Finding / Observation (Hallazgo / Observación) | Incumplimiento (hallazgo) o recomendación de mejora (observación) registrado durante una auditoría. |
+| Audit Evidence Package (Expediente de auditoría) | Conjunto de evidencias de un rango de fechas o de lotes (registros, certificados, firmas y audit trail) que se entrega a los auditores o inspectores. |
+| Regulatory Report (Reporte regulatorio) | Informe periódico estandarizado con los registros de calidad del laboratorio, preparado para la autoridad sanitaria o para la revisión interna. |
+| Regulatory Inspection (Inspección regulatoria) | Visita de la autoridad sanitaria (DIGEMID) al laboratorio para verificar el cumplimiento de las BPM. |
 | Audit Trail (Registro de auditoría) | Registro inalterable de quién, cuándo, qué y por qué cambió en cada registro de calidad. |
 | Electronic Signature (Firma electrónica) | Confirmación de identidad del usuario con su contraseña al aprobar, revisar o liberar un registro; incluye nombre, fecha, hora y significado. |
+| Equipment (Equipo) | Máquina o instrumento de producción o de laboratorio, identificado por su número de serie, cuya calibración y mantenimiento determinan si es apto para fabricar. |
 | Calibration (Calibración) | Verificación periódica de un equipo o sensor contra un patrón; si vence, el equipo queda no apto para producción. |
+| IoT Sensor (Sensor IoT) | Dispositivo instalado en un equipo que mide una variable crítica y envía sus lecturas a través de ThingsBoard; se asocia al lote en fabricación. |
 | Sensor Reading (Lectura de sensor) | Valor de una variable crítica (temperatura, humedad, presión, pH) enviado por un sensor y asociado al lote en curso. |
 | Alert (Alerta) | Aviso generado cuando una lectura sale del rango permitido; puede derivar en una incidencia. |
+| Organization (Organización) | Laboratorio farmacéutico cliente registrado en DoofPlus con su razón social y RUC; agrupa sus plantas, usuarios y suscripción. |
+| Role (Rol) | Conjunto de permisos que el administrador del laboratorio asigna a un usuario (por ejemplo, QA Specialist o Production Supervisor) y que determina qué acciones puede realizar. |
 | Subscription Plan (Plan de suscripción) | Modalidad comercial de DoofPlus (Standard Lab o Enterprise) que define el precio y los límites de usuarios y sensores. |
 
 **Beneficios esperados del Ubiquitous Language:**
