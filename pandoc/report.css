@@ -20,13 +20,6 @@
   }
 }
 
-/* The cover has no header or footer. */
-@page :first {
-  @top-left { content: none; }
-  @top-right { content: none; }
-  @bottom-right { content: none; }
-}
-
 html {
   font-family: -apple-system, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 10pt;
@@ -43,77 +36,95 @@ header#title-block-header {
   display: none;
 }
 
-/* Cover taken from the HTML block at the top of README.md, laid out like the
-   course's reference cover: labels in regular weight, values in bold. */
+/* Cover rebuilt by report.lua from README.md. Every line is placed at the
+   position, size and weight of the course's reference cover (A4, in points),
+   since the cover must match the template exactly. */
+@page cover {
+  margin: 0;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-right { content: none; }
+}
+
 .cover {
-  padding-top: 1.2cm;
-  text-align: center;
-  font-size: 11pt;
-  line-height: 1.25;
+  page: cover;
+  position: relative;
+  height: 841.8pt;
+  font-family: Aptos, "Segoe UI", -apple-system, Helvetica, Arial, sans-serif;
+  color: #000;
   break-after: page;
 }
 
-.cover img {
-  width: auto;
-  height: 1.5cm;
-  margin-bottom: 0.5cm;
+/* UPC.png has a 5% transparent border: a 41.4pt box shows a 37.3pt logo,
+   the visible size of the template's logo, starting at (280.2pt, 86.2pt). */
+.cover-logo {
+  position: absolute;
+  top: 84.1pt;
+  left: 278.1pt;
+  width: 41.4pt;
+  height: 41.4pt;
 }
 
-.cover p,
-.cover h2,
-.cover h3 {
-  margin: 0 0 0.32cm;
-  padding: 0;
-  border: none;
+/* The template centers its lines at x=299.2pt, 1.6pt right of the page center. */
+.cover-line {
+  position: absolute;
+  left: 1.6pt;
+  width: 595.2pt;
+  margin: 0;
+  text-align: center;
+  line-height: 1.22;
+  white-space: nowrap;
 }
 
-.cover h2,
-.cover h3,
-.cover strong,
-.cover table.members th {
-  font-weight: 700;
-}
+.line-1 { top: 142.6pt; font-size: 12pt; font-weight: 400; }
+.line-2 { top: 164.7pt; font-size: 12pt; font-weight: 400; }
+.line-3 { top: 208.7pt; font-size: 13.92pt; font-weight: 700; }
+.line-4 { top: 234.4pt; font-size: 13.92pt; font-weight: 700; }
+.line-5 { top: 259.9pt; font-size: 12pt; font-weight: 400; }
+.line-6 { top: 281.9pt; font-size: 13.92pt; font-weight: 700; }
+.line-7 { top: 307.5pt; font-size: 16.08pt; font-weight: 700; }
+.line-8 { top: 336.7pt; font-size: 12pt; font-weight: 400; }
+.line-9 { top: 358.9pt; font-size: 13.92pt; font-weight: 700; }
+.line-10 { top: 406.3pt; font-size: 12pt; font-weight: 400; }
+.line-11 { top: 428.5pt; font-size: 13.92pt; font-weight: 700; }
+.line-12 { top: 453.9pt; font-size: 12pt; font-weight: 400; }
+.line-13 { top: 476.0pt; font-size: 13.92pt; font-weight: 700; }
+.line-14 { top: 523.5pt; font-size: 12pt; font-weight: 700; }
+.line-15 { top: 710.4pt; font-size: 12pt; font-weight: 700; }
+.line-16 { top: 754.3pt; font-size: 12pt; font-weight: 700; }
 
-.cover h3 {
-  font-size: 12.5pt;
-}
-
-.cover h2 {
-  font-size: 15pt;
-}
-
-/* Extra space between the groups of the cover. */
-.cover h3:nth-of-type(1),
-.cover p:nth-of-type(5),
-.cover p:nth-of-type(7) {
-  margin-top: 0.9cm;
-}
-
-.cover h3:nth-last-of-type(2) {
-  margin-top: 1.4cm;
-}
-
-.cover h3:last-of-type {
-  margin-top: 0.9cm;
-}
-
-/* Member list: two left-aligned columns without borders, centered on the page. */
+/* Member list: code at x=184.3pt and name at x=254.2pt, one row every 20.15pt. */
 .cover table.members {
+  position: absolute;
+  top: 545.5pt;
+  left: 184.3pt;
   width: auto;
-  margin: 0 auto;
-  font-size: 10pt;
-  text-align: left;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 11.04pt;
 }
 
 .cover table.members th,
 .cover table.members td {
-  padding: 0.12cm 0.3cm;
+  height: 20.15pt;
+  padding: 0;
   border: none;
   background: none;
+  line-height: 1.22;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap;
 }
 
-.cover table.members tr:nth-child(2n) td {
-  background: none;
+.cover table.members th {
+  height: 21.8pt;
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.cover table.members th:first-child,
+.cover table.members td:first-child {
+  width: 69.9pt;
 }
 
 /* The cover already ends its page. */
@@ -221,10 +232,13 @@ tr {
   break-inside: avoid;
 }
 
-/* Photos and logos inside tables keep a reasonable size. */
+/* Photos and logos inside tables keep a reasonable size and shrink with their
+   cell, so a width="120" attribute cannot push a table beyond the page. */
 td img {
-  max-width: 3.5cm;
-  max-height: 4cm;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 3.5cm;
 }
 
 /* Table of contents with dotted leaders and page numbers. */
