@@ -9,37 +9,37 @@ En esta sección se describen las decisiones, convenciones y herramientas utiliz
 A continuación se detallan los productos de software que los miembros del equipo utilizan para colaborar en el ciclo de vida de DoofPlus, indicando su propósito y su ruta de referencia (productos SaaS) o de descarga (productos que se ejecutan en el computador de cada integrante).
 
 * **Project Management**
-  * **Jira Software:** Gestión del Product Backlog, planificación de sprints y seguimiento de tareas en el board del proyecto. (Referencia: https://www.atlassian.com/software/jira)
-  * **Discord:** Canal de comunicación del equipo para las reuniones de Sprint Planning, Sprint Review y coordinación diaria. (Referencia: https://discord.com)
+    * **Jira Software:** Gestión del Product Backlog, planificación de sprints y seguimiento de tareas en el board del proyecto. (Referencia: https://www.atlassian.com/software/jira)
+    * **Discord:** Canal de comunicación del equipo para las reuniones de Sprint Planning, Sprint Review y coordinación diaria. (Referencia: https://discord.com)
 * **Requirements Management**
-  * **Jira Software:** Registro de User Stories y Technical Stories con sus Story Points y criterios de aceptación. (Referencia: https://www.atlassian.com/software/jira)
-  * **Gherkin:** Redacción de criterios de aceptación con la estructura Given-When-Then. (Referencia: https://cucumber.io/docs/gherkin/reference)
-  * **Miro:** Elaboración del Big Picture Event Storming y del Design-Level Event Storming. (Referencia: https://miro.com)
+    * **Jira Software:** Registro de User Stories y Technical Stories con sus Story Points y criterios de aceptación. (Referencia: https://www.atlassian.com/software/jira)
+    * **Gherkin:** Redacción de criterios de aceptación con la estructura Given-When-Then. (Referencia: https://cucumber.io/docs/gherkin/reference)
+    * **Miro:** Elaboración del Big Picture Event Storming y del Design-Level Event Storming. (Referencia: https://miro.com)
 * **Product UX/UI Design**
-  * **Figma:** Elaboración de Wireframes, Mock-ups y Prototypes de la Landing Page y la Web Application. (Referencia: https://www.figma.com)
-  * **UXPressia:** Elaboración de User Personas, Empathy Maps, Journey Maps e Impact Maps. (Referencia: https://uxpressia.com)
-  * **Lucidchart:** Elaboración de Wireflows, User Flows y diagramas técnicos. (Referencia: https://www.lucidchart.com)
+    * **Figma:** Elaboración de Wireframes, Mock-ups y Prototypes de la Landing Page y la Web Application. (Referencia: https://www.figma.com)
+    * **UXPressia:** Elaboración de User Personas, Empathy Maps, Journey Maps e Impact Maps. (Referencia: https://uxpressia.com)
+    * **Lucidchart:** Elaboración de Wireflows, User Flows y diagramas técnicos. (Referencia: https://www.lucidchart.com)
 * **Software Development**
-  * **Git:** Sistema de control de versiones distribuido utilizado en todos los repositorios. (Descarga: https://git-scm.com/downloads)
-  * **GitHub:** Plataforma de alojamiento de los repositorios de la organización y de colaboración mediante ramas y Pull Requests. (Referencia: https://github.com/IngesCompany-7742)
-  * **WebStorm:** IDE para el desarrollo de la Landing Page (HTML5, CSS3 y JavaScript) y de la Frontend Web Application en Angular. (Descarga: https://www.jetbrains.com/webstorm/download)
-  * **IntelliJ IDEA:** IDE para el desarrollo de los RESTful Web Services en Java con Spring Boot. (Descarga: https://www.jetbrains.com/idea/download)
-  * **Node.js y npm:** Entorno de ejecución y gestor de paquetes requeridos por Angular CLI. (Descarga: https://nodejs.org/en/download)
-  * **Angular CLI:** Herramienta para generar, ejecutar y compilar la Frontend Web Application, integrando **Angular Material** como biblioteca de componentes y **ngx-translate** para la internacionalización. (Referencia: https://angular.dev/tools/cli)
-  * **Spring Boot y Spring Data JPA:** Frameworks de Java para el desarrollo de los RESTful Web Services. (Referencia: https://spring.io/projects/spring-boot)
-  * **PostgreSQL:** Sistema gestor de base de datos relacional. (Descarga: https://www.postgresql.org/download)
+    * **Git:** Sistema de control de versiones distribuido utilizado en todos los repositorios. (Descarga: https://git-scm.com/downloads)
+    * **GitHub:** Plataforma de alojamiento de los repositorios de la organización y de colaboración mediante ramas y Pull Requests. (Referencia: https://github.com/IngesCompany-7742)
+    * **WebStorm:** IDE para el desarrollo de la Landing Page (HTML5, CSS3 y JavaScript) y de la Frontend Web Application en Angular. (Descarga: https://www.jetbrains.com/webstorm/download)
+    * **IntelliJ IDEA:** IDE para el desarrollo de los RESTful Web Services en Java con Spring Boot. (Descarga: https://www.jetbrains.com/idea/download)
+    * **Node.js y npm:** Entorno de ejecución y gestor de paquetes requeridos por Angular CLI. (Descarga: https://nodejs.org/en/download)
+    * **Angular CLI:** Herramienta para generar, ejecutar y compilar la Frontend Web Application, integrando **Angular Material** como biblioteca de componentes y **ngx-translate** para la internacionalización. (Referencia: https://angular.dev/tools/cli)
+    * **Spring Boot y Spring Data JPA:** Frameworks de Java para el desarrollo de los RESTful Web Services. (Referencia: https://spring.io/projects/spring-boot)
+    * **PostgreSQL:** Sistema gestor de base de datos relacional. (Descarga: https://www.postgresql.org/download)
 * **Software Testing**
-  * **Chrome DevTools:** Inspección del diseño responsive y depuración de la Landing Page y la Web Application. (Referencia: https://developer.chrome.com/docs/devtools)
-  * **json-server:** Fake API para simular los endpoints REST desde la Web Application mientras se implementan los Web Services. (Referencia: https://github.com/typicode/json-server)
-  * **Swagger UI:** Ejecución de pruebas sobre los endpoints documentados de los RESTful Web Services. (Referencia: https://swagger.io/tools/swagger-ui)
+    * **Chrome DevTools:** Inspección del diseño responsive y depuración de la Landing Page y la Web Application. (Referencia: https://developer.chrome.com/docs/devtools)
+    * **json-server:** Fake API para simular los endpoints REST desde la Web Application mientras se implementan los Web Services. (Referencia: https://github.com/typicode/json-server)
+    * **Swagger UI:** Ejecución de pruebas sobre los endpoints documentados de los RESTful Web Services. (Referencia: https://swagger.io/tools/swagger-ui)
 * **Software Documentation**
-  * **Markdown en GitHub:** Redacción del informe del proyecto bajo el enfoque Docs-as-Code en el repositorio del informe. (Referencia: https://www.markdownguide.org)
-  * **OpenAPI (Swagger):** Documentación de los RESTful Web Services. (Referencia: https://swagger.io/specification)
+    * **Markdown en GitHub:** Redacción del informe del proyecto bajo el enfoque Docs-as-Code en el repositorio del informe. (Referencia: https://www.markdownguide.org)
+    * **OpenAPI (Swagger):** Documentación de los RESTful Web Services. (Referencia: https://swagger.io/specification)
 * **Software Deployment**
-  * **GitHub Pages:** Publicación de la Landing Page. (Referencia: https://pages.github.com)
-  * **Firebase Hosting:** Publicación de la Frontend Web Application. (Referencia: https://firebase.google.com/docs/hosting)
-  * **Render:** Publicación de los RESTful Web Services. (Referencia: https://render.com)
-  * **Railway:** Base de datos PostgreSQL gestionada en la nube. (Referencia: https://railway.com)
+    * **GitHub Pages:** Publicación de la Landing Page. (Referencia: https://pages.github.com)
+    * **Firebase Hosting:** Publicación de la Frontend Web Application. (Referencia: https://firebase.google.com/docs/hosting)
+    * **Render:** Publicación de los RESTful Web Services. (Referencia: https://render.com)
+    * **Railway:** Base de datos PostgreSQL gestionada en la nube. (Referencia: https://railway.com)
 
 ### 5.1.2. Source Code Management
 
@@ -105,19 +105,19 @@ Toda la nomenclatura del código fuente (archivos, clases, variables, métodos y
 A continuación se describen los pasos para desplegar cada producto de la solución a partir de su repositorio de código fuente:
 
 1. **Landing Page (GitHub Pages)**
-   1. Fusionar la rama en `main` y etiquetar la versión.
-   2. En el repositorio `IngesCompany-LandingPage`, ingresar a *Settings > Pages* y seleccionar *Deploy from a branch* con la rama `main` y la carpeta `/ (root)`.
-   3. GitHub Pages publica el sitio en https://ingescompany-7742.github.io/IngesCompany-LandingPage/ y lo vuelve a publicar con cada push a `main`.
+    1. Fusionar la rama en `main` y etiquetar la versión.
+    2. En el repositorio `IngesCompany-LandingPage`, ingresar a *Settings > Pages* y seleccionar *Deploy from a branch* con la rama `main` y la carpeta `/ (root)`.
+    3. GitHub Pages publica el sitio en https://ingescompany-7742.github.io/IngesCompany-LandingPage/ y lo vuelve a publicar con cada push a `main`.
 2. **Frontend Web Application (Firebase Hosting)**
-   1. Instalar Firebase CLI (`npm install -g firebase-tools`) e iniciar sesión con `firebase login`.
-   2. Ejecutar `firebase init` en la raíz del proyecto Angular, indicando como carpeta pública `dist/<project-name>/browser` y configurándolo como Single Page Application.
-   3. Compilar la versión de producción con `ng build --configuration production`.
-   4. Publicar con `firebase deploy`.
+    1. Instalar Firebase CLI (`npm install -g firebase-tools`) e iniciar sesión con `firebase login`.
+    2. Ejecutar `firebase init` en la raíz del proyecto Angular, indicando como carpeta pública `dist/<project-name>/browser` y configurándolo como Single Page Application.
+    3. Compilar la versión de producción con `ng build --configuration production`.
+    4. Publicar con `firebase deploy`.
 3. **RESTful Web Services (Render y Railway)**
-   1. Crear la base de datos PostgreSQL en Railway y obtener la URL de conexión y las credenciales.
-   2. Crear un Web Service en Render vinculado a la rama `main` del repositorio de Web Services, con el Dockerfile del proyecto Spring Boot.
-   3. Registrar en Render las variables de entorno de producción (URL y credenciales de la base de datos, secreto JWT y credenciales de la pasarela de pagos Niubiz).
-   4. Render compila y publica el servicio con cada push a `main`; la documentación OpenAPI queda disponible en la ruta `/swagger-ui/index.html` del servicio.
+    1. Crear la base de datos PostgreSQL en Railway y obtener la URL de conexión y las credenciales.
+    2. Crear un Web Service en Render vinculado a la rama `main` del repositorio de Web Services, con el Dockerfile del proyecto Spring Boot.
+    3. Registrar en Render las variables de entorno de producción (URL y credenciales de la base de datos, secreto JWT y credenciales de la pasarela de pagos Niubiz).
+    4. Render compila y publica el servicio con cada push a `main`; la documentación OpenAPI queda disponible en la ruta `/swagger-ui/index.html` del servicio.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -162,7 +162,7 @@ En el Sprint 1 se consideraron cuatro aspectos: el diseño de la Landing Page, s
 
 El objetivo principal de este Sprint fue implementar y publicar la Landing Page de DoofPlus para dar a conocer a Inges Company y su propuesta de valor. La siguiente imagen muestra el board del Sprint 1 en Jira:
 
-![Sprint Backlog 1 en Jira](../assets/img/chapter5/jira-pb.png)
+![Sprint Backlog 1 en Jira](../assets/img/chapter5/evidencia/jira-pb.png)
 
 *Figura: Board del Sprint 1 en Jira Software.*
 
