@@ -4,7 +4,7 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
 
 
     model {
-        visitor = person "Visitante de un laboratorio" "Evalúa DoofPlus desde la Landing Page y solicita una demostración."
+        visitor = person "Visitante de un laboratorio" "Evalúa DoofPlus desde la Landing Page, consulta los planes, envía sus consultas y registra su laboratorio."
         qa = person "Especialista QA/QC" "Gestiona documentos, insumos, desviaciones, CAPA, auditorías y liberación de lotes."
         prod = person "Jefe de Producción Farmacéutica" "Gestiona órdenes y lotes, monitorea equipos y solicita aprobaciones a Calidad."
         admin = person "Administrador del laboratorio" "Registra la organización, usuarios, roles, sensores y la suscripción."
@@ -13,11 +13,11 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
         mail = softwareSystem "SendGrid" "Servicio de correo para invitaciones, alertas y notificaciones." "External"
         ga = softwareSystem "App autenticadora (TOTP)" "App móvil del usuario (p. ej., Google Authenticator) que genera códigos 2FA." "External"
         doofplus = softwareSystem "DoofPlus" "Plataforma SaaS de gestión de calidad y trazabilidad de lotes farmacéuticos (Landing Page, Web Application y RESTful API)." {
-            landing = container "Landing Page" "Sitio estático (GitHub Pages) con la propuesta de valor, planes y equipo; i18n en-US/es-419. Sus CTA llevan a la Web Application." "HTML5, CSS3, JavaScript"
+            landing = container "Landing Page" "Sitio estático (GitHub Pages) con la propuesta de valor, planes, formulario de contacto y equipo; i18n en-US/es-419. Sus CTA llevan a la Web Application." "HTML5, CSS3, JavaScript"
             webapp = container "Web Application" "SPA responsive (Material Design) con un módulo por bounded context; i18n con ngx-translate y ARIA. Desplegada en Firebase Hosting." "Angular, Angular Material, TypeScript" {
                 wa_router = component "app.routes & authGuard" "Rutas lazy por bounded context y protección de vistas por rol." "Angular Router, CanActivateFn"
                 wa_layout = component "Layout, Toolbar y Footer" "Shell responsive y navegación global." "shared/presentation – mat-toolbar, mat-sidenav"
-                wa_iam = component "iam" "Sign-in con 2FA, sesión (JWT), usuarios y firmas." "views + IamStore + IamApi"
+                wa_iam = component "iam" "Elección de entorno, sign-in con 2FA, sesión (JWT), usuarios y firmas." "views + IamStore + IamApi"
                 wa_org = component "organizations" "Organización, plantas y perfiles." "views + store + api"
                 wa_subs = component "subscriptions" "Planes, pago y estado de la suscripción." "views + store + api"
                 wa_mfg = component "manufacturing" "Órdenes, lotes, insumos e incidencias." "views + ManufacturingStore + api"
@@ -43,15 +43,15 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
                     iam_acl = component "IamContextFacade" "Expone usuarios y firmas a los demás bounded contexts." "Interfaces – ACL Facade" "Identity & Access Management"
                 }
                 group "Organizations & Profiles" {
-                    org_ctl = component "OrganizationsController · DemoRequestsController" "Registro de organizaciones, plantas y solicitudes de demo." "Spring @RestController" "Organizations & Profiles"
+                    org_ctl = component "OrganizationsController · ContactInquiriesController" "Registro de organizaciones, plantas y consultas de contacto." "Spring @RestController" "Organizations & Profiles"
                     org_ctl2 = component "ProfilesController" "Perfiles y preferencias." "Spring @RestController" "Organizations & Profiles"
                     org_cmd = component "OrganizationCommandServiceImpl" "Registra la organización (RUC único) y pide crear su administrador." "Spring @Service – Command Service" "Organizations & Profiles"
-                    org_dcmd = component "DemoRequestCommandServiceImpl" "Registra la solicitud y avisa al equipo comercial." "Spring @Service – Command Service" "Organizations & Profiles"
+                    org_dcmd = component "ContactInquiryCommandServiceImpl" "Registra la consulta y avisa al equipo de DoofPlus." "Spring @Service – Command Service" "Organizations & Profiles"
                     org_pcmd = component "ProfileCommandServiceImpl" "Crea y actualiza perfiles." "Spring @Service – Command Service" "Organizations & Profiles"
                     org_qry = component "OrganizationQueryServiceImpl" "Consultas de organizaciones y plantas." "Spring @Service – Query Service" "Organizations & Profiles"
-                    org_dom = component "Organization · Plant · Profile · DemoRequest" "Aggregates del contexto." "Domain Model" "Organizations & Profiles"
+                    org_dom = component "Organization · Plant · Profile · ContactInquiry" "Aggregates del contexto." "Domain Model" "Organizations & Profiles"
                     org_ext = component "ExternalIamService" "Crea el usuario administrador mediante IamContextFacade." "Application – Outbound ACL" "Organizations & Profiles"
-                    org_repo = component "OrganizationRepository · ProfileRepository · DemoRequestRepository" "Persistencia en MySQL." "Spring Data JPA Repository" "Organizations & Profiles"
+                    org_repo = component "OrganizationRepository · ProfileRepository · ContactInquiryRepository" "Persistencia en MySQL." "Spring Data JPA Repository" "Organizations & Profiles"
                     org_acl = component "OrganizationsContextFacade" "Expone organización y plantas." "Interfaces – ACL Facade" "Organizations & Profiles"
                 }
                 group "Subscriptions & Payments" {
@@ -109,7 +109,7 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
             db = container "Database" "Tablas agrupadas por bounded context (Railway)." "MySQL 8" "Database"
         }
 
-        visitor -> doofplus "Conoce la propuesta de valor, los planes y solicita una demo" "HTTPS"
+        visitor -> doofplus "Conoce la propuesta de valor y los planes, envía consultas y registra su laboratorio" "HTTPS"
         qa -> doofplus "Gestiona calidad y cumplimiento" "HTTPS"
         prod -> doofplus "Gestiona la producción y monitorea la planta" "HTTPS"
         admin -> doofplus "Administra organización, usuarios y suscripción" "HTTPS"
@@ -120,8 +120,8 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
         ga -> prod "Muestra el código TOTP (sin integración por API)" "" "Optional"
         ga -> admin "Muestra el código TOTP (sin integración por API)" "" "Optional"
         visitor -> landing "Visita" "HTTPS"
-        landing -> api "Solicita demo" "JSON/HTTPS"
-        landing -> webapp "Redirige por segmento (CTA)" "HTTPS"
+        landing -> api "Envía consultas de contacto" "JSON/HTTPS"
+        landing -> webapp "Lleva al inicio de sesión por entorno y al registro" "HTTPS"
         qa -> webapp "Usa" "HTTPS"
         prod -> webapp "Usa" "HTTPS"
         admin -> webapp "Usa" "HTTPS"
@@ -170,7 +170,7 @@ workspace "DoofPlus" "Modelo C4 de DoofPlus (IngesCompany). Fuente Structurizr D
         iam_acl -> iam_qry "Usa"
         iam_acl -> iam_sig "Usa"
         iam_repo -> db "JDBC"
-        landing -> org_ctl "Solicita demo"
+        landing -> org_ctl "Envía consultas de contacto"
         webapp -> org_ctl "JSON/HTTPS"
         webapp -> org_ctl2 "JSON/HTTPS"
         org_ctl -> org_cmd "Usa"
