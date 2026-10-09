@@ -810,8 +810,8 @@ En este Sprint se completó la Landing Page, publicada en GitHub Pages, y se imp
 
 Videos de navegación del producto (upc-pre-202620-1asi0729-7742-IngesCompany-productnavigation-sprint-2):
 
-- **Landing Page:** [ver en Microsoft Stream](https://shorturl.at/cI09z). Inicio: 00:00. Duración: <mark>mm:ss</mark>.
-- **Web Application:** [ver en Microsoft Stream](https://shorturl.at/rqzbT). Inicio: 00:00. Duración: <mark>mm:ss</mark>.
+- **Landing Page:** [ver en Microsoft Stream](https://shorturl.at/cI09z).
+- **Web Application:** [ver en Microsoft Stream](https://shorturl.at/rqzbT).
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
