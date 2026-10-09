@@ -166,7 +166,7 @@ El objetivo principal de este Sprint fue implementar y publicar la Landing Page 
 
 *Figura: Board del Sprint 1 en Jira Software.*
 
-**Enlace al board en Jira:** [click aquí](https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3/backlog?jql=parent+IN+%28UPC-2%2C+UPC-9%2C+UPC-20%29&atlOrigin=eyJpIjoiOWZkY2NhNGFkYzdlNGFmNGJlZTE4MTY1OGVjNjAyZDciLCJwIjoiaiJ9)
+**Enlace al board en Jira:** <>
 
 | Sprint # | Sprint 1 | | | | | | |
 |----------|----------|---|---|---|---|---|---|
@@ -303,7 +303,7 @@ El objetivo principal de este Sprint es implementar la primera versión de la Fr
 
 *Figura: Board del Sprint 2 en Jira Software.*
 
-**Enlace al board en Jira:** [click aquí](https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3/backlog?jql=parent+IN+%28UPC-2%2C+UPC-9%2C+UPC-20%29&atlOrigin=eyJpIjoiOWZkY2NhNGFkYzdlNGFmNGJlZTE4MTY1OGVjNjAyZDciLCJwIjoiaiJ9)
+**Enlace al board en Jira:** <>
 
 | Sprint # | Sprint 2 | | | | | | |
 |----------|----------|---|---|---|---|---|---|
