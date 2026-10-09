@@ -50,7 +50,7 @@ u20241f733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 
 ---
 
-## Registro de Versiones del Informe
+## Registro de Versiones del Informe {.unlisted}
 
 | Versión | Fecha | Autor | Descripción |
 |:---:|:---:|:---|:---|
@@ -104,7 +104,7 @@ u20241f733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 | 2.6.1 | 09/10/2026 | Rojas Ambicho, Nestor Daniel | Capítulo V: se quitaron los marcadores de duración de los videos de navegación del Sprint 2. |
 ---
 
-## Project Report Collaboration Insights
+## Project Report Collaboration Insights {.unlisted}
 
 **Link de los repositorios de la organización:**
 https://github.com/IngesCompany-7742
@@ -115,6 +115,8 @@ https://github.com/IngesCompany-7742/IngesCompany-Project-Report.git
 ---
 
 ## Contenido
+
+- [Student Outcome](#student-outcome)
 
 - [Capítulo I: Introducción](docs/chapter1.md#capítulo-i-introducción)
   - [1.1. Startup Profile](docs/chapter1.md#11-startup-profile)
@@ -210,3 +212,17 @@ https://github.com/IngesCompany-7742/IngesCompany-Project-Report.git
   - [Video About-the-Team](docs/chapter5.md#video-about-the-team)
 - [Bibliografía](docs/chapter5.md#bibliografía)
 - [Anexos](docs/chapter5.md#anexos)
+
+
+---
+
+# Student Outcome
+
+El presente proyecto permite a los integrantes del equipo IngesCompany consolidar y evidenciar sus habilidades de comunicación, adaptando la terminología y la profundidad técnica al público objetivo. A través de las sustentaciones, la documentación estructurada y la creación de material audiovisual, el equipo demuestra la capacidad de transmitir el valor del producto "DoofPlus" a diferentes stakeholders (técnicos, de negocio y usuarios finales).
+
+**ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|---|---|---|
+| Comunica oralmente con efectividad a diferentes rangos de audiencia | *Angulo Ramírez, Marcelo Martín*<br>**TB1:** Participó en la elaboración y narración de videos de navegación y demostración de las aplicaciones.<br><br>*Cobades Zamora, Yhoshua Hebert*<br>**TB1:** Explicó la integración del trabajo mediante la exportación a PDF y la automatización de flujos.<br><br>*Flores Martinez, Ricardo Andres*<br>**TB1:** Sustentó el proceso de Sprint Planning y el manejo de evidencias durante el desarrollo.<br><br>*Rojas Ambicho, Nestor Daniel*<br>**TB1:** Explicó los modelos de arquitectura de software y el impacto técnico a nivel de despliegue.<br><br>*Zavaleta Gutierrez, Rodolfo Martin*<br>**TB1:** Expuso de forma clara el desarrollo y estructuración del dominio y las conclusiones del análisis. | Se ha logrado adaptar el nivel de lenguaje (técnico y de negocio) según los requerimientos de sustentación y grabación de videos, asegurando una buena recepción por parte de la audiencia evaluadora. |
+| Comunica por escrito con efectividad a diferentes rangos de audiencia | *Angulo Ramírez, Marcelo Martín*<br>**TB1:** Elaboró los análisis de entrevistas, UX y secciones de validación.<br><br>*Cobades Zamora, Yhoshua Hebert*<br>**TB1:** Redactó y estructuró las secciones de Configuration Management y evidencias del Sprint 1 y 2.<br><br>*Flores Martinez, Ricardo Andres*<br>**TB1:** Documentó las métricas, 5W & 2H y la organización de los sprints.<br><br>*Rojas Ambicho, Nestor Daniel*<br>**TB1:** Documentó exhaustivamente los diagramas C4 y el Object-Oriented Design del producto.<br><br>*Zavaleta Gutierrez, Rodolfo Martin*<br>**TB1:** Redactó la problemática, Lean UX, requisitos técnicos y las conclusiones finales. | El equipo elaboró el informe respetando el Ubiquitous Language y aplicando los estándares de Markdown y documentación técnica, lo que facilita la lectura y comprensión para distintos perfiles (técnicos y de producto). |
