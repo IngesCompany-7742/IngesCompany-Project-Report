@@ -386,6 +386,18 @@ Las capturas de las vistas implementadas y los analíticos de colaboración del 
 
 ## Conclusiones y recomendaciones
 
+### Conclusiones
+
+1. **Necesidad de digitalización regulatoria:** La transformación digital en los laboratorios farmacéuticos va más allá de una simple optimización operativa; es una necesidad regulatoria. DoofPlus resuelve el problema crítico de la documentación en papel y los errores manuales al unificar la trazabilidad de lotes, datos IoT y el control de calidad bajo los estrictos estándares de las Buenas Prácticas de Manufactura (BPM/GMP).
+2. **Escalabilidad mediante Arquitectura DDD:** El diseño arquitectónico de DoofPlus, fundamentado en *Domain-Driven Design (DDD)*, ha demostrado ser el enfoque óptimo para modelar la complejidad de la industria farmacéutica. La separación en *Bounded Contexts* (IAM, Manufactura, QA/QC) asegura que el software sea escalable, mantenible y permita al equipo de desarrollo trabajar en paralelo sin generar acoplamientos innecesarios.
+3. **Ventaja competitiva frente al mercado:** Tras el análisis del mercado y los competidores, se concluye que la propuesta de valor de DoofPlus destaca por ofrecer una integración nativa y fluida entre las alertas de sensores (IoT) en tiempo real y el flujo de liberación de lotes (firmas electrónicas), adaptándose de manera más ágil a la realidad de los supervisores de producción frente a alternativas monolíticas tradicionales.
+
+### Recomendaciones
+
+1. **Priorización de la Seguridad (Audit Trail):** Para las próximas fases del proyecto (AV2), se recomienda implementar desde el inicio un *Audit Trail* (pista de auditoría) inmutable en el backend. Dada la naturaleza del sector farmacéutico, es vital que todas las firmas electrónicas y cambios de estado de los lotes cumplan con normativas internacionales (como FDA 21 CFR Part 11).
+2. **Simulación temprana de hardware IoT:** Puesto que las pruebas con sensores físicos pueden ser complejas de implementar en el corto plazo, se recomienda desarrollar *scripts* o herramientas de simulación (mocks) en el backend que envíen telemetría falsa (temperatura, humedad, presión) para probar de manera continua las alertas en el módulo de Manufactura.
+3. **Pruebas de usabilidad orientadas a roles:** Se sugiere realizar sesiones de *testing* enfocadas específicamente en la experiencia de usuario (UX) de los especialistas de QA/QC. Es crucial verificar que la interfaz (desarrollada con Angular Material) permita revisar los registros electrónicos de lotes y aplicar firmas digitales de forma intuitiva, reduciendo la curva de aprendizaje.
+
 ## Video About-the-Team
 
 # Bibliografía
