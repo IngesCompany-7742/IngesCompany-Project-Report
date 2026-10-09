@@ -98,7 +98,8 @@ u20241f733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 | 2.5.0 | 08/10/2026 | Cobades Zamora, Yhoshua Hebert | Revisión integral según el statement: objetivos y restricciones, Lean UX Canvas en alta resolución, análisis competitivo, Ubiquitous Language, Product Backlog ordenado por valor, diagramas C4 y capturas de Jira de los Sprints 1 y 2. |
 | 2.5.1 | 08/10/2026 | Cobades Zamora, Yhoshua Hebert | Carátula del PDF según la plantilla del curso, ajuste de tablas con logos e Impact Mapping dividido al ancho de página. |
 | 2.5.2 | 08/10/2026 | Cobades Zamora, Yhoshua Hebert | Actualización del registro de versiones (un autor por versión), carátula con fecha de Octubre 2026 y códigos de alumno en minúscula. |
-
+| 2.5.3 | 09/10/2026 | Zavaleta Gutierrez, Rodolfo Martin | Implementación de análisis y conclusiones |
+| 2.5.4 | 09/10/2026 | Zavaleta Gutierrez, Rodolfo Martin | Implementación de las referencias bibliográficas |
 ---
 
 ## Project Report Collaboration Insights
