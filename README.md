@@ -101,6 +101,7 @@ u20241f733 &nbsp; &nbsp; Zavaleta Gutierrez, Rodolfo Martin
 | 2.5.3 | 09/10/2026 | Zavaleta Gutierrez, Rodolfo Martin | Implementación de análisis y conclusiones |
 | 2.5.4 | 09/10/2026 | Zavaleta Gutierrez, Rodolfo Martin | Implementación de las referencias bibliográficas |
 | 2.6.0 | 09/10/2026 | Rojas Ambicho, Nestor Daniel | Integración de los capítulos I, III, IV y V para la entrega TB1: prototipo y diseño en el Figma del curso, video de navegación del prototipo, y evidencias del Sprint 2 (Landing Page v1.0.1 en GitHub Pages, Web Application v1.0.0 en Firebase Hosting y Fake API en Render). |
+| 2.6.1 | 09/10/2026 | Rojas Ambicho, Nestor Daniel | Capítulo V: se quitaron los marcadores de duración de los videos de navegación del Sprint 2. |
 ---
 
 ## Project Report Collaboration Insights
