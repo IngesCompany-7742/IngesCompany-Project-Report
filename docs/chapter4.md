@@ -894,7 +894,7 @@ Frame en Miro: https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=34587646857
 
 #### Paso 1: Timelines
 
-Se organizaron en una línea de tiempo vertical los eventos de cada contexto, con los resultados alternativos en la columna "Alternativa" (por ejemplo, "Documento aprobado" o "Documento rechazado"). Al revisar qué dispara cada evento, en este nivel se agregaron eventos que faltaban en el Big Picture: "Consulta recibida", "Plan de suscripción seleccionado", "Firma electrónica registrada", "Equipo registrado", "Sensor IoT registrado", "Aprobación de insumos solicitada a Calidad", "Mantenimiento preventivo realizado", "Lote puesto en espera" y "Acción CAPA vencida"; además, "Usuario registrado" se renombró como "Usuario dado de alta en la organización". También aparecen eventos de detalle que no eran relevantes en la vista general, como "Usuario autenticado", "Inicio de sesión fallido", "Cuenta bloqueada", "Planta agregada", "Perfil actualizado" y "Alerta reconocida".
+Se organizaron en una línea de tiempo vertical los eventos de cada contexto, con los resultados alternativos en la columna "Alternative" (por ejemplo, "Document approved" o "Document rejected"). Al revisar qué dispara cada evento, en este nivel se agregaron eventos que faltaban en el Big Picture: "Inquiry received", "Subscription plan selected", "Electronic signature recorded", "Equipment registered", "IoT sensor registered", "Raw material approval requested from Quality", "Preventive maintenance performed", "Batch put on hold" y "CAPA action overdue"; además, "User signed up" se renombró como "User registered in the organization". También aparecen eventos de detalle que no eran relevantes en la vista general, como "User authenticated", "Sign-in failed", "Account locked", "Facility added", "Profile updated" y "Alert acknowledged".
 
 **Identity & Access Management**
 
@@ -922,7 +922,7 @@ Se organizaron en una línea de tiempo vertical los eventos de cada contexto, co
 
 #### Paso 2: Commands
 
-Cada evento se antecedió por el command que lo provoca, redactado en imperativo (por ejemplo, "Crear lote" produce "Lote creado"). Un mismo command puede terminar en dos eventos alternativos, como "Aprobar orden de producción", que produce "Orden de producción aprobada" u "Orden de producción rechazada".
+Cada evento se antecedió por el command que lo provoca, redactado en imperativo (por ejemplo, "Create batch" produce "Batch created"). Un mismo command puede terminar en dos eventos alternativos, como "Approve production order", que produce "Production order approved" o "Production order rejected".
 
 **Identity & Access Management**
 
@@ -950,7 +950,7 @@ Cada evento se antecedió por el command que lo provoca, redactado en imperativo
 
 #### Paso 3: Actors and policies
 
-Se identificó quién ejecuta cada command: Administrador del laboratorio, Especialista QA/QC, Jefe de Calidad, Jefe de Producción, Auditor interno, Responsable de la acción CAPA y, para las tareas programadas, el sistema. Cuando un command se ejecuta automáticamente, el actor se reemplazó por una policy. Las principales policies son:
+Se identificó quién ejecuta cada command: Laboratory Administrator, QA/QC Specialist, Quality Manager, Production Supervisor, Internal Auditor, Action Owner y, para las tareas programadas, el sistema (System, scheduler). Cuando un command se ejecuta automáticamente, el actor se reemplazó por una policy. Las principales policies son:
 
 | Bounded context | Policy (cuando ocurre…, entonces…) |
 | --- | --- |
@@ -993,7 +993,7 @@ Se identificó quién ejecuta cada command: Administrador del laboratorio, Espec
 
 #### Paso 4: Read models
 
-Se registró la información que cada actor consulta antes de decidir. Estos read models son la base de las vistas de la Web Application y de los dashboards: por ejemplo, "Panel de control del lote" (GxP Batch Execution & Management Console), "Tablero de desviaciones y CAPA" (Critical Deviations & CAPA Actions Control), "Panel de resultados de laboratorio" (Analytical Results Entry & Validation), "Panel de alertas" (Environmental & Equipment Monitoring) y "Audit trail" (Cross-Traceability & Audit Center). Cada read model se obtiene con una query del contexto, atendida por su query service: por ejemplo, el panel de control del lote se arma con la consulta del lote y su línea de tiempo, y el tablero de desviaciones, con la consulta de las desviaciones abiertas por severidad.
+Se registró la información que cada actor consulta antes de decidir. Estos read models son la base de las vistas de la Web Application y de los dashboards: por ejemplo, "Batch dashboard" (GxP Batch Execution & Management Console), "Deviations and CAPA board" (Critical Deviations & CAPA Actions Control), "Laboratory results dashboard" (Analytical Results Entry & Validation), "Alerts dashboard" (Environmental & Equipment Monitoring) y "Audit trail" (Cross-Traceability & Audit Center). Cada read model se obtiene con una query del contexto, atendida por su query service: por ejemplo, el panel de control del lote se arma con la consulta del lote y su línea de tiempo, y el tablero de desviaciones, con la consulta de las desviaciones abiertas por severidad.
 
 **Identity & Access Management**
 
@@ -1021,7 +1021,7 @@ Se registró la información que cada actor consulta antes de decidir. Estos rea
 
 #### Paso 5: External systems
 
-Se ubicaron los sistemas externos en el punto donde intervienen: Niubiz (pago y renovación de suscripciones), ThingsBoard (registro de sensores e ingesta de lecturas), SendGrid (invitaciones, alertas y notificaciones por correo), el Lector RFID (recepción de materias primas), la app autenticadora del usuario (códigos TOTP) y DIGEMID (inspección). Respecto del tablero original se corrigieron tres elementos: "Registro en la base de datos" no es un sistema externo (la base de datos es parte de la solución), el "Motor de alertas" es lógica propia del contexto IoT Monitoring y Google Authenticator no expone un API: solo genera el código que el usuario ingresa.
+Se ubicaron los sistemas externos en el punto donde intervienen: Niubiz (pago y renovación de suscripciones), ThingsBoard (registro de sensores e ingesta de lecturas), SendGrid (invitaciones, alertas y notificaciones por correo), el RFID Reader (recepción de materias primas), la Authenticator App (TOTP) del usuario (códigos de 2FA) y DIGEMID (inspección). Respecto del tablero original se corrigieron tres elementos: "Registro en la base de datos" no es un sistema externo (la base de datos es parte de la solución), el "Motor de alertas" es lógica propia del contexto IoT Monitoring y Google Authenticator no expone un API: solo genera el código que el usuario ingresa.
 
 **Identity & Access Management**
 
@@ -1049,7 +1049,7 @@ Se ubicaron los sistemas externos en el punto donde intervienen: Niubiz (pago y 
 
 #### Paso 6: Business rules y aggregates
 
-Donde no interviene un sistema externo se escribió la business rule que el command debe cumplir. Las reglas se tomaron de los criterios de aceptación de las User Stories (el identificador aparece en el post-it), por ejemplo "Número de lote único (US14)", "Solo materia prima aprobada (US17)" o "Requiere causa raíz y CAPA verificadas (US19)". Las reglas que protegen los mismos datos se apilaron y cada grupo recibió el nombre de su aggregate:
+Donde no interviene un sistema externo se escribió la business rule que el command debe cumplir. Las reglas se tomaron de los criterios de aceptación de las User Stories (el identificador aparece en el post-it), por ejemplo "Unique batch number (US14)", "Approved raw material only (US17)" o "Requires a root cause and verified CAPA (US19)". Las reglas que protegen los mismos datos se apilaron y cada grupo recibió el nombre de su aggregate:
 
 | Bounded context | Aggregates | Ejemplo de invariante |
 | --- | --- | --- |
@@ -1060,7 +1060,7 @@ Donde no interviene un sistema externo se escribió la business rule que el comm
 | IoT Monitoring | Equipment, IoTDevice, TelemetryReading, Alert | Un equipo con calibración vencida no puede asignarse a un lote. |
 | Quality & Compliance | QualityDocument, MaterialApproval, BatchReview, AnalyticalResult, Deviation, Audit, RegulatoryReport | Un lote con un resultado OOS sin desviación cerrada no puede liberarse. |
 
-Frames en Miro por bounded context. Debajo de los frames finales, el tablero tiene la sección "DLES paso a paso por bounded context", con una fila por contexto y un frame por paso (Pasos 1 a 6); el enlace lleva al Paso 1 de cada fila:
+Frames en Miro por bounded context. Debajo de los frames finales, el tablero tiene la sección "DLES step by step per bounded context", con una fila por contexto y un frame por paso (Pasos 1 a 6); el enlace lleva al Paso 1 de cada fila:
 
 | Bounded context | Frame final | Pasos 1 a 6 |
 | --- | --- | --- |
