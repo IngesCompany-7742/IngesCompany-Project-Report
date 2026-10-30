@@ -1117,22 +1117,48 @@ Frame en Miro: https://miro.com/app/board/uXjVHkhKOXE=/?moveToWidget=34587646857
 
 ### 4.6.2. Software Architecture Context Diagram
 
-El diagrama de contexto (nivel 1 del modelo C4) muestra a DoofPlus como un único sistema rodeado por sus usuarios y los sistemas externos identificados en el EventStorming. Los usuarios son el visitante de un laboratorio (Landing Page), el Especialista QA/QC y el Jefe de Producción (segmentos objetivo) y el Administrador del laboratorio. Los sistemas externos son ThingsBoard, que envía la telemetría de los sensores; Niubiz, que autoriza los cobros de las suscripciones; SendGrid, que entrega correos; y el Lector RFID del almacén, con el que el Jefe de Producción lee la etiqueta del insumo recibido y que envía ese código a DoofPlus. La app autenticadora del usuario genera los códigos TOTP del segundo factor sin integración por API, por eso se muestra con línea punteada. DIGEMID, identificada como sistema externo en el EventStorming, no forma parte del diagrama porque inspecciona al laboratorio sin intercambiar datos con DoofPlus: el modelo C4 solo incluye las personas y los sistemas conectados directamente con el sistema. Los diagramas C4 se elaboraron con Structurizr DSL (Diagram-as-Code) y se renderizaron con Structurizr, la herramienta de referencia del modelo C4; todas las vistas salen de un único modelo (`assets/diagrams/structurizr/workspace.dsl`), y la disposición de los elementos de cada vista se guarda en `workspace.json`, ordenada en capas de arriba hacia abajo para que las relaciones no se crucen ni atraviesen otros elementos.
+El diagrama de contexto (nivel 1 del modelo C4) presenta a DoofPlus como una "caja negra": el foco está en el sistema y en las personas y sistemas externos con los que interactúa, sin detallar cómo está construido por dentro. Los diagramas C4 se elaboraron con Structurizr DSL (Diagram-as-Code) y se renderizaron con Structurizr; todas las vistas salen de un único modelo (`assets/diagrams/structurizr/workspace.dsl`), la posición de cada elemento se guarda en `workspace.json` y los textos de los diagramas están en inglés, al igual que el resto de artefactos.
+
+Personas que usan DoofPlus:
+
+- **Laboratory Visitor:** representante de un laboratorio que conoce DoofPlus desde la Landing Page, revisa los planes y registra su laboratorio.
+- **QA/QC Specialist** (segmento objetivo 1): gestiona documentos, dictamen de insumos, desviaciones, CAPA, auditorías y la liberación de lotes.
+- **Pharmaceutical Production Supervisor** (segmento objetivo 2): gestiona órdenes y lotes, monitorea los equipos y solicita aprobaciones a Calidad.
+- **Laboratory Administrator:** registra la organización, los usuarios, los roles, los sensores y la suscripción.
+
+Sistemas externos:
+
+- **ThingsBoard:** plataforma IoT que recibe las lecturas de los sensores de planta y las reenvía a DoofPlus.
+- **Niubiz:** pasarela de pagos que autoriza los cobros de las suscripciones.
+- **SendGrid:** servicio de correo para invitaciones, alertas y notificaciones.
+- **RFID Reader:** lector del almacén con el que el Jefe de Producción lee la etiqueta del insumo recibido; envía ese código a DoofPlus.
+- **Authenticator App (TOTP):** aplicación móvil del usuario que genera los códigos del segundo factor. No se integra por API con DoofPlus, por eso su relación se dibuja con línea punteada.
+
+En el diagrama se observa que las cuatro personas usan DoofPlus mediante HTTPS, que ThingsBoard envía la telemetría al sistema mediante un webhook y que DoofPlus se integra con Niubiz y SendGrid a través de sus API REST. DIGEMID, identificada en el EventStorming, no forma parte del diagrama porque inspecciona al laboratorio sin intercambiar datos con DoofPlus: el modelo C4 solo incluye a las personas y los sistemas conectados directamente con el sistema.
 
 ![Context Level Diagram](../assets/img/chapter4/software-architecture/c4/c4-01-context.png)
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-El diagrama de contenedores (nivel 2) muestra las unidades de despliegue de la solución y cómo se comunican:
+En el nivel de contenedores, la atención pasa de "quién usa el sistema" a "cómo se organiza el sistema en aplicaciones y almacenes de datos". El diagrama muestra los contenedores de DoofPlus, sus responsabilidades, las decisiones de tecnología y la forma en que se comunican entre sí y con los sistemas externos:
 
 | Container | Tecnología | Despliegue | Responsabilidad |
 | --- | --- | --- | --- |
-| Landing Page | HTML5, CSS3, JavaScript | GitHub Pages | Presentar la propuesta de valor, los planes y el equipo; enviar las consultas del formulario de contacto y llevar a cada usuario al inicio de sesión de su entorno o al registro de la organización. |
-| Web Application | Angular, Angular Material, TypeScript, ngx-translate | Firebase Hosting | SPA responsive con un módulo por bounded context; consume el RESTful API con un token JWT. |
-| RESTful API | Spring Boot, Java 21, Spring Data JPA, Spring Security, springdoc-openapi | Render | Monolito modular con los seis bounded contexts; expone endpoints REST documentados con OpenAPI (Swagger), recibe la telemetría de ThingsBoard y publica notificaciones por WebSocket (STOMP). |
+| Landing Page | HTML5, CSS3, JavaScript | GitHub Pages | Presentar la propuesta de valor, los planes y el equipo, y llevar a cada usuario, mediante el call to action, al inicio de sesión de su entorno o al registro de la organización. |
+| Web Application | Archivos estáticos generados por `ng build` | Firebase Hosting | Entregar al navegador del usuario el contenido estático y la Single-Page Application (`index.html` y los archivos JavaScript y CSS). No ejecuta lógica de negocio. |
+| Single-Page Application | Angular, Angular Material, TypeScript, ngx-translate | Navegador del usuario | Toda la interfaz de DoofPlus, con un módulo por bounded context; consume el RESTful API con un token JWT. |
+| RESTful API | Spring Boot, Java, Spring Data JPA, Spring Security, springdoc-openapi | Render | Monolito modular con los seis bounded contexts; expone endpoints REST documentados con OpenAPI (Swagger), recibe la telemetría de ThingsBoard y publica notificaciones por WebSocket (STOMP). |
 | Database | MySQL 8 | Railway | Persistencia relacional; las tablas se agrupan por bounded context. |
 
-El Lector RFID se conecta al equipo del almacén y envía a la Web Application el código de la etiqueta como entrada de teclado (USB HID), por lo que no requiere integración con el RESTful API.
+La aplicación web de DoofPlus se representa con dos contenedores, como indica el modelo C4 para una Single-Page Application. Al compilar el proyecto Angular se genera una carpeta con `index.html` y los archivos JavaScript y CSS; Firebase Hosting (Web Application) solo los entrega cuando el usuario ingresa a la URL de DoofPlus, y la aplicación se ejecuta en el navegador del usuario (Single-Page Application), por eso este contenedor se dibuja con la forma de un navegador. La Landing Page es un contenedor aparte.
+
+En el diagrama se observa que:
+
+- El visitante ingresa a la **Landing Page**, cuyo call to action lo lleva a la URL de la Web Application.
+- Los tres usuarios de la plataforma visitan la URL de DoofPlus; la **Web Application** entrega la **Single-Page Application** a su navegador, y desde ese momento trabajan con la SPA.
+- La **Single-Page Application** se comunica solo con el **RESTful API**: realiza peticiones JSON/HTTPS con un token JWT y recibe las alertas en tiempo real por WebSocket.
+- El **RESTful API** lee y escribe en la **Database** mediante Spring Data JPA, recibe la telemetría de **ThingsBoard** sin pasar por la SPA y se integra con **Niubiz** y **SendGrid**.
+- El **RFID Reader** se conecta al equipo del almacén y escribe el código de la etiqueta en la Single-Page Application como entrada de teclado (USB HID), por lo que no requiere integración con el RESTful API.
 
 Se eligió un monolito modular en lugar de microservicios porque el statement define un único RESTful API y porque el equipo y el volumen de datos de laboratorios pequeños y medianos no justifican la complejidad operativa de varios servicios. La separación por bounded context dentro del código (paquetes independientes que solo se comunican mediante fachadas y eventos) permite extraer un contexto a un servicio propio en el futuro.
 
@@ -1140,35 +1166,45 @@ Se eligió un monolito modular en lugar de microservicios porque el statement de
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-Los diagramas de componentes (nivel 3) descomponen la Web Application y el RESTful API. La Web Application sigue la estructura del proyecto en Angular: un módulo por bounded context con las capas `domain`, `application`, `infrastructure` y `presentation`, más los elementos compartidos de `shared`. El módulo `manufacturing` recibe el código leído por el Lector RFID en el registro de la recepción de insumos.
+En el nivel de componentes se detalla cómo se descompone cada contenedor que contiene código propio: la Single-Page Application y el RESTful API. En ambos, cada componente corresponde a un bounded context identificado en el Design-Level EventStorming (sección 4.6.1), más un componente `Shared` con los elementos reutilizados por todos. La descomposición de cada bounded context en sus capas (domain, application, infrastructure y presentation o interfaces) y en sus clases se presenta en los diagramas de clases de la sección 4.7.
 
-![Component Diagram - Web Application](../assets/img/chapter4/software-architecture/c4/c4-03-webapp-components.png)
+#### Single-Page Application
 
-En el RESTful API cada bounded context es un paquete de Spring Boot con cuatro capas: `interfaces` (controladores REST y fachadas ACL), `application` (command services, query services, event handlers y servicios ACL de salida), `domain` (aggregates, entities, value objects, commands, queries y domain services) e `infrastructure` (repositorios Spring Data JPA e integraciones externas).
+La Single-Page Application sigue la estructura del proyecto en Angular: un módulo por bounded context en `src/app/<bounded-context>/`, más el módulo `shared`.
 
-**Identity & Access Management.** `AuthenticationController` atiende sign-up, sign-in y la verificación 2FA; `BearerAuthorizationRequestFilter` valida el JWT en cada request; `UserCommandServiceImpl` da de alta usuarios, asigna roles y bloquea cuentas; `SignatureCommandServiceImpl` registra firmas electrónicas. `IamContextFacade` expone estas capacidades a los demás contextos.
+- **Shared:** el shell del espacio de trabajo (layout, toolbar, sidebar, footer y selector de idioma), las rutas de cada entorno (QA/QC, Production y Administration) y el cliente REST base del que heredan los endpoints de todos los módulos.
+- **Identity & Access Management:** elección del entorno, inicio de sesión con 2FA, sesión, usuarios, invitaciones y protección de las rutas según el rol.
+- **Organizations & Profiles:** registro de la organización, plantas, resumen de administración, consultas de contacto y preferencias del perfil.
+- **Subscriptions & Payments:** planes, medio de pago, suscripción vigente e historial de facturas.
+- **Manufacturing & Batch Management:** resumen de producción, órdenes, productos y fórmulas, lotes y recepción de insumos.
+- **IoT Monitoring:** resumen IoT, equipos y sensores, lecturas, alertas y evidencia IoT de cada lote.
+- **Quality & Compliance:** documentos, desviaciones, CAPA, liberación de lotes, resultados analíticos, auditorías, audit trail y reportes regulatorios.
 
-![Component Diagram - IAM](../assets/img/chapter4/software-architecture/c4/c4-04-api-iam-components.png)
+En el diagrama se observa que los usuarios trabajan en el shell de `Shared`, que carga de forma diferida el módulo del bounded context que corresponde a cada vista; cada módulo llama al RESTful API mediante JSON/HTTPS. El RFID Reader escribe el código de la etiqueta en el módulo de Manufacturing durante la recepción de insumos.
 
-**Organizations & Profiles.** Registra organizaciones, plantas, perfiles y las consultas del formulario de contacto de la Landing Page; al registrar una organización pide a IAM crear su administrador mediante `ExternalIamService`.
+![Component Diagram - Single-Page Application](../assets/img/chapter4/software-architecture/c4/c4-03-spa-components.png)
 
-![Component Diagram - Organizations](../assets/img/chapter4/software-architecture/c4/c4-05-api-organizations-components.png)
+#### RESTful API
 
-**Subscriptions & Payments.** Gestiona planes y suscripciones; `NiubizPaymentGateway` autoriza los cobros y `SubscriptionRenewalScheduler` renueva las suscripciones vencidas.
+El RESTful API es un monolito modular: cada bounded context es un paquete de Spring Boot independiente, y los paquetes solo se comunican mediante fachadas ACL (`<Context>ContextFacade`) y eventos de dominio.
 
-![Component Diagram - Subscriptions](../assets/img/chapter4/software-architecture/c4/c4-06-api-subscriptions-components.png)
+- **Shared:** clase base de los aggregates auditables, estrategia de nombres en snake_case, el tipo `Result` y la configuración común.
+- **Identity & Access Management:** registro e inicio de sesión con JWT y TOTP, usuarios, roles, bloqueo de cuentas tras cinco intentos fallidos y firmas electrónicas. Envía las invitaciones por SendGrid.
+- **Organizations & Profiles:** organizaciones (con RUC único), plantas, perfiles y consultas de contacto. Al registrar una organización pide a IAM crear su usuario administrador y avisa de cada consulta por SendGrid.
+- **Subscriptions & Payments:** planes, suscripciones, pagos, renovaciones y cancelaciones. Autoriza los cobros con Niubiz.
+- **Manufacturing & Batch Management:** productos, fórmulas maestras, lotes de insumos, órdenes de producción, lotes e incidencias.
+- **IoT Monitoring:** equipos, calibraciones, sensores, lecturas de telemetría y alertas. Recibe la telemetría de ThingsBoard y envía las alertas por WebSocket y por SendGrid.
+- **Quality & Compliance:** documentos de calidad, dictamen de insumos, revisión y liberación de lotes, desviaciones, CAPA, auditorías, audit trail y reportes regulatorios.
 
-**Manufacturing & Batch Management.** Gestiona productos, fórmulas, insumos, órdenes y lotes; solicita a Quality la aprobación de insumos y la cuarentena del lote, y actualiza sus aggregates cuando recibe los eventos `MaterialApprovalDecided` y `BatchReleaseDecided`.
+En el diagrama se observa que:
 
-![Component Diagram - Manufacturing](../assets/img/chapter4/software-architecture/c4/c4-07-api-manufacturing-components.png)
+- La Single-Page Application llama a cada bounded context mediante sus endpoints REST; con IoT Monitoring, además, recibe las alertas en tiempo real por WebSocket.
+- Organizations & Profiles crea el administrador de la organización mediante la fachada de IAM, y Quality & Compliance le pide a IAM la firma electrónica de documentos y liberaciones.
+- Manufacturing & Batch Management solicita a Quality & Compliance la aprobación de insumos y la cuarentena de los lotes; Quality & Compliance le devuelve su veredicto mediante los eventos `MaterialApprovalDecided` y `BatchReleaseDecided`.
+- Manufacturing & Batch Management pide a IoT Monitoring asignar sensores a cada lote, e IoT Monitoring consulta a Manufacturing el lote en curso al registrar cada lectura y a Subscriptions & Payments el límite de sensores del plan.
+- Cada bounded context persiste sus datos en sus propias tablas de la Database.
 
-**IoT Monitoring.** `TelemetryWebhookController` recibe las lecturas de ThingsBoard, `AlertRuleEvaluator` compara cada lectura con los rangos permitidos y `NotificationService` publica las alertas por WebSocket y por correo.
-
-![Component Diagram - IoT Monitoring](../assets/img/chapter4/software-architecture/c4/c4-08-api-iot-components.png)
-
-**Quality & Compliance.** Gestiona documentos, dictamen de insumos, revisión y liberación de lotes, resultados analíticos, desviaciones, CAPA y auditorías. `AuditTrailEntityListener` registra cada cambio de las entidades de todos los contextos y `ReportGenerationServiceImpl` genera expedientes y reportes en PDF con OpenPDF.
-
-![Component Diagram - Quality & Compliance](../assets/img/chapter4/software-architecture/c4/c4-09-api-quality-components.png)
+![Component Diagram - RESTful API](../assets/img/chapter4/software-architecture/c4/c4-04-api-components.png)
 
 ## 4.7. Software Object-Oriented Design
 
