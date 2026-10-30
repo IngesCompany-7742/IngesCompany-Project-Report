@@ -126,6 +126,10 @@ Se ofrece una única cuenta por organización con varias plantas y líneas de pr
 
 La prospección se dirige a jefes de aseguramiento de calidad y de producción, demostrando la reducción del tiempo de preparación de auditorías y del riesgo de observaciones de DIGEMID. Tácticas: webinars sobre integridad de datos, casos de uso con los primeros laboratorios suscritos y alianzas con consultores de BPM.
 
+#### Funciones diferenciadoras
+
+Del análisis realizado se concluye que DoofPlus puede adoptar características consolidadas del mercado, como la captura automática de datos mediante IoT, la trazabilidad digital y los paneles de monitoreo; no obstante, su principal factor diferenciador radica en integrar en una sola plataforma los procesos de calidad y producción farmacéutica. Esta propuesta permite cubrir necesidades que actualmente se encuentran dispersas entre distintas soluciones, incorporando gestión documental, desviaciones, CAPA, liberación de lotes, auditorías y cumplimiento regulatorio, orientados específicamente al contexto de laboratorios farmacéuticos de la región.
+
 ## 2.2. Entrevistas
 
 Las entrevistas constituyen una herramienta fundamental para obtener información cualitativa directamente de los profesionales involucrados en los procesos de aseguramiento de calidad y producción farmacéutica. A través de conversaciones estructuradas, se busca comprender sus actividades, necesidades, desafíos, comportamientos y experiencias relacionadas con la gestión de documentación, la trazabilidad de lotes y el acceso a la información. La información recopilada permitió identificar problemáticas, oportunidades de mejora y necesidades reales del entorno de aplicación, contribuyendo a definir una propuesta de solución alineada con los requerimientos y expectativas de los segmentos objetivo.
