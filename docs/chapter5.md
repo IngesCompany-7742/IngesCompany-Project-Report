@@ -45,7 +45,7 @@ A continuación se detallan los productos de software que los miembros del equip
 
 ### 5.1.2. Source Code Management
 
-El equipo utiliza **GitHub** como plataforma y **Git** como sistema de control de versiones. Todos los repositorios pertenecen a la organización [IngesCompany-7742](https://github.com/IngesCompany-7742):
+El equipo utiliza **GitHub** como plataforma y **Git** como sistema de control de versiones. Todos los repositorios pertenecen a la organización IngesCompany-7742: https://github.com/IngesCompany-7742:
 
 | Producto | Repositorio |
 |----------|-------------|
@@ -93,14 +93,14 @@ Los mensajes de commit siguen la especificación **Conventional Commits 1.0.0**:
 
 Toda la nomenclatura del código fuente (archivos, clases, variables, métodos y comentarios) se escribe en **inglés**, respetando el Ubiquitous Language del dominio de calidad farmacéutica (por ejemplo, `ProductionBatch`, `Deviation`, `CapaAction`). Las convenciones adoptadas por lenguaje son las siguientes:
 
-* **HTML:** [HTML Style Guide and Coding Conventions (W3Schools)](https://www.w3schools.com/html/html5_syntax.asp) y [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html). Etiquetas y atributos en minúsculas, valores de atributos entre comillas dobles, uso de etiquetas semánticas (`header`, `main`, `section`, `footer`) y atributo `alt` en todas las imágenes.
-* **CSS:** [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html). Indentación de 2 espacios, nombres de clases en kebab-case y selectores cortos; los ids no se usan para estilos.
-* **JavaScript:** [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html). Uso de `const`/`let`, lowerCamelCase para variables y funciones y punto y coma al final de cada sentencia.
-* **TypeScript:** [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html). UpperCamelCase para clases e interfaces, lowerCamelCase para propiedades y métodos, tipado explícito y sin uso de `any`.
-* **Angular:** [Angular coding style guide](https://angular.dev/style-guide). Nombres de archivos en kebab-case, un componente por archivo, selectores con el prefijo `app-`, inyección de dependencias en servicios y organización del código por bounded context (`domain`, `infrastructure`, `application`, `presentation`).
-* **Java:** [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). UpperCamelCase para clases, lowerCamelCase para métodos y variables, CONSTANT_CASE para constantes y llaves obligatorias en todas las estructuras de control.
-* **Spring Boot:** [Spring Boot Features](https://docs.spring.io/spring-boot/reference/features/index.html). Clase principal en el paquete raíz, configuración externalizada en `application.properties` y variables de entorno, y controladores RESTful con rutas en plural y kebab-case (por ejemplo, `/api/v1/production-batches`).
-* **Gherkin:** [Gherkin Conventions for Readable Specifications](https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications). Palabras clave `Feature`, `Scenario`, `Given`, `When`, `Then` en inglés, un comportamiento por escenario y uso de `Scenario Outline` con `Examples` para casos basados en datos.
+* **HTML:** HTML Style Guide and Coding Conventions (W3Schools): https://www.w3schools.com/html/html5_syntax.asp y Google HTML/CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html. Etiquetas y atributos en minúsculas, valores de atributos entre comillas dobles, uso de etiquetas semánticas (`header`, `main`, `section`, `footer`) y atributo `alt` en todas las imágenes.
+* **CSS:** Google HTML/CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html. Indentación de 2 espacios, nombres de clases en kebab-case y selectores cortos; los ids no se usan para estilos.
+* **JavaScript:** Google JavaScript Style Guide: https://google.github.io/styleguide/jsguide.html. Uso de `const`/`let`, lowerCamelCase para variables y funciones y punto y coma al final de cada sentencia.
+* **TypeScript:** Google TypeScript Style Guide: https://google.github.io/styleguide/tsguide.html. UpperCamelCase para clases e interfaces, lowerCamelCase para propiedades y métodos, tipado explícito y sin uso de `any`.
+* **Angular:** Angular coding style guide: https://angular.dev/style-guide. Nombres de archivos en kebab-case, un componente por archivo, selectores con el prefijo `app-`, inyección de dependencias en servicios y organización del código por bounded context (`domain`, `infrastructure`, `application`, `presentation`).
+* **Java:** Google Java Style Guide: https://google.github.io/styleguide/javaguide.html. UpperCamelCase para clases, lowerCamelCase para métodos y variables, CONSTANT_CASE para constantes y llaves obligatorias en todas las estructuras de control.
+* **Spring Boot:** Spring Boot Features: https://docs.spring.io/spring-boot/reference/features/index.html. Clase principal en el paquete raíz, configuración externalizada en `application.properties` y variables de entorno, y controladores RESTful con rutas en plural y kebab-case (por ejemplo, `/api/v1/production-batches`).
+* **Gherkin:** Gherkin Conventions for Readable Specifications: https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications. Palabras clave `Feature`, `Scenario`, `Given`, `When`, `Then` en inglés, un comportamiento por escenario y uso de `Scenario Outline` con `Examples` para casos basados en datos.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -145,7 +145,7 @@ El Sprint Planning Meeting sirvió para definir los objetivos iniciales, asignar
 | **Sprint 0 Review Summary** | No aplica por ser el primer Sprint del proyecto. |
 | **Sprint 0 Retrospective Summary** | No aplica por ser el primer Sprint del proyecto. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Our focus is on** delivering a responsive and bilingual Landing Page for DoofPlus.<br>**We believe it delivers** a clear understanding of DoofPlus' value proposition, plans and team to QA/QC specialists and production supervisors of pharmaceutical laboratories.<br>**This will be confirmed when** visitors can navigate through the features, plans and team sections, switch between Spanish and English, and reach the contact form on both desktop and mobile devices. |
+| **Sprint 1 Goal** | **Our focus is on** QA/QC specialists and production supervisors of small and medium-sized pharmaceutical laboratories being able to learn, from a bilingual website, how DoofPlus centralizes their quality records and batch traceability, compare its subscription plans and contact the team.<br>**We believe it delivers** a clear understanding of how DoofPlus replaces paper forms and spreadsheets and shortens audit preparation, so they can decide to evaluate the platform, **to** QA/QC specialists and production supervisors.<br>**This will be confirmed when** a visitor from each segment, on desktop or mobile and in English or Spanish, identifies the features for their role, compares the two plans and sends an inquiry through the contact form. |
 | **Sprint 1 Velocity** | 16 Story Points |
 | **Sum of Story Points** | 16 Story Points (US44: 3, US03: 2, US45: 1, US04: 1, TS01: 3, US46: 5, US47: 1) |
 
@@ -169,7 +169,7 @@ El objetivo principal de este Sprint fue implementar y publicar la Landing Page 
 
 *Figura: Board del Sprint 1 en Jira Software.*
 
-**Enlace al board en Jira:** <>
+**Enlace al board en Jira:** https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3
 
 | Sprint # | Sprint 1 | | | | | | |
 |----------|----------|---|---|---|---|---|---|
@@ -181,11 +181,14 @@ El objetivo principal de este Sprint fue implementar y publicar la Landing Page 
 | US03 | Visualización de planes y precios | T004 | Toggle mensual/anual | Implementar el cambio entre precios mensuales y anuales con un ahorro equivalente a dos meses (≈17%). | 2 | Cobades Zamora, Yhoshua Hebert | Done |
 | US45 | Visualización del equipo y de la startup | T005 | Maquetar sección Our Team | Implementar las tarjetas de los 5 integrantes del equipo Inges Company con foto, nombre y descripción. | 2 | Rojas Ambicho, Nestor Daniel | Done |
 | US45 | Visualización del equipo y de la startup | T006 | Correcciones sección Our Team | Corregir la estructura y el contenido de la sección del equipo tras la revisión de pares. | 1 | Angulo Ramírez, Marcelo Martín | Done |
-| US04 | Formulario de contacto | T007 | Implementar footer y formulario | Desarrollar el footer con el formulario de suscripción por email, datos de contacto y enlaces legales. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| TS01 | Implementación de Landing Page adaptable y accesible | T008 | Correcciones de estructura index | Corregir la estructura general de `index.html` para asegurar la consistencia semántica y la accesibilidad. | 2 | Flores Martinez, Ricardo Andres | Done |
-| US46 | Cambio de idioma | T009 | Lógica i18n y toggle de idioma | Implementar el selector de idioma ES/EN con archivos de traducción y lógica JavaScript de i18n. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
-| US47 | Consulta de términos y política de privacidad | T010 | Agregar Terms of Service | Redactar e implementar la página de Términos de Servicio de DoofPlus. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US47 | Consulta de términos y política de privacidad | T011 | Agregar Privacy Policy | Redactar e implementar la Política de Privacidad conforme a la Ley N.° 29733. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US04 | Formulario de contacto | T007 | Footer con datos de contacto | Desarrollar el footer con los datos de contacto y los enlaces legales. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US04 | Formulario de contacto | T008 | Formulario de suscripción por email | Implementar el formulario de suscripción por email con la validación del correo. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| TS01 | Implementación de Landing Page adaptable y accesible | T009 | Estructura semántica de index | Corregir la estructura general de `index.html` con etiquetas semánticas (header, main, section y footer). | 1 | Flores Martinez, Ricardo Andres | Done |
+| TS01 | Implementación de Landing Page adaptable y accesible | T010 | Revisión de accesibilidad | Revisar los textos alternativos, los atributos aria y el contraste de colores de la Landing Page. | 1 | Flores Martinez, Ricardo Andres | Done |
+| US46 | Cambio de idioma | T011 | Archivos de traducción ES/EN | Crear los archivos de traducción en.json y es.json con los textos de cada sección. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US46 | Cambio de idioma | T012 | Selector de idioma e i18n | Implementar el selector de idioma ES/EN y la lógica JavaScript que aplica las traducciones. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US47 | Consulta de términos y política de privacidad | T013 | Agregar Terms of Service | Redactar e implementar la página de Términos de Servicio de DoofPlus. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US47 | Consulta de términos y política de privacidad | T014 | Agregar Privacy Policy | Redactar e implementar la Política de Privacidad conforme a la Ley N.° 29733. | 2 | Angulo Ramírez, Marcelo Martín | Done |
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
@@ -282,7 +285,7 @@ El Sprint Planning Meeting sirvió para definir los objetivos del Sprint, asigna
 | **Sprint 1 Review Summary** | Se entregó la primera versión de la Landing Page de DoofPlus publicada en GitHub Pages, con navegación por secciones, planes y precios, sección del equipo, formulario de contacto, cambio de idioma ES/EN y páginas legales. Como feedback, se pidió que el formulario de contacto sirva para enviar consultas sobre la plataforma y sus planes, y alinear la Landing Page con los mock-ups del capítulo 4. |
 | **Sprint 1 Retrospective Summary** | Como acierto, el equipo integró la versión estable mediante una rama de release siguiendo GitFlow. Como oportunidades de mejora, se acordó trabajar en feature branches que nazcan de `develop`, una por sección o bounded context, distribuir los commits a lo largo del sprint y usar los types de Conventional Commits según su significado. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | **Our focus is on** delivering the complete DoofPlus Landing Page and the first version of the DoofPlus Web Application for the QA/QC, Production and Administration environments.<br>**We believe it delivers** a single place to register batches, follow deviations and CAPA, release batches with electronic signature and monitor IoT equipment to QA/QC specialists and production supervisors of pharmaceutical laboratories.<br>**This will be confirmed when** each segment signs in to its own environment with two-factor authentication and completes its user goals (QA-1 to QA-6 and PR-1 to PR-6) on the published Web Application. |
+| **Sprint 2 Goal** | **Our focus is on** QA/QC specialists and production supervisors being able to manage, in a single web platform, the life cycle of a batch: register production orders and batches, receive raw materials, monitor equipment readings, record deviations and CAPA, and release batches with an electronic signature.<br>**We believe it delivers** complete batch traceability and audit-ready records without paper forms or spreadsheets, together with a landing page that guides new laboratories to the platform, **to** QA/QC specialists and production supervisors of small and medium-sized pharmaceutical laboratories.<br>**This will be confirmed when** a QA/QC specialist and a production supervisor sign in to their own environment, follow a batch from its creation to its release with an electronic signature and retrieve its complete history in a single view. |
 | **Sprint 2 Velocity** | 177 Story Points |
 | **Sum of Story Points** | 177 Story Points (US01: 2, US02: 2, US48: 2, US49: 2, US05: 1, US06: 2, US07: 3, US08: 5, US55: 3, US50: 3, US51: 3, US52: 5, US53: 3, US35: 3, US36: 5, US57: 3, US14: 3, US15: 5, US16: 2, US58: 3, US17: 3, US32: 3, US23: 3, US24: 3, US25: 5, US26: 3, US37: 3, US38: 3, US39: 3, US56: 3, US22: 2, US09: 5, US10: 3, US12: 5, US13: 3, US18: 3, US19: 5, US20: 5, US21: 3, US11: 5, US54: 5, US31: 3, US27: 5, US28: 5, US29: 5, US30: 3, US59: 3, US33: 3, US34: 3, US40: 3, US41: 3, US42: 2, US43: 3) |
 
@@ -306,76 +309,134 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 
 *Figura: Board del Sprint 2 en Jira Software.*
 
-**Enlace al board en Jira:** <>
+**Enlace al board en Jira:** https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3
 
 | Sprint # | Sprint 2 | | | | | | |
 |----------|----------|---|---|---|---|---|---|
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
-| US01 | Visualización de la propuesta de valor | T012 | Hero con propuesta de valor | Implementar el hero con el título, el subtítulo, los indicadores de confianza y los botones Get Started y View plans. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US02 | Visualización de servicios y características | T013 | Secciones Services y Features | Implementar las tarjetas de servicios y el acordeón de características con su panel de vista previa. | 3 | Flores Martinez, Ricardo Andres | Done |
-| US48 | Acceso por segmento a la Web Application | T014 | Acceso por segmento | Implementar la sección Choose your workspace y los enlaces con data-app-segment hacia el inicio de sesión de cada entorno. | 3 | Rojas Ambicho, Nestor Daniel | Done |
-| US49 | Visualización del video promocional | T015 | Video About the Product y About the Team | Implementar el reproductor que carga el video de YouTube al pulsar play y muestra un aviso mientras el video no está publicado. | 3 | Angulo Ramírez, Marcelo Martín | Done |
-| US05 | Preguntas frecuentes | T016 | Sección FAQ | Implementar las preguntas frecuentes con acordeón accesible y el enlace al formulario de contacto. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US44 | Navegación por secciones | T017 | Navbar con menú móvil | Reimplementar la barra de navegación con anclas reales, Sign in y Get Started con destino propio y el menú overlay en mobile. | 4 | Rojas Ambicho, Nestor Daniel | Done |
-| US03 | Visualización de planes y precios | T018 | Planes con toggle mensual/anual | Reimplementar las tarjetas de planes con el cambio de precio mensual/anual y su nota de precios. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US45 | Visualización del equipo y de la startup | T019 | Secciones About us y Our Team | Implementar la misión, la visión y las tarjetas de los integrantes con su foto y rol. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US04 | Formulario de contacto | T020 | Formulario Contact us | Implementar el formulario de consulta con validación de campos y el estado de mensaje enviado. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
-| US47 | Consulta de términos y política de privacidad | T021 | Términos y política de privacidad | Implementar las páginas terms.html y privacy.html con sus estilos y traducciones. | 2 | Angulo Ramírez, Marcelo Martín | Done |
-| US06 | Inicio de sesión con segundo factor | T022 | Inicio de sesión con 2FA | Implementar la elección de entorno, el inicio de sesión por entorno y la verificación con código de seis dígitos. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US07 | Gestión de roles | T023 | Acceso por rol | Implementar el guard de IAM y el estado Access not authorized cuando el rol no corresponde al entorno. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US08 | Firmas electrónicas | T024 | Firma electrónica | Implementar la confirmación con contraseña en las aprobaciones, liberaciones y cierres críticos. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US55 | Alta de usuarios del equipo | T025 | Usuarios e invitaciones | Implementar el directorio de usuarios y perfiles y el formulario para invitar usuarios. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US50 | Registro de organización | T026 | Registro de organización | Implementar el registro con razón social, RUC, planta, plan y primer administrador, y el resumen de administración. | 4 | Rojas Ambicho, Nestor Daniel | Done |
-| US51 | Selección de plan | T027 | Selección de plan | Implementar la revisión del cambio de plan en la página de suscripción. | 4 | Rojas Ambicho, Nestor Daniel | Done |
-| US52 | Pago de suscripción | T028 | Pago de suscripción | Implementar el historial de facturación y el reintento de un pago rechazado. | 6 | Rojas Ambicho, Nestor Daniel | Done |
-| US53 | Renovación y cancelación | T029 | Renovación de la suscripción | Mostrar la fecha de renovación y el estado de la suscripción en la página de suscripción y pagos. | 4 | Rojas Ambicho, Nestor Daniel | Done |
-| US35 | Catálogo de productos | T030 | Catálogo de productos | Implementar el catálogo de productos con su fórmula maestra vigente. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US36 | Gestión de fórmulas maestras | T031 | Fórmulas maestras | Mostrar los componentes y la versión aprobada de la fórmula maestra de cada producto. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US57 | Gestión de órdenes de producción | T032 | Órdenes de producción | Implementar la lista y la ejecución de órdenes de producción contra la fórmula maestra. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US14 | Registro de lotes | T033 | Registro de lotes | Implementar el diálogo Create batch con el estado de lote rechazado por fórmula no aprobada. | 4 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US15 | Consulta del historial de lotes | T034 | Historial de lotes | Implementar la lista de lotes con filtros y la genealogía y el historial de estados de cada lote. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US16 | Gestión de estados de lote | T035 | Estados de lote | Implementar el cambio de estado de los lotes y sus conteos por estado. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
-| US58 | Recepción de materias primas | T036 | Recepción de materias primas | Implementar la recepción de materias primas con cuarentena e inspección. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US17 | Asociación de materias primas | T037 | Asociación de materias primas | Asignar lotes de materia prima aprobados a un lote de producción. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US32 | Panel de producción | T038 | Resumen de producción | Implementar el resumen de producción con el programa del día, la disponibilidad de equipos y las incidencias. | 4 | Flores Martinez, Ricardo Andres | Done |
-| US23 | Registro de dispositivos IoT | T039 | Inventario de equipos y sensores | Implementar el inventario de equipos con sus sensores IoT y el registro de un sensor. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US24 | Asociación de sensores a un lote | T040 | Asociación de sensores a lotes | Implementar la evidencia IoT del lote con la asociación de equipos y sensores. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US25 | Captura automática de evidencias | T041 | Telemetría | Implementar el gráfico de telemetría con límites y lectura pico. | 6 | Angulo Ramírez, Marcelo Martín | Done |
-| US26 | Consulta de registros IoT | T042 | Consulta de registros IoT | Implementar el resumen IoT con la salud de los equipos y la cola de alertas. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US37 | Gestión de equipos | T043 | Gestión de equipos | Mostrar el estado operativo de cada equipo en el inventario. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US38 | Gestión de calibraciones | T044 | Calibraciones | Mostrar el estado de calibración (apto, por vencer, no apto) de equipos y sensores. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US39 | Mantenimiento preventivo | T045 | Mantenimiento preventivo | Mostrar el próximo mantenimiento y su responsable en el detalle del equipo. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US56 | Registro y escalamiento de incidencias | T046 | Incidentes | Implementar la lista de incidentes con su severidad y el reconocimiento de alertas. | 4 | Angulo Ramírez, Marcelo Martín | Done |
-| US22 | Notificaciones de desviación crítica | T047 | Alertas críticas | Implementar el detalle del sensor con la alerta activa y la regla de reconocimiento. | 3 | Angulo Ramírez, Marcelo Martín | Done |
-| US09 | Gestión de protocolos de calidad | T048 | Documentos de calidad | Implementar el repositorio de documentos controlados con su flujo de aprobación. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US10 | Repositorio de SOP | T049 | Repositorio de SOP | Filtrar los documentos por tipo y estado para consultar la versión vigente. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US12 | Control de versiones documentales | T050 | Versiones de documentos | Implementar el historial de versiones de cada documento. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US13 | Aprobación documental | T051 | Aprobación documental | Implementar la aprobación con firma y el bloqueo de autoaprobación (segregación de funciones). | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US18 | Registro de desviaciones | T052 | Registro de desviaciones | Implementar el reporte de desviación con su evaluación de riesgo. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US19 | Análisis de causa raíz | T053 | Análisis de causa raíz | Implementar el registro de la causa raíz como requisito del plan CAPA. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US20 | Gestión CAPA | T054 | Plan CAPA | Implementar el plan CAPA con sus acciones, responsables y fechas. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US21 | Seguimiento de acciones CAPA | T055 | Seguimiento de CAPA | Mostrar el avance de las acciones CAPA y bloquear el cierre sin evidencia de eficacia. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US11 | Automatización de cálculos de calidad | T056 | Resultados analíticos | Implementar los resultados analíticos con su conformidad respecto de la especificación. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US54 | Revisión y liberación de lotes | T057 | Liberación de lotes | Implementar la liberación de lotes con requisitos previos, firma electrónica y estado bloqueado. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US31 | Panel de indicadores de calidad | T058 | Resumen de calidad | Implementar el resumen de calidad con la cola de prioridades y las próximas decisiones. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US27 | Audit trail | T059 | Audit trail | Implementar el registro de eventos con filtros por registro y actor, compartido por los tres entornos. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US28 | Generación automática de reportes | T060 | Reportes regulatorios | Implementar la lista y generación de reportes regulatorios. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US29 | Preparación de auditorías | T061 | Preparación de auditorías | Implementar el registro de auditorías y su estado de preparación. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US30 | Acceso de auditor a evidencias | T062 | Evidencias para auditor | Mostrar las evidencias vinculadas a cada hallazgo de auditoría. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US59 | Registro de auditorías y hallazgos | T063 | Hallazgos de auditoría | Implementar el registro de hallazgos con su severidad y acción asignada. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US33 | Indicadores de trazabilidad | T064 | Indicadores de trazabilidad | Implementar los indicadores de brechas de trazabilidad. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US34 | Indicadores de desviaciones | T065 | Indicadores de desviaciones | Implementar la tendencia de desviaciones por periodo. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US40 | Bandeja de tareas | T066 | Bandeja de tareas | Implementar la lista de tareas pendientes vinculadas a registros. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US41 | Notificaciones entre áreas | T067 | Comunicación entre áreas | Implementar los comentarios de cada tarea para la coordinación entre Producción y Calidad. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US42 | Solicitudes de aprobación | T068 | Solicitudes de aprobación | Crear tareas de aprobación dirigidas a Calidad desde un registro. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
-| US43 | Seguimiento de tareas | T069 | Seguimiento de tareas | Mostrar el estado de las tareas asignadas por el usuario. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| — | Tareas técnicas | T070 | Configuración del proyecto Angular | Configurar Angular Material, ngx-translate, environments y json-server con las rutas /api/v1. | 4 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| — | Tareas técnicas | T071 | Capa shared | Implementar las clases base de la API, el layout público, el workspace shell, el page header y el selector de idioma. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| — | Tareas técnicas | T072 | Traducciones de IoT Monitoring | Agregar las 121 claves de la sección monitoring en inglés y español. | 3 | Rojas Ambicho, Nestor Daniel | Done |
-| — | Tareas técnicas | T073 | Documentación del repositorio | Redactar el README, el CHANGELOG, la guía de contribución, las ADRs y el diagrama de clases. | 4 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| — | Tareas técnicas | T074 | Releases v1.0.0 | Preparar release/v1.0.0 en la Landing Page y en la Web Application, con merge a main y tag SemVer. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| — | Tareas técnicas | T075 | Configuración de despliegue | Agregar firebase.json para Firebase Hosting y el script server:prod para publicar la Fake API. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US01 | Visualización de la propuesta de valor | T015 | Hero con propuesta de valor | Implementar el hero con el título, el subtítulo, los indicadores de confianza y los botones Get Started y View plans. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US01 | Visualización de la propuesta de valor | T016 | Hero con propuesta de valor: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US02 | Visualización de servicios y características | T017 | Secciones Services y Features | Implementar las tarjetas de servicios y el acordeón de características con su panel de vista previa. | 2 | Flores Martinez, Ricardo Andres | Done |
+| US02 | Visualización de servicios y características | T018 | Secciones Services y Features: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Flores Martinez, Ricardo Andres | Done |
+| US48 | Acceso por segmento a la Web Application | T019 | Acceso por segmento | Implementar la sección Choose your workspace y los enlaces con data-app-segment hacia el inicio de sesión de cada entorno. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US48 | Acceso por segmento a la Web Application | T020 | Acceso por segmento: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
+| US49 | Visualización del video promocional | T021 | Video About the Product y About the Team | Implementar el reproductor que carga el video de YouTube al pulsar play y muestra un aviso mientras el video no está publicado. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US49 | Visualización del video promocional | T022 | Video About the Product y About the Team: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Angulo Ramírez, Marcelo Martín | Done |
+| US05 | Preguntas frecuentes | T023 | Sección FAQ | Implementar las preguntas frecuentes con acordeón accesible y el enlace al formulario de contacto. | 1 | Rojas Ambicho, Nestor Daniel | Done |
+| US05 | Preguntas frecuentes | T024 | Sección FAQ: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
+| US44 | Navegación por secciones | T025 | Navbar con menú móvil | Reimplementar la barra de navegación con anclas reales, Sign in y Get Started con destino propio y el menú overlay en mobile. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US44 | Navegación por secciones | T026 | Navbar con menú móvil: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US03 | Visualización de planes y precios | T027 | Planes con toggle mensual/anual | Reimplementar las tarjetas de planes con el cambio de precio mensual/anual y su nota de precios. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US03 | Visualización de planes y precios | T028 | Planes con toggle mensual/anual: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US45 | Visualización del equipo y de la startup | T029 | Secciones About us y Our Team | Implementar la misión, la visión y las tarjetas de los integrantes con su foto y rol. | 1 | Rojas Ambicho, Nestor Daniel | Done |
+| US45 | Visualización del equipo y de la startup | T030 | Secciones About us y Our Team: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
+| US04 | Formulario de contacto | T031 | Formulario Contact us | Implementar el formulario de consulta con validación de campos y el estado de mensaje enviado. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US04 | Formulario de contacto | T032 | Formulario Contact us: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US47 | Consulta de términos y política de privacidad | T033 | Términos y política de privacidad | Implementar las páginas terms.html y privacy.html con sus estilos y traducciones. | 1 | Angulo Ramírez, Marcelo Martín | Done |
+| US47 | Consulta de términos y política de privacidad | T034 | Términos y política de privacidad: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Angulo Ramírez, Marcelo Martín | Done |
+| US06 | Inicio de sesión con segundo factor | T035 | Inicio de sesión con 2FA: vista | Implementar la elección de entorno, el inicio de sesión por entorno y la verificación con código de seis dígitos. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US06 | Inicio de sesión con segundo factor | T036 | Inicio de sesión con 2FA: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US07 | Gestión de roles | T037 | Acceso por rol: vista | Implementar el guard de IAM y el estado Access not authorized cuando el rol no corresponde al entorno. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US07 | Gestión de roles | T038 | Acceso por rol: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US08 | Firmas electrónicas | T039 | Firma electrónica: vista | Implementar la confirmación con contraseña en las aprobaciones, liberaciones y cierres críticos. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US08 | Firmas electrónicas | T040 | Firma electrónica: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US55 | Alta de usuarios del equipo | T041 | Usuarios e invitaciones: vista | Implementar el directorio de usuarios y perfiles y el formulario para invitar usuarios. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US55 | Alta de usuarios del equipo | T042 | Usuarios e invitaciones: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US50 | Registro de organización | T043 | Registro de organización: vista | Implementar el registro con razón social, RUC, planta, plan y primer administrador, y el resumen de administración. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US50 | Registro de organización | T044 | Registro de organización: store y Fake API | Agregar al store de Organizations las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US51 | Selección de plan | T045 | Selección de plan: vista | Implementar la revisión del cambio de plan en la página de suscripción. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US51 | Selección de plan | T046 | Selección de plan: store y Fake API | Agregar al store de Subscriptions las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US52 | Pago de suscripción | T047 | Pago de suscripción: vista | Implementar el historial de facturación y el reintento de un pago rechazado. | 3 | Rojas Ambicho, Nestor Daniel | Done |
+| US52 | Pago de suscripción | T048 | Pago de suscripción: store y Fake API | Agregar al store de Subscriptions las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Rojas Ambicho, Nestor Daniel | Done |
+| US53 | Renovación y cancelación | T049 | Renovación de la suscripción: vista | Mostrar la fecha de renovación y el estado de la suscripción en la página de suscripción y pagos. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US53 | Renovación y cancelación | T050 | Renovación de la suscripción: store y Fake API | Agregar al store de Subscriptions las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| US35 | Catálogo de productos | T051 | Catálogo de productos: vista | Implementar el catálogo de productos con su fórmula maestra vigente. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US35 | Catálogo de productos | T052 | Catálogo de productos: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US36 | Gestión de fórmulas maestras | T053 | Fórmulas maestras: vista | Mostrar los componentes y la versión aprobada de la fórmula maestra de cada producto. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US36 | Gestión de fórmulas maestras | T054 | Fórmulas maestras: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US57 | Gestión de órdenes de producción | T055 | Órdenes de producción: vista | Implementar la lista y la ejecución de órdenes de producción contra la fórmula maestra. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US57 | Gestión de órdenes de producción | T056 | Órdenes de producción: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US14 | Registro de lotes | T057 | Registro de lotes: vista | Implementar el diálogo Create batch con el estado de lote rechazado por fórmula no aprobada. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US14 | Registro de lotes | T058 | Registro de lotes: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US15 | Consulta del historial de lotes | T059 | Historial de lotes: vista | Implementar la lista de lotes con filtros y la genealogía y el historial de estados de cada lote. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US15 | Consulta del historial de lotes | T060 | Historial de lotes: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US16 | Gestión de estados de lote | T061 | Estados de lote: vista | Implementar el cambio de estado de los lotes y sus conteos por estado. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US16 | Gestión de estados de lote | T062 | Estados de lote: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US58 | Recepción de materias primas | T063 | Recepción de materias primas: vista | Implementar la recepción de materias primas con cuarentena e inspección. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US58 | Recepción de materias primas | T064 | Recepción de materias primas: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US17 | Asociación de materias primas | T065 | Asociación de materias primas: vista | Asignar lotes de materia prima aprobados a un lote de producción. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US17 | Asociación de materias primas | T066 | Asociación de materias primas: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US32 | Panel de producción | T067 | Resumen de producción: vista | Implementar el resumen de producción con el programa del día, la disponibilidad de equipos y las incidencias. | 2 | Flores Martinez, Ricardo Andres | Done |
+| US32 | Panel de producción | T068 | Resumen de producción: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Flores Martinez, Ricardo Andres | Done |
+| US23 | Registro de dispositivos IoT | T069 | Inventario de equipos y sensores: vista | Implementar el inventario de equipos con sus sensores IoT y el registro de un sensor. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US23 | Registro de dispositivos IoT | T070 | Inventario de equipos y sensores: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US24 | Asociación de sensores a un lote | T071 | Asociación de sensores a lotes: vista | Implementar la evidencia IoT del lote con la asociación de equipos y sensores. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US24 | Asociación de sensores a un lote | T072 | Asociación de sensores a lotes: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US25 | Captura automática de evidencias | T073 | Telemetría: vista | Implementar el gráfico de telemetría con límites y lectura pico. | 3 | Angulo Ramírez, Marcelo Martín | Done |
+| US25 | Captura automática de evidencias | T074 | Telemetría: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Angulo Ramírez, Marcelo Martín | Done |
+| US26 | Consulta de registros IoT | T075 | Consulta de registros IoT: vista | Implementar el resumen IoT con la salud de los equipos y la cola de alertas. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US26 | Consulta de registros IoT | T076 | Consulta de registros IoT: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US37 | Gestión de equipos | T077 | Gestión de equipos: vista | Mostrar el estado operativo de cada equipo en el inventario. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US37 | Gestión de equipos | T078 | Gestión de equipos: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US38 | Gestión de calibraciones | T079 | Calibraciones: vista | Mostrar el estado de calibración (apto, por vencer, no apto) de equipos y sensores. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US38 | Gestión de calibraciones | T080 | Calibraciones: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US39 | Mantenimiento preventivo | T081 | Mantenimiento preventivo: vista | Mostrar el próximo mantenimiento y su responsable en el detalle del equipo. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US39 | Mantenimiento preventivo | T082 | Mantenimiento preventivo: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US56 | Registro y escalamiento de incidencias | T083 | Incidentes: vista | Implementar la lista de incidentes con su severidad y el reconocimiento de alertas. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US56 | Registro y escalamiento de incidencias | T084 | Incidentes: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US22 | Notificaciones de desviación crítica | T085 | Alertas críticas: vista | Implementar el detalle del sensor con la alerta activa y la regla de reconocimiento. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US22 | Notificaciones de desviación crítica | T086 | Alertas críticas: store y Fake API | Agregar al store de IoT Monitoring las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Angulo Ramírez, Marcelo Martín | Done |
+| US09 | Gestión de protocolos de calidad | T087 | Documentos de calidad: vista | Implementar el repositorio de documentos controlados con su flujo de aprobación. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US09 | Gestión de protocolos de calidad | T088 | Documentos de calidad: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US10 | Repositorio de SOP | T089 | Repositorio de SOP: vista | Filtrar los documentos por tipo y estado para consultar la versión vigente. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US10 | Repositorio de SOP | T090 | Repositorio de SOP: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US12 | Control de versiones documentales | T091 | Versiones de documentos: vista | Implementar el historial de versiones de cada documento. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US12 | Control de versiones documentales | T092 | Versiones de documentos: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US13 | Aprobación documental | T093 | Aprobación documental: vista | Implementar la aprobación con firma y el bloqueo de autoaprobación (segregación de funciones). | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US13 | Aprobación documental | T094 | Aprobación documental: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US18 | Registro de desviaciones | T095 | Registro de desviaciones: vista | Implementar el reporte de desviación con su evaluación de riesgo. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US18 | Registro de desviaciones | T096 | Registro de desviaciones: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US19 | Análisis de causa raíz | T097 | Análisis de causa raíz: vista | Implementar el registro de la causa raíz como requisito del plan CAPA. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US19 | Análisis de causa raíz | T098 | Análisis de causa raíz: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US20 | Gestión CAPA | T099 | Plan CAPA: vista | Implementar el plan CAPA con sus acciones, responsables y fechas. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US20 | Gestión CAPA | T100 | Plan CAPA: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US21 | Seguimiento de acciones CAPA | T101 | Seguimiento de CAPA: vista | Mostrar el avance de las acciones CAPA y bloquear el cierre sin evidencia de eficacia. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US21 | Seguimiento de acciones CAPA | T102 | Seguimiento de CAPA: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US11 | Automatización de cálculos de calidad | T103 | Resultados analíticos: vista | Implementar los resultados analíticos con su conformidad respecto de la especificación. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US11 | Automatización de cálculos de calidad | T104 | Resultados analíticos: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US54 | Revisión y liberación de lotes | T105 | Liberación de lotes: vista | Implementar la liberación de lotes con requisitos previos, firma electrónica y estado bloqueado. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US54 | Revisión y liberación de lotes | T106 | Liberación de lotes: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US31 | Panel de indicadores de calidad | T107 | Resumen de calidad: vista | Implementar el resumen de calidad con la cola de prioridades y las próximas decisiones. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US31 | Panel de indicadores de calidad | T108 | Resumen de calidad: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US27 | Audit trail | T109 | Audit trail: vista | Implementar el registro de eventos con filtros por registro y actor, compartido por los tres entornos. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US27 | Audit trail | T110 | Audit trail: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US28 | Generación automática de reportes | T111 | Reportes regulatorios: vista | Implementar la lista y generación de reportes regulatorios. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US28 | Generación automática de reportes | T112 | Reportes regulatorios: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US29 | Preparación de auditorías | T113 | Preparación de auditorías: vista | Implementar el registro de auditorías y su estado de preparación. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US29 | Preparación de auditorías | T114 | Preparación de auditorías: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US30 | Acceso de auditor a evidencias | T115 | Evidencias para auditor: vista | Mostrar las evidencias vinculadas a cada hallazgo de auditoría. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US30 | Acceso de auditor a evidencias | T116 | Evidencias para auditor: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US59 | Registro de auditorías y hallazgos | T117 | Hallazgos de auditoría: vista | Implementar el registro de hallazgos con su severidad y acción asignada. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US59 | Registro de auditorías y hallazgos | T118 | Hallazgos de auditoría: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US33 | Indicadores de trazabilidad | T119 | Indicadores de trazabilidad: vista | Implementar los indicadores de brechas de trazabilidad. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US33 | Indicadores de trazabilidad | T120 | Indicadores de trazabilidad: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US34 | Indicadores de desviaciones | T121 | Indicadores de desviaciones: vista | Implementar la tendencia de desviaciones por periodo. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US34 | Indicadores de desviaciones | T122 | Indicadores de desviaciones: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US40 | Bandeja de tareas | T123 | Bandeja de tareas: vista | Implementar la lista de tareas pendientes vinculadas a registros. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US40 | Bandeja de tareas | T124 | Bandeja de tareas: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US41 | Notificaciones entre áreas | T125 | Comunicación entre áreas: vista | Implementar los comentarios de cada tarea para la coordinación entre Producción y Calidad. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US41 | Notificaciones entre áreas | T126 | Comunicación entre áreas: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US42 | Solicitudes de aprobación | T127 | Solicitudes de aprobación: vista | Crear tareas de aprobación dirigidas a Calidad desde un registro. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US42 | Solicitudes de aprobación | T128 | Solicitudes de aprobación: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US43 | Seguimiento de tareas | T129 | Seguimiento de tareas: vista | Mostrar el estado de las tareas asignadas por el usuario. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US43 | Seguimiento de tareas | T130 | Seguimiento de tareas: store y Fake API | Agregar al store de Quality las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| — | Tareas técnicas | T131 | Configuración del proyecto Angular | Configurar Angular Material, ngx-translate, environments y json-server con las rutas /api/v1. | 4 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| — | Tareas técnicas | T132 | Capa shared | Implementar las clases base de la API, el layout público, el workspace shell, el page header y el selector de idioma. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
+| — | Tareas técnicas | T133 | Traducciones de IoT Monitoring | Agregar las 121 claves de la sección monitoring en inglés y español. | 3 | Rojas Ambicho, Nestor Daniel | Done |
+| — | Tareas técnicas | T134 | Documentación del repositorio | Redactar el README, el CHANGELOG, la guía de contribución, las ADRs y el diagrama de clases. | 4 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| — | Tareas técnicas | T135 | Releases v1.0.0 | Preparar release/v1.0.0 en la Landing Page y en la Web Application, con merge a main y tag SemVer. | 2 | Rojas Ambicho, Nestor Daniel | Done |
+| — | Tareas técnicas | T136 | Configuración de despliegue | Agregar firebase.json para Firebase Hosting y el script server:prod para publicar la Fake API. | 2 | Rojas Ambicho, Nestor Daniel | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
@@ -810,102 +871,102 @@ En este Sprint se completó la Landing Page, publicada en GitHub Pages, y se imp
 
 Videos de navegación del producto (upc-pre-202620-1asi0729-7742-IngesCompany-productnavigation-sprint-2):
 
-- **Landing Page:** [ver en Microsoft Stream](https://shorturl.at/cI09z).
-- **Web Application:** [ver en Microsoft Stream](https://shorturl.at/rqzbT).
+- **Landing Page:** ver en Microsoft Stream: https://shorturl.at/cI09z.
+- **Web Application:** ver en Microsoft Stream: https://shorturl.at/rqzbT.
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-En el Sprint 2 todavía no se implementaron los RESTful Web Services, por lo que no hay documentación OpenAPI. Mientras tanto, la Web Application consume una Fake API con json-server (`server/db.json`), cuyas rutas se exponen bajo el prefijo `/api/v1` mediante `server/routes.json`, el mismo que tendrán los Web Services. La siguiente tabla documenta los endpoints que usa la Web Application; la URL base local es `http://localhost:3000/api/v1` y la publicada en Render es `https://ingescompany-frontend.onrender.com/api/v1` (por ejemplo, [`/plans`](https://ingescompany-frontend.onrender.com/api/v1/plans)).
+En el Sprint 2 todavía no se implementaron los RESTful Web Services, por lo que no hay documentación OpenAPI. Mientras tanto, la Web Application consume una Fake API con json-server (`server/db.json`), cuyas rutas se exponen bajo el prefijo `/api/v1` mediante `server/routes.json`, el mismo que tendrán los Web Services. La siguiente tabla documenta los endpoints que usa la Web Application; la URL base local es `http://localhost:3000/api/v1` y la publicada en Render es `https://ingescompany-frontend.onrender.com/api/v1` (por ejemplo, `/plans`: https://ingescompany-frontend.onrender.com/api/v1/plans).
 
 | Endpoint | Verbo HTTP | Sintaxis | Parámetros | Response | URL documentación |
 |---|---|---|---|---|---|
-| `/invitations` | GET | `/api/v1/invitations` | — | 200 OK con la lista de `invitations` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/invitations` | POST | `/api/v1/invitations` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/role-profiles` | GET | `/api/v1/role-profiles` | — | 200 OK con la lista de `role-profiles` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/users` | GET | `/api/v1/users` | — | 200 OK con la lista de `users` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/users` | GET | `/api/v1/users?email={email}&password={password}` | `email`, `password` (query) | 200 OK con el usuario cuyas credenciales coinciden (inicio de sesión) | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/users` | GET | `/api/v1/users?id={id}&twoFactorCode={code}` | `id`, `twoFactorCode` (query) | 200 OK con el usuario si el código 2FA es válido | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/users` | POST | `/api/v1/users` | Usuario en el body (JSON) | 201 Created con el usuario invitado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/batch-events` | GET | `/api/v1/batch-events` | — | 200 OK con la lista de `batch-events` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/batch-events` | POST | `/api/v1/batch-events` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/batches` | GET | `/api/v1/batches` | — | 200 OK con la lista de `batches` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/batches` | POST | `/api/v1/batches` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/batches` | PUT | `/api/v1/batches/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/formula-items` | GET | `/api/v1/formula-items` | — | 200 OK con la lista de `formula-items` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/master-formulas` | GET | `/api/v1/master-formulas` | — | 200 OK con la lista de `master-formulas` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/material-lots` | GET | `/api/v1/material-lots` | — | 200 OK con la lista de `material-lots` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/material-lots` | POST | `/api/v1/material-lots` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/material-lots` | PUT | `/api/v1/material-lots/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/operations` | GET | `/api/v1/operations` | — | 200 OK con la lista de `operations` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/operations` | PUT | `/api/v1/operations/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/production-orders` | GET | `/api/v1/production-orders` | — | 200 OK con la lista de `production-orders` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/production-orders` | POST | `/api/v1/production-orders` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/products` | GET | `/api/v1/products` | — | 200 OK con la lista de `products` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/products` | POST | `/api/v1/products` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/alerts` | GET | `/api/v1/alerts` | — | 200 OK con la lista de `alerts` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/alerts` | PUT | `/api/v1/alerts/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/equipment` | GET | `/api/v1/equipment` | — | 200 OK con la lista de `equipment` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/equipment` | PUT | `/api/v1/equipment/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/readings` | GET | `/api/v1/readings` | — | 200 OK con la lista de `readings` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/sensors` | GET | `/api/v1/sensors` | — | 200 OK con la lista de `sensors` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/sensors` | POST | `/api/v1/sensors` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/sensors` | PUT | `/api/v1/sensors/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/administrative-activities` | GET | `/api/v1/administrative-activities` | — | 200 OK con la lista de `administrative-activities` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/facilities` | GET | `/api/v1/facilities` | — | 200 OK con la lista de `facilities` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/facilities` | POST | `/api/v1/facilities` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/organizations` | GET | `/api/v1/organizations/{id}` | `id` (path) | 200 OK con el recurso de `organizations` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/organizations` | POST | `/api/v1/organizations` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/organizations` | GET | `/api/v1/organizations?ruc={ruc}` | `ruc` (query) | 200 OK con la organización que ya usa ese RUC | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/user-profiles` | GET | `/api/v1/user-profiles` | — | 200 OK con la lista de `user-profiles` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/user-profiles` | PUT | `/api/v1/user-profiles/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/analytical-results` | GET | `/api/v1/analytical-results` | — | 200 OK con la lista de `analytical-results` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/analytical-results` | POST | `/api/v1/analytical-results` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/analytical-results` | PUT | `/api/v1/analytical-results/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-events` | GET | `/api/v1/audit-events` | — | 200 OK con la lista de `audit-events` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-events` | POST | `/api/v1/audit-events` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-events` | PUT | `/api/v1/audit-events/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-findings` | GET | `/api/v1/audit-findings` | — | 200 OK con la lista de `audit-findings` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-findings` | POST | `/api/v1/audit-findings` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audit-findings` | PUT | `/api/v1/audit-findings/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audits` | GET | `/api/v1/audits` | — | 200 OK con la lista de `audits` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audits` | POST | `/api/v1/audits` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/audits` | PUT | `/api/v1/audits/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-actions` | GET | `/api/v1/capa-actions` | — | 200 OK con la lista de `capa-actions` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-actions` | POST | `/api/v1/capa-actions` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-actions` | PUT | `/api/v1/capa-actions/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-plans` | GET | `/api/v1/capa-plans` | — | 200 OK con la lista de `capa-plans` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-plans` | POST | `/api/v1/capa-plans` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/capa-plans` | PUT | `/api/v1/capa-plans/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/collaboration-tasks` | GET | `/api/v1/collaboration-tasks` | — | 200 OK con la lista de `collaboration-tasks` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/collaboration-tasks` | POST | `/api/v1/collaboration-tasks` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/collaboration-tasks` | PUT | `/api/v1/collaboration-tasks/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviation-trends` | GET | `/api/v1/deviation-trends` | — | 200 OK con la lista de `deviation-trends` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviation-trends` | POST | `/api/v1/deviation-trends` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviation-trends` | PUT | `/api/v1/deviation-trends/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviations` | GET | `/api/v1/deviations` | — | 200 OK con la lista de `deviations` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviations` | POST | `/api/v1/deviations` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/deviations` | PUT | `/api/v1/deviations/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/evidence` | GET | `/api/v1/evidence` | — | 200 OK con la lista de `evidence` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/evidence` | POST | `/api/v1/evidence` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/evidence` | PUT | `/api/v1/evidence/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/quality-documents` | GET | `/api/v1/quality-documents` | — | 200 OK con la lista de `quality-documents` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/quality-documents` | POST | `/api/v1/quality-documents` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/quality-documents` | PUT | `/api/v1/quality-documents/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/regulatory-reports` | GET | `/api/v1/regulatory-reports` | — | 200 OK con la lista de `regulatory-reports` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/regulatory-reports` | POST | `/api/v1/regulatory-reports` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/regulatory-reports` | PUT | `/api/v1/regulatory-reports/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/task-comments` | GET | `/api/v1/task-comments` | — | 200 OK con la lista de `task-comments` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/task-comments` | POST | `/api/v1/task-comments` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/task-comments` | PUT | `/api/v1/task-comments/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/traceability-gaps` | GET | `/api/v1/traceability-gaps` | — | 200 OK con la lista de `traceability-gaps` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/traceability-gaps` | POST | `/api/v1/traceability-gaps` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/traceability-gaps` | PUT | `/api/v1/traceability-gaps/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/invoices` | GET | `/api/v1/invoices` | — | 200 OK con la lista de `invoices` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/invoices` | POST | `/api/v1/invoices` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/plans` | GET | `/api/v1/plans` | — | 200 OK con la lista de `plans` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/subscriptions` | GET | `/api/v1/subscriptions` | — | 200 OK con la lista de `subscriptions` | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/subscriptions` | POST | `/api/v1/subscriptions` | Recurso en el body (JSON) | 201 Created con el recurso creado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
-| `/subscriptions` | PUT | `/api/v1/subscriptions/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | [README](https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme) |
+| `/invitations` | GET | `/api/v1/invitations` | — | 200 OK con la lista de `invitations` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/invitations` | POST | `/api/v1/invitations` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/role-profiles` | GET | `/api/v1/role-profiles` | — | 200 OK con la lista de `role-profiles` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/users` | GET | `/api/v1/users` | — | 200 OK con la lista de `users` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/users` | GET | `/api/v1/users?email={email}&password={password}` | `email`, `password` (query) | 200 OK con el usuario cuyas credenciales coinciden (inicio de sesión) | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/users` | GET | `/api/v1/users?id={id}&twoFactorCode={code}` | `id`, `twoFactorCode` (query) | 200 OK con el usuario si el código 2FA es válido | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/users` | POST | `/api/v1/users` | Usuario en el body (JSON) | 201 Created con el usuario invitado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/batch-events` | GET | `/api/v1/batch-events` | — | 200 OK con la lista de `batch-events` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/batch-events` | POST | `/api/v1/batch-events` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/batches` | GET | `/api/v1/batches` | — | 200 OK con la lista de `batches` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/batches` | POST | `/api/v1/batches` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/batches` | PUT | `/api/v1/batches/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/formula-items` | GET | `/api/v1/formula-items` | — | 200 OK con la lista de `formula-items` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/master-formulas` | GET | `/api/v1/master-formulas` | — | 200 OK con la lista de `master-formulas` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/material-lots` | GET | `/api/v1/material-lots` | — | 200 OK con la lista de `material-lots` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/material-lots` | POST | `/api/v1/material-lots` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/material-lots` | PUT | `/api/v1/material-lots/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/operations` | GET | `/api/v1/operations` | — | 200 OK con la lista de `operations` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/operations` | PUT | `/api/v1/operations/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/production-orders` | GET | `/api/v1/production-orders` | — | 200 OK con la lista de `production-orders` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/production-orders` | POST | `/api/v1/production-orders` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/products` | GET | `/api/v1/products` | — | 200 OK con la lista de `products` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/products` | POST | `/api/v1/products` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/alerts` | GET | `/api/v1/alerts` | — | 200 OK con la lista de `alerts` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/alerts` | PUT | `/api/v1/alerts/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/equipment` | GET | `/api/v1/equipment` | — | 200 OK con la lista de `equipment` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/equipment` | PUT | `/api/v1/equipment/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/readings` | GET | `/api/v1/readings` | — | 200 OK con la lista de `readings` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/sensors` | GET | `/api/v1/sensors` | — | 200 OK con la lista de `sensors` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/sensors` | POST | `/api/v1/sensors` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/sensors` | PUT | `/api/v1/sensors/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/administrative-activities` | GET | `/api/v1/administrative-activities` | — | 200 OK con la lista de `administrative-activities` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/facilities` | GET | `/api/v1/facilities` | — | 200 OK con la lista de `facilities` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/facilities` | POST | `/api/v1/facilities` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/organizations` | GET | `/api/v1/organizations/{id}` | `id` (path) | 200 OK con el recurso de `organizations` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/organizations` | POST | `/api/v1/organizations` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/organizations` | GET | `/api/v1/organizations?ruc={ruc}` | `ruc` (query) | 200 OK con la organización que ya usa ese RUC | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/user-profiles` | GET | `/api/v1/user-profiles` | — | 200 OK con la lista de `user-profiles` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/user-profiles` | PUT | `/api/v1/user-profiles/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/analytical-results` | GET | `/api/v1/analytical-results` | — | 200 OK con la lista de `analytical-results` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/analytical-results` | POST | `/api/v1/analytical-results` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/analytical-results` | PUT | `/api/v1/analytical-results/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-events` | GET | `/api/v1/audit-events` | — | 200 OK con la lista de `audit-events` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-events` | POST | `/api/v1/audit-events` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-events` | PUT | `/api/v1/audit-events/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-findings` | GET | `/api/v1/audit-findings` | — | 200 OK con la lista de `audit-findings` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-findings` | POST | `/api/v1/audit-findings` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audit-findings` | PUT | `/api/v1/audit-findings/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audits` | GET | `/api/v1/audits` | — | 200 OK con la lista de `audits` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audits` | POST | `/api/v1/audits` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/audits` | PUT | `/api/v1/audits/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-actions` | GET | `/api/v1/capa-actions` | — | 200 OK con la lista de `capa-actions` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-actions` | POST | `/api/v1/capa-actions` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-actions` | PUT | `/api/v1/capa-actions/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-plans` | GET | `/api/v1/capa-plans` | — | 200 OK con la lista de `capa-plans` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-plans` | POST | `/api/v1/capa-plans` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/capa-plans` | PUT | `/api/v1/capa-plans/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/collaboration-tasks` | GET | `/api/v1/collaboration-tasks` | — | 200 OK con la lista de `collaboration-tasks` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/collaboration-tasks` | POST | `/api/v1/collaboration-tasks` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/collaboration-tasks` | PUT | `/api/v1/collaboration-tasks/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviation-trends` | GET | `/api/v1/deviation-trends` | — | 200 OK con la lista de `deviation-trends` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviation-trends` | POST | `/api/v1/deviation-trends` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviation-trends` | PUT | `/api/v1/deviation-trends/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviations` | GET | `/api/v1/deviations` | — | 200 OK con la lista de `deviations` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviations` | POST | `/api/v1/deviations` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/deviations` | PUT | `/api/v1/deviations/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/evidence` | GET | `/api/v1/evidence` | — | 200 OK con la lista de `evidence` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/evidence` | POST | `/api/v1/evidence` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/evidence` | PUT | `/api/v1/evidence/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/quality-documents` | GET | `/api/v1/quality-documents` | — | 200 OK con la lista de `quality-documents` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/quality-documents` | POST | `/api/v1/quality-documents` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/quality-documents` | PUT | `/api/v1/quality-documents/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/regulatory-reports` | GET | `/api/v1/regulatory-reports` | — | 200 OK con la lista de `regulatory-reports` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/regulatory-reports` | POST | `/api/v1/regulatory-reports` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/regulatory-reports` | PUT | `/api/v1/regulatory-reports/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/task-comments` | GET | `/api/v1/task-comments` | — | 200 OK con la lista de `task-comments` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/task-comments` | POST | `/api/v1/task-comments` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/task-comments` | PUT | `/api/v1/task-comments/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/traceability-gaps` | GET | `/api/v1/traceability-gaps` | — | 200 OK con la lista de `traceability-gaps` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/traceability-gaps` | POST | `/api/v1/traceability-gaps` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/traceability-gaps` | PUT | `/api/v1/traceability-gaps/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/invoices` | GET | `/api/v1/invoices` | — | 200 OK con la lista de `invoices` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/invoices` | POST | `/api/v1/invoices` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/plans` | GET | `/api/v1/plans` | — | 200 OK con la lista de `plans` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/subscriptions` | GET | `/api/v1/subscriptions` | — | 200 OK con la lista de `subscriptions` | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/subscriptions` | POST | `/api/v1/subscriptions` | Recurso en el body (JSON) | 201 Created con el recurso creado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
+| `/subscriptions` | PUT | `/api/v1/subscriptions/{id}` | `id` (path) y recurso en el body (JSON) | 200 OK con el recurso actualizado | https://github.com/IngesCompany-7742/IngesCompany-Frontend#readme |
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
@@ -970,15 +1031,18 @@ Los cinco integrantes participaron en ambos repositorios. La siguiente tabla res
 
 ### Conclusiones
 
-1. **Sobre los Problem Statements:** En relación a los *Problem Statements* especificados, se concluye que la falta de digitalización y la trazabilidad manual generan un riesgo regulatorio crítico y pérdidas invisibles en los laboratorios farmacéuticos. DoofPlus aborda directamente este problema centralizando la documentación de calidad y los datos de producción en una única plataforma alineada a las normativas BPM/GMP.
-2. **Assumptions vs. Comportamiento Real:** Durante el proceso, el equipo estableció como *Assumption* que los especialistas de QA/QC y Supervisores de Producción tendrían una alta resistencia al cambio tecnológico. Sin embargo, en contraste con el comportamiento real observado durante las entrevistas y validaciones, los segmentos mostraron una alta disposición a adoptar la herramienta, siempre y cuando la experiencia de usuario (UX) reduzca los clics necesarios para liberar un lote.
-3. **Hypotheses Statements y Criterios de Éxito (Lean UX):** Respecto a nuestros *Hypotheses Statements*, se confirmó la hipótesis de que implementar firmas electrónicas y un *Audit Trail* automatizado reduce drásticamente el tiempo de revisión de lotes. Los resultados obtenidos de las validaciones de nuestros prototipos y *wireframes* superaron los criterios de éxito especificados en el proceso de Lean UX (logrando una aceptación del flujo de trabajo superior a la métrica esperada).
+1. **Sobre los Problem Statements:** las entrevistas confirmaron el problema planteado. El 100 % de los especialistas QA/QC trabaja con un esquema mixto de registros físicos y digitales, el 100 % de los jefes y supervisores de producción registra el seguimiento de los lotes en formularios físicos y hojas de cálculo, y el 67 % de ambos segmentos tiene dificultades para reconstruir el historial completo de un lote. DoofPlus responde a esta situación centralizando en una sola plataforma la documentación de calidad, los lotes, las desviaciones y los datos de los equipos.
+2. **Sobre los Assumptions:** el equipo asumió que la resistencia al cambio sería una de las principales barreras de adopción. En las entrevistas, el 100 % de los participantes mostró una percepción favorable hacia la digitalización de sus procesos, siempre que la plataforma reduzca el trabajo manual y no agregue pasos a su rutina; esto orientó el diseño de la Web Application hacia entornos separados por rol y flujos cortos.
+3. **Sobre los Hypothesis Statements y los criterios de éxito:** al cierre del Sprint 2 la Landing Page y la Web Application están publicadas y cubren los flujos necesarios para probar las hipótesis: registro y seguimiento de lotes, desviaciones y CAPA, liberación con firma electrónica, audit trail y monitoreo IoT. La validación de las hipótesis y de los criterios de éxito con usuarios de cada segmento se realizará en las Validation Interviews (sección 5.3) de la siguiente entrega.
 
 ### Recomendaciones
 
-1. **Roadmap - Desarrollo Backend y Seguridad:** En relación al *Roadmap* de los productos digitales, se recomienda priorizar para el siguiente sprint o hito (AV2) la construcción de la arquitectura Backend y la base de datos relacional. Es imperativo consolidar el *Bounded Context* de IAM (Identity and Access Management) antes de avanzar, ya que el valor del sistema depende de las firmas electrónicas y la seguridad de los roles.
-2. **Roadmap - Integración de Telemetría (IoT):** Como siguiente paso en el alcance del modelo de negocio digital, se sugiere que el equipo investigue e integre simuladores de *WebSockets* o APIs en tiempo real. Esto permitirá validar técnicamente el módulo de monitoreo IoT (temperatura y humedad) establecido en el *Roadmap* sin necesidad de depender de hardware físico inmediato.
+1. **Para la siguiente entrega (AV2):** implementar los RESTful Web Services en Spring Boot y conectar la Web Application, que hoy consume una Fake API, empezando por Identity & Access Management, del que dependen el inicio de sesión con 2FA y las firmas electrónicas.
+2. **Para la validación:** realizar las Validation Interviews con especialistas QA/QC y jefes de producción sobre la versión publicada de la Web Application, midiendo el tiempo necesario para reconstruir el historial de un lote y para preparar una auditoría, que son los criterios de éxito del Problem Statement.
+
 ## Video About-the-Team
+
+El video About-the-Team se presentará en la entrega AV2. En él, cada integrante contará su experiencia en el desarrollo de DoofPlus y el equipo expondrá la proyección del producto: la integración de la Web Application con los RESTful Web Services, la conexión con ThingsBoard para la telemetría real de los sensores y la incorporación de los laboratorios piloto.
 
 # Bibliografía
 
@@ -1054,3 +1118,9 @@ Veeva Systems. (2024). <em>Veeva Vault Quality: Modernizing Quality Management</
 Vernon, V. (2013). <em>Implementing Domain-Driven Design</em>. Addison-Wesley Professional.
 </div>
 # Anexos
+
+## Anexo A. Videos de exposiciones
+
+| Entrega | Título del video | Enlace |
+| --- | --- | --- |
+| TB1 | upc-pre-202620-1asi0729-7742-IngesCompany-exposition-tb1 | ENLACE PENDIENTE |
