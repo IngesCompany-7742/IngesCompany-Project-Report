@@ -182,7 +182,7 @@ El objetivo principal de este Sprint fue implementar y publicar la Landing Page 
 | US45 | Visualización del equipo y de la startup | T005 | Maquetar sección Our Team | Implementar las tarjetas de los 5 integrantes del equipo Inges Company con foto, nombre y descripción. | 2 | Rojas Ambicho, Nestor Daniel | Done |
 | US45 | Visualización del equipo y de la startup | T006 | Correcciones sección Our Team | Corregir la estructura y el contenido de la sección del equipo tras la revisión de pares. | 1 | Angulo Ramírez, Marcelo Martín | Done |
 | US04 | Formulario de contacto | T007 | Implementar footer y formulario | Desarrollar el footer con el formulario de suscripción por email, datos de contacto y enlaces legales. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| TS01 | Implementación de Landing Page responsive y accesible | T008 | Correcciones de estructura index | Corregir la estructura general de `index.html` para asegurar la consistencia semántica y la accesibilidad. | 2 | Flores Martinez, Ricardo Andres | Done |
+| TS01 | Implementación de Landing Page adaptable y accesible | T008 | Correcciones de estructura index | Corregir la estructura general de `index.html` para asegurar la consistencia semántica y la accesibilidad. | 2 | Flores Martinez, Ricardo Andres | Done |
 | US46 | Cambio de idioma | T009 | Lógica i18n y toggle de idioma | Implementar el selector de idioma ES/EN con archivos de traducción y lógica JavaScript de i18n. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
 | US47 | Consulta de términos y política de privacidad | T010 | Agregar Terms of Service | Redactar e implementar la página de Términos de Servicio de DoofPlus. | 2 | Rojas Ambicho, Nestor Daniel | Done |
 | US47 | Consulta de términos y política de privacidad | T011 | Agregar Privacy Policy | Redactar e implementar la Política de Privacidad conforme a la Ley N.° 29733. | 2 | Angulo Ramírez, Marcelo Martín | Done |
@@ -338,7 +338,7 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 | US16 | Gestión de estados de lote | T035 | Estados de lote | Implementar el cambio de estado de los lotes y sus conteos por estado. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
 | US58 | Recepción de materias primas | T036 | Recepción de materias primas | Implementar la recepción de materias primas con cuarentena e inspección. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
 | US17 | Asociación de materias primas | T037 | Asociación de materias primas | Asignar lotes de materia prima aprobados a un lote de producción. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
-| US32 | Dashboard de producción | T038 | Resumen de producción | Implementar el resumen de producción con el programa del día, la disponibilidad de equipos y las incidencias. | 4 | Flores Martinez, Ricardo Andres | Done |
+| US32 | Panel de producción | T038 | Resumen de producción | Implementar el resumen de producción con el programa del día, la disponibilidad de equipos y las incidencias. | 4 | Flores Martinez, Ricardo Andres | Done |
 | US23 | Registro de dispositivos IoT | T039 | Inventario de equipos y sensores | Implementar el inventario de equipos con sus sensores IoT y el registro de un sensor. | 4 | Angulo Ramírez, Marcelo Martín | Done |
 | US24 | Asociación de sensores a un lote | T040 | Asociación de sensores a lotes | Implementar la evidencia IoT del lote con la asociación de equipos y sensores. | 4 | Angulo Ramírez, Marcelo Martín | Done |
 | US25 | Captura automática de evidencias | T041 | Telemetría | Implementar el gráfico de telemetría con límites y lectura pico. | 6 | Angulo Ramírez, Marcelo Martín | Done |
@@ -358,7 +358,7 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 | US21 | Seguimiento de acciones CAPA | T055 | Seguimiento de CAPA | Mostrar el avance de las acciones CAPA y bloquear el cierre sin evidencia de eficacia. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
 | US11 | Automatización de cálculos de calidad | T056 | Resultados analíticos | Implementar los resultados analíticos con su conformidad respecto de la especificación. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
 | US54 | Revisión y liberación de lotes | T057 | Liberación de lotes | Implementar la liberación de lotes con requisitos previos, firma electrónica y estado bloqueado. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
-| US31 | Dashboard de calidad | T058 | Resumen de calidad | Implementar el resumen de calidad con la cola de prioridades y las próximas decisiones. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
+| US31 | Panel de indicadores de calidad | T058 | Resumen de calidad | Implementar el resumen de calidad con la cola de prioridades y las próximas decisiones. | 4 | Cobades Zamora, Yhoshua Hebert | Done |
 | US27 | Audit trail | T059 | Audit trail | Implementar el registro de eventos con filtros por registro y actor, compartido por los tres entornos. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
 | US28 | Generación automática de reportes | T060 | Reportes regulatorios | Implementar la lista y generación de reportes regulatorios. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
 | US29 | Preparación de auditorías | T061 | Preparación de auditorías | Implementar el registro de auditorías y su estado de preparación. | 6 | Cobades Zamora, Yhoshua Hebert | Done |
