@@ -163,11 +163,11 @@ En el Sprint 1 se consideraron cuatro aspectos: el diseño de la Landing Page, s
 
 #### 5.2.1.3. Sprint Backlog 1
 
-El objetivo principal de este Sprint fue implementar y publicar la Landing Page de DoofPlus para dar a conocer a Inges Company y su propuesta de valor. La siguiente imagen muestra el board del Sprint 1 en Jira:
+El objetivo principal de este Sprint fue implementar y publicar la Landing Page de DoofPlus para dar a conocer a Inges Company y su propuesta de valor. La siguiente imagen muestra las User Stories del Sprint 1 en Jira, ya cerrado:
 
 ![Sprint Backlog 1 en Jira](../assets/img/chapter5/evidencia/jira-pb.png)
 
-*Figura: Board del Sprint 1 en Jira Software.*
+*Figura: User Stories del Sprint 1 en Jira Software.*
 
 **Enlace al board en Jira:** https://doofplus.atlassian.net/jira/software/projects/UPC/boards/3
 
@@ -317,28 +317,28 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
 | US01 | Visualización de la propuesta de valor | T015 | Hero con propuesta de valor | Implementar el hero con el título, el subtítulo, los indicadores de confianza y los botones Get Started y View plans. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
 | US01 | Visualización de la propuesta de valor | T016 | Hero con propuesta de valor: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US02 | Visualización de servicios y características | T017 | Secciones Services y Features | Implementar las tarjetas de servicios y el acordeón de características con su panel de vista previa. | 2 | Flores Martinez, Ricardo Andres | Done |
-| US02 | Visualización de servicios y características | T018 | Secciones Services y Features: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Flores Martinez, Ricardo Andres | Done |
-| US48 | Acceso por segmento a la Web Application | T019 | Acceso por segmento | Implementar la sección Choose your workspace y los enlaces con data-app-segment hacia el inicio de sesión de cada entorno. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US48 | Acceso por segmento a la Web Application | T020 | Acceso por segmento: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
-| US49 | Visualización del video promocional | T021 | Video About the Product y About the Team | Implementar el reproductor que carga el video de YouTube al pulsar play y muestra un aviso mientras el video no está publicado. | 2 | Angulo Ramírez, Marcelo Martín | Done |
-| US49 | Visualización del video promocional | T022 | Video About the Product y About the Team: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Angulo Ramírez, Marcelo Martín | Done |
+| US02 | Visualización de servicios y características | T017 | Sección Services | Implementar las tarjetas de servicios con sus estilos y sus textos en en.json y es.json. | 2 | Flores Martinez, Ricardo Andres | Done |
+| US02 | Visualización de servicios y características | T018 | Sección Features | Implementar el acordeón de características con su panel de vista previa, sus estilos y sus textos en en.json y es.json. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
+| US48 | Acceso por segmento a la Web Application | T019 | Acceso por segmento | Implementar la sección Choose your workspace y los enlaces con data-app-segment hacia el inicio de sesión de cada entorno. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US48 | Acceso por segmento a la Web Application | T020 | Acceso por segmento: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US49 | Visualización del video promocional | T021 | Sección About the Product con video | Implementar la sección del video del producto con su reproductor, sus estilos y sus textos en en.json y es.json. | 2 | Angulo Ramírez, Marcelo Martín | Done |
+| US49 | Visualización del video promocional | T022 | Carga del video y video About the Team | Cargar el video de YouTube al pulsar play y agregar el video About the Team debajo de las tarjetas del equipo. | 1 | Rojas Ambicho, Nestor Daniel | Done |
 | US05 | Preguntas frecuentes | T023 | Sección FAQ | Implementar las preguntas frecuentes con acordeón accesible y el enlace al formulario de contacto. | 1 | Rojas Ambicho, Nestor Daniel | Done |
 | US05 | Preguntas frecuentes | T024 | Sección FAQ: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
 | US44 | Navegación por secciones | T025 | Navbar con menú móvil | Reimplementar la barra de navegación con anclas reales, Sign in y Get Started con destino propio y el menú overlay en mobile. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US44 | Navegación por secciones | T026 | Navbar con menú móvil: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 2 | Rojas Ambicho, Nestor Daniel | Done |
-| US03 | Visualización de planes y precios | T027 | Planes con toggle mensual/anual | Reimplementar las tarjetas de planes con el cambio de precio mensual/anual y su nota de precios. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
-| US03 | Visualización de planes y precios | T028 | Planes con toggle mensual/anual: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US44 | Navegación por secciones | T026 | Navbar con menú móvil: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US03 | Visualización de planes y precios | T027 | Planes con toggle mensual/anual | Reimplementar las tarjetas de planes con el cambio de precio mensual/anual y su nota de precios. | 2 | Flores Martinez, Ricardo Andres | Done |
+| US03 | Visualización de planes y precios | T028 | Planes con toggle mensual/anual: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Flores Martinez, Ricardo Andres | Done |
 | US45 | Visualización del equipo y de la startup | T029 | Secciones About us y Our Team | Implementar la misión, la visión y las tarjetas de los integrantes con su foto y rol. | 1 | Rojas Ambicho, Nestor Daniel | Done |
 | US45 | Visualización del equipo y de la startup | T030 | Secciones About us y Our Team: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Rojas Ambicho, Nestor Daniel | Done |
 | US04 | Formulario de contacto | T031 | Formulario Contact us | Implementar el formulario de consulta con validación de campos y el estado de mensaje enviado. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
 | US04 | Formulario de contacto | T032 | Formulario Contact us: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
 | US47 | Consulta de términos y política de privacidad | T033 | Términos y política de privacidad | Implementar las páginas terms.html y privacy.html con sus estilos y traducciones. | 1 | Angulo Ramírez, Marcelo Martín | Done |
 | US47 | Consulta de términos y política de privacidad | T034 | Términos y política de privacidad: estilos y traducciones | Aplicar los estilos responsive de la sección y agregar sus textos en en.json y es.json. | 1 | Angulo Ramírez, Marcelo Martín | Done |
-| US06 | Inicio de sesión con segundo factor | T035 | Inicio de sesión con 2FA: vista | Implementar la elección de entorno, el inicio de sesión por entorno y la verificación con código de seis dígitos. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US06 | Inicio de sesión con segundo factor | T035 | Inicio de sesión con 2FA: vista | Implementar la elección de entorno, el inicio de sesión por entorno y la verificación con código de seis dígitos. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
 | US06 | Inicio de sesión con segundo factor | T036 | Inicio de sesión con 2FA: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Zavaleta Gutierrez, Rodolfo Martin | Done |
 | US07 | Gestión de roles | T037 | Acceso por rol: vista | Implementar el guard de IAM y el estado Access not authorized cuando el rol no corresponde al entorno. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
-| US07 | Gestión de roles | T038 | Acceso por rol: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
+| US07 | Gestión de roles | T038 | Acceso por rol: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
 | US08 | Firmas electrónicas | T039 | Firma electrónica: vista | Implementar la confirmación con contraseña en las aprobaciones, liberaciones y cierres críticos. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
 | US08 | Firmas electrónicas | T040 | Firma electrónica: store y Fake API | Agregar al store de IAM las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
 | US55 | Alta de usuarios del equipo | T041 | Usuarios e invitaciones: vista | Implementar el directorio de usuarios y perfiles y el formulario para invitar usuarios. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
@@ -357,10 +357,10 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 | US36 | Gestión de fórmulas maestras | T054 | Fórmulas maestras: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
 | US57 | Gestión de órdenes de producción | T055 | Órdenes de producción: vista | Implementar la lista y la ejecución de órdenes de producción contra la fórmula maestra. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
 | US57 | Gestión de órdenes de producción | T056 | Órdenes de producción: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
-| US14 | Registro de lotes | T057 | Registro de lotes: vista | Implementar el diálogo Create batch con el estado de lote rechazado por fórmula no aprobada. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
+| US14 | Registro de lotes | T057 | Registro de lotes: vista | Implementar el diálogo Create batch con el estado de lote rechazado por fórmula no aprobada. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
 | US14 | Registro de lotes | T058 | Registro de lotes: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 2 | Zavaleta Gutierrez, Rodolfo Martin | Done |
 | US15 | Consulta del historial de lotes | T059 | Historial de lotes: vista | Implementar la lista de lotes con filtros y la genealogía y el historial de estados de cada lote. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
-| US15 | Consulta del historial de lotes | T060 | Historial de lotes: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Cobades Zamora, Yhoshua Hebert | Done |
+| US15 | Consulta del historial de lotes | T060 | Historial de lotes: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 3 | Zavaleta Gutierrez, Rodolfo Martin | Done |
 | US16 | Gestión de estados de lote | T061 | Estados de lote: vista | Implementar el cambio de estado de los lotes y sus conteos por estado. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
 | US16 | Gestión de estados de lote | T062 | Estados de lote: store y Fake API | Agregar al store de Manufacturing las operaciones de la vista, sus datos en la Fake API (db.json) y las traducciones en inglés y español. | 1 | Cobades Zamora, Yhoshua Hebert | Done |
 | US58 | Recepción de materias primas | T063 | Recepción de materias primas: vista | Implementar la recepción de materias primas con cuarentena e inspección. | 2 | Cobades Zamora, Yhoshua Hebert | Done |
@@ -440,9 +440,9 @@ El objetivo del Sprint fue completar la Landing Page y entregar la primera versi
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-En el Sprint 2 se trabajó en dos repositorios siguiendo GitFlow: una feature branch por sección de la Landing Page o por bounded context de la Web Application, integradas en `develop` con merges `--no-ff`, y una rama `release/v1.0.0` fusionada en `main` con el tag `v1.0.0` en ambos repositorios. La Landing Page recibió además el hotfix `v1.0.1`. Las tablas siguientes presentan todos los commits de `main`; la columna *Branch* indica la rama en que se realizó cada commit.
+En el Sprint 2 se trabajó en dos repositorios siguiendo GitFlow: una feature branch por sección de la Landing Page o por bounded context de la Web Application, integradas en `develop` con merges `--no-ff`, y una rama `release/v1.0.0` fusionada en `main` con el tag `v1.0.0` en ambos repositorios. La Landing Page recibió además el hotfix `v1.0.1` y el enlace de sus botones de acceso a la Web Application publicada; en la Web Application, después de `v1.0.0` se registraron en `main` los ajustes del despliegue en Firebase Hosting y Render y la versión 1.0.1. Las tablas siguientes presentan todos los commits de `main`; la columna *Branch* indica la rama en que se realizó cada commit.
 
-**Landing Page** (92 commits)
+**Landing Page** (97 commits)
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
@@ -538,8 +538,13 @@ En el Sprint 2 se trabajó en dos repositorios siguiendo GitFlow: una feature br
 | IngesCompany-7742/IngesCompany-LandingPage | hotfix/v1.0.1 | `7a2de04` | fix(deploy): publish the static site on GitHub Pages without the Jekyll build | — | 09/10/2026 |
 | IngesCompany-7742/IngesCompany-LandingPage | hotfix/v1.0.1 | `d4efb41` | chore(release): set the landing page version to 1.0.1 | — | 09/10/2026 |
 | IngesCompany-7742/IngesCompany-LandingPage | main | `61326ed` | Merge branch 'hotfix/v1.0.1' | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-LandingPage | develop | `385a2f9` | Merge branch 'release/v1.0.0' into develop | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-LandingPage | develop | `97a9e4b` | Merge branch 'hotfix/v1.0.1' into develop | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-LandingPage | feature/web-app-links | `467b222` | feat(config): link the segment access buttons to the published web application | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-LandingPage | develop | `bb1946e` | Merge branch 'feature/web-app-links' into develop | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-LandingPage | main | `4e2299e` | Merge branch 'develop' | — | 09/10/2026 |
 
-**Frontend Web Application** (173 commits)
+**Frontend Web Application** (178 commits)
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
@@ -716,6 +721,11 @@ En el Sprint 2 se trabajó en dos repositorios siguiendo GitFlow: una feature br
 | IngesCompany-7742/IngesCompany-Frontend | develop | `eab64e9` | Merge branch 'feature/project-configuration' into develop | — | 09/10/2026 |
 | IngesCompany-7742/IngesCompany-Frontend | release/v1.0.0 | `700dcb1` | chore(release): set the web application version to 1.0.0 and update the changelog | — | 09/10/2026 |
 | IngesCompany-7742/IngesCompany-Frontend | main | `d63b938` | Merge branch 'release/v1.0.0' | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-Frontend | main | `b0097e9` | fix(environment): read the fake API published on Render in production | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-Frontend | main | `9a7d14b` | chore(deploy): link the Firebase project and ignore the deploy cache | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-Frontend | main | `c9dbe4e` | fix(server): restore the seed state of material lot RM-26104 | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-Frontend | main | `079465a` | fix(a11y): name tables and alerts of the views copied before the accessibility work | — | 09/10/2026 |
+| IngesCompany-7742/IngesCompany-Frontend | main | `946151e` | chore(release): set the web application version to 1.0.1 and update the changelog | — | 09/10/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
@@ -973,7 +983,7 @@ En el Sprint 2 todavía no se implementaron los RESTful Web Services, por lo que
 En este Sprint se prepararon las versiones estables de ambos productos siguiendo GitFlow:
 
 - **Landing Page:** la rama `release/v1.0.0` se fusionó en `main` con el tag `v1.0.0`, y luego se publicó el hotfix `v1.0.1`, que agrega el archivo `.nojekyll` para que GitHub Pages publique los archivos estáticos sin procesarlos con Jekyll. La Landing Page se publica en GitHub Pages desde `main` en https://ingescompany-7742.github.io/IngesCompany-LandingPage/.
-- **Web Application:** la rama `release/v1.0.0` se fusionó en `main` con el tag `v1.0.0` y su CHANGELOG. El repositorio incluye `firebase.json`, que configura Firebase Hosting como Single Page Application, y el script `npm run server:prod`, que publica la Fake API en un Web Service de Render. La Web Application está publicada en Firebase Hosting en https://doofplus-webapp.web.app y la Fake API en Render en https://ingescompany-frontend.onrender.com/api/v1.
+- **Web Application:** la rama `release/v1.0.0` se fusionó en `main` con el tag `v1.0.0` y su CHANGELOG. El repositorio incluye `firebase.json`, que configura Firebase Hosting como Single Page Application, y el script `npm run server:prod`, que publica la Fake API en un Web Service de Render. Después del release se agregaron en `main` la lectura de la Fake API publicada en Render, la vinculación del proyecto de Firebase y correcciones de accesibilidad, y la versión se actualizó a 1.0.1 en el CHANGELOG. La Web Application está publicada en Firebase Hosting en https://doofplus-webapp.web.app y la Fake API en Render en https://ingescompany-frontend.onrender.com/api/v1.
 
 ![Tag v1.0.0 de la Landing Page](../assets/img/chapter5/sprint2/github/release-landing-v1.0.0.png)
 
@@ -993,9 +1003,9 @@ Los cinco integrantes participaron en ambos repositorios. La siguiente tabla res
 
 | Team Member | GitHub Username | Landing Page | Web Application | Total |
 |---|---|:---:|:---:|:---:|
-| Rojas Ambicho, Nestor Daniel | danRO-20 | 23 | 23 | 46 |
+| Rojas Ambicho, Nestor Daniel | danRO-20 | 25 | 23 | 48 |
 | Zavaleta Gutierrez, Rodolfo Martin | gutierrezrodolfo360-bit | 17 | 44 | 61 |
-| Cobades Zamora, Yhoshua Hebert | YhoshuaCZ | 12 | 51 | 63 |
+| Cobades Zamora, Yhoshua Hebert | YhoshuaCZ | 13 | 56 | 69 |
 | Angulo Ramírez, Marcelo Martín | Zock2005 | 8 | 28 | 36 |
 | Flores Martinez, Ricardo Andres | Nitoryu28 | 8 | 4 | 12 |
 
