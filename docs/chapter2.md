@@ -482,7 +482,7 @@ Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=34587646857
 
 **Step 5 – Sorting Domain Events**
 
-Los eventos se ordenaron cronológicamente de izquierda a derecha. Los resultados alternativos de un mismo momento (por ejemplo, "Materia prima aprobada" o "Materia prima rechazada") se ubicaron en vertical, y los flujos que ocurren en paralelo se separaron en siete swimlanes: Plataforma y administración, Gestión documental, Producción y almacén, Monitoreo de equipos (IoT), Control de calidad y liberación, Desviaciones y CAPA, y Auditoría y cumplimiento. Al ordenar se eliminaron los eventos duplicados.
+Los eventos se ordenaron cronológicamente de izquierda a derecha. Los resultados alternativos de un mismo momento (por ejemplo, "Raw material approved" o "Raw material rejected") se ubicaron en vertical, y los flujos que ocurren en paralelo se separaron en siete swimlanes: Platform and administration, Document management, Production and warehouse, Equipment monitoring (IoT), Quality control and release, Deviations and CAPA, y Audit and compliance. Al ordenar se eliminaron los eventos duplicados.
 
 Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732347233
 
@@ -490,7 +490,7 @@ Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=34587646857
 
 **Step 6 – Adding Actors and External Systems**
 
-Sobre la línea de tiempo se agregaron los actores que provocan cada grupo de eventos (Administrador del laboratorio, Especialista QA/QC y Jefe de Producción) y los sistemas externos con los que interactúa el proceso: Niubiz para el cobro de suscripciones, el Lector RFID en la recepción de insumos, los sensores IoT conectados a ThingsBoard y DIGEMID como entidad que realiza la inspección.
+Sobre la línea de tiempo se agregaron los actores que provocan cada grupo de eventos (Laboratory Administrator, QA/QC Specialist y Production Supervisor) y los sistemas externos con los que interactúa el proceso: Niubiz para el cobro de suscripciones, el RFID Reader en la recepción de insumos, los sensores IoT conectados a ThingsBoard y DIGEMID como entidad que realiza la inspección.
 
 Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=3458764685732347919
 
@@ -498,7 +498,7 @@ Frame en Miro: https://miro.com/app/board/uXjVHl-67N8=/?moveToWidget=34587646857
 
 **Step 7 – Storytelling**
 
-Un integrante narró la historia completa de inicio a fin mientras el resto validaba el orden y el significado de cada evento. Durante la narración se registraron en rosado los problemas que hoy enfrentan los laboratorios, tomados de las entrevistas, y se conectaron con flechas los eventos que disparan a otros (por ejemplo, "Parámetro fuera de rango detectado" dispara "Alerta generada", que genera una "Incidencia registrada"). Los pivotal events, destacados con un post-it de mayor tamaño, marcan los cambios de fase del lote: "Materia prima recibida", "Lote creado", "Lote cerrado", "Muestra de lote tomada", "Registro de lote revisado", "Lote liberado", "Auditoría iniciada" y "Auditoría cerrada".
+Un integrante narró la historia completa de inicio a fin mientras el resto validaba el orden y el significado de cada evento. Durante la narración se registraron en rosado los problemas que hoy enfrentan los laboratorios, tomados de las entrevistas, y se conectaron con flechas los eventos que disparan a otros (por ejemplo, "Out-of-range parameter detected" dispara "Alert raised", que genera un "Incident recorded"). Los pivotal events, destacados con un post-it de mayor tamaño, marcan los cambios de fase del lote: "Raw material received", "Batch created", "Batch closed", "Batch sample taken", "Batch record reviewed", "Batch released", "Audit started" y "Audit closed".
 
 | Problema detectado | Evidencia en las entrevistas |
 | --- | --- |
